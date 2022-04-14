@@ -37,4 +37,11 @@ $("#show-sorteo").click(function() {
   $("#content-resumen").hide();
 });
 
+// Admin Dashboard  $("button").click(function(){
+$(".sidebar-admin button").click(function(){
+  $("#active").removeClass("active-item-sidebar");
+});
+
+// End admin dashboard
+
 });

@@ -939,3 +939,25 @@ small {
   font-size: 1.5rem;
 }
 /* END LOADER */
+
+/* ADMIN STYLES */
+.sidebar-admin {
+
+}
+
+.sidebar-admin .btn {
+  /* background-color: lightgreen; */
+}
+
+.sidebar-admin .btn:focus  {
+  background-color: lightpink;
+}
+
+.active-item-sidebar {
+  background-color: blue;
+}
+
+.sidebar-admin .link-dark:focus {
+  background-color: yellow;
+}
+/* END ADMIN STYLES */
