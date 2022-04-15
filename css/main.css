@@ -56,6 +56,11 @@ small {
   line-height: 1rem;
 }
 
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /* Colors */
 .success-color {
   color: var(--success);
@@ -876,6 +881,11 @@ small {
   padding-bottom: .75rem;
 }
 
+.navbar-cear .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .navbar-brand img {
   height: 3rem;
   image-rendering: -moz-crisp-edges;
@@ -941,8 +951,23 @@ small {
 /* END LOADER */
 
 /* ADMIN STYLES */
-.sidebar-admin {
 
+/* navbar admin */
+.navbar-cear-menu {
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding-right: 1rem;
+}
+
+/* end navbar menu */
+
+/* Sidebar */
+.sidebar-admin {
+  width: 300px;
+  min-height: 100vh
 }
 
 .sidebar-admin .btn {
@@ -960,4 +985,6 @@ small {
 .sidebar-admin .link-dark:focus {
   background-color: yellow;
 }
+
+/* End sidebar */
 /* END ADMIN STYLES */

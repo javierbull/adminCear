@@ -24,10 +24,17 @@
 <body>
 	<header>
 		<nav class="navbar navbar-light navbar-cear">
-			<div class="container-fluid container-mobile">
-				<a class="navbar-brand" href="#">
-					<img src="img/logos/logo-cear-negativo.png" alt="">
-				</a>
+			<div class="container-fluid container-mobile ">
+				<div class="navbar-cear-menu">
+					<a class="navbar-brand" href="#">
+						<img src="img/logos/logo-cear-negativo.png" alt="">
+					</a>
+					<button type="button" name="button" class="btn btn-icon btn-warning">
+						<span class="material-icons-outlined">
+							menu
+						</span>
+					</button>
+				</div>
 				<div class="btn-group">
 					<button type="button" class="btn dropdown-toggle btn-user" data-bs-toggle="dropdown" aria-expanded="false">
 						<span class="user-name">
@@ -39,20 +46,13 @@
 					</button>
 					<ul class="dropdown-menu dropdown-menu-end">
 						<li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
-
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 	<main class="bg-cear">
-		<div class="flex-shrink-0 p-3 bg-white sidebar-admin" style="width: 280px;">
-			<a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-				<svg class="bi me-2" width="30" height="24">
-					<use xlink:href="#bootstrap" />
-				</svg>
-				<span class="fs-5 fw-semibold">Collapsible</span>
-			</a>
+		<div class="p-3 bg-white sidebar-admin">
 			<ul class="list-unstyled ps-0">
 				<li class="mb-1">
 					<button class="btn btn-toggle align-items-center rounded collapsed active-item-sidebar" id="active" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
