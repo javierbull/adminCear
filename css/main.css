@@ -202,6 +202,11 @@ small {
   opacity: 1;
 }
 
+.btn-circle {
+  border-radius: 100px;
+  padding: .75rem;
+}
+
 .link-button {
   /* background-color: salmon; */
   color: var(--a-02);
@@ -954,12 +959,15 @@ small {
 
 /* navbar admin */
 .navbar-cear-menu {
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 300px;
-  padding-right: 1rem;
+}
+
+.navbar-cear-menu .btn {
+  background-color: yellow;
+  margin-right: 1rem;
 }
 
 /* end navbar menu */
