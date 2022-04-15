@@ -975,8 +975,17 @@ small {
 /* Sidebar */
 .sidebar-admin {
   width: 300px;
-  min-height: 100vh
+  min-height: calc(100vh - 74px);
+  position: fixed;
+  left: -300px;
+  transition: all 150ms linear;
 }
+
+.sidebar-admin.active {
+  left: 0;
+}
+
+
 
 .sidebar-admin .btn {
   /* background-color: lightgreen; */
