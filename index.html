@@ -52,10 +52,11 @@
 		</nav>
 	</header>
 	<main class="bg-light">
+		<!-- Sidebar -->
 		<div class="sidebar-admin" id="sidebar-admin">
 			<ul class="sidebar-admin-list">
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed">
+					<button class="btn btn-toggle collapsed active-item-sidebar" id="active">
 						Profesionales
 					</button>
 				</li>
@@ -75,7 +76,7 @@
 					</button>
 				</li>
 				<!-- <li class="item-sidebar">
-					<button class="btn btn-toggle collapsed active-item-sidebar" id="active" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+					<button class="btn btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
 						Home
 					</button>
 					<div class="collapse show" id="home-collapse">
@@ -85,8 +86,8 @@
 							<li><a href="#" class="item-collapse rounded">Reports</a></li>
 						</ul>
 					</div>
-				</li> -->
-				<!-- <li class="item-sidebar">
+				</li>
+				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
 						Dashboard
 					</button>
@@ -101,6 +102,16 @@
 				</li> -->
 			</ul>
 		</div>
+		<!-- end sidebar -->
+		<!-- main panel -->
+		<div class="wrap-panel-admin ml-panel">
+			<div class="container-fluid">
+				<div id="profesionales" class="tabcontent">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, impedit.
+				</div>
+			</div>
+		</div>
+		<!-- Ebd main panel -->
 	</main>
 
 	<!-- Modals -->

@@ -1043,4 +1043,11 @@ small {
 }
 
 /* End sidebar */
+
+/* Main panel admin */
+.ml-panel {
+  margin-left: 250px;
+}
+
+/* end main panel admin */
 /* END ADMIN STYLES */

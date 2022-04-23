@@ -37,10 +37,20 @@ $("#show-sorteo").click(function() {
   $("#content-resumen").hide();
 });
 
-// Admin Dashboard  $("button").click(function(){
+// Admin Dashboard  active item sidebar
 $(".sidebar-admin button").click(function(){
   $("#active").removeClass("active-item-sidebar");
 });
+// Admin Dashboard  active item sidebar
+
+// $("#toggle-btn-sidebar").click(function(){
+//      $("p.normal").toggle();
+//      $("p.fast").toggle("fast");
+//      $("p.slow").toggle("slow");
+//      $("p.very-fast").toggle(50);
+//      $("p.very-slow").toggle(2000);
+//  });
+
 
 // End admin dashboard
 
