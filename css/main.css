@@ -892,7 +892,7 @@ small {
 }
 
 .navbar-brand img {
-  height: 3rem;
+  height: 2.5rem;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
@@ -962,7 +962,7 @@ small {
   /* background-color: pink; */
   display: flex;
   align-items: center;
-  width: 300px;
+  width: 250px;
 }
 
 .navbar-cear-menu .btn {
@@ -980,7 +980,7 @@ small {
 /* Sidebar */
 .sidebar-admin {
   background-color: var(--g-03);
-  width: 300px;
+  width: 250px;
   min-height: calc(100vh - 74px);
   position: fixed;
   left: 0;
@@ -988,13 +988,14 @@ small {
 }
 
 .sidebar-admin.active {
-  left: -300px;
+  left: -250px;
 }
 
 .sidebar-admin-list .btn {
   /* background-color: lightgreen; */
   width: 100%;
   border-bottom: 1px solid var(--g-02);
+  text-align: left;
 }
 
 .sidebar-admin-list .btn:focus  {
