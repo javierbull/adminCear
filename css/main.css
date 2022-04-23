@@ -881,7 +881,7 @@ small {
 
 /* DISCLAIMER */
 .navbar-cear {
-  background-color: var(--a-03);
+  background-color: var(--a-02);
   padding-top: .75rem;
   padding-bottom: .75rem;
 }
@@ -966,8 +966,9 @@ small {
 }
 
 .navbar-cear-menu .btn {
-  background-color: yellow;
+  /* background-color: yellow; */
   margin-right: 1rem;
+  color: var(--g-03);
 }
 
 /* end navbar menu */
