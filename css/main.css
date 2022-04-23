@@ -998,12 +998,16 @@ small {
   text-align: left;
 }
 
+.sidebar-admin-list .btn:hover  {
+  background-color: var(--g-02);
+}
+
 .sidebar-admin-list .btn:focus  {
-  background-color: lightpink;
+  background-color: var(--g-02);
 }
 
 .active-item-sidebar {
-  background-color: lightblue;
+  background-color: var(--g-02);
 }
 
 .sidebar-admin-list {
@@ -1017,10 +1021,25 @@ small {
 
 .sidebar-list-collapse {
   list-style: none;
+  padding-left: 0;
 }
 
-.sidebar-list-collapse .item-collapse:focus {
-  background-color: yellow;
+.item-collapse {
+  text-decoration: none;
+  /* background-color: pink; */
+  display: block;
+  padding: .5rem .5rem .5rem 2rem;
+  margin-bottom: .5rem;
+  color: var(--n-01);
+}
+
+.item-collapse:hover {
+  background-color: var(--b-01);
+  color: var(--n-01);
+}
+
+.item-collapse:focus {
+  font-weight: 600;
 }
 
 /* End sidebar */
