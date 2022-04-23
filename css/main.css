@@ -977,12 +977,14 @@ small {
   width: 300px;
   min-height: calc(100vh - 74px);
   position: fixed;
-  left: -300px;
+  /* left: -300px; */
+  left: 0;
   transition: all 150ms linear;
 }
 
 .sidebar-admin.active {
-  left: 0;
+  /* left: 0; */
+  left: -300px;
 }
 
 
