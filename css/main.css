@@ -1086,5 +1086,11 @@ small {
 .header-panel h2 {
   font-weight: 600;
 }
+
+.content-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 /* end content panels */
 /* END ADMIN STYLES */
