@@ -43,14 +43,11 @@ $(".sidebar-admin button").click(function(){
 });
 // Admin Dashboard  active item sidebar
 
-// $("#toggle-btn-sidebar").click(function(){
-//      $("p.normal").toggle();
-//      $("p.fast").toggle("fast");
-//      $("p.slow").toggle("slow");
-//      $("p.very-fast").toggle(50);
-//      $("p.very-slow").toggle(2000);
-//  });
-
+// Admin panel
+$("#toggle-btn-sidebar").click(function(){
+     $("#admin-panel").toggleClass("ml-panel ml-panel-0");
+ });
+// End admin panel
 
 // End admin dashboard
 

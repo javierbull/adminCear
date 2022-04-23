@@ -971,7 +971,7 @@ small {
   color: var(--g-03);
 }
 
-.navbar-cear-menu:hover .btn {
+.navbar-cear-menu .btn:hover {
   background-color: var(--a-01);
 }
 
@@ -1045,8 +1045,19 @@ small {
 /* End sidebar */
 
 /* Main panel admin */
+.admin-panel {
+  background-color: lavender;
+  padding-top: 10rem;
+}
+
 .ml-panel {
   margin-left: 250px;
+  transition: all 150ms linear;
+}
+
+.ml-panel-0 {
+  margin-left: 0px;
+  transition: all 150ms linear;
 }
 
 /* end main panel admin */
