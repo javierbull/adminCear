@@ -971,6 +971,10 @@ small {
   color: var(--g-03);
 }
 
+.navbar-cear-menu:hover .btn {
+  background-color: var(--a-01);
+}
+
 /* end navbar menu */
 
 /* Sidebar */
