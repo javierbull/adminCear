@@ -991,19 +991,34 @@ small {
   left: -300px;
 }
 
-.sidebar-admin .btn {
+.sidebar-admin-list .btn {
   /* background-color: lightgreen; */
+  width: 100%;
+  /* border-bottom: 1px solid var(--g-02); */
 }
 
-.sidebar-admin .btn:focus  {
+.sidebar-admin-list .btn:focus  {
   background-color: lightpink;
 }
 
 .active-item-sidebar {
-  background-color: blue;
+  background-color: lightblue;
 }
 
-.sidebar-admin .link-dark:focus {
+.sidebar-admin-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-admin-list .item {
+  border-bottom: 1px solid var(--g-02);
+}
+
+.sidebar-list-collapse {
+  list-style: none;
+}
+
+.sidebar-list-collapse .item:focus {
   background-color: yellow;
 }
 
