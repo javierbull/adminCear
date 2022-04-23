@@ -1047,7 +1047,7 @@ small {
 /* Main panel admin */
 .admin-panel {
   background-color: lavender;
-  padding-top: 1rem;
+  padding: 2rem;
   min-height: calc(100vh - 74px);
 }
 
@@ -1069,4 +1069,22 @@ small {
   display: block;
 }
 /* end main panel admin */
+
+/* content panels */
+.header-panel {
+  /* background-color: pink; */
+  margin-bottom: 2rem;
+  color: var(--n-01);
+}
+
+.header-panel .title-panel {
+  /* background-color: yellow; */
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.header-panel h2 {
+  font-weight: 600;
+}
+/* end content panels */
 /* END ADMIN STYLES */
