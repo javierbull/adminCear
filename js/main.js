@@ -49,6 +49,18 @@ $("#toggle-btn-sidebar").click(function(){
  });
 // End admin panel
 
+// SHOW HIDE PANELS
+$(".show-profesionales").click(function(){
+     $("#profesionales").show();
+     $("#datos").hide();
+ });
+
+ $(".show-datos").click(function(){
+    $("#datos").show();
+    $("#profesionales").hide();
+  });
+
+  // END SHOW HIDE PANELS
 // End admin dashboard
 
 });

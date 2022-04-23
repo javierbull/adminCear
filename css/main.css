@@ -1047,7 +1047,8 @@ small {
 /* Main panel admin */
 .admin-panel {
   background-color: lavender;
-  padding-top: 10rem;
+  padding-top: 1rem;
+  min-height: calc(100vh - 74px);
 }
 
 .ml-panel {
@@ -1060,5 +1061,12 @@ small {
   transition: all 150ms linear;
 }
 
+.panel {
+  display: none;
+}
+
+.active-panel {
+  display: block;
+}
 /* end main panel admin */
 /* END ADMIN STYLES */
