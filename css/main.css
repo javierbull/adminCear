@@ -994,7 +994,7 @@ small {
 .sidebar-admin-list .btn {
   /* background-color: lightgreen; */
   width: 100%;
-  /* border-bottom: 1px solid var(--g-02); */
+  border-bottom: 1px solid var(--g-02);
 }
 
 .sidebar-admin-list .btn:focus  {
@@ -1010,7 +1010,7 @@ small {
   padding-left: 0;
 }
 
-.sidebar-admin-list .item {
+.sidebar-admin-list .item-sidebar {
   border-bottom: 1px solid var(--g-02);
 }
 
@@ -1018,7 +1018,7 @@ small {
   list-style: none;
 }
 
-.sidebar-list-collapse .item:focus {
+.sidebar-list-collapse .item-collapse:focus {
   background-color: yellow;
 }
 
