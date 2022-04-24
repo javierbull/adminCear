@@ -39,7 +39,7 @@ $("#show-sorteo").click(function() {
 
 // Admin Dashboard  active item sidebar
 $(".sidebar-admin button").click(function(){
-  $("#active").removeClass("active-item-sidebar");
+  $(".active").removeClass("active-item-sidebar");
 });
 // Admin Dashboard  active item sidebar
 
@@ -50,16 +50,23 @@ $("#toggle-btn-sidebar").click(function(){
 // End admin panel
 
 // SHOW HIDE PANELS
-$(".show-profesionales").click(function(){
-     $("#profesionales").show();
-     $("#datos").hide();
- });
+$("#showProfesionales").click(function() {
+  $("#profesionales-panel").show();
+  $("#agregarProfesional-panel").hide();
+  $("#datos-panel").hide();
+});
 
- $(".show-datos").click(function(){
-    $("#datos").show();
-    $("#profesionales").hide();
-  });
+$("#showAgregarProfesional").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").show();
+  $("#datos-panel").hide();
+});
 
+$("#showDatos").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").hide();
+  $("#datos-panel").show();
+});
   // END SHOW HIDE PANELS
 // End admin dashboard
 

@@ -56,12 +56,12 @@
 		<div class="sidebar-admin" id="sidebar-admin">
 			<ul class="sidebar-admin-list">
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed active-item-sidebar show-profesionales" id="active">
+					<button class="btn btn-toggle collapsed show-profesionales active-item-sidebar active" id="showProfesionales">
 						Profesionales
 					</button>
 				</li>
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed show-datos">
+					<button class="btn btn-toggle collapsed show-datos" id="showDatos">
 						Datos
 					</button>
 				</li>
@@ -108,7 +108,7 @@
 		<!-- end sidebar -->
 		<!-- main panel -->
 		<div class="admin-panel ml-panel" id="admin-panel">
-			<div class="panel active-panel" id="profesionales">
+			<div class="panel active-panel" id="profesionales-panel">
 				<div class="row">
 					<div class="header-panel">
 						<small class="title-panel">
@@ -136,7 +136,7 @@
 								</div>
 							</div>
 
-							<button type="button" name="button" class="btn btn-large primary-button">
+							<button type="button" name="button" class="btn btn-large primary-button" id="showAgregarProfesional">
 								Agregar profesional
 							</button>
 						</div>
@@ -226,7 +226,10 @@
 
 				</div>
 			</div>
-			<div class="panel" id="datos">
+			<div class="panel" id="agregarProfesional-panel">
+				Agregar profesional
+			</div>
+			<div class="panel" id="datos-panel">
 				Datos
 			</div>
 		</div>
