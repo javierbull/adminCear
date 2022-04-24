@@ -1069,7 +1069,7 @@ small {
 
 /* Main panel admin */
 .admin-panel {
-  background-color: lavender;
+  /* background-color: lavender; */
   padding: 2rem;
   margin-top:  74px;
   min-height: calc(100vh - 74px);
