@@ -119,26 +119,34 @@
 						</h2>
 					</div>
 
-					<div class="content-controls marginBottom-2">
-						<div class="col-xl-3">
-							<div class="search-input">
-								<input type="text" class="form-control" placeholder="Buscar profesional" aria-label="Recipient's username" aria-describedby="button-addon2">
-								<button class="btn material-icons-outlined" type="button">
-									search
-								</button>
-								<small class="text-help">
-									<span class="material-icons">
-										report_problem
-									</span>
-									El usuario es incorrecto
-								</small>
+					<div class="wrap-controls-admin">
+						<div class="content-controls marginBottom-1">
+							<div class="col-xl-3">
+								<div class="search-input">
+									<input type="text" class="form-control" placeholder="Buscar profesional" aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn material-icons-outlined" type="button">
+										search
+									</button>
+									<small class="text-help">
+										<span class="material-icons">
+											report_problem
+										</span>
+										El usuario es incorrecto
+									</small>
+								</div>
 							</div>
-						</div>
 
-						<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalInstrucciones">
-							Agregar profesional
-						</button>
+							<button type="button" name="button" class="btn btn-large primary-button">
+								Agregar profesional
+							</button>
+						</div>
+						<div class="content-filtros">
+							<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalFiltrosProfesionales">
+								Aplicar filtros
+							</button>
+						</div>
 					</div>
+
 				</div>
 			</div>
 			<div class="panel" id="datos">
@@ -177,6 +185,62 @@
 				<div class="modal-footer marginBottom-2">
 					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
 						Solicitar recuperación
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalFiltrosProfesionales" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h1 class="modal-title marginBottom-1-5 text-center">Selecciona los filtros</h1>
+
+					<div class="row">
+						<div class="col-lg-6 marginBottom-2">
+							<label for="inputUser" class="form-label-admin">Asignado</label>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkAsignado" checked>
+								<label class="form-check-label" for="checkAsignado">
+									Asignado
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkNoAsignado">
+								<label class="form-check-label" for="checkNoAsignado">
+									No Asignado
+								</label>
+							</div>
+						</div>
+
+						<div class="col-lg-6 marginBottom-2">
+							<label for="inputUser" class="form-label-admin">Estado</label>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkHabilitado">
+								<label class="form-check-label" for="checkHabilitado">
+									Habilitado
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkNoHabilitado">
+								<label class="form-check-label" for="checkNoHabilitado">
+									No Habilitado
+								</label>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="modal-footer marginBottom-2">
+					<button type="button" class="btn btn-large primary-button" data-bs-dismiss="modal">
+						Aplicar filtros
 					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cancelar
