@@ -972,6 +972,14 @@ small {
 
 /* ADMIN STYLES */
 
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 /* navbar admin */
 .navbar-cear-menu {
   /* background-color: pink; */
@@ -1061,8 +1069,9 @@ small {
 
 /* Main panel admin */
 .admin-panel {
-  /* background-color: lavender; */
+  background-color: lavender;
   padding: 2rem;
+  margin-top:  74px;
   min-height: calc(100vh - 74px);
 }
 
@@ -1104,6 +1113,7 @@ small {
 
 .wrap-controls-admin {
   /* background-color: yellowgreen; */
+
 }
 
 .content-controls {
