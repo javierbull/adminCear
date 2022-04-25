@@ -4,6 +4,7 @@
   --g-01: #757677;
   --g-02: #BCBEBE;
   --g-03: #EBECEC;
+  --g-04: #F0F0F5;
   --b-01: #FFFFFF;
   --a-01: #114357;
   --a-02: #286781;
@@ -1174,6 +1175,25 @@ small {
   background-repeat: no-repeat;
   background-size: 1.5rem;
   transition: transform 0.2s ease-in-out;
+}
+
+.content-accordion-btn {
+  /* background-color: pink; */
+  display:flex;
+  align-items: center;
+}
+
+.accordion-step {
+  background-color: var(--g-04);
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2rem;
+  margin-right: .5rem;
+  border-radius: 50%;
 }
 /* End Accordion */
 /* END ADMIN STYLES */
