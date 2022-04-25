@@ -1196,4 +1196,13 @@ small {
   border-radius: 50%;
 }
 /* End Accordion */
+
+.content-btns-controls-panel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-btns-controls-panel .link-button {
+  margin-right: 1.5rem;
+}
 /* END ADMIN STYLES */
