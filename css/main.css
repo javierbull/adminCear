@@ -1221,7 +1221,7 @@ small {
   border: 1px solid var(--g-02);
   width: 8rem;
   height: 8rem;
-  border-radius: .6rem;
+  border-radius: .5rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -1230,6 +1230,7 @@ small {
 
 .imageWrapper img {
   width: 90%;
+  border-radius: .25rem;
 }
 
 .content-info-upload-img {
