@@ -1362,4 +1362,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* End Drag & Drop */
+
+.content-cases-attended {
+  padding-left: 0; 
+}
 /* END ADMIN STYLES */
