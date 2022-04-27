@@ -83,6 +83,12 @@ $(".showDatos").click(function() {
    reader.readAsDataURL(this.files[0]);
   });
      // END UPLOAD PICTURE PROFILE
+
+     // Show hide Tag
+     $('#checkContratacionPublicaNp').click(function() {
+       $("#tag-arbitro").toggleClass("flex hide");
+     });
+     // End Show hide Tag
 // End admin dashboard
 
 });
