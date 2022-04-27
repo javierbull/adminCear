@@ -50,19 +50,19 @@ $("#toggle-btn-sidebar").click(function(){
 // End admin panel
 
 // SHOW HIDE PANELS
-$("#showProfesionales").click(function() {
+$(".showProfesionales").click(function() {
   $("#profesionales-panel").show();
   $("#agregarProfesional-panel").hide();
   $("#datos-panel").hide();
 });
 
-$("#showAgregarProfesional").click(function() {
+$(".showAgregarProfesional").click(function() {
   $("#profesionales-panel").hide();
   $("#agregarProfesional-panel").show();
   $("#datos-panel").hide();
 });
 
-$("#showDatos").click(function() {
+$(".showDatos").click(function() {
   $("#profesionales-panel").hide();
   $("#agregarProfesional-panel").hide();
   $("#datos-panel").show();
