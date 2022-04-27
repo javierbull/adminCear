@@ -209,12 +209,24 @@ small {
 }
 
 .btn-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-icon span {
+  padding-right: .5rem;
+  font-size: 1.2rem
+}
+
+.btn-img {
   display: flex;
   align-items: center;
 }
 
-.btn-icon .material-icons {
-  padding-left: 1rem;
+.btn-img-left img {
+  /* background-color: yellow; */
+  display: block;
+  height: 2rem;
 }
 
 .primary-button {
@@ -292,15 +304,11 @@ small {
 .btn-outline {
   border: 1px solid var(--a-02);
   color: var(--a-02);
-  display: flex;
-  align-items: center;
 }
 
 .btn-outline:hover {
   border: 1px solid var(--a-02);
   color: var(--a-02);
-  display: flex;
-  align-items: center;
 }
 /* End Buttons */
 
