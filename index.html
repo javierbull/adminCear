@@ -600,7 +600,7 @@
 								<button type="button" name="button" class="btn link-button showProfesionales">
 									Cancelar
 								</button>
-								<button type="button" name="button" class="btn btn-large primary-button">
+								<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalDatosGuardados">
 									Crear profesional
 								</button>
 							</div>
@@ -824,6 +824,30 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="modal fade modalInfo" id="modalDatosGuardados" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-left">
+					<div class="content-icon-modal">
+						<span class="material-icons success-color">
+							check_circle
+						</span>
+					</div>
+					<h1 class="modal-title marginBottom-1-5 text-center">Datos guardados con éxito</h1>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Fin Modals -->
 
 	<!--   Bootstrap JS Files   -->
