@@ -57,6 +57,8 @@ $(".showProfesionales").click(function() {
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").hide();
   $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
 });
 
 $(".showAgregarProfesional").click(function() {
@@ -66,6 +68,8 @@ $(".showAgregarProfesional").click(function() {
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").hide();
   $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
 });
 
 $(".showDesignacion").click(function() {
@@ -75,6 +79,8 @@ $(".showDesignacion").click(function() {
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").hide();
   $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
 });
 
 $(".showAgregarDesignacion").click(function() {
@@ -84,6 +90,8 @@ $(".showAgregarDesignacion").click(function() {
   $("#agregarDesignacion-panel").show();
   $("#especialidades-panel").hide();
   $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
 });
 
 $(".showEspecialidad").click(function() {
@@ -93,6 +101,8 @@ $(".showEspecialidad").click(function() {
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").show();
   $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
 });
 
 $(".showAgregarEspecialidad").click(function() {
@@ -102,6 +112,30 @@ $(".showAgregarEspecialidad").click(function() {
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").hide();
   $("#agregarEspecialidad-panel").show();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
+});
+
+$(".showProfesiones").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").hide();
+  $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").hide();
+  $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").show();
+  $("#agregarProfesion-panel").hide();
+});
+
+$(".showAgregarProfesion").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").hide();
+  $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").hide();
+  $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").show();
 });
   // END SHOW HIDE PANELS
 

@@ -849,7 +849,7 @@
 								</tr>
 								<tr>
 									<th scope="row">2</th>
-									<td>Contratación con el Estado</td>
+									<td>Arbitraje</td>
 									<td>
 										<div class="form-check form-switch">
 											<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
@@ -863,7 +863,7 @@
 								</tr>
 								<tr>
 									<th scope="row">3</th>
-									<td>Contratación con el Estado</td>
+									<td>RNA-OSCE</td>
 									<td>
 										<div class="form-check form-switch">
 											<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
@@ -929,6 +929,141 @@
 						<div class="row">
 							<div class="col-lg-6 content-btns-controls-panel">
 								<button type="button" name="button" class="btn link-button showEspecialidad">
+									Cancelar
+								</button>
+								<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalDatosGuardados">
+									Crear especialidad
+								</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel" id="profesiones-panel">
+				<div class="row">
+					<div class="wrap-header-panel marginBottom-2">
+						<div class="header-panel">
+							<small class="title-panel">
+								Datos
+							</small>
+							<h2>
+								Listado de profesiones
+							</h2>
+						</div>
+						<button type="button" name="button" class="btn btn-large primary-button showAgregarProfesion">
+							Agregar profesion
+						</button>
+					</div>
+
+					<div class="col-12">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">N°</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Estado</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Abogado</td>
+									<td>
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+										</div>
+									</td>
+									<td>
+										<button type="button" name="button" class="btn link-button">
+											Editar profesión
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Ingeniero Civil</td>
+									<td>
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+										</div>
+									</td>
+									<td>
+										<button type="button" name="button" class="btn link-button">
+											Editar profesión
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Arquitecto</td>
+									<td>
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+										</div>
+									</td>
+									<td>
+										<button type="button" name="button" class="btn link-button">
+											Editar profesión
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel" id="agregarProfesion-panel">
+				<div class="row">
+					<div class="header-panel">
+						<small class="title-panel">
+							Datos
+						</small>
+						<h2>
+							Nueva especialidad
+						</h2>
+					</div>
+
+					<div class="col-lg-6 marginBottom-2">
+						<form>
+
+							<div class="row g-3">
+								<div class="col-md-10 marginBottom-1 error-input-">
+									<label for="inputNombreEspecialidad" class="form-label fw-b">Nombre de la especialidad</label>
+									<input type="text" class="form-control" id="inputNombreEspecialidad">
+									<small class="text-help">
+										<span class="material-icons">
+											report_problem
+										</span>
+										Campo obligatorio
+									</small>
+								</div>
+							</div>
+
+							<div class="col-md-10 marginBottom-1">
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchNtdEstado" checked>
+									<label class="form-check-label" for="flexSwitchNtdEstado">Estado</label>
+								</div>
+							</div>
+
+							<div class="col-md-10 marginBottom-1">
+								<button type="button" name="button" class="btn link-button-danger" data-bs-toggle="modal" data-bs-target="#modalEliminarEspecialidad">
+									Eliminar especialidad
+								</button>
+							</div>
+
+						</form>
+					</div>
+
+					<div class="col-lg-10">
+						<div class="row">
+							<div class="col-lg-6 content-btns-controls-panel">
+								<button type="button" name="button" class="btn link-button showProfesiones">
 									Cancelar
 								</button>
 								<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalDatosGuardados">
