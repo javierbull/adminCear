@@ -54,18 +54,28 @@ $(".showProfesionales").click(function() {
   $("#profesionales-panel").show();
   $("#agregarProfesional-panel").hide();
   $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").hide();
 });
 
 $(".showAgregarProfesional").click(function() {
   $("#profesionales-panel").hide();
   $("#agregarProfesional-panel").show();
   $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").hide();
 });
 
 $(".showDesignacion").click(function() {
   $("#profesionales-panel").hide();
   $("#agregarProfesional-panel").hide();
   $("#designacion-panel").show();
+  $("#agregarDesignacion-panel").hide();
+});
+
+$(".showAgregarDesignacion").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").hide();
+  $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").show();
 });
   // END SHOW HIDE PANELS
 
