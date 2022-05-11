@@ -53,19 +53,19 @@ $("#toggle-btn-sidebar").click(function(){
 $(".showProfesionales").click(function() {
   $("#profesionales-panel").show();
   $("#agregarProfesional-panel").hide();
-  $("#datos-panel").hide();
+  $("#designacion-panel").hide();
 });
 
 $(".showAgregarProfesional").click(function() {
   $("#profesionales-panel").hide();
   $("#agregarProfesional-panel").show();
-  $("#datos-panel").hide();
+  $("#designacion-panel").hide();
 });
 
-$(".showDatos").click(function() {
+$(".showDesignacion").click(function() {
   $("#profesionales-panel").hide();
   $("#agregarProfesional-panel").hide();
-  $("#datos-panel").show();
+  $("#designacion-panel").show();
 });
   // END SHOW HIDE PANELS
 
