@@ -56,6 +56,7 @@ $(".showProfesionales").click(function() {
   $("#designacion-panel").hide();
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
 });
 
 $(".showAgregarProfesional").click(function() {
@@ -64,6 +65,7 @@ $(".showAgregarProfesional").click(function() {
   $("#designacion-panel").hide();
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
 });
 
 $(".showDesignacion").click(function() {
@@ -72,6 +74,7 @@ $(".showDesignacion").click(function() {
   $("#designacion-panel").show();
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
 });
 
 $(".showAgregarDesignacion").click(function() {
@@ -80,6 +83,7 @@ $(".showAgregarDesignacion").click(function() {
   $("#designacion-panel").hide();
   $("#agregarDesignacion-panel").show();
   $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
 });
 
 $(".showEspecialidad").click(function() {
@@ -88,6 +92,16 @@ $(".showEspecialidad").click(function() {
   $("#designacion-panel").hide();
   $("#agregarDesignacion-panel").hide();
   $("#especialidades-panel").show();
+  $("#agregarEspecialidad-panel").hide();
+});
+
+$(".showAgregarEspecialidad").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").hide();
+  $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").hide();
+  $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").show();
 });
   // END SHOW HIDE PANELS
 

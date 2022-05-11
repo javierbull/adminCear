@@ -703,7 +703,7 @@
 				<div class="row">
 					<div class="header-panel">
 						<small class="title-panel">
-							Profesionales
+							datos
 						</small>
 						<h2>
 							Nuevo tipo de designación
@@ -817,7 +817,7 @@
 								Listado de especialidades
 							</h2>
 						</div>
-						<button type="button" name="button" class="btn btn-large primary-button showAgregarEspecilidad">
+						<button type="button" name="button" class="btn btn-large primary-button showAgregarEspecialidad">
 							Agregar especialidad
 						</button>
 					</div>
@@ -877,6 +877,65 @@
 								</tr>
 							</tbody>
 						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel" id="agregarEspecialidad-panel">
+				<div class="row">
+					<div class="header-panel">
+						<small class="title-panel">
+							Datos
+						</small>
+						<h2>
+							Nueva especialidad
+						</h2>
+					</div>
+
+					<div class="col-lg-6 marginBottom-2">
+						<form>
+
+							<div class="row g-3">
+								<div class="col-md-10 marginBottom-1 error-input-">
+									<label for="inputNombreEspecialidad" class="form-label fw-b">Nombre de la especialidad</label>
+									<input type="text" class="form-control" id="inputNombreEspecialidad">
+									<small class="text-help">
+										<span class="material-icons">
+											report_problem
+										</span>
+										Campo obligatorio
+									</small>
+								</div>
+							</div>
+
+							<div class="col-md-10 marginBottom-1">
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchNtdEstado" checked>
+									<label class="form-check-label" for="flexSwitchNtdEstado">Estado</label>
+								</div>
+							</div>
+
+							<div class="col-md-10 marginBottom-1">
+								<button type="button" name="button" class="btn link-button-danger" data-bs-toggle="modal" data-bs-target="#modalEliminarEspecialidad">
+									Eliminar especialidad
+								</button>
+							</div>
+
+						</form>
+					</div>
+
+					<div class="col-lg-10">
+						<div class="row">
+							<div class="col-lg-6 content-btns-controls-panel">
+								<button type="button" name="button" class="btn link-button showEspecialidad">
+									Cancelar
+								</button>
+								<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalDatosGuardados">
+									Crear especialidad
+								</button>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -1128,6 +1187,30 @@
 						Estás eliminando el tipo de designación:
 					</p>
 					<h2 class="modal-title marginBottom-1-5 text-center">Junta de Resolución de Disputas</h2>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
+						Eliminar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarEspecialidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-subtitle">
+						Estás eliminando la especialidad:
+					</p>
+					<h2 class="modal-title marginBottom-1-5 text-center">Derecho Administrativo</h2>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
