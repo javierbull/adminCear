@@ -1174,6 +1174,17 @@ input[type=number]::-webkit-outer-spin-button {
 /* end main panel admin */
 
 /* content panels */
+.wrap-header-panel {
+  /* background-color: lavender; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrap-header-panel .header-panel {
+  margin-bottom: 0;
+}
+
 .header-panel {
   /* background-color: pink; */
   margin-bottom: 2rem;
