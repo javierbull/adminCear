@@ -292,6 +292,29 @@ small {
   text-decoration: underline;
 }
 
+.link-button-danger {
+  /* background-color: salmon; */
+  color: var(--error);
+  padding: 0.5rem  0;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.link-button-danger:hover {
+  color: var(--error);
+  text-decoration: underline;
+}
+
+.link-button-danger:focus {
+  color: var(--error);
+  text-decoration: underline;
+}
+
+.link-button-danger.disabled {
+  color: var(--g-02);
+  text-decoration: underline;
+}
+
 .light-button {
   color: var(--n-01);
 }
@@ -593,6 +616,11 @@ input[type=number]::-webkit-outer-spin-button {
     padding-right: 2rem;
     padding-top: 0;
     padding-bottom: 1.5rem;
+  }
+
+  .modal-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .modal-title {
