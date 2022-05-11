@@ -61,9 +61,19 @@
 					</button>
 				</li>
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed showDatos">
+					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
 						Datos
+						<span class="material-icons-outlined">
+							expand_more
+						</span>
 					</button>
+					<div class="collapse show-" id="home-collapse">
+						<ul class="btn-toggle-nav sidebar-list-collapse">
+							<li><a href="#" class="item-collapse rounded showTipoDesignacion">Tipos de designación</a></li>
+							<li><a href="#" class="item-collapse rounded">Especialidades</a></li>
+							<li><a href="#" class="item-collapse rounded">Profesiones</a></li>
+						</ul>
+					</div>
 				</li>
 				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed">
@@ -74,18 +84,6 @@
 					<button class="btn btn-toggle collapsed">
 						Usuarios
 					</button>
-				</li>
-				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-						Home
-					</button>
-					<div class="collapse show" id="home-collapse">
-						<ul class="btn-toggle-nav sidebar-list-collapse">
-							<li><a href="#" class="item-collapse rounded">Overview</a></li>
-							<li><a href="#" class="item-collapse rounded">Updates</a></li>
-							<li><a href="#" class="item-collapse rounded">Reports</a></li>
-						</ul>
-					</div>
 				</li>
 				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
