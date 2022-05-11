@@ -1121,16 +1121,17 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .sidebar-list-collapse {
+  background-color: var(--b-01);
   list-style: none;
   padding-left: 0;
 }
 
 .item-collapse {
-  text-decoration: none;
   /* background-color: pink; */
+  text-decoration: none;
   display: block;
-  padding: .5rem .5rem .5rem 2rem;
-  margin-bottom: .5rem;
+  padding: .75rem .75rem .75rem 2rem;
+  /* margin-bottom: .5rem; */
   color: var(--n-01);
 }
 
