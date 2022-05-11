@@ -1024,7 +1024,7 @@
 							Datos
 						</small>
 						<h2>
-							Nueva especialidad
+							Nueva profesión
 						</h2>
 					</div>
 
@@ -1033,8 +1033,8 @@
 
 							<div class="row g-3">
 								<div class="col-md-10 marginBottom-1 error-input-">
-									<label for="inputNombreEspecialidad" class="form-label fw-b">Nombre de la especialidad</label>
-									<input type="text" class="form-control" id="inputNombreEspecialidad">
+									<label for="inputNombreProfesion" class="form-label fw-b">Nombre de la profesión</label>
+									<input type="text" class="form-control" id="inputNombreProfesion">
 									<small class="text-help">
 										<span class="material-icons">
 											report_problem
@@ -1046,14 +1046,14 @@
 
 							<div class="col-md-10 marginBottom-1">
 								<div class="form-check form-switch">
-									<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchNtdEstado" checked>
-									<label class="form-check-label" for="flexSwitchNtdEstado">Estado</label>
+									<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchNtdProfesionEstado" checked>
+									<label class="form-check-label" for="flexSwitchNtdProfesionEstado">Estado</label>
 								</div>
 							</div>
 
 							<div class="col-md-10 marginBottom-1">
-								<button type="button" name="button" class="btn link-button-danger" data-bs-toggle="modal" data-bs-target="#modalEliminarEspecialidad">
-									Eliminar especialidad
+								<button type="button" name="button" class="btn link-button-danger" data-bs-toggle="modal" data-bs-target="#modalEliminarProfesion">
+									Eliminar profesión
 								</button>
 							</div>
 
@@ -1346,6 +1346,30 @@
 						Estás eliminando la especialidad:
 					</p>
 					<h2 class="modal-title marginBottom-1-5 text-center">Derecho Administrativo</h2>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
+						Eliminar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarProfesion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-subtitle">
+						Estás eliminando la profesión:
+					</p>
+					<h2 class="modal-title marginBottom-1-5 text-center">Ingeniero de minas</h2>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
