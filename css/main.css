@@ -66,6 +66,10 @@ small {
 .success-color {
   color: var(--success);
 }
+
+.disabled-color {
+  color: var(--g-02);
+}
 /* End colors */
 
 /* Font weight */
