@@ -1450,8 +1450,14 @@ input[type=number]::-webkit-outer-spin-button {
   margin-left: 1.25rem;
 }
 
-.content-btn-profession {
+.content-btn-right {
+  /* background-color: pink; */
   display: flex;
   justify-content: flex-end;
+}
+
+.fieldset-profesion {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 /* END ADMIN STYLES */
