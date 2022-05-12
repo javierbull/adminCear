@@ -59,6 +59,7 @@ $(".showProfesionales").click(function() {
   $("#agregarEspecialidad-panel").hide();
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
 });
 
 $(".showAgregarProfesional").click(function() {
@@ -70,6 +71,7 @@ $(".showAgregarProfesional").click(function() {
   $("#agregarEspecialidad-panel").hide();
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
 });
 
 $(".showDesignacion").click(function() {
@@ -81,6 +83,7 @@ $(".showDesignacion").click(function() {
   $("#agregarEspecialidad-panel").hide();
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
 });
 
 $(".showAgregarDesignacion").click(function() {
@@ -92,6 +95,7 @@ $(".showAgregarDesignacion").click(function() {
   $("#agregarEspecialidad-panel").hide();
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
 });
 
 $(".showEspecialidad").click(function() {
@@ -103,6 +107,7 @@ $(".showEspecialidad").click(function() {
   $("#agregarEspecialidad-panel").hide();
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
 });
 
 $(".showAgregarEspecialidad").click(function() {
@@ -114,6 +119,7 @@ $(".showAgregarEspecialidad").click(function() {
   $("#agregarEspecialidad-panel").show();
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
 });
 
 $(".showProfesiones").click(function() {
@@ -125,6 +131,7 @@ $(".showProfesiones").click(function() {
   $("#agregarEspecialidad-panel").hide();
   $("#profesiones-panel").show();
   $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
 });
 
 $(".showAgregarProfesion").click(function() {
@@ -136,6 +143,19 @@ $(".showAgregarProfesion").click(function() {
   $("#agregarEspecialidad-panel").hide();
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").show();
+  $("#casos-panel").hide();
+});
+
+$(".showCasos").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").hide();
+  $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").hide();
+  $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
+  $("#casos-panel").show();
 });
   // END SHOW HIDE PANELS
 

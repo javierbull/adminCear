@@ -76,27 +76,14 @@
 					</div>
 				</li>
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed">
+					<button class="btn btn-toggle collapsed showCasos">
 						Casos
 					</button>
 				</li>
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed">
+					<button class="btn btn-toggle collapsed showUsuarios">
 						Usuarios
 					</button>
-				</li>
-				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-						Dashboard
-					</button>
-					<div class="collapse" id="dashboard-collapse">
-						<ul class="btn-toggle-nav sidebar-list-collapse">
-							<li><a href="#" class="item-collapse rounded">Overview</a></li>
-							<li><a href="#" class="item-collapse rounded">Weekly</a></li>
-							<li><a href="#" class="item-collapse rounded">Monthly</a></li>
-							<li><a href="#" class="item-collapse rounded">Annually</a></li>
-						</ul>
-					</div>
 				</li>
 			</ul>
 		</div>
@@ -1130,6 +1117,173 @@
 								</button>
 							</div>
 						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel" id="casos-panel">
+				<div class="row">
+					<div class="header-panel">
+						<small class="title-panel">
+							Casos
+						</small>
+						<h2>
+							Listado de casos
+						</h2>
+					</div>
+
+					<div class="wrap-controls-admin marginBottom-2">
+						<div class="content-controls marginBottom-1">
+							<div class="col-xl-3">
+								<div class="search-input">
+									<input type="text" class="form-control" placeholder="Buscar casos" aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn material-icons-outlined" type="button">
+										search
+									</button>
+								</div>
+								<small class="text-help">
+									<span class="material-icons">
+										report_problem
+									</span>
+									El usuario es incorrecto
+								</small>
+							</div>
+						</div>
+						<div class="content-filtros">
+							<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalFiltrosProfesionales">
+								Aplicar filtros
+							</button>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">N°</th>
+									<th scope="col">Expediente</th>
+									<th scope="col">Nombre del caso</th>
+									<th scope="col">Tipo de designación</th>
+									<th scope="col">Entidad</th>
+									<th scope="col">Contratista</th>
+									<th scope="col">Presidente</th>
+									<th scope="col">Favorito</th>
+									<th scope="col">Único</th>
+									<th scope="col">Estado</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>2022-0192</td>
+									<td>Nombre del caso</td>
+									<td>Contratación Pública</td>
+									<td>22/12/2023</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+										</div>
+									</td>
+									<td>
+										<button type="button" name="button" class="btn link-button">
+											Ver árbitro
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>2022-0192</td>
+									<td>Nombre del caso</td>
+									<td>Contratación Pública</td>
+									<td>22/12/2023</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										-
+									</td>
+									<td>
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+										</div>
+									</td>
+									<td>
+										<button type="button" name="button" class="btn link-button">
+											Ver árbitro
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">1</th>
+									<td>2022-0192</td>
+									<td>Nombre del caso</td>
+									<td>Contratación Pública</td>
+									<td>22/12/2023</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										<span class="material-icons success-color">
+											check_circle
+										</span>
+									</td>
+									<td>
+										-
+									</td>
+									<td>
+										<div class="form-check form-switch">
+											<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+										</div>
+									</td>
+									<td>
+										<button type="button" name="button" class="btn link-button">
+											Ver árbitro
+										</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 
 				</div>
