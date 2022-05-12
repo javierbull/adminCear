@@ -62,6 +62,7 @@ $(".showProfesionales").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showAgregarProfesional").click(function() {
@@ -76,6 +77,7 @@ $(".showAgregarProfesional").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showDesignacion").click(function() {
@@ -90,6 +92,7 @@ $(".showDesignacion").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showAgregarDesignacion").click(function() {
@@ -104,6 +107,7 @@ $(".showAgregarDesignacion").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showEspecialidad").click(function() {
@@ -118,6 +122,7 @@ $(".showEspecialidad").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showAgregarEspecialidad").click(function() {
@@ -132,6 +137,7 @@ $(".showAgregarEspecialidad").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showProfesiones").click(function() {
@@ -146,6 +152,7 @@ $(".showProfesiones").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showAgregarProfesion").click(function() {
@@ -160,6 +167,7 @@ $(".showAgregarProfesion").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showCasos").click(function() {
@@ -174,6 +182,7 @@ $(".showCasos").click(function() {
   $("#casos-panel").show();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showEditarCaso").click(function() {
@@ -188,6 +197,7 @@ $(".showEditarCaso").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").show();
   $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").hide();
 });
 
 $(".showUsuarios").click(function() {
@@ -202,6 +212,22 @@ $(".showUsuarios").click(function() {
   $("#casos-panel").hide();
   $("#editar-caso-panel").hide();
   $("#usuarios-panel").show();
+  $("#editar-usuario-panel").hide();
+});
+
+$(".showEditarUsuario").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").hide();
+  $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").hide();
+  $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
+  $("#usuarios-panel").hide();
+  $("#editar-usuario-panel").show();
 });
   // END SHOW HIDE PANELS
 

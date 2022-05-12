@@ -1473,8 +1473,8 @@
 										</div>
 									</td>
 									<td>
-										<button type="button" name="button" class="btn link-button showEditarCaso">
-											Editar caso
+										<button type="button" name="button" class="btn link-button showEditarUsuario">
+											Editar usuario
 										</button>
 									</td>
 								</tr>
@@ -1497,13 +1497,90 @@
 										</div>
 									</td>
 									<td>
-										<button type="button" name="button" class="btn link-button showEditarCaso">
-											Editar caso
+										<button type="button" name="button" class="btn link-button showEditarUsuario">
+											Editar usuario
 										</button>
 									</td>
 								</tr>
 							</tbody>
 						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel" id="editar-usuario-panel">
+				<div class="row">
+					<div class="header-panel">
+						<small class="title-panel">
+							Usuarios
+						</small>
+						<h2>
+							Editar usuario
+						</h2>
+					</div>
+
+					<div class="col-lg-6 marginBottom-2">
+						<form>
+
+							<div class="row g-3">
+								<div class="col-md-10 marginBottom-1 error-input-">
+									<label for="inputNombreUsuarioeditar" class="form-label fw-b">Nombre del usuario</label>
+									<input type="text" class="form-control" id="inputNombreUsuarioeditar" placeholder="fatherzeus">
+									<small class="text-help">
+										<span class="material-icons">
+											report_problem
+										</span>
+										Campo obligatorio
+									</small>
+								</div>
+							</div>
+
+							<div class="col-lg-10 marginBottom-1">
+								<label for="inputUser" class="form-label-admin">Accesos</label>
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchEditarAcceso1" checked>
+									<label class="form-check-label" for="flexSwitchEditarAcceso1">Sistema Aleatorio</label>
+								</div>
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchEditarAcceso2" checked>
+									<label class="form-check-label" for="flexSwitchEditarAcceso2">Sistema Administrativo</label>
+								</div>
+								<small class="text-help">
+									<span class="material-icons">
+										report_problem
+									</span>
+									Campo obligatorio
+								</small>
+							</div>
+
+							<div class="col-md-10 marginBottom-1">
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchNtdProfesionEstado" checked>
+									<label class="form-check-label" for="flexSwitchNtdProfesionEstado">Estado</label>
+								</div>
+							</div>
+
+							<div class="col-md-10 marginBottom-1">
+								<button type="button" name="button" class="btn link-button-danger" data-bs-toggle="modal" data-bs-target="#modalEliminarUsuario">
+									Eliminar usuario
+								</button>
+							</div>
+
+						</form>
+					</div>
+
+					<div class="col-lg-10">
+						<div class="row">
+							<div class="col-lg-6 content-btns-controls-panel">
+								<button type="button" name="button" class="btn link-button showUsuarios">
+									Cancelar
+								</button>
+								<button type="button" name="button" class="btn btn-large primary-button" data-bs-toggle="modal" data-bs-target="#modalDatosGuardados">
+									Guardar cambios
+								</button>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -1828,6 +1905,30 @@
 						Estás eliminando el caso:
 					</p>
 					<h2 class="modal-title marginBottom-1-5 text-center">Nombre del caso</h2>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
+						Eliminar
+					</button>
+					<button type="button" class="btn link-button" data-bs-dismiss="modal">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalEliminarUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p class="modal-subtitle">
+						Estás eliminando al usuario:
+					</p>
+					<h2 class="modal-title marginBottom-1-5 text-center">Nombre del usuario</h2>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-danger btn-large" data-bs-dismiss="modal">
