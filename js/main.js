@@ -60,6 +60,7 @@ $(".showProfesionales").click(function() {
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
   $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
 });
 
 $(".showAgregarProfesional").click(function() {
@@ -72,6 +73,7 @@ $(".showAgregarProfesional").click(function() {
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
   $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
 });
 
 $(".showDesignacion").click(function() {
@@ -84,6 +86,7 @@ $(".showDesignacion").click(function() {
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
   $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
 });
 
 $(".showAgregarDesignacion").click(function() {
@@ -96,6 +99,7 @@ $(".showAgregarDesignacion").click(function() {
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
   $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
 });
 
 $(".showEspecialidad").click(function() {
@@ -108,6 +112,7 @@ $(".showEspecialidad").click(function() {
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
   $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
 });
 
 $(".showAgregarEspecialidad").click(function() {
@@ -120,6 +125,7 @@ $(".showAgregarEspecialidad").click(function() {
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
   $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
 });
 
 $(".showProfesiones").click(function() {
@@ -132,6 +138,7 @@ $(".showProfesiones").click(function() {
   $("#profesiones-panel").show();
   $("#agregarProfesion-panel").hide();
   $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
 });
 
 $(".showAgregarProfesion").click(function() {
@@ -144,6 +151,7 @@ $(".showAgregarProfesion").click(function() {
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").show();
   $("#casos-panel").hide();
+  $("#editar-caso-panel").hide();
 });
 
 $(".showCasos").click(function() {
@@ -156,6 +164,20 @@ $(".showCasos").click(function() {
   $("#profesiones-panel").hide();
   $("#agregarProfesion-panel").hide();
   $("#casos-panel").show();
+  $("#editar-caso-panel").hide();
+});
+
+$(".showEditarCaso").click(function() {
+  $("#profesionales-panel").hide();
+  $("#agregarProfesional-panel").hide();
+  $("#designacion-panel").hide();
+  $("#agregarDesignacion-panel").hide();
+  $("#especialidades-panel").hide();
+  $("#agregarEspecialidad-panel").hide();
+  $("#profesiones-panel").hide();
+  $("#agregarProfesion-panel").hide();
+  $("#casos-panel").hide();
+  $("#editar-caso-panel").show();
 });
   // END SHOW HIDE PANELS
 

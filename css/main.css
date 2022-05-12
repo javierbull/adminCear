@@ -1460,4 +1460,15 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
 }
+
+.wrap-sorteo-estado {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.wrap-sorteo-estado span {
+  margin-right: .5rem;
+}
 /* END ADMIN STYLES */
