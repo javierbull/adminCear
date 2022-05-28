@@ -1475,4 +1475,10 @@ input[type=number]::-webkit-outer-spin-button {
 .wrap-sorteo-estado span {
   margin-right: .5rem;
 }
+
+/* Accordion Collapse */
+.accordionCollapse .accordion-button {
+  background-color: lightblue;
+}
+/* End Accordion Collapse */
 /* END ADMIN STYLES */
