@@ -1477,8 +1477,31 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* Accordion Collapse */
+.accordionCollapse .accordion-button:focus {
+  z-index: 3;
+  border-color: var(--a-01);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--white);
+  background-color: var(--b-01);
+}
+
+.accordionCollapse .accordion-button:not(.collapsed) {
+  color: var(--a-01);
+  background-color: var(--b-01);
+  box-shadow: 0 0 0 0.25rem var(--white);
+}
+
 .accordionCollapse .accordion-button {
-  background-color: lightblue;
+  /* background-color: lightblue !important; */
+  padding: .25rem 0;
+}
+
+.accordionCollapse .accordion-body {
+  padding: .5rem 0 0 0;
+}
+
+.accordionCollapse .accordion-item {
+  border: none;
 }
 /* End Accordion Collapse */
 /* END ADMIN STYLES */
