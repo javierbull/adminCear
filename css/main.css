@@ -517,7 +517,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
   padding-top: .25rem;
-  /* display: none; */
+  display: none;
 }
 
 .text-help .material-icons {
