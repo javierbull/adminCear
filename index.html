@@ -1764,13 +1764,45 @@
 								Campo obligatorio
 							</small>
 						</div>
-					</div>
-
-					<div class="row">
 
 						<div class="col-lg-6 marginBottom-2">
-							<label for="inputUser" class="form-label-admin">Tipo de Designación</label>
-
+							<div class="accordion accordionCollapse" id="accordionFiltroEspecialidades">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingCollapseFiltroEspecialidades">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltroEspecialidades" aria-expanded="false" aria-controls="collapseFiltroEspecialidades">
+											Especialidades
+										</button>
+									</h2>
+									<div id="collapseFiltroEspecialidades" class="accordion-collapse collapse" aria-labelledby="headingCollapseFiltroEspecialidades" data-bs-parent="#accordionFiltroEspecialidades">
+										<div class="accordion-body">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="checkContratacionEstado">
+												<label class="form-check-label" for="checkContratacionEstado">
+													Contratación con el estado
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="checkArbitraje">
+												<label class="form-check-label" for="checkArbitraje">
+													Arbitraje
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="checkDerechoAdministrativo">
+												<label class="form-check-label" for="checkDerechoAdministrativo">
+													Derecho Administrativo
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="checkRnaOsce">
+												<label class="form-check-label" for="checkRnaOsce">
+													RNA-OSCE
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 							<small class="text-help">
 								<span class="material-icons">
 									report_problem
@@ -1778,33 +1810,13 @@
 								Campo obligatorio
 							</small>
 						</div>
+					</div>
+
+					<div class="row">
 
 						<div class="col-lg-6 marginBottom-2">
 							<label for="inputUser" class="form-label-admin">Especialidades</label>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="checkContratacionEstado">
-								<label class="form-check-label" for="checkContratacionEstado">
-									Contratación con el estado
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="checkArbitraje">
-								<label class="form-check-label" for="checkArbitraje">
-									Arbitraje
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="checkDerechoAdministrativo">
-								<label class="form-check-label" for="checkDerechoAdministrativo">
-									Derecho Administrativo
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="checkRnaOsce">
-								<label class="form-check-label" for="checkRnaOsce">
-									RNA-OSCE
-								</label>
-							</div>
+
 							<small class="text-help">
 								<span class="material-icons">
 									report_problem
