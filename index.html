@@ -1682,12 +1682,12 @@
 						<div class="col-lg-6 marginBottom-2">
 							<div class="accordion accordionCollapse" id="accordionFiltroEstado">
 								<div class="accordion-item">
-									<h2 class="accordion-header" id="headingCollapseFiltroAsignacion">
+									<h2 class="accordion-header" id="headingCollapseFiltroEstado">
 										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltroEstado" aria-expanded="false" aria-controls="collapseFiltroEstado">
 											Estado
 										</button>
 									</h2>
-									<div id="collapseFiltroEstado" class="accordion-collapse collapse" aria-labelledby="headingCollapseFiltroAsignacion" data-bs-parent="#accordionFiltroEstado">
+									<div id="collapseFiltroEstado" class="accordion-collapse collapse" aria-labelledby="headingCollapseFiltroEstado" data-bs-parent="#accordionFiltroEstado">
 										<div class="accordion-body">
 											<div class="form-check">
 												<input class="form-check-input" type="checkbox" value="" id="checkHabilitado">
@@ -1810,34 +1810,32 @@
 								Campo obligatorio
 							</small>
 						</div>
-					</div>
-
-					<div class="row">
 
 						<div class="col-lg-6 marginBottom-2">
-							<label for="inputUser" class="form-label-admin">Especialidades</label>
-
-							<small class="text-help">
-								<span class="material-icons">
-									report_problem
-								</span>
-								Campo obligatorio
-							</small>
-						</div>
-
-						<div class="col-lg-6 marginBottom-2">
-							<label for="inputUser" class="form-label-admin">Tipo de Arbitraje</label>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="checkArbitroPresidenteUnico">
-								<label class="form-check-label" for="checkArbitroPresidenteUnico">
-									Árbitro Presidente/Único
-								</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="checkArbitroParte">
-								<label class="form-check-label" for="checkArbitroParte">
-									Árbitro Parte
-								</label>
+							<div class="accordion accordionCollapse" id="accordionFiltroArbitraje">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingCollapseFiltroArbitraje">
+										<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltroArbitraje" aria-expanded="false" aria-controls="collapseFiltroArbitraje">
+											Tipo de Arbitraje
+										</button>
+									</h2>
+									<div id="collapseFiltroArbitraje" class="accordion-collapse collapse" aria-labelledby="headingCollapseFiltroArbitraje" data-bs-parent="#accordionFiltroArbitraje">
+										<div class="accordion-body">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="checkArbitroPresidenteUnico">
+												<label class="form-check-label" for="checkArbitroPresidenteUnico">
+													Árbitro Presidente/Único
+												</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="checkArbitroParte">
+												<label class="form-check-label" for="checkArbitroParte">
+													Árbitro Parte
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<small class="text-help">
 								<span class="material-icons">
