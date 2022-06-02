@@ -1466,14 +1466,22 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wrap-sorteo-estado {
-  /* background-color: yellow; */
-  display: flex;
-  align-items: center;
+  /* background-color: lavender; */
   margin-bottom: .5rem;
 }
 
-.wrap-sorteo-estado span {
+.header-sorteo-estado {
+  display: flex;
+  align-items: center;
+  margin-bottom: .25rem;
+}
+
+.header-sorteo-estado span {
   margin-right: .5rem;
+}
+
+.body-sorteo-estado {
+  margin-left: 2rem;
 }
 
 /* Accordion Collapse */
