@@ -8,10 +8,6 @@
     min-width: 100%;
   }
 
-  .admin-panel {
-    /* background-color: SkyBlue; */
-  }
-
   .header-panel {
     /* background-color: pink; */
     margin-bottom: 1rem;
@@ -22,6 +18,25 @@
     /* background-color: lavender; */
     margin-bottom: 1.5rem !important;
   }
+
+  /* SIDEBAR MOBILE */
+  .sidebar-admin {
+    display: none;
+  }
+
+  .btn-sidebar-desktop {
+    display: none;
+  }
+
+  .admin-panel {
+    background-color: SkyBlue;
+  }
+
+  .ml-panel {
+    margin-left: 0;
+    transition: all 150ms linear;
+  }
+  /* END SIDEBAR MOBILE */
 
 
 }
