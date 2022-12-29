@@ -1518,3 +1518,13 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
 }
 /* END ADMIN STYLES */
+
+/* SIDEBAR OFF CANVAS */
+.sidebar-mobile .offcanvas-header {
+  background-color: var(--a-03);
+}
+
+.sidebar-mobile {
+  background-color: var(--g-03);
+}
+/* END SIDEBAR OFF CANVAS */
