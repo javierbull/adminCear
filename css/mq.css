@@ -94,6 +94,29 @@
   .navbar-cear .btn-user .user-name {
     display: none;
   }
+
+  .content-controls {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .wrap-search-input {
+    /* background-color: peru; */
+    width: 100%;
+  }
+
+  .content-controls .btn {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .content-controls .search-input .btn {
+    /* background-color: lightblue; */
+    width: auto;
+  }
 }
 
 /* Fin cell portrait */
