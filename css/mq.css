@@ -7,6 +7,10 @@
   .form-login {
     min-width: 100%;
   }
+
+  .admin-panel {
+    background-color: LightSalmon;
+  }
 }
 
 /* Fin tablet landscape */
