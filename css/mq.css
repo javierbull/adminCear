@@ -9,8 +9,21 @@
   }
 
   .admin-panel {
-    background-color: LightSalmon;
+    /* background-color: SkyBlue; */
   }
+
+  .header-panel {
+    /* background-color: pink; */
+    margin-bottom: 1rem;
+    color: var(--n-01);
+  }
+
+  .wrap-controls-admin {
+    /* background-color: lavender; */
+    margin-bottom: 1.5rem !important;
+  }
+
+
 }
 
 /* Fin tablet landscape */
@@ -24,6 +37,11 @@
   .form-login .logo {
     /* background-color: lavender; */
     width: 100%;
+  }
+
+  .admin-panel {
+    /* background-color: lavender; */
+    padding: 1rem;
   }
 
 }
