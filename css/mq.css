@@ -53,6 +53,16 @@
     /* background-color: pink; */
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .wrap-header-panel {
+    /* background-color: yellow; */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wrap-header-panel .header-panel {
+    margin-bottom: 1rem;
+  }
 }
 
 /* fin tablet portrait */
@@ -116,6 +126,16 @@
   .content-controls .search-input .btn {
     /* background-color: lightblue; */
     width: auto;
+  }
+
+  .content-btns-controls-panel {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .content-btns-controls-panel .btn {
+    margin-bottom: 1rem;
   }
 }
 
