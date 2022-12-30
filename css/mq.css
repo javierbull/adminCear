@@ -156,6 +156,14 @@
   .content-btns-controls-panel .btn {
     margin-bottom: 1rem;
   }
+
+  .wrap-header-panel {
+    /* background-color: peru; */
+  }
+
+  .wrap-header-panel .btn {
+    width: 100%;
+  }
 }
 
 /* Fin cell portrait */
