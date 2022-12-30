@@ -57,16 +57,6 @@
 		</nav>
 	</header>
 
-	<div class="offcanvas offcanvas-start" id="sidebar-mobile">
-		<div class="offcanvas-header">
-			<h1 class="offcanvas-title">Heading</h1>
-			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-		</div>
-		<div class="offcanvas-body">
-
-		</div>
-	</div>
-
 	<main class="bg-light">
 		<!-- Sidebar -->
 		<div class="sidebar-admin" id="sidebar-admin">
@@ -102,6 +92,47 @@
 					</button>
 				</li>
 			</ul>
+		</div>
+
+		<div class="offcanvas offcanvas-start" id="sidebar-mobile">
+			<div class="offcanvas-header">
+				<h1 class="offcanvas-title">Heading</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="sidebar-admin-list">
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed showProfesionales active-item-sidebar active">
+							Profesionales
+						</button>
+					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+							Datos
+							<span class="material-icons-outlined">
+								expand_more
+							</span>
+						</button>
+						<div class="collapse show-" id="home-collapse">
+							<ul class="btn-toggle-nav sidebar-list-collapse">
+								<li><a href="#" class="item-collapse rounded showDesignacion">Tipos de designación</a></li>
+								<li><a href="#" class="item-collapse rounded showEspecialidad">Especialidades</a></li>
+								<li><a href="#" class="item-collapse rounded showProfesiones">Profesiones</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed showCasos">
+							Casos
+						</button>
+					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed showUsuarios">
+							Usuarios
+						</button>
+					</li>
+				</ul>
+			</div>
 		</div>
 
 
