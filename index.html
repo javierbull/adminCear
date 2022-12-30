@@ -31,7 +31,7 @@
 							menu
 						</span>
 					</button>
-					<button class="btn btn-primary btn-circle btn-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+					<button class="btn btn-primary btn-circle btn-icon btn-sidebar-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-mobile" aria-controls="offcanvasExample">
 						<span class="material-icons-outlined">
 							menu
 						</span>
@@ -56,6 +56,17 @@
 			</div>
 		</nav>
 	</header>
+
+	<div class="offcanvas offcanvas-start" id="sidebar-mobile">
+		<div class="offcanvas-header">
+			<h1 class="offcanvas-title">Heading</h1>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+		</div>
+		<div class="offcanvas-body">
+
+		</div>
+	</div>
+
 	<main class="bg-light">
 		<!-- Sidebar -->
 		<div class="sidebar-admin" id="sidebar-admin">
@@ -93,48 +104,7 @@
 			</ul>
 		</div>
 
-		<div class="offcanvas offcanvas-start sidebar-mobile" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-			<div class="offcanvas-header">
-				<a class="navbar-brand" href="#">
-					<img src="img/logos/logo-cear-negativo.png" alt="">
-				</a>
-				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-			</div>
-			<div class="offcanvas-body">
-				<ul class="sidebar-admin-list">
-					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed showProfesionales active-item-sidebar active" data-bs-dismiss="offcanvas">
-							Profesionales
-						</button>
-					</li>
-					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-							Datos
-							<span class="material-icons-outlined">
-								expand_more
-							</span>
-						</button>
-						<div class="collapse show-" id="home-collapse">
-							<ul class="btn-toggle-nav sidebar-list-collapse">
-								<li><a href="#" class="item-collapse rounded showDesignacion" data-bs-dismiss="offcanvas">Tipos de designación</a></li>
-								<li><a href="#" class="item-collapse rounded showEspecialidad" data-bs-dismiss="offcanvas">Especialidades</a></li>
-								<li><a href="#" class="item-collapse rounded showProfesiones" data-bs-dismiss="offcanvas">Profesiones</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed showCasos" data-bs-dismiss="offcanvas">
-							Casos
-						</button>
-					</li>
-					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed showUsuarios" data-bs-dismiss="offcanvas">
-							Usuarios
-						</button>
-					</li>
-				</ul>
-			</div>
-		</div>
+
 		<!-- end sidebar -->
 		<!-- main panel -->
 		<div class="admin-panel ml-panel" id="admin-panel">

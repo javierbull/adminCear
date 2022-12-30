@@ -28,6 +28,10 @@
     display: none;
   }
 
+  .btn-sidebar-mobile {
+    display: block;
+  }
+
   .admin-panel {
     background-color: SkyBlue;
   }

@@ -1526,5 +1526,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sidebar-mobile {
   background-color: var(--g-03);
+
+}
+
+.btn-sidebar-mobile {
+  display: none;
+}
+
+.offcanvas-body {
+  /* background-color: pink; */
+  height: calc(100% - 82px);
+  overflow-y: scroll;
+  padding: 1rem;
 }
 /* END SIDEBAR OFF CANVAS */
