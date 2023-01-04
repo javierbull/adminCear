@@ -1526,7 +1526,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sidebar-mobile {
   background-color: var(--g-03);
-
 }
 
 .btn-sidebar-mobile {
@@ -1537,6 +1536,24 @@ input[type=number]::-webkit-outer-spin-button {
   /* background-color: pink; */
   height: calc(100% - 3.5rem);
   overflow-y: scroll;
-  padding: 1rem;
+  padding: 0;
+}
+
+.wrap-navbarMobile-brand__title {
+  display: flex;
+  align-items: center;
+}
+
+.wrap-navbarMobile-brand__title img {
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.wrap-navbarMobile-brand__title .offcanvas-title {
+  font-weight: 500;
+}
+
+.sidebar-mobile .offcanvas-header {
+  color: var(--b-01);
 }
 /* END SIDEBAR OFF CANVAS */
