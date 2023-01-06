@@ -281,7 +281,7 @@ $(".showSolicitudFisico").click(function() {
      // End Show hide Tag
 // End admin dashboard
 
-// SHOW MOTIVO RECHAZO PRMOTORIA
+// SHOW HIDE CHECKBOX
 $("#checkDatosRepresentanteLegalSf").click(function() {
   if ($(this).is(":checked")) {
     $("#fieldset-DatosRepresntanteLegal").show();
@@ -289,7 +289,15 @@ $("#checkDatosRepresentanteLegalSf").click(function() {
     $("#fieldset-DatosRepresntanteLegal").hide();
   }
 });
-// END SHOW MOTIVO RECHAZO PRMOTORIA
+
+$("#checkShowInputEnlaceSf").click(function() {
+  if ($(this).is(":checked")) {
+    $("#fieldset-enlaceArchivoPesado").show();
+  } else {
+    $("#fieldset-enlaceArchivoPesado").hide();
+  }
+});
+// END SHOW HIDE CHECKBOX
 
 });
 

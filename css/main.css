@@ -1590,7 +1590,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* END SIDEBAR OFF CANVAS */
 
 /* SOLICITUD FISICA */
-#fieldset-DatosRepresntanteLegal {
+#fieldset-DatosRepresntanteLegal, #fieldset-enlaceArchivoPesado {
   display: none;
 }
 /* END SOLICITUD FISICA */
