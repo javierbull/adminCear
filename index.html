@@ -1766,10 +1766,33 @@
 								<div id="collapseOneSolicitudesFisico" class="accordion-collapse collapse show" aria-labelledby="headingOneSolicitudesFisico" data-bs-parent="#accordionNuevoProfesional">
 									<div class="accordion-body">
 										<form>
+
 											<div class="row g-3">
-												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="inputNameProfessional" class="form-label fw-b">Nombres</label>
-													<input type="text" class="form-control" id="inputNameProfessional">
+												<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
+													<label for="selectTipoDocumentoDemandanteSf" class="form-label fw-b">Tipo de Documento del Demandante</label>
+													<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoDemandanteSf">
+														<option selected>(DNI) Documento Nacional de Identidad</option>
+														<option value="1">(CE) Carnet de Extranjería)</option>
+													</select>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputDocumentoDemandanteSf" class="form-label fw-b">Número de Documento del Demandante</label>
+													<input type="number" class="form-control" id="inputDocumentoDemandanteSf">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+
+
+											<div class="row g-3">
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputNombreDemandanteSf" class="form-label fw-b">Nombres y Apellidos del Demandante</label>
+													<input type="text" class="form-control" id="inputNombreDemandanteSf">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -1778,9 +1801,9 @@
 													</small>
 												</div>
 
-												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="inputLastName" class="form-label fw-b">Apellido Paterno</label>
-													<input type="text" class="form-control" id="inputLastName">
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputCorreoDemandanteSf" class="form-label fw-b">Correo del Demandante</label>
+													<input type="email" class="form-control" id="inputCorreoDemandanteSf">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -1789,56 +1812,15 @@
 													</small>
 												</div>
 
-												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="inputMotherLastName" class="form-label fw-b">Apellido Materno</label>
-													<input type="text" class="form-control" id="inputMotherLastName">
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputCelularDemandanteSf" class="form-label fw-b">Celulars del Demandante</label>
+													<input type="tel" class="form-control" id="inputCelularDemandanteSf">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
 														</span>
 														Campo obligatorio
 													</small>
-												</div>
-
-												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="inputId" class="form-label fw-b">DNI</label>
-													<input type="number" class="form-control" id="inputId">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-
-												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="inputId" class="form-label fw-b">Fecha de nacimiento</label>
-													<input type="date" class="form-control" id="inputId">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-
-												<div class="col-lg-6 col-md-6 wrap-img-preview">
-													<div class="imageWrapper">
-														<img id="photoProfile" class="img-default">
-													</div>
-
-													<div class="content-info-upload-img">
-														<label for="inputNameProfessional" class="form-label fw-b">Foto</label>
-
-														<button class="file-upload btn link-button">
-															<input type="file" id="imgFileLogoEmpresa" class="file-input">
-															<img src="img/icons/add.svg" alt="plus icon">
-															Cargar archivo
-														</button>
-														<div class="textHelp-fileInput">
-															JPG, PNG. Tamaño máximo 100K
-														</div>
-													</div>
 												</div>
 											</div>
 										</form>
