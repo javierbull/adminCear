@@ -1357,8 +1357,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .imageWrapper {
-  background-color: var(--bg-content);
-  /* background-image: url(../img/products/product-default.svg); */
+  background-color: var(--b-01);
   border: 1px solid var(--g-02);
   width: 8rem;
   height: 8rem;
@@ -1530,6 +1529,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .accordionCollapse .accordion-item {
   border: none;
+}
+
+.accordion-body {
+  background-color: var(--g-04);
 }
 /* End Accordion Collapse */
 
