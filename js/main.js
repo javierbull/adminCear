@@ -281,6 +281,16 @@ $(".showSolicitudFisico").click(function() {
      // End Show hide Tag
 // End admin dashboard
 
+// SHOW MOTIVO RECHAZO PRMOTORIA
+$("#checkDatosRepresentanteLegalSf").click(function() {
+  if ($(this).is(":checked")) {
+    $("#fieldset-DatosRepresntanteLegal").show();
+  } else {
+    $("#fieldset-DatosRepresntanteLegal").hide();
+  }
+});
+// END SHOW MOTIVO RECHAZO PRMOTORIA
+
 });
 
 // admin btn sidebar togle menu
