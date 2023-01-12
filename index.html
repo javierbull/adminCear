@@ -2303,7 +2303,7 @@
 								<h2 class="accordion-header" id="headingTwoSolicitudElectronico">
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoSolicitudElectronico" aria-expanded="false" aria-controls="collapseTwoSolicitudElectronico">
 										<div class="content-accordion-btn">
-											<span class="accordion-step">2</span>
+											<span class="accordion-step">3</span>
 											Datos del Demandado
 										</div>
 									</button>
@@ -2313,16 +2313,16 @@
 										<form>
 											<div class="row form-row g-3">
 												<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-													<label for="selectTipoDocumentoDemandadoSf" class="form-label fw-b">Tipo de Documento del Demandado</label>
-													<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoDemandadoSf">
+													<label for="selectTipoDocumentoDemandadoSe" class="form-label fw-b">Tipo de Documento del Demandado</label>
+													<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoDemandadoSe">
 														<option selected>(DNI) Documento Nacional de Identidad</option>
 														<option value="1">(CE) Carnet de Extranjería)</option>
 													</select>
 												</div>
 
 												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputDocumentoDemandadoSf" class="form-label fw-b">Número de Documento del Demandado</label>
-													<input type="number" class="form-control" id="inputDocumentoDemandadoSf">
+													<label for="inputDocumentoDemandadoSe" class="form-label fw-b">Número de Documento del Demandado</label>
+													<input type="number" class="form-control" id="inputDocumentoDemandadoSe">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2333,9 +2333,9 @@
 											</div>
 
 											<div class="row form-row g-3">
-												<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-													<label for="inputNombresDemandadoSf" class="form-label fw-b">Nombres del Demandado</label>
-													<input type="text" class="form-control" id="inputNombresDemandadoSf">
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputNombresDemandadoSe" class="form-label fw-b">Nombres del Demandado</label>
+													<input type="text" class="form-control" id="inputNombresDemandadoSe">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2345,8 +2345,19 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputCorreoDemandadoSf" class="form-label fw-b">Correo del Demandado</label>
-													<input type="email" class="form-control" id="inputCorreoDemandadoSf">
+													<label for="inputCorreoDemandadoSe" class="form-label fw-b">Correo del Demandado</label>
+													<input type="email" class="form-control" id="inputCorreoDemandadoSe">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputCelularDemandadoSe" class="form-label fw-b">Celular del Demandado</label>
+													<input type="tel" class="form-control" id="inputCelularDemandadoSe">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
