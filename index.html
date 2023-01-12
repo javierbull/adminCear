@@ -2159,8 +2159,8 @@
 											<fieldset id="fieldset-DatosRepresntanteLegalSe">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-														<label for="selectTipoDocumentoFacultatorioSf" class="form-label fw-b">Seleccionar Tipo de Documento Facultatorio</label>
-														<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoFacultatorioSf">
+														<label for="selectTipoDocumentoFacultatorioSe" class="form-label fw-b">Seleccionar Tipo de Documento Facultatorio</label>
+														<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoFacultatorioSe">
 															<option>Seleccione</option>
 															<option>Escritura Pública</option>
 															<option>Acta Legalizada</option>
@@ -2170,8 +2170,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCodigoDocumentoFacultatorioSf" class="form-label fw-b">Código del Documento Facultatorio</label>
-														<input type="number" class="form-control" id="inputCodigoDocumentoFacultatorioSf">
+														<label for="inputCodigoDocumentoFacultatorioSe" class="form-label fw-b">Código del Documento Facultatorio</label>
+														<input type="number" class="form-control" id="inputCodigoDocumentoFacultatorioSe">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2183,16 +2183,16 @@
 
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-														<label for="selectTipoDocumentoRlegalSf" class="form-label fw-b">Tipo de Documento del Representante Legal</label>
-														<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoRlegalSf">
+														<label for="selectTipoDocumentoRlegalSe" class="form-label fw-b">Tipo de Documento del Representante Legal</label>
+														<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoRlegalSe">
 															<option selected>(DNI) Documento Nacional de Identidad</option>
 															<option value="1">(CE) Carnet de Extranjería)</option>
 														</select>
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputDocumentoRlegalSf" class="form-label fw-b">Número de Documento del Representante Legal</label>
-														<input type="number" class="form-control" id="inputDocumentoRlegalSf">
+														<label for="inputDocumentoRlegalSe" class="form-label fw-b">Número de Documento del Representante Legal</label>
+														<input type="number" class="form-control" id="inputDocumentoRlegalSe">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2204,8 +2204,8 @@
 
 												<div class="row form-row g-3">
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputNombreRlegalSf" class="form-label fw-b">Nombres y Apellidos del Representante Legal</label>
-														<input type="text" class="form-control" id="inputNombreRlegalSf">
+														<label for="inputNombreRlegalSe" class="form-label fw-b">Nombres y Apellidos del Representante Legal</label>
+														<input type="text" class="form-control" id="inputNombreRlegalSe">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2215,8 +2215,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCorreoRlegalSf" class="form-label fw-b">Correo del Representante Legal</label>
-														<input type="email" class="form-control" id="inputCorreoRlegalSf">
+														<label for="inputCorreoRlegalSe" class="form-label fw-b">Correo del Representante Legal</label>
+														<input type="email" class="form-control" id="inputCorreoRlegalSe">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2226,8 +2226,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCelularRlegalSf" class="form-label fw-b">Celulars del Representante Legal</label>
-														<input type="tel" class="form-control" id="inputCelularRlegalSf">
+														<label for="inputCelularRlegalSe" class="form-label fw-b">Celulars del Representante Legal</label>
+														<input type="tel" class="form-control" id="inputCelularRlegalSe">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2242,6 +2242,64 @@
 								</div>
 							</div>
 							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingComprobanteSolicitudElectronico">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComprobanteSolicitudElectronico" aria-expanded="true" aria-controls="collapseComprobanteSolicitudElectronico">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">2</span>
+											Emisión de Comprobante
+										</div>
+									</button>
+								</h2>
+								<div id="collapseComprobanteSolicitudElectronico" class="accordion-collapse collapse" aria-labelledby="headingComprobanteSolicitudElectronico" data-bs-parent="#accordionNuevoSolicitudElectronico2">
+									<div class="accordion-body">
+										<form>
+											<div class="row form-row g-3">
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="selectTipoComprobanteSe" class="form-label fw-b">Tipo de Comprobante</label>
+													<select class="form-select" aria-label="Default select example" id="selectTipoComprobanteSe">
+														<option selected>Boleta</option>
+														<option value="1">Factura</option>
+													</select>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-" id="comprobanteDNIse">
+													<label for="inputComprobanteDNISe" class="form-label fw-b">DNI</label>
+													<input type="number" class="form-control" id="inputComprobanteDNISe">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-" id="comprobanteFacturase">
+													<label for="inputComprobanteFacturaSe" class="form-label fw-b">Factura</label>
+													<input type="number" class="form-control" id="inputComprobanteFacturaSe">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputComprobanteRazonSocialSe" class="form-label fw-b">Razón Social</label>
+													<input type="number" class="form-control" id="inputComprobanteRazonSocialSe">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingTwoSolicitudElectronico">
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoSolicitudElectronico" aria-expanded="false" aria-controls="collapseTwoSolicitudElectronico">
 										<div class="content-accordion-btn">
@@ -2250,7 +2308,7 @@
 										</div>
 									</button>
 								</h2>
-								<div id="collapseTwoSolicitudElectronico" class="accordion-collapse collapse" aria-labelledby="headingTwoSolicitudElectronico" data-bs-parent="#accordionNuevoSolicitudElectronico2">
+								<div id="collapseTwoSolicitudElectronico" class="accordion-collapse collapse" aria-labelledby="headingTwoSolicitudElectronico" data-bs-parent="#accordionNuevoSolicitudElectronico3">
 									<div class="accordion-body">
 										<form>
 											<div class="row form-row g-3">
@@ -2310,7 +2368,7 @@
 										</div>
 									</button>
 								</h2>
-								<div id="collapseThreeSolicitudElectronico" class="accordion-collapse collapse" aria-labelledby="headingThreeSolicitudElectronico" data-bs-parent="#accordionNuevoSolicitudElectronico3">
+								<div id="collapseThreeSolicitudElectronico" class="accordion-collapse collapse" aria-labelledby="headingThreeSolicitudElectronico" data-bs-parent="#accordionNuevoSolicitudElectronico4">
 									<div class="accordion-body">
 										<form>
 											<div class="row form-row g-3">
