@@ -316,6 +316,14 @@ $("#checkShowInputEnlaceSf").click(function() {
     $("#fieldset-enlaceArchivoPesado").hide();
   }
 });
+
+$("#checkDatosRepresentanteLegalSe").click(function() {
+  if ($(this).is(":checked")) {
+    $("#fieldset-DatosRepresntanteLegalSe").show();
+  } else {
+    $("#fieldset-DatosRepresntanteLegalSe").hide();
+  }
+});
 // END SHOW HIDE CHECKBOX
 
 });
