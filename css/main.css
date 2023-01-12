@@ -1590,8 +1590,12 @@ input[type=number]::-webkit-outer-spin-button {
 /* END SIDEBAR OFF CANVAS */
 
 /* SOLICITUD FISICA */
-#fieldset-DatosRepresntanteLegal, #fieldset-enlaceArchivoPesado, #fieldset-DatosRepresntanteLegalSe {
+#fieldset-DatosRepresntanteLegal, #fieldset-enlaceArchivoPesado, #fieldset-DatosRepresntanteLegalSe, .comprobanteSe  {
   display: none;
+}
+
+#comprobanteDNIse {
+  display: block;
 }
 
 .form-control::file-selector-button {

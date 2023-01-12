@@ -324,7 +324,18 @@ $("#checkDatosRepresentanteLegalSe").click(function() {
     $("#fieldset-DatosRepresntanteLegalSe").hide();
   }
 });
+
 // END SHOW HIDE CHECKBOX
+
+// SHOW HIDE SELECT
+$('#comprobanteSelectorSe').change(function(){
+    var myID = $(this).val();
+    $('.comprobanteSe').each(function(){
+        myID === $(this).attr('id') ? $(this).show() : $(this).hide();
+    });
+});
+// END SHOW HIDE SELECT
+
 
 });
 

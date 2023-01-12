@@ -2255,14 +2255,14 @@
 										<form>
 											<div class="row form-row g-3">
 												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="selectTipoComprobanteSe" class="form-label fw-b">Tipo de Comprobante</label>
-													<select class="form-select" aria-label="Default select example" id="selectTipoComprobanteSe">
-														<option selected>Boleta</option>
-														<option value="1">Factura</option>
+													<label for="comprobanteSelectorSe" class="form-label fw-b">Tipo de Comprobante</label>
+													<select class="form-select" aria-label="Default select example" id="comprobanteSelectorSe">
+														<option value="comprobanteDNIse" selected>Boleta</option>
+														<option value="comprobanteFacturase">Factura</option>
 													</select>
 												</div>
 
-												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-" id="comprobanteDNIse">
+												<div class="col-lg-4 col-md-6 marginBottom-1 comprobanteSe error-input-" id="comprobanteDNIse">
 													<label for="inputComprobanteDNISe" class="form-label fw-b">DNI</label>
 													<input type="number" class="form-control" id="inputComprobanteDNISe">
 													<small class="text-help">
@@ -2273,7 +2273,7 @@
 													</small>
 												</div>
 
-												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-" id="comprobanteFacturase">
+												<div class="col-lg-4 col-md-6 marginBottom-1 comprobanteSe error-input-" id="comprobanteFacturase">
 													<label for="inputComprobanteFacturaSe" class="form-label fw-b">Factura</label>
 													<input type="number" class="form-control" id="inputComprobanteFacturaSe">
 													<small class="text-help">
