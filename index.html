@@ -2431,16 +2431,23 @@
 								</h2>
 								<div id="collapseFiveSolicitudElectronico" class="accordion-collapse collapse" aria-labelledby="headingFiveSolicitudElectronico" data-bs-parent="#accordionNuevoSolicitudElectronico5">
 									<div class="accordion-body">
-										<div class="col-lg-6">
-											<form>
-												<h3>
+										<form>
+												<h3 class="col-lg-6 col-md-6">
 													Seleccione las casillas que considere aplicables
 												</h3>
-												<div class="mb-3">
-													<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+												<div class="row form-row g-3">
+													<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
+														<label for="selectControversiaSe" class="form-label fw-b">Seleccione su Controversia</label>
+														<select class="form-select select2-multiple" aria-label="Default select example" id="selectControversiaSe" data-placeholder="Buscar" multiple>
+															<option></option>
+															<option>(DNI) Documento Nacional de Identidad</option>
+															<option>(CE) Carnet de Extranjería)</option>
+														</select>
+													</div>
+
+
 												</div>
 											</form>
-										</div>
 									</div>
 								</div>
 							</div>
