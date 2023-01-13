@@ -55,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -292,6 +292,11 @@ small {
   opacity: 1;
 }
 
+.small-button {
+  font-size: .875rem;
+  padding: .25rem .5rem
+}
+
 .btn-circle {
   border-radius: 100px;
   padding: .75rem;
@@ -375,6 +380,8 @@ small {
   border: 1px solid var(--a-02);
   color: var(--a-02);
 }
+
+
 /* End Buttons */
 
 .show {
@@ -494,6 +501,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .form-label {
   color: var(--a-01);
+  font-weight: 500;
 }
 
 .form-control, .form-select {
