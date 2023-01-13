@@ -524,6 +524,26 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--a-01);
 }
 
+/* Selec2 Styles */
+.select2-container--bootstrap-5 .select2-selection {
+  width: 100%;
+  min-height: calc(1.5em + 0.75rem + 2px);
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--a-02);
+  background-color: var(--b-01);
+  border: 1px solid var(--g-02);
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+/* End Select2 styles */
+
 .search-input {
   position: relative;
 }
