@@ -366,6 +366,7 @@ small {
 }
 
 .btn-outline {
+  background-color: var(--b-01);
   border: 1px solid var(--a-02);
   color: var(--a-02);
 }
@@ -582,7 +583,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .table thead tr th {
-  background-color: var(--g-03);
+  background-color: var(--c-01);
   vertical-align: middle;
   padding: 1rem;
 }
