@@ -1081,7 +1081,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* END DISCLAIMER */
 
-#content-resumen {
+#content-resumen, #fieldset-cuantia-determinada {
   display: none;
 }
 

@@ -325,6 +325,14 @@ $("#checkDatosRepresentanteLegalSe").click(function() {
   }
 });
 
+$("#cuantiaDeterminado").click(function() {
+  $("#fieldset-cuantia-determinada").show();
+});
+
+$("#cuantiaIndeterminado").click(function() {
+  $("#fieldset-cuantia-determinada").hide();
+});
+
 // END SHOW HIDE CHECKBOX
 
 // SHOW HIDE SELECT
