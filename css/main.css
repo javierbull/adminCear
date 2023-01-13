@@ -410,6 +410,10 @@ input[type=number]::-webkit-outer-spin-button {
   /* background-color: pink; */
   align-items: flex-end;
 }
+
+.form-row-top {
+  align-items: flex-start;
+}
 /* END FORMS */
 
 /* Fin Estilos Generales */
