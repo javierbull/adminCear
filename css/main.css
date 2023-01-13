@@ -281,9 +281,10 @@ small {
 }
 
 .primary-button:focus {
-  background-color: var(--b-01);
-  color: var(--a-01);
-  border-color: 1px solid var(--success);
+  background-color: var(--a-02);
+  color: var(--b-01);
+  border-color: var(--a-01);
+  box-shadow: 0 0 0 0.25rem rgba(16, 158, 181, 0.5);
 }
 
 .primary-button.disabled {
