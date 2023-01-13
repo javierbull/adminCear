@@ -2762,6 +2762,64 @@
 									</div>
 								</div>
 							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingElevenSolicitudElectronico">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseElevenSolicitudElectronico">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">11</span>
+											Anexos
+										</div>
+									</button>
+								</h2>
+								<div id="collapseElevenSolicitudElectronico" class="accordion-collapse collapse" aria-labelledby="headingElevenSolicitudElectronico" data-bs-parent="#accordionNuevoSolicitudElectronico11">
+									<div class="accordion-body">
+										<form>
+												<h3>
+													Información de Anexos
+												</h3>
+												<div class="row form-row g-3">
+													<div class="col-lg-6 marginBottom-1 error-input-">
+														<label for="selectTipoDocAnexoSe" class="form-label fw-b">Tipo de Documento</label>
+														<select class="form-select" aria-label="Default select example" id="selectTipoDocAnexoSe">
+															<option>Seleccione</option>
+															<option>Aclaración, Rectificación, Integración, Interpretación de Laudo</option>
+															<option>Alegatos</option>
+														</select>
+													</div>
+
+													<div class="col-lg-6 marginBottom-1 error-input-">
+														<label for="inputFilePDFse" class="form-label fw-b">Documento PDF (Se permite solo un archivo de hasta 10 Mb)</label>
+														<input type="file" class="form-control" id="inputFilePDFse" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+													</div>
+												</div>
+
+												<div class="row form-row g-3">
+												<div class="col-lg-10 col-md-8 marginBottom-1 error-input-">
+													<label for="inputUrlSe" class="form-label fw-b">Enlace para enviar archivos pesados (Google Drive, OneDrive, WeTransfer, Mega, Dropbox, etc.), recuerde habilitar los permisos</label>
+													<input type="url" class="form-control" placeholder="Ingrese url del documento" id="inputUrlSe">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-2 col-md-4 marginBottom-1 error-input-">
+													<label for="inputFoliosSe" class="form-label fw-b">Total de Folios</label>
+													<input type="number" class="form-control" id="inputFoliosSe">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+											</form>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 
