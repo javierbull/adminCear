@@ -1298,7 +1298,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .header-panel {
   /* background-color: pink; */
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .header-panel .title-panel {
@@ -1348,6 +1348,7 @@ input[type=number]::-webkit-outer-spin-button {
 .accordion-button:focus {
   z-index: 3;
   border-color: var(--primary-dark);
+  color: var(--primary-dark);
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(40, 103, 129, 0.25);
   background-color: var(--white);
@@ -1588,9 +1589,35 @@ input[type=number]::-webkit-outer-spin-button {
   border: none;
 }
 
-.accordion-body {
-  background-color: var(--background);
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid var(--primary-dark);
 }
+
+.accordion-item:first-of-type {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: 0;
+}
+.accordion-item:last-of-type {
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+.accordion-item:last-of-type .accordion-collapse {
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
 /* End Accordion Collapse */
 
 .textCenter {
