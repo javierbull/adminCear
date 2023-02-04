@@ -1768,107 +1768,30 @@
 								<div id="collapseOneSolicitudesFisico" class="accordion-collapse collapse show" aria-labelledby="headingOneSolicitudesFisico" data-bs-parent="#accordionNuevoProfesional">
 									<div class="accordion-body">
 										<form>
-											<div class="row form-row g-3">
-												<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-													<label for="selectTipoDocumentoDemandanteSf" class="form-label fw-b">Tipo de Documento del Demandante</label>
-													<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoDemandanteSf">
-														<option selected>(DNI) Documento Nacional de Identidad</option>
-														<option value="1">(CE) Carnet de Extranjería)</option>
-													</select>
+											<div class="marginBottom-1">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="RadioOptionsDemandanteSfPn" id="datosDemandanteSfPn" value="option1" checked>
+													<label class="form-check-label" for="datosDemandanteSfPn">Persona Natural</label>
 												</div>
-
-												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputDocumentoDemandanteSf" class="form-label fw-b">Número de Documento del Demandante</label>
-													<input type="number" class="form-control" id="inputDocumentoDemandanteSf">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="RadioOptionsDemandanteSfPn" id="datosDemandanteSfPj" value="option2">
+													<label class="form-check-label" for="datosDemandanteSfPj">Persona Jurídica</label>
 												</div>
 											</div>
 
-											<div class="row form-row g-3">
-												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputNombreDemandanteSf" class="form-label fw-b">Nombres y Apellidos del Demandante</label>
-													<input type="text" class="form-control" id="inputNombreDemandanteSf">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-
-												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputCorreoDemandanteSf" class="form-label fw-b">Correo del Demandante</label>
-													<input type="email" class="form-control" id="inputCorreoDemandanteSf">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-
-												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputCelularDemandanteSf" class="form-label fw-b">Celulars del Demandante</label>
-													<input type="tel" class="form-control" id="inputCelularDemandanteSf">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-											</div>
-
-											<div class="form-check marginBottom-1">
-												<input class="form-check-input" type="checkbox" value="" id="checkDatosRepresentanteLegalSf">
-												<label class="form-check-label" for="checkDatosRepresentanteLegalSf">
-													Datos del Representante Legal
-												</label>
-												<small class="tag-primary hide" id="tag-arbitro">Árbitro Único/Presidente</small>
-											</div>
-
-											<fieldset id="fieldset-DatosRepresntanteLegal">
+											<fieldset class="fieldset-se-demandante-pn" id="fieldset-se-demandante-pn">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-														<label for="selectTipoDocumentoFacultatorioSf" class="form-label fw-b">Seleccionar Tipo de Documento Facultatorio</label>
-														<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoFacultatorioSf">
-															<option>Seleccione</option>
-															<option>Escritura Pública</option>
-															<option>Acta Legalizada</option>
-															<option>Copia Literal</option>
-															<option>Copia de la vigencia expedida por los registros públicos</option>
-														</select>
-													</div>
-
-													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCodigoDocumentoFacultatorioSf" class="form-label fw-b">Código del Documento Facultatorio</label>
-														<input type="number" class="form-control" id="inputCodigoDocumentoFacultatorioSf">
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-												</div>
-
-												<div class="row form-row g-3">
-													<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-														<label for="selectTipoDocumentoRlegalSf" class="form-label fw-b">Tipo de Documento del Representante Legal</label>
-														<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoRlegalSf">
+														<label for="selectTipoDocumentoDemandanteSf" class="form-label fw-b">Tipo de Documento del Demandante</label>
+														<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoDemandanteSf">
 															<option selected>(DNI) Documento Nacional de Identidad</option>
 															<option value="1">(CE) Carnet de Extranjería)</option>
 														</select>
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputDocumentoRlegalSf" class="form-label fw-b">Número de Documento del Representante Legal</label>
-														<input type="number" class="form-control" id="inputDocumentoRlegalSf">
+														<label for="inputDocumentoDemandanteSf" class="form-label fw-b">Número de Documento del Demandante</label>
+														<input type="number" class="form-control" id="inputDocumentoDemandanteSf">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -1880,8 +1803,8 @@
 
 												<div class="row form-row g-3">
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputNombreRlegalSf" class="form-label fw-b">Nombres y Apellidos del Representante Legal</label>
-														<input type="text" class="form-control" id="inputNombreRlegalSf">
+														<label for="inputNombreDemandanteSf" class="form-label fw-b">Nombres y Apellidos del Demandante</label>
+														<input type="text" class="form-control" id="inputNombreDemandanteSf">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -1891,8 +1814,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCorreoRlegalSf" class="form-label fw-b">Correo del Representante Legal</label>
-														<input type="email" class="form-control" id="inputCorreoRlegalSf">
+														<label for="inputCorreoDemandanteSf" class="form-label fw-b">Correo del Demandante</label>
+														<input type="email" class="form-control" id="inputCorreoDemandanteSf">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -1902,8 +1825,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCelularRlegalSf" class="form-label fw-b">Celulars del Representante Legal</label>
-														<input type="tel" class="form-control" id="inputCelularRlegalSf">
+														<label for="inputCelularDemandanteSf" class="form-label fw-b">Celulars del Demandante</label>
+														<input type="tel" class="form-control" id="inputCelularDemandanteSf">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -1912,6 +1835,100 @@
 														</small>
 													</div>
 												</div>
+
+												<div class="form-check marginBottom-1">
+													<input class="form-check-input" type="checkbox" value="" id="checkDatosRepresentanteLegalSf">
+													<label class="form-check-label" for="checkDatosRepresentanteLegalSf">
+														Datos del Representante Legal
+													</label>
+													<small class="tag-primary hide" id="tag-arbitro">Árbitro Único/Presidente</small>
+												</div>
+
+												<fieldset id="fieldset-DatosRepresntanteLegal">
+													<div class="row form-row g-3">
+														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
+															<label for="selectTipoDocumentoFacultatorioSf" class="form-label fw-b">Seleccionar Tipo de Documento Facultatorio</label>
+															<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoFacultatorioSf">
+																<option>Seleccione</option>
+																<option>Escritura Pública</option>
+																<option>Acta Legalizada</option>
+																<option>Copia Literal</option>
+																<option>Copia de la vigencia expedida por los registros públicos</option>
+															</select>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+															<label for="inputCodigoDocumentoFacultatorioSf" class="form-label fw-b">Código del Documento Facultatorio</label>
+															<input type="number" class="form-control" id="inputCodigoDocumentoFacultatorioSf">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+
+													<div class="row form-row g-3">
+														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
+															<label for="selectTipoDocumentoRlegalSf" class="form-label fw-b">Tipo de Documento del Representante Legal</label>
+															<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoRlegalSf">
+																<option selected>(DNI) Documento Nacional de Identidad</option>
+																<option value="1">(CE) Carnet de Extranjería)</option>
+															</select>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+															<label for="inputDocumentoRlegalSf" class="form-label fw-b">Número de Documento del Representante Legal</label>
+															<input type="number" class="form-control" id="inputDocumentoRlegalSf">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+
+													<div class="row form-row g-3">
+														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+															<label for="inputNombreRlegalSf" class="form-label fw-b">Nombres y Apellidos del Representante Legal</label>
+															<input type="text" class="form-control" id="inputNombreRlegalSf">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+															<label for="inputCorreoRlegalSf" class="form-label fw-b">Correo del Representante Legal</label>
+															<input type="email" class="form-control" id="inputCorreoRlegalSf">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+															<label for="inputCelularRlegalSf" class="form-label fw-b">Celulars del Representante Legal</label>
+															<input type="tel" class="form-control" id="inputCelularRlegalSf">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+												</fieldset>
+											</fieldset>
+
+											<fieldset class="fieldset-se-demandante-pj" id="fieldset-se-demandante-pj">
+												Lorem ipsum dolor sit amet.
 											</fieldset>
 										</form>
 									</div>

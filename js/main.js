@@ -333,6 +333,16 @@ $("#cuantiaIndeterminado").click(function() {
   $("#fieldset-cuantia-determinada").hide();
 });
 
+$("#datosDemandanteSfPj").click(function() {
+  $("#fieldset-se-demandante-pn").hide();
+  $("#fieldset-se-demandante-pj").show();
+});
+
+$("#datosDemandanteSfPn").click(function() {
+  $("#fieldset-se-demandante-pn").show();
+  $("#fieldset-se-demandante-pj").hide();
+});
+
 // END SHOW HIDE CHECKBOX
 
 // SHOW HIDE SELECT
