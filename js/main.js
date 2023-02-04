@@ -309,6 +309,14 @@ $("#checkDatosRepresentanteLegalSf").click(function() {
   }
 });
 
+$("#checkDatosRepresentanteLegalSfPj").click(function() {
+  if ($(this).is(":checked")) {
+    $("#fieldset-DatosRepresntanteLegalSfPj").show();
+  } else {
+    $("#fieldset-DatosRepresntanteLegalSfPj").hide();
+  }
+});
+
 $("#checkShowInputEnlaceSf").click(function() {
   if ($(this).is(":checked")) {
     $("#fieldset-enlaceArchivoPesado").show();
