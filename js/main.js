@@ -351,6 +351,16 @@ $("#datosDemandanteSfPn").click(function() {
   $("#fieldset-se-demandante-pj").hide();
 });
 
+$("#datosDemandadoSfPj").click(function() {
+  $("#fieldset-se-demandado-pn").hide();
+  $("#fieldset-se-demandado-pj").show();
+});
+
+$("#datosDemandadoSfPn").click(function() {
+  $("#fieldset-se-demandado-pn").show();
+  $("#fieldset-se-demandado-pj").hide();
+});
+
 // END SHOW HIDE CHECKBOX
 
 // SHOW HIDE SELECT
