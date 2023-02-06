@@ -317,22 +317,6 @@ $("#checkDatosRepresentanteLegalSfPj").click(function() {
   }
 });
 
-$("#checkDatosRepresentanteLegalDemandadoSfPn").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-DatosRepresentanteLegalDemandadoSfPn").show();
-  } else {
-    $("#fieldset-DatosRepresentanteLegalDemandadoSfPn").hide();
-  }
-});
-
-$("#checkDatosRepresentanteLegalDemandadoSfPj").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-DatosRepresentanteLegalDemandadoSfPj").show();
-  } else {
-    $("#fieldset-DatosRepresentanteLegalDemandadoSfPj").hide();
-  }
-});
-
 $("#checkShowInputEnlaceSf").click(function() {
   if ($(this).is(":checked")) {
     $("#fieldset-enlaceArchivoPesado").show();
