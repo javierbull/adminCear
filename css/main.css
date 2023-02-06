@@ -1407,6 +1407,7 @@ input[type=number]::-webkit-outer-spin-button {
   /* background-color: pink; */
   display:flex;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .accordion-step {
