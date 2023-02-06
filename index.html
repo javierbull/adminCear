@@ -2389,8 +2389,8 @@
 											<fieldset class="fieldset-se-demandado-pj" id="fieldset-se-demandado-pj">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-														<label for="inputRazonSocialDemandanteSfPj" class="form-label fw-b">Razón Social del Demandante</label>
-														<input type="number" class="form-control" id="inputRazonSocialDemandanteSfPj">
+														<label for="inputRazonSocialDemandadoSfPj" class="form-label fw-b">Razón Social del Demandado</label>
+														<input type="number" class="form-control" id="inputRazonSocialDemandadoSfPj">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2400,8 +2400,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputRucDemandanteSfPj" class="form-label fw-b">RUC del Demandante</label>
-														<input type="number" class="form-control" id="inputRucDemandanteSfPj">
+														<label for="inputRucDemandadoSfPj" class="form-label fw-b">RUC del Demandado</label>
+														<input type="number" class="form-control" id="inputRucDemandadoSfPj">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2413,8 +2413,8 @@
 
 												<div class="row form-row g-3">
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputDomicilioDemandanteSfPj" class="form-label fw-b">Domicilio del Demandante</label>
-														<input type="text" class="form-control" id="inputDomicilioDemandanteSfPj">
+														<label for="inputDomicilioDemandadoSfPj" class="form-label fw-b">Domicilio del Demandado</label>
+														<input type="text" class="form-control" id="inputDomicilioDemandadoSfPj">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2424,8 +2424,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCelularDemandanteSfPj" class="form-label fw-b">Celular del Demandante</label>
-														<input type="tel" class="form-control" id="inputCelularDemandanteSfPj">
+														<label for="inputCelularDemandadoSfPj" class="form-label fw-b">Celular del Demandado</label>
+														<input type="tel" class="form-control" id="inputCelularDemandadoSfPj">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2435,8 +2435,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputLinkDemandanteSfPj" class="form-label fw-b">Enlace Mesa de partes (Opcional)</label>
-														<input type="url" class="form-control" id="inputLinkDemandanteSfPj">
+														<label for="inputLinkDemandadoSfPj" class="form-label fw-b">Enlace Mesa de partes (Opcional)</label>
+														<input type="url" class="form-control" id="inputLinkDemandadoSfPj">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2447,9 +2447,9 @@
 												</div>
 
 												<div class="col-12 marginBottom-1 error-input-">
-													<label for="inputcorreoDemandanteSfPj" class="form-label fw-b">Correo del Demandante</label>
+													<label for="inputcorreoDemandadoSfPj" class="form-label fw-b">Correo del DemandadoDemandado</label>
 													<div class="input-group">
-														<input type="email" class="form-control" id="inputcorreoDemandanteSfPj" placeholder="Ingrese un correo" aria-label="Registre un correo" aria-describedby="button-addon-correo">
+														<input type="email" class="form-control" id="inputcorreoDemandadoSfPj" placeholder="Ingrese un correo" aria-label="Registre un correo" aria-describedby="button-addon-correo">
 														<button class="btn btn-outline" type="button" id="button-addon-correo">Agregar Correo</button>
 													</div>
 													<small class="text-help">
@@ -2498,135 +2498,17 @@
 													</tbody>
 												</table>
 
-												<div class="form-check marginBottom-1">
-													<input class="form-check-input" type="checkbox" value="" id="checkDatosRepresentanteLegalDemandadoSfPj">
-													<label class="form-check-label" for="checkDatosRepresentanteLegalDemandadoSfPj">
-														Datos del Representante Legal
-													</label>
+												<div class="marginBottom-1 error-input-">
+													<label for="inputNombreRlDemandadoSfPj" class="form-label fw-b">Nombres y Apellidos del Representante Legal</label>
+													<input type="text" class="form-control" id="inputNombreRlDemandadoSfPj">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
 												</div>
 
-												<fieldset id="fieldset-DatosRepresentanteLegalDemandadoSfPj">
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="selectTipoDocumentoFacultatorioSf" class="form-label fw-b">Seleccionar Tipo de Documento Facultatorio</label>
-															<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoFacultatorioSf">
-																<option>Seleccione</option>
-																<option>Escritura Pública</option>
-																<option>Acta Legalizada</option>
-																<option>Copia Literal</option>
-																<option>Copia de la vigencia expedida por los registros públicos</option>
-															</select>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputCodigoDocumentoFacultatorioSf" class="form-label fw-b">Código del Documento Facultatorio</label>
-															<input type="number" class="form-control" id="inputCodigoDocumentoFacultatorioSf">
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="selectTipoDocumentoRlegalSf" class="form-label fw-b">Tipo de Documento del Representante Legal</label>
-															<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoRlegalSf">
-																<option selected>(DNI) Documento Nacional de Identidad</option>
-																<option value="1">(CE) Carnet de Extranjería)</option>
-															</select>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputDocumentoRlegalSf" class="form-label fw-b">Número de Documento del Representante Legal</label>
-															<input type="number" class="form-control" id="inputDocumentoRlegalSf">
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="inputNombreRlegalSf" class="form-label fw-b">Nombres y Apellidos del Representante Legal</label>
-															<input type="text" class="form-control" id="inputNombreRlegalSf">
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputCelularRlegalSf" class="form-label fw-b">Celular del Representante Legal</label>
-															<input type="tel" class="form-control" id="inputCelularRlegalSf">
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="col-12 marginBottom-1 error-input-">
-														<label for="inputcorreoRepresentanteLegalSfPj" class="form-label fw-b">Correo del Representante Legal</label>
-														<div class="input-group">
-															<input type="email" class="form-control" id="inputcorreoRepresentanteLegalSfPj" placeholder="Ingrese un correo" aria-label="Registre un correo" aria-describedby="button-addon-correo">
-															<button class="btn btn-outline" type="button" id="button-addon-correo">Agregar Correo</button>
-														</div>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-
-													<table class="table">
-														<thead>
-															<tr>
-																<th scope="col">#</th>
-																<th scope="col">Correos</th>
-																<th scope="col">Acciones</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th scope="row">1</th>
-																<td>
-																	peru@attachmedia.com.pe
-																</td>
-																<td>
-																	<button type="button" name="button" class="btn ghost-button-danger small-button">
-																		<span class="material-icons-outlined">
-																			delete_forever
-																		</span>
-																	</button>
-																</td>
-															</tr>
-															<tr>
-																<th scope="row">2</th>
-																<td>
-																	contacto@attachmedia.com.pe
-																</td>
-																<td>
-																	<button type="button" name="button" class="btn ghost-button-danger small-button">
-																		<span class="material-icons-outlined">
-																			delete_forever
-																		</span>
-																	</button>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</fieldset>
 											</fieldset>
 										</form>
 									</div>
