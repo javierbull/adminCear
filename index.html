@@ -2558,7 +2558,7 @@
 													</small>
 												</div>
 
-												<button type="button" name="button" class="btn btn-outline">
+												<button type="button" name="button" class="btn btn-outline" data-bs-toggle="modal" data-bs-target="#modalAvisoPesoArchivos">
 													Agregar Archivo
 												</button>
 											</div>
@@ -2567,7 +2567,9 @@
 												<thead>
 													<tr>
 														<th scope="col">#</th>
-														<th scope="col">Correos</th>
+														<th scope="col">Archivo</th>
+														<th scope="col">Folios</th>
+														<th scope="col">Peso</th>
 														<th scope="col">Acciones</th>
 													</tr>
 												</thead>
@@ -2575,7 +2577,13 @@
 													<tr>
 														<th scope="row">1</th>
 														<td>
-															peru@attachmedia.com.pe
+															archivo1.pdf
+														</td>
+														<td>
+															10
+														</td>
+														<td>
+															10 mb
 														</td>
 														<td>
 															<button type="button" name="button" class="btn ghost-button-danger small-button">
@@ -2588,7 +2596,13 @@
 													<tr>
 														<th scope="row">2</th>
 														<td>
-															contacto@attachmedia.com.pe
+															archivo2.pdf
+														</td>
+														<td>
+															20
+														</td>
+														<td>
+															15 mb
 														</td>
 														<td>
 															<button type="button" name="button" class="btn ghost-button-danger small-button">
@@ -2598,6 +2612,18 @@
 															</button>
 														</td>
 													</tr>
+													<tfoot>
+														<td></td>
+														<td>
+															Total
+														</td>
+														<td>
+															30
+														</td>
+														<td>
+															25 mb
+														</td>
+													</tfoot>
 												</tbody>
 											</table>
 
@@ -3988,7 +4014,32 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
-						Cancelar
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalAvisoPesoArchivos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5 text-center">
+						Aviso
+					</h4>
+				</div>
+				<div class="modal-body text-center">
+					<p>
+						No se pueden subir más archivos porque exceden el límite de 30 mb
+					</p>
+					<p>
+						Le invitamos a ingresar un enlace de Google Drive, OneDrive, WeTransfer, Mega, Dropbox, etc.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
 					</button>
 				</div>
 			</div>
