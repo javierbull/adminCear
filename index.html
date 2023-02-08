@@ -2541,13 +2541,13 @@
 											Ver Lista de Requerimientos
 										</button>
 										<form>
-											<div class="row form-row g-3">
-												<div class="col error-input-">
+											<div class="form-row-btn">
+												<div class="col">
 													<label for="inputFileSf" class="form-label fw-b">Documento PDF (Se permite solo un archivo de hasta 10 Mb)</label>
 													<input type="file" class="form-control" id="inputFileSf" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
 												</div>
 
-												<div class="col-lg-2 col-md-3 error-input-">
+												<div class="col-lg-3 col-md-3">
 													<label for="inputFoliosSf" class="form-label fw-b">Total de Folios</label>
 													<input type="number" class="form-control" id="inputFoliosSf">
 													<small class="text-help">
@@ -2558,10 +2558,48 @@
 													</small>
 												</div>
 
-												<button type="button" name="button" class="btn btn-outline col-lg-3">
+												<button type="button" name="button" class="btn btn-outline">
 													Agregar Archivo
 												</button>
 											</div>
+
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">#</th>
+														<th scope="col">Correos</th>
+														<th scope="col">Acciones</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td>
+															peru@attachmedia.com.pe
+														</td>
+														<td>
+															<button type="button" name="button" class="btn ghost-button-danger small-button">
+																<span class="material-icons-outlined">
+																	delete_forever
+																</span>
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<th scope="row">2</th>
+														<td>
+															contacto@attachmedia.com.pe
+														</td>
+														<td>
+															<button type="button" name="button" class="btn ghost-button-danger small-button">
+																<span class="material-icons-outlined">
+																	delete_forever
+																</span>
+															</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
 
 											<div class="form-check marginBottom-1">
 												<input class="form-check-input" type="checkbox" value="" id="checkShowInputEnlaceSf">

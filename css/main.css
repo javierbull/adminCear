@@ -459,7 +459,16 @@ input[type=number]::-webkit-outer-spin-button {
 /* FORMS */
 .form-row {
   /* background-color: pink; */
+  display: flex;
   align-items: flex-end;
+}
+
+.form-row-btn {
+  /* background-color: lightgreen; */
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .form-row-top {
