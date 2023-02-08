@@ -1329,6 +1329,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
 
 .wrap-header-panel .header-panel {
