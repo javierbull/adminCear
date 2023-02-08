@@ -205,6 +205,12 @@ small {
 }
 /* End Paddings */
 
+/* List */
+.list-group .list-group-item {
+  color: var(--primary-dark);
+}
+/* End list */
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -411,9 +417,14 @@ small {
 .btn-outline:hover {
   border: 1px solid var(--primary);
   color: var(--primary);
+  background-color: var(--primary-extra-light);
 }
 
-
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap:.5rem;
+}
 /* End Buttons */
 
 .show {
@@ -701,9 +712,16 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .modal-header {
-    padding-top: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-align: center;
   }
 
   .modal-header, .modal-footer {
@@ -713,8 +731,8 @@ input[type=number]::-webkit-outer-spin-button {
   .modal-body {
     /* background-color: pink; */
     color: var(--primary-dark);
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-top: 0;
     padding-bottom: 1.5rem;
   }
@@ -724,20 +742,14 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1.5rem;
   }
 
-  .modal-title {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 600;
-  }
-
   .modal-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     padding-top: 0;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .modalInfo .iconModal {
