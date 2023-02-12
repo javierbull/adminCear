@@ -1178,7 +1178,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* END DISCLAIMER */
 
-#content-resumen, #fieldset-cuantia-determinada, #fieldset-se-demandante-pj {
+#content-resumen, #fieldset-cuantia-determinada, #fieldset-demandante-sf-pj {
   display: none;
 }
 

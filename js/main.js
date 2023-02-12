@@ -342,23 +342,43 @@ $("#cuantiaIndeterminado").click(function() {
 });
 
 $("#datosDemandanteSfPj").click(function() {
-  $("#fieldset-se-demandante-pn").hide();
-  $("#fieldset-se-demandante-pj").show();
+  $("#fieldset-demandante-sf-pn").hide();
+  $("#fieldset-demandante-sf-pj").show();
 });
 
 $("#datosDemandanteSfPn").click(function() {
-  $("#fieldset-se-demandante-pn").show();
-  $("#fieldset-se-demandante-pj").hide();
+  $("#fieldset-demandante-sf-pn").show();
+  $("#fieldset-demandante-sf-pj").hide();
 });
 
 $("#datosDemandadoSfPj").click(function() {
-  $("#fieldset-se-demandado-pn").hide();
-  $("#fieldset-se-demandado-pj").show();
+  $("#fieldset-demandado-sf-pn").hide();
+  $("#fieldset-demandado-sf-pj").show();
 });
 
 $("#datosDemandadoSfPn").click(function() {
-  $("#fieldset-se-demandado-pn").show();
-  $("#fieldset-se-demandado-pj").hide();
+  $("#fieldset-demandado-sf-pn").show();
+  $("#fieldset-demandado-sf-pj").hide();
+});
+
+$("#datosDemandanteSePj").click(function() {
+  $("#fieldset-demandante-se-pn").hide();
+  $("#fieldset-demandante-se-pj").show();
+});
+
+$("#datosDemandanteSePn").click(function() {
+  $("#fieldset-demandante-se-pn").show();
+  $("#fieldset-demandante-se-pj").hide();
+});
+
+$("#datosDemandadoSePj").click(function() {
+  $("#fieldset-demandado-se-pn").hide();
+  $("#fieldset-demandado-se-pj").show();
+});
+
+$("#datosDemandadoSePn").click(function() {
+  $("#fieldset-demandado-se-pn").show();
+  $("#fieldset-demandado-se-pj").hide();
 });
 
 // END SHOW HIDE CHECKBOX
