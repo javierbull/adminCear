@@ -1721,6 +1721,8 @@ input[type=number]::-webkit-outer-spin-button {
 /* SOLICITUD FISICA */
 #fieldset-demandante-sf-pj,
 #fieldset-demandante-se-pj,
+#fieldset-demandado-sf-pj,
+#fieldset-demandado-se-pj,
 #fieldset-datosDemandanteRepLegalSfPn,
 #fieldset-datosDemandanteRepLegalSfPj,
 #fieldset-datosDemandanteRepLegalSePn,
