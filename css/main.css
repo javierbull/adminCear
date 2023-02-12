@@ -1719,7 +1719,12 @@ input[type=number]::-webkit-outer-spin-button {
 /* END SIDEBAR OFF CANVAS */
 
 /* SOLICITUD FISICA */
-#fieldset-DatosRepresntanteLegal, #fieldset-enlaceArchivoPesado, #fieldset-DatosRepresntanteLegalSe, #fieldset-DatosRepresntanteLegalSfPj, .comprobanteSe,
+#fieldset-enlaceArchivoPesado,
+#fieldset-datosDemandanteRepLegalSfPn, 
+#fieldset-datosDemandanteRepLegalSfPj,
+#fieldset-datosDemandanteRepLegalSePn,
+#fieldset-datosDemandanteRepLegalSePj,
+ .comprobanteSe,
 #fieldset-se-demandado-pj {
   display: none;
 }

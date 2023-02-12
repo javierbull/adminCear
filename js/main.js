@@ -301,19 +301,35 @@ $(".showSolicitudElectronico").click(function() {
 // End admin dashboard
 
 // SHOW HIDE CHECKBOX
-$("#checkDatosRepresentanteLegalSf").click(function() {
+$("#checkDatosDemandanteRepLegalSfPn").click(function() {
   if ($(this).is(":checked")) {
-    $("#fieldset-DatosRepresntanteLegal").show();
+    $("#fieldset-datosDemandanteRepLegalSfPn").show();
   } else {
-    $("#fieldset-DatosRepresntanteLegal").hide();
+    $("#fieldset-datosDemandanteRepLegalSfPn").hide();
   }
 });
 
-$("#checkDatosRepresentanteLegalSfPj").click(function() {
+$("#checkDatosDemandanteRepLegalSfPj").click(function() {
   if ($(this).is(":checked")) {
-    $("#fieldset-DatosRepresntanteLegalSfPj").show();
+    $("#fieldset-datosDemandanteRepLegalSfPj").show();
   } else {
-    $("#fieldset-DatosRepresntanteLegalSfPj").hide();
+    $("#fieldset-datosDemandanteRepLegalSfPj").hide();
+  }
+});
+
+$("#checkDatosDemandanteRepLegalSePn").click(function() {
+  if ($(this).is(":checked")) {
+    $("#fieldset-datosDemandanteRepLegalSePn").show();
+  } else {
+    $("#fieldset-datosDemandanteRepLegalSePn").hide();
+  }
+});
+
+$("#checkDatosDemandanteRepLegalSePj").click(function() {
+  if ($(this).is(":checked")) {
+    $("#fieldset-datosDemandanteRepLegalSePj").show();
+  } else {
+    $("#fieldset-datosDemandanteRepLegalSePj").hide();
   }
 });
 
