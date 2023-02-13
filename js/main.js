@@ -341,6 +341,14 @@ $("#checkShowInputEnlaceSf").click(function() {
   }
 });
 
+$("#checkShowInputEnlaceSe").click(function() {
+  if ($(this).is(":checked")) {
+    $("#fieldset-enlaceArchivoPesado-se").show();
+  } else {
+    $("#fieldset-enlaceArchivoPesado-se").hide();
+  }
+});
+
 $("#checkDatosRepresentanteLegalSe").click(function() {
   if ($(this).is(":checked")) {
     $("#fieldset-DatosRepresntanteLegalSe").show();
