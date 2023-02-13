@@ -434,6 +434,13 @@ $( '.select2-multiple' ).select2( {
 
 // END ACTIVAR SELECT2
 
+// TOOLTIP
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+// END TOOLTIP
+
 
 });
 

@@ -2630,11 +2630,16 @@
 												</tbody>
 											</table>
 
-											<div class="form-check marginBottom-1">
-												<input class="form-check-input" type="checkbox" value="" id="checkShowInputEnlaceSf">
-												<label class="form-check-label" for="checkShowInputEnlaceSf">
-													Mi archivo pesa más de 10 Mb
-												</label>
+											<div class="wrap-form-tooltip">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value="" id="checkShowInputEnlaceSf">
+													<label class="form-check-label" for="checkShowInputEnlaceSf">
+														Mi archivo pesa más de 30 Mb
+													</label>
+												</div>
+												<span class="material-icons" data-bs-toggle="tooltip" data-bs-placement="right" title="Marque la casilla para ingresar link del archivo">
+													help
+												</span>
 											</div>
 
 											<fieldset id="fieldset-enlaceArchivoPesado">
@@ -3648,48 +3653,55 @@
 										</form>
 
 										<table class="table">
-										  <thead>
-										    <tr>
-										      <th scope="col">#</th>
-										      <th scope="col">Petitorio</th>
-										      <th scope="col">Acciones</th>
-										    </tr>
-										  </thead>
-										  <tbody>
-										    <tr>
-										      <th scope="row">1</th>
-										      <td>
-														Primer petitorio
+											<thead>
+												<tr>
+													<th scope="col">#</th>
+													<th scope="col">Correos</th>
+													<th scope="col">Acciones</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th scope="row">1</th>
+													<td>
+														peru@attachmedia.com.pe
 													</td>
-										      <td>
-														<button type="button" name="button" class="btn link-button">
-															Eliminar
-														</button>
-										      </td>
-										    </tr>
+													<td>
+														<div class="warp-btn-actions">
+															<button type="button" name="button" class="btn ghost-button small-button">
+																<span class="material-icons-outlined">
+																	edit
+																</span>
+															</button>
+															<button type="button" name="button" class="btn ghost-button-danger small-button">
+																<span class="material-icons-outlined">
+																	delete_forever
+																</span>
+															</button>
+														</div>
+													</td>
+												</tr>
 												<tr>
 													<th scope="row">2</th>
 													<td>
-														Segundo petitorio
+														contacto@attachmedia.com.pe
 													</td>
 													<td>
-														<button type="button" name="button" class="btn link-button">
-															Eliminar
-														</button>
+														<div class="warp-btn-actions">
+															<button type="button" name="button" class="btn ghost-button small-button">
+																<span class="material-icons-outlined">
+																	edit
+																</span>
+															</button>
+															<button type="button" name="button" class="btn ghost-button-danger small-button">
+																<span class="material-icons-outlined">
+																	delete_forever
+																</span>
+															</button>
+														</div>
 													</td>
 												</tr>
-												<tr>
-													<th scope="row">3</th>
-													<td>
-														Tercer petitorio
-													</td>
-													<td>
-														<button type="button" name="button" class="btn link-button">
-															Eliminar
-														</button>
-													</td>
-												</tr>
-										  </tbody>
+											</tbody>
 										</table>
 
 									</div>
@@ -3810,6 +3822,12 @@
 												<input class="form-check-input" type="radio" name="radioOptionsArbitro" id="arbitroUnico" value="option2">
 												<label class="form-check-label" for="arbitroUnico">
 													El Centro de Arbitraje designe al Árbitro Único
+												</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="radioOptionsArbitro" id="designarArbitro" value="option3">
+												<label class="form-check-label" for="designarArbitro">
+													Designar mi árbitro
 												</label>
 											</div>
 										</div>
