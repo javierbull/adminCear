@@ -668,15 +668,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .text-help {
+  /* background-color: pink; */
   color: var(--danger);
   display: flex;
   align-items: center;
   padding-top: .25rem;
-  display: none;
+  padding-left: .25rem;
+  /* display: none; */
 }
 
 .text-help .material-icons {
   margin-right: .5rem;
+  font-size: 1rem;
 }
 
 .danger-input .form-control, .danger-input .form-select {
