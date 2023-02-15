@@ -182,6 +182,13 @@
   .form-row-btn .col-sm-12, .form-row-btn .btn {
     width: 100%;
   }
+
+  .wrap-designacion-arbitro-options {
+    /* background-color: pink; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap:2rem;
+  }
   /* End Solicitudes */
 }
 

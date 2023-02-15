@@ -1797,11 +1797,17 @@ input[type=number]::-webkit-outer-spin-button {
 /* END SOLICITUD FISICA */
 
 /* SOLICITUD ELECTRÓNICA */
-.warp-btn-actions {
+.wrap-btn-actions {
   /* background-color: lavender; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: .5rem;
+}
+
+.wrap-designacion-arbitro-options {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 /* END SOLICITUD ELECTRÓNICA */
