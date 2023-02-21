@@ -2579,11 +2579,81 @@
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeSolicitudesFisico" aria-expanded="false" aria-controls="collapseThreeSolicitudesFisico">
 										<div class="content-accordion-btn">
 											<span class="accordion-step">3</span>
-											Formato de Inicio del Procedimiento
+											Tipo de arbitraje
 										</div>
 									</button>
 								</h2>
 								<div id="collapseThreeSolicitudesFisico" class="accordion-collapse collapse" aria-labelledby="headingThreeSolicitudesFisico" data-bs-parent="#accordionNuevoProfesional">
+									<div class="accordion-body">
+										<form>
+												<h3 class="col-lg-6 col-md-6">
+													Seleccione las casillas que considere aplicables
+												</h3>
+												<div class="row form-row-top g-3">
+													<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
+														<label for="selectControversiaSf" class="form-label fw-b">Seleccione su Controversia</label>
+
+														<div class="wrap-buttons-contorls-select2 marginBottom-1">
+															<button type="button" name="button" class="btn primary-button small-button">
+																Seleccionar todos
+															</button>
+															<button type="button" name="button" class="btn primary-button small-button">
+																Quitar todos
+															</button>
+														</div>
+
+														<select class="form-select select2-multiple" aria-label="Default select example" id="selectControversiaSf" data-placeholder="Buscar" multiple>
+															<option></option>
+															<option>(DNI) Documento Nacional de Identidad</option>
+															<option>(CE) Carnet de Extranjería)</option>
+														</select>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
+														<label for="selectEspecialidadSf" class="form-label fw-b">Seleccione la Especialidad</label>
+
+														<div class="wrap-buttons-contorls-select2 marginBottom-1">
+															<button type="button" name="button" class="btn primary-button small-button">
+																Seleccionar todos
+															</button>
+															<button type="button" name="button" class="btn primary-button small-button">
+																Quitar todos
+															</button>
+														</div>
+
+														<select class="form-select select2-multiple" aria-label="Default select example" id="selectEspecialidadSf" data-placeholder="Buscar" multiple>
+															<option></option>
+															<option>Contratación Pública</option>
+															<option>Civil</option>
+														</select>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+											</form>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFourSolicitudesFisico">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourSolicitudesFisico" aria-expanded="false" aria-controls="collapseFourSolicitudesFisico">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">4</span>
+											Formato de Inicio del Procedimiento
+										</div>
+									</button>
+								</h2>
+								<div id="collapseFourSolicitudesFisico" class="accordion-collapse collapse" aria-labelledby="headingFourSolicitudesFisico" data-bs-parent="#accordionNuevoSolicitudFisica">
 									<div class="accordion-body">
 										<button type="button" name="button" class="btn btn-outline btn-icon marginBottom-1" data-bs-toggle="modal" data-bs-target="#modalListaRequerimientos">
 											<span class="material-icons-outlined">
