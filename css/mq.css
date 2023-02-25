@@ -88,20 +88,27 @@
 /* Cell landscape */
 @media (max-width: 736px) {
 
+  /* .content-controls-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  } */
+
 }
 
 /* Fin cell landscape */
-/* Small cell landscape */
-@media (max-width: 568px) {
 
-}
-
-/* Fin small cell landscape */
 /* Cell portrait */
 @media (max-width: 480px) {
   .container-mobile{
+    /* background-color: brown; */
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .navbar-cear-menu {
+    width: auto;
   }
 
   .form-login {
