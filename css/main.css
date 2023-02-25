@@ -213,10 +213,11 @@ small {
 
 /* Buttons */
 .btn {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
   font-weight: 600;
   text-align: center;
-  vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -674,7 +675,7 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   padding-top: .25rem;
   padding-left: .25rem;
-  /* display: none; */
+  display: none;
 }
 
 .text-help .material-icons {
@@ -1435,6 +1436,21 @@ input[type=number]::-webkit-outer-spin-button {
 .form-label-admin {
   font-weight: 600;
   margin-bottom: .5rem;
+}
+
+.content-controls-main {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.content-controls-search {
+  /* background-color: #4DADBC; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 /* end content panels */
 
