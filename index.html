@@ -112,6 +112,11 @@
 					<div class="collapse show-" id="Solicitudes-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
 							<li>
+								<a href="#" class="item-collapse rounded showSolicitudesIngresadas">
+									Solicitudes Ingresadas
+								</a>
+							</li>
+							<li>
 								<a href="#" class="item-collapse rounded showSolicitudFisico">
 									Solicitud de Arbitraje Físico
 								</a>
@@ -119,11 +124,6 @@
 							<li>
 								<a href="#" class="item-collapse rounded showSolicitudElectronico">
 									Solicitud de Arbitraje Electrónico
-								</a>
-							</li>
-							<li>
-								<a href="#" class="item-collapse rounded showSolicitudesIngresadas">
-									Solicitudes Ingresadas
 								</a>
 							</li>
 						</ul>
@@ -187,6 +187,12 @@
 						<div class="collapse show-" id="Solicitudes-collapse-mobile">
 							<ul class="btn-toggle-nav sidebar-list-collapse">
 								<li>
+									<a href="#" class="item-collapse rounded showSolicitudesIngresadas"
+										data-bs-dismiss="offcanvas">
+										Solicitudes Ingresadas
+									</a>
+								</li>
+								<li>
 									<a href="#" class="item-collapse rounded showSolicitudFisico"
 										data-bs-dismiss="offcanvas">
 										Solicitud de Arbitraje Físico
@@ -196,12 +202,6 @@
 									<a href="#" class="item-collapse rounded showSolicitudElectronico"
 										data-bs-dismiss="offcanvas">
 										Solicitud de Arbitraje Electrónico
-									</a>
-								</li>
-								<li>
-									<a href="#" class="item-collapse rounded showSolicitudesIngresadas"
-										data-bs-dismiss="offcanvas">
-										Solicitudes Ingresadas
 									</a>
 								</li>
 							</ul>
@@ -1914,30 +1914,36 @@
 						<table class="table">
 							<thead>
 								<tr>
-									<th scope="col">#</th>
-									<th scope="col">Correos</th>
+									<th scope="col"># Expediente</th>
+									<th scope="col">Tipo de Solicitud</th>
+									<th scope="col">Fecha de Registro</th>
+									<th scope="col">Plazo Límite para Respuesta</th>
+									<th scope="col">Asignado</th>
+									<th scope="col">Estado</th>
 									<th scope="col">Acciones</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<th scope="row">1</th>
+									<th scope="row">
+										00022-2022
+									</th>
 									<td>
-										peru@attachmedia.com.pe
+										Solicitud de Arbitraje Físico
 									</td>
 									<td>
-										<button type="button" name="button"
-											class="btn ghost-button-danger small-button">
-											<span class="material-icons-outlined">
-												delete_forever
-											</span>
-										</button>
+										08/01/2023 - 11:23
 									</td>
-								</tr>
-								<tr>
-									<th scope="row">2</th>
 									<td>
-										contacto@attachmedia.com.pe
+										12/01/2023
+									</td>
+									<td>
+										Mesa de Partes
+									</td>
+									<td>
+										<span class="tag tag-warning">
+											Solicitado
+										</span>
 									</td>
 									<td>
 										<button type="button" name="button"
@@ -2976,7 +2982,8 @@
 											<div class="row form-row-top g-3">
 												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
 													<label for="selectControversiaSf" class="form-label fw-b">Seleccione
-														su Controversia</label>
+														su Controversia
+													</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
 														<button type="button" name="button"
