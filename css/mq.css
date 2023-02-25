@@ -88,12 +88,22 @@
 /* Cell landscape */
 @media (max-width: 736px) {
 
-  /* .content-controls-search {
+  .content-controls-search {
+    /* background-color: #4DADBC; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  } */
+  }
+
+  .content-controls-search .wrap-search-input {
+    min-width: 100%;
+  }
+
+  .content-controls-search .btn-filter {
+    width: 100%;
+  }
 
 }
 
@@ -101,6 +111,11 @@
 
 /* Cell portrait */
 @media (max-width: 480px) {
+  .sidebar-mobile {
+    background-color: var(--white);
+    width: 75%;
+  }
+
   .container-mobile{
     /* background-color: brown; */
     padding-left: 1.5rem;
