@@ -96,13 +96,8 @@
 					</button>
 				</li>
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed showSolicitudesIngresadas active-item-sidebar">
-						Mis Solicitudes Ingresadas
-					</button>
-				</li>
-				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#Solicitudes-collapse" aria-expanded="true">
-						Nueva Solicitud
+						Solicitudes
 						<span class="material-icons-outlined">
 							expand_more
 						</span>
@@ -117,6 +112,11 @@
 							<li>
 								<a href="#" class="item-collapse rounded showSolicitudElectronico">
 									Solicitud de Arbitraje Electrónico
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-collapse rounded showSolicitudesIngresadas">
+									Solicitudes Ingresadas
 								</a>
 							</li>
 						</ul>
@@ -166,11 +166,6 @@
 						</button>
 					</li>
 					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed showSolicitudesIngresadas" data-bs-dismiss="offcanvas">
-							Mis Solicitudes Ingresadas
-						</button>
-					</li>
-					<li class="item-sidebar">
 						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse" data-bs-target="#Solicitudes-collapse-mobile" aria-expanded="true">
 							Solicitudes
 							<span class="material-icons-outlined">
@@ -187,6 +182,11 @@
 								<li>
 									<a href="#" class="item-collapse rounded showSolicitudElectronico" data-bs-dismiss="offcanvas">
 										Solicitud de Arbitraje Electrónico
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showSolicitudesIngresadas" data-bs-dismiss="offcanvas">
+										Solicitudes Ingresadas
 									</a>
 								</li>
 							</ul>
@@ -1747,6 +1747,127 @@
 									Guardar cambios
 								</button>
 							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel" id="solicitudes-ingresadas-panel">
+				<div class="row">
+					<div class="header-panel">
+						<small class="title-panel">
+							Solicitudes
+						</small>
+						<h2>
+							Solicitudes Ingresadas
+						</h2>
+					</div>
+
+					<div class="wrap-controls-admin marginBottom-2">
+						<div class="content-controls marginBottom-1">
+							<div class="col-xl-3 col-lg-4 col-md-5 wrap-search-input">
+								<div class="search-input">
+									<input type="text" class="form-control" placeholder="Buscar profesional" aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn material-icons-outlined" type="button">
+										search
+									</button>
+								</div>
+								<small class="text-help">
+									<span class="material-icons">
+										report_problem
+									</span>
+									El usuario es incorrecto
+								</small>
+							</div>
+
+							<button type="button" name="button" class="btn btn-large primary-button showAgregarProfesional">
+								Agregar profesional
+							</button>
+						</div>
+						<div class="content-filtros">
+							<button type="button" name="button" class="btn link-button" data-bs-toggle="modal" data-bs-target="#modalFiltrosProfesionales">
+								Aplicar filtros
+							</button>
+						</div>
+					</div>
+
+					<div class="col-12">
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th scope="col">N°</th>
+										<th scope="col">Nombre del profesional</th>
+										<th scope="col">Profesión</th>
+										<th scope="col">Fecha registro</th>
+										<th scope="col">Venc. registro</th>
+										<th scope="col">Asignado</th>
+										<th scope="col">Habilitado</th>
+										<th scope="col">Favorito</th>
+										<th scope="col">Casos atendidos</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Richard Stephen Lévano Jiménez</td>
+										<td>Abogado</td>
+										<td>22/12/2022</td>
+										<td>22/12/2023</td>
+										<td>
+											<div class="form-check form-switch">
+												<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+											</div>
+										</td>
+										<td>
+											<div class="form-check form-switch">
+												<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+											</div>
+										</td>
+										<td>
+											<div class="form-check form-switch">
+												<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+											</div>
+										</td>
+										<td>10</td>
+										<td>
+											<button type="button" name="button" class="btn link-button">
+												Ver árbitro
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Faraón Love Shady</td>
+										<td>Dios del Trap</td>
+										<td>22/12/2022</td>
+										<td>22/12/2023</td>
+										<td>
+											<div class="form-check form-switch">
+												<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+											</div>
+										</td>
+										<td>
+											<div class="form-check form-switch">
+												<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+											</div>
+										</td>
+										<td>
+											<div class="form-check form-switch">
+												<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+											</div>
+										</td>
+										<td>10</td>
+										<td>
+											<button type="button" name="button" class="btn link-button">
+												Ver árbitro
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 
