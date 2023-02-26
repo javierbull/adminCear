@@ -472,6 +472,34 @@ $(document).ready(function () {
     $("#fieldset-demandado-se-pj").hide();
   });
 
+  $("#datosDemandanteSiPj").click(function () {
+    $("#fieldset-demandante-si-pn").hide();
+    $("#fieldset-demandante-si-pj").show();
+  });
+
+  $("#datosDemandanteSiPn").click(function () {
+    $("#fieldset-demandante-si-pn").show();
+    $("#fieldset-demandante-si-pj").hide();
+  });
+
+  $("#datosDemandadoSiPj").click(function () {
+    $("#fieldset-demandado-si-pn").hide();
+    $("#fieldset-demandado-si-pj").show();
+  });
+
+  $("#datosDemandadoSiPn").click(function () {
+    $("#fieldset-demandado-si-pn").show();
+    $("#fieldset-demandado-si-pj").hide();
+  });
+
+  $("#checkDatosDemandanteRepLegalSiPn").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-datosDemandanteRepLegalSiPn").show();
+    } else {
+      $("#fieldset-datosDemandanteRepLegalSiPn").hide();
+    }
+  });
+
   // END SHOW HIDE CHECKBOX
 
   // SHOW HIDE SELECT

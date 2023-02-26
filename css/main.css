@@ -1256,7 +1256,9 @@ input[type=number]::-webkit-outer-spin-button {
 #content-resumen,
 #fieldset-cuantia-determinada,
 #fieldset-demandante-sf-pj,
-#fieldset-enlaceArchivoPesado-se {
+#fieldset-enlaceArchivoPesado-se,
+#fieldset-datosDemandanteRepLegalSiPn,
+#fieldset-demandante-si-pj {
   display: none;
 }
 
