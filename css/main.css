@@ -228,7 +228,11 @@ small {
   padding: 0.75rem 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  border-radius: 0.25rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -434,13 +438,13 @@ small {
   opacity: 1;
 }
 
-.btn-outline {
+.outline-button {
   background-color: var(--white);
   border: 1px solid var(--primary);
   color: var(--primary);
 }
 
-.btn-outline:hover {
+.outline-button:hover {
   border: 1px solid var(--primary);
   color: var(--primary);
   background-color: var(--primary-extra-light);
@@ -661,11 +665,6 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--primary);
 }
 /* fin form login */
-
-
-.form-control:disabled {
-  opacity: .5;
-}
 
 .text-help {
   /* background-color: pink; */
@@ -1875,3 +1874,55 @@ input[type=number]::-webkit-outer-spin-button {
   gap: 3rem;
 }
 /* END SOLICITUD ELECTRÓNICA */
+
+/* SOLICITUD INGRESADA */
+.card-solicitud {
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.card-solicitud__header {
+  /* background-color: pink; */
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-solicitud__title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-solicitud__body {
+  padding: 1rem;
+}
+
+.card-solicitud-section {
+  margin-bottom: 2rem;
+}
+
+.card-solicitud-section:last-child {
+  margin-bottom: 0;
+}
+
+.card-solicitud-section__header {
+  /* background-color: #4DADBC; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-solicitud-section__header h2 {
+  margin-bottom: 0;
+}
+/* END SOLICITUD INGRESADA */
