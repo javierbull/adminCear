@@ -1,484 +1,520 @@
 "use strict";
 
-$(document).ready(function(){
+$(document).ready(function () {
 
   // SHOW-HIDE PASSWORD
-  $(".toggle-password").click(function() {
+  $(".toggle-password").click(function () {
 
-  $(this).toggleClass("fa-eye fa-eye-slash");
-  var input = $($(this).attr("toggle"));
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
-  } else {
-    input.attr("type", "password");
-  }
-});
-// END SHOW-HIDE PASSWORD
+    $(this).toggleClass("fa-eye fa-eye-slash");
+    var input = $($(this).attr("toggle"));
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
+    }
+  });
+  // END SHOW-HIDE PASSWORD
 
-$("#show-resumen").click(function() {
-  $("#content-sorteo").hide();
-  $("#content-resumen").show();
-});
+  $("#show-resumen").click(function () {
+    $("#content-sorteo").hide();
+    $("#content-resumen").show();
+  });
 
-$("#show-sorteo").click(function() {
-  $("#content-sorteo").show();
-  $("#content-resumen").hide();
-});
+  $("#show-sorteo").click(function () {
+    $("#content-sorteo").show();
+    $("#content-resumen").hide();
+  });
 
-// Admin Dashboard  active item sidebar
-$(".sidebar-admin button").click(function(){
-  $(".active").removeClass("active-item-sidebar");
-});
-// Admin Dashboard  active item sidebar
+  // Admin Dashboard  active item sidebar
+  $(".sidebar-admin button").click(function () {
+    $(".active").removeClass("active-item-sidebar");
+  });
+  // Admin Dashboard  active item sidebar
 
-// Admin panel
-$("#toggle-btn-sidebar").click(function(){
-     $("#admin-panel").toggleClass("ml-panel ml-panel-0");
- });
-// End admin panel
+  // Admin panel
+  $("#toggle-btn-sidebar").click(function () {
+    $("#admin-panel").toggleClass("ml-panel ml-panel-0");
+  });
+  // End admin panel
 
-// SHOW HIDE PANELS
-$(".showProfesionales").click(function() {
-  $("#profesionales-panel").show();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  // SHOW HIDE PANELS
+  $(".showProfesionales").click(function () {
+    $("#profesionales-panel").show();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showAgregarProfesional").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").show();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showAgregarProfesional").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").show();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showDesignacion").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").show();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showDesignacion").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").show();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showAgregarDesignacion").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").show();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showAgregarDesignacion").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").show();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showEspecialidad").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").show();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showEspecialidad").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").show();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showAgregarEspecialidad").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").show();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showAgregarEspecialidad").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").show();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showProfesiones").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").show();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showProfesiones").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").show();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showAgregarProfesion").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").show();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showAgregarProfesion").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").show();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showCasos").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").show();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showCasos").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").show();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showEditarCaso").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").show();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showEditarCaso").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").show();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showUsuarios").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").show();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showUsuarios").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").show();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showEditarUsuario").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").show();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showEditarUsuario").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").show();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showSolicitudFisico").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").show();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showSolicitudFisico").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").show();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showSolicitudElectronico").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").show();
-  $("#solicitudes-ingresadas-panel").hide();
-});
+  $(".showSolicitudElectronico").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").show();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
 
-$(".showSolicitudesIngresadas").click(function() {
-  $("#profesionales-panel").hide();
-  $("#agregarProfesional-panel").hide();
-  $("#designacion-panel").hide();
-  $("#agregarDesignacion-panel").hide();
-  $("#especialidades-panel").hide();
-  $("#agregarEspecialidad-panel").hide();
-  $("#profesiones-panel").hide();
-  $("#agregarProfesion-panel").hide();
-  $("#casos-panel").hide();
-  $("#editar-caso-panel").hide();
-  $("#usuarios-panel").hide();
-  $("#editar-usuario-panel").hide();
-  $("#solicitud-fisico-panel").hide();
-  $("#solicitud-electronico-panel").hide();
-  $("#solicitudes-ingresadas-panel").show();
-});
+  $(".showSolicitudesIngresadas").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").show();
+    $("#detalle-solicitud-ingresada-panel").hide();
+  });
+
+  $(".showDetalleSolicitudIngresada").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").show();
+  });
+
+
   // END SHOW HIDE PANELS
 
-  $('#imgFileLogoEmpresa').change(function(){
-   var curElement = $('#photoProfile');
-   console.log(curElement);
-   var reader = new FileReader();
+  $('#imgFileLogoEmpresa').change(function () {
+    var curElement = $('#photoProfile');
+    console.log(curElement);
+    var reader = new FileReader();
 
-   reader.onload = function (e) {
-       // get loaded data and render thumbnail.
-       curElement.attr('src', e.target.result);
-   };
+    reader.onload = function (e) {
+      // get loaded data and render thumbnail.
+      curElement.attr('src', e.target.result);
+    };
 
-   // read the image file as a data URL.
-   reader.readAsDataURL(this.files[0]);
+    // read the image file as a data URL.
+    reader.readAsDataURL(this.files[0]);
   });
-     // END UPLOAD PICTURE PROFILE
+  // END UPLOAD PICTURE PROFILE
 
-     // Show hide Tag
-     $('#checkContratacionPublicaNp').click(function() {
-       $("#tag-arbitro").toggleClass("flex hide");
-     });
-     // End Show hide Tag
-// End admin dashboard
+  // Show hide Tag
+  $('#checkContratacionPublicaNp').click(function () {
+    $("#tag-arbitro").toggleClass("flex hide");
+  });
+  // End Show hide Tag
+  // End admin dashboard
 
-// SHOW HIDE CHECKBOX
-$("#checkDatosDemandanteRepLegalSfPn").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-datosDemandanteRepLegalSfPn").show();
-  } else {
-    $("#fieldset-datosDemandanteRepLegalSfPn").hide();
-  }
-});
+  // SHOW HIDE CHECKBOX
+  $("#checkDatosDemandanteRepLegalSfPn").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-datosDemandanteRepLegalSfPn").show();
+    } else {
+      $("#fieldset-datosDemandanteRepLegalSfPn").hide();
+    }
+  });
 
-$("#checkDatosDemandanteRepLegalSfPj").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-datosDemandanteRepLegalSfPj").show();
-  } else {
-    $("#fieldset-datosDemandanteRepLegalSfPj").hide();
-  }
-});
+  $("#checkDatosDemandanteRepLegalSfPj").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-datosDemandanteRepLegalSfPj").show();
+    } else {
+      $("#fieldset-datosDemandanteRepLegalSfPj").hide();
+    }
+  });
 
-$("#checkDatosDemandanteRepLegalSePn").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-datosDemandanteRepLegalSePn").show();
-  } else {
-    $("#fieldset-datosDemandanteRepLegalSePn").hide();
-  }
-});
+  $("#checkDatosDemandanteRepLegalSePn").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-datosDemandanteRepLegalSePn").show();
+    } else {
+      $("#fieldset-datosDemandanteRepLegalSePn").hide();
+    }
+  });
 
-$("#checkDatosDemandanteRepLegalSePj").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-datosDemandanteRepLegalSePj").show();
-  } else {
-    $("#fieldset-datosDemandanteRepLegalSePj").hide();
-  }
-});
+  $("#checkDatosDemandanteRepLegalSePj").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-datosDemandanteRepLegalSePj").show();
+    } else {
+      $("#fieldset-datosDemandanteRepLegalSePj").hide();
+    }
+  });
 
-$("#checkShowInputEnlaceSf").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-enlaceArchivoPesado").show();
-  } else {
-    $("#fieldset-enlaceArchivoPesado").hide();
-  }
-});
+  $("#checkShowInputEnlaceSf").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-enlaceArchivoPesado").show();
+    } else {
+      $("#fieldset-enlaceArchivoPesado").hide();
+    }
+  });
 
-$("#checkShowInputEnlaceSe").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-enlaceArchivoPesado-se").show();
-  } else {
-    $("#fieldset-enlaceArchivoPesado-se").hide();
-  }
-});
+  $("#checkShowInputEnlaceSe").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-enlaceArchivoPesado-se").show();
+    } else {
+      $("#fieldset-enlaceArchivoPesado-se").hide();
+    }
+  });
 
-$("#checkDatosRepresentanteLegalSe").click(function() {
-  if ($(this).is(":checked")) {
-    $("#fieldset-DatosRepresntanteLegalSe").show();
-  } else {
-    $("#fieldset-DatosRepresntanteLegalSe").hide();
-  }
-});
+  $("#checkDatosRepresentanteLegalSe").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-DatosRepresntanteLegalSe").show();
+    } else {
+      $("#fieldset-DatosRepresntanteLegalSe").hide();
+    }
+  });
 
-$("#cuantiaDeterminado").click(function() {
-  $("#fieldset-cuantia-determinada").show();
-});
+  $("#cuantiaDeterminado").click(function () {
+    $("#fieldset-cuantia-determinada").show();
+  });
 
-$("#cuantiaIndeterminado").click(function() {
-  $("#fieldset-cuantia-determinada").hide();
-});
+  $("#cuantiaIndeterminado").click(function () {
+    $("#fieldset-cuantia-determinada").hide();
+  });
 
-$("#datosDemandanteSfPj").click(function() {
-  $("#fieldset-demandante-sf-pn").hide();
-  $("#fieldset-demandante-sf-pj").show();
-});
+  $("#datosDemandanteSfPj").click(function () {
+    $("#fieldset-demandante-sf-pn").hide();
+    $("#fieldset-demandante-sf-pj").show();
+  });
 
-$("#datosDemandanteSfPn").click(function() {
-  $("#fieldset-demandante-sf-pn").show();
-  $("#fieldset-demandante-sf-pj").hide();
-});
+  $("#datosDemandanteSfPn").click(function () {
+    $("#fieldset-demandante-sf-pn").show();
+    $("#fieldset-demandante-sf-pj").hide();
+  });
 
-$("#datosDemandadoSfPj").click(function() {
-  $("#fieldset-demandado-sf-pn").hide();
-  $("#fieldset-demandado-sf-pj").show();
-});
+  $("#datosDemandadoSfPj").click(function () {
+    $("#fieldset-demandado-sf-pn").hide();
+    $("#fieldset-demandado-sf-pj").show();
+  });
 
-$("#datosDemandadoSfPn").click(function() {
-  $("#fieldset-demandado-sf-pn").show();
-  $("#fieldset-demandado-sf-pj").hide();
-});
+  $("#datosDemandadoSfPn").click(function () {
+    $("#fieldset-demandado-sf-pn").show();
+    $("#fieldset-demandado-sf-pj").hide();
+  });
 
-$("#datosDemandanteSePj").click(function() {
-  $("#fieldset-demandante-se-pn").hide();
-  $("#fieldset-demandante-se-pj").show();
-});
+  $("#datosDemandanteSePj").click(function () {
+    $("#fieldset-demandante-se-pn").hide();
+    $("#fieldset-demandante-se-pj").show();
+  });
 
-$("#datosDemandanteSePn").click(function() {
-  $("#fieldset-demandante-se-pn").show();
-  $("#fieldset-demandante-se-pj").hide();
-});
+  $("#datosDemandanteSePn").click(function () {
+    $("#fieldset-demandante-se-pn").show();
+    $("#fieldset-demandante-se-pj").hide();
+  });
 
-$("#datosDemandadoSePj").click(function() {
-  $("#fieldset-demandado-se-pn").hide();
-  $("#fieldset-demandado-se-pj").show();
-});
+  $("#datosDemandadoSePj").click(function () {
+    $("#fieldset-demandado-se-pn").hide();
+    $("#fieldset-demandado-se-pj").show();
+  });
 
-$("#datosDemandadoSePn").click(function() {
-  $("#fieldset-demandado-se-pn").show();
-  $("#fieldset-demandado-se-pj").hide();
-});
+  $("#datosDemandadoSePn").click(function () {
+    $("#fieldset-demandado-se-pn").show();
+    $("#fieldset-demandado-se-pj").hide();
+  });
 
-// END SHOW HIDE CHECKBOX
+  // END SHOW HIDE CHECKBOX
 
-// SHOW HIDE SELECT
-$('#comprobanteSelectorSe').change(function(){
+  // SHOW HIDE SELECT
+  $('#comprobanteSelectorSe').change(function () {
     var myID = $(this).val();
-    $('.comprobanteSe').each(function(){
-        myID === $(this).attr('id') ? $(this).show() : $(this).hide();
+    $('.comprobanteSe').each(function () {
+      myID === $(this).attr('id') ? $(this).show() : $(this).hide();
     });
-});
-// END SHOW HIDE SELECT
+  });
+  // END SHOW HIDE SELECT
 
-// ACTIVAR SELECT 2
-$('.select2').select2({
-  theme: "bootstrap-5",
-  width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-  placeholder: $(this).data('placeholder')
-});
+  // ACTIVAR SELECT 2
+  $('.select2').select2({
+    theme: "bootstrap-5",
+    width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+    placeholder: $(this).data('placeholder')
+  });
 
-$('.select2modal').each(function() {
-  $(this).select2({
+  $('.select2modal').each(function () {
+    $(this).select2({
+      theme: "bootstrap-5",
+      width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+      placeholder: $(this).data('placeholder'),
+      dropdownParent: $(this).parent()
+    });
+  });
+
+  $('.select2-multiple').select2({
     theme: "bootstrap-5",
     width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
     placeholder: $(this).data('placeholder'),
-    dropdownParent: $(this).parent()
-  });
-});
-
-$( '.select2-multiple' ).select2( {
-    theme: "bootstrap-5",
-    width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
-    placeholder: $( this ).data( 'placeholder' ),
     closeOnSelect: false,
     allowClear: true,
-} );
+  });
 
-// END ACTIVAR SELECT2
+  // END ACTIVAR SELECT2
 
-// TOOLTIP
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
-// END TOOLTIP
+  // TOOLTIP
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  // END TOOLTIP
 
 
 });

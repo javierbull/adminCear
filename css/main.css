@@ -372,13 +372,11 @@ small {
   /* background-color: salmon; */
   color: var(--primary);
   padding: 0.5rem  0;
-  text-decoration: underline;
   font-weight: 600;
 }
 
 .link-button:hover {
-  color: var(--primary-dark);
-  text-decoration: underline;
+  color: var(--primary-light);
 }
 
 .link-button:focus {
