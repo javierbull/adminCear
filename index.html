@@ -1897,7 +1897,8 @@
 									</button>
 								</div>
 							</div>
-							<button type="button" class="btn btn-outline btn-filter" data-bs-toggle="modal" data-bs-target="#modal-filtrar-solicitudes-ingresadas">
+							<button type="button" class="btn btn-outline btn-filter" data-bs-toggle="modal"
+								data-bs-target="#modalFiltrarSolicitudesIngresadas">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -1946,12 +1947,22 @@
 										</span>
 									</td>
 									<td>
-										<button type="button" name="button"
-											class="btn ghost-button-danger small-button">
-											<span class="material-icons-outlined">
-												delete_forever
-											</span>
-										</button>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modal-solicitud-cargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showSolicitudIngresada">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
 									</td>
 								</tr>
 							</tbody>
@@ -5724,6 +5735,58 @@
 							file_download
 						</span>
 						Descargar
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalFiltrarSolicitudesIngresadas" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5 text-center">
+						Filtrar
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<div class=" marginBottom-1 error-input-">
+							<label for="selectTipoDocumentoDemandanteSf" class="form-label fw-b">
+								Tipo de Solicitud
+							</label>
+							<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoDemandanteSf">
+								<option selected>Seleccione</option>
+								<option>Solicitud de arbitraje físico</option>
+								<option>Solicitud de arbitraje electrónico</option>
+							</select>
+						</div>
+
+						<div class=" marginBottom-1 error-input-">
+							<label for="selectTipoDocumentoDemandanteSf" class="form-label fw-b">
+								Estado
+							</label>
+							<select class="form-select" aria-label="Default select example" id="selectTipoDocumentoDemandanteSf">
+								<option selected>Seleccione</option>
+								<option>Admitido</option>
+								<option>Completado</option>
+								<option>En trámite</option>
+								<option>Observado</option>
+								<option>Solicitado</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						<span class="material-icons-outlined">
+							filter_list
+						</span>
+						Aplicar filtros
 					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cerrar

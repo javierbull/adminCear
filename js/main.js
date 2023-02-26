@@ -215,6 +215,7 @@ $(".showEditarCaso").click(function() {
   $("#editar-usuario-panel").hide();
   $("#solicitud-fisico-panel").hide();
   $("#solicitud-electronico-panel").hide();
+  $("#solicitudes-ingresadas-panel").hide();
 });
 
 $(".showUsuarios").click(function() {
@@ -232,6 +233,7 @@ $(".showUsuarios").click(function() {
   $("#editar-usuario-panel").hide();
   $("#solicitud-fisico-panel").hide();
   $("#solicitud-electronico-panel").hide();
+  $("#solicitudes-ingresadas-panel").hide();
 });
 
 $(".showEditarUsuario").click(function() {
@@ -249,6 +251,7 @@ $(".showEditarUsuario").click(function() {
   $("#editar-usuario-panel").show();
   $("#solicitud-fisico-panel").hide();
   $("#solicitud-electronico-panel").hide();
+  $("#solicitudes-ingresadas-panel").hide();
 });
 
 $(".showSolicitudFisico").click(function() {
@@ -266,6 +269,7 @@ $(".showSolicitudFisico").click(function() {
   $("#editar-usuario-panel").hide();
   $("#solicitud-fisico-panel").show();
   $("#solicitud-electronico-panel").hide();
+  $("#solicitudes-ingresadas-panel").hide();
 });
 
 $(".showSolicitudElectronico").click(function() {
