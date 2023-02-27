@@ -2581,6 +2581,133 @@
 										</div>
 									</div>
 								</section>
+
+								<section class="card-solicitud-section">
+									<div class="card-solicitud-section__header">
+										<h2>
+											Datos de la Solicitud
+										</h2>
+										<button class="btn small-button outline-button">
+											<span class="material-icons-outlined">
+												edit
+											</span>
+											Editar
+										</button>
+										<button class="btn small-button primary-button">
+											<span class="material-icons-outlined">
+												save
+											</span>
+											Guardar
+										</button>
+									</div>
+
+									<div class="card-solicitud-section__body">
+										<form>
+											<div class="row form-row g-3">
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="selectTipoDocumentoDemandadoSiPn"
+														class="form-label fw-b">Asignado
+													</label>
+													<select class="form-select" aria-label="Default select example"
+														id="selectTipoDocumentoDemandadoSiPn" disabled>
+														<option selected>Secretaria General</option>
+														<option>Mesa de Partes</option>
+														<option>Administración</option>
+														<option>Profesional</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputDocumentoDemandadoSiPn"
+														class="form-label fw-b">Fecha de Registro
+													</label>
+													<input type="datetime" class="form-control"
+														id="inputDocumentoDemandadoSiPn" value="2023-02-15 17:00" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputDocumentoDemandadoSiPn"
+														class="form-label fw-b">Plazo Límite Respuesta
+													</label>
+													<input type="date" class="form-control"
+														id="inputDocumentoDemandadoSiPn" value="2023-02-15" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+
+											<div class="table-responsive marginBottom-1">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">#</th>
+															<th scope="col">Acción/th>
+															<th scope="col">Autor</th>
+															<th scope="col">Fecha y Hora</th>
+															<th scope="col">Estado</th>
+															<th scope="col">Acciones</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">
+																00022-2022
+															</th>
+															<td>
+																Respuesta
+															</td>
+															<td>
+																Mesa de Partes
+															</td>
+															<td>
+																08/01/2023 - 11:23
+															</td>
+															<td>
+																<span class="tag tag-inactive">
+																	En Trámite
+																</span>
+															</td>
+															<td>
+																<div class="content-action-btns">
+																	<button type="button" name="button" class="btn ghost-button small-button"
+																		data-bs-toggle="modal" data-bs-target="#modalSolicitudDetalle">
+																		<span class="material-icons-outlined" data-bs-toggle="tooltip"
+																			data-bs-placement="left" title="Detalle">
+																			visibility
+																		</span>
+																	</button>
+																	<button type="button" name="button"
+																		class="btn ghost-button small-button">
+																		<span class="material-icons-outlined" data-bs-toggle="tooltip"
+																			data-bs-placement="left" title="Ver solicitud">
+																			download
+																		</span>
+																	</button>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</form>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -6390,6 +6517,83 @@
 						</span>
 						Aplicar filtros
 					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalSolicitudDetalle" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5 text-center">
+						Detalle Solicitud
+					</h4>
+				</div>
+				<div class="modal-body">
+					<table class="table text-start">
+						<tbody>
+							<tr>
+								<th>
+									Expediente:
+								</th>
+								<td>
+									00020-2022
+								</td>
+							</tr>
+							<tr>
+								<th>
+									Autor:
+								</th>
+								<td>
+									Mesa de Partes
+								</td>
+							</tr>
+							<tr>
+								<th>
+									Fecha de presentación:
+								</th>
+								<td>
+									08/02/2023 - 10:00
+								</td>
+							</tr>
+							<tr>
+								<th>
+									Estado:
+								</th>
+								<td>
+									En Trámite
+								</td>
+							</tr>
+							<tr>
+								<th>
+									Asignado a:
+								</th>
+								<td>
+									Secretaría
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="mb-3">
+						<label for="respuestaSI">
+							Respuesta
+						</label>
+						<textarea class="form-control" id="respuestaSI" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, in.</textarea>
+						<small class="text-help">
+							<span class="material-icons">
+								report_problem
+							</span>
+							Campo obligatorio
+						</small>
+					</div>
+				</div>
+				<div class="modal-footer">
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cerrar
 					</button>
