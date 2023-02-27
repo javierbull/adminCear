@@ -6662,20 +6662,7 @@
 					</h4>
 				</div>
 				<div class="modal-body">
-					<form class="form-modal">
-						<div class="mb-3">
-							<label for="inputFileSi" class="form-label fw-b">
-								Anexar documento
-							</label>
-							<input type="file" class="form-control" id="inputFileSi"
-								aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-							<small class="text-help">
-								<span class="material-icons">
-									report_problem
-								</span>
-								Campo obligatorio
-							</small>
-						</div>
+					<form class="form-modal">	
 
 						<div class="mb-3">
 							<label for="respuestaSI" class="form-label">
@@ -6753,6 +6740,117 @@
 							people
 						</span>
 						Asignar
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalCambiarEstado" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5 text-center">
+						Cambiar Estado
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<div class=" marginBottom-1 error-input-">
+							<label for="modalCambiarEstadoSelectAsignarAreaSi" class="form-label fw-b">
+								Estado
+							</label>
+							<select class="form-select" aria-label="Default select example"
+								id="modalCambiarEstadoSelectAsignarAreaSi">
+								<option selected>Seleccione</option>
+								<option>Admitido</option>
+								<option>Completado</option>
+								<option>En trámite</option>
+								<option>Observado</option>
+								<option>Solicitado</option>
+							</select>
+						</div>
+
+						<div class="mb-3">
+							<label for="modalCambiarEstadoComentarioSI" class="form-label">
+								Comentario
+							</label>
+							<textarea class="form-control" id="modalCambiarEstadoComentarioSI" rows="4" placeholder="Ingrese un comentario"></textarea>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						<span class="material-icons-outlined">
+							swap_horiz
+						</span>
+						Cambiar estado
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalAdjuntarDocumento" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5 text-center">
+						Adjuntar Documento
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<div class="mb-3">
+							<label for="modalAdjuntarDocInputFile" class="form-label fw-b">
+								Anexar documento
+							</label>
+							<input type="file" class="form-control" id="modalAdjuntarDocInputFile"
+								aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+						<div class="mb-3">
+							<label for="modalAdjuntarDocComentario" class="form-label">
+								Respuesta
+							</label>
+							<textarea class="form-control" id="modalAdjuntarDocComentario" rows="4" placeholder="Ingrese su respuesta"></textarea>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						<span class="material-icons-outlined">
+							link
+						</span>
+						Adjuntar Documento
 					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cerrar
