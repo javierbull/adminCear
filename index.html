@@ -2027,33 +2027,173 @@
 
 									<div class="card-solicitud-section__body">
 										<form>
-											<div class="marginBottom-1">
-												<div class="form-check form-check-inline">
-													<input class="form-check-input" type="radio"
-														name="RadioOptionsDemandanteSiPn" id="datosDemandanteSiPn"
-														value="option1" checked disabled>
-													<label class="form-check-label" for="datosDemandanteSiPn">
-														Persona Natural
-													</label>
+											<div class="row form-row g-3">
+												<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
+													<label for="selectTipoDocumentoDemandanteSi"
+														class="form-label fw-b">Tipo de Documento del
+														Demandante</label>
+													<select class="form-select" aria-label="Default select example"
+														id="selectTipoDocumentoDemandanteSi" disabled>
+														<option selected>(DNI) Documento Nacional de Identidad
+														</option>
+														<option value="1">(CE) Carnet de Extranjería)</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
 												</div>
-												<div class="form-check form-check-inline">
-													<input class="form-check-input" type="radio"
-														name="RadioOptionsDemandanteSiPn" id="datosDemandanteSiPj"
-														value="option2" disabled>
-													<label class="form-check-label" for="datosDemandanteSiPj">
-														Persona Jurídica
-													</label>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputDocumentoDemandanteSi"
+														class="form-label fw-b">Número de Documento del
+														Demandante</label>
+													<input type="number" class="form-control"
+														id="inputDocumentoDemandanteSi" value="74589658" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
 												</div>
 											</div>
 
-											<fieldset class="fieldset-demandante-si-pn" id="fieldset-demandante-si-pn">
+											<div class="row form-row g-3">
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputNombreDemandanteSi"
+														class="form-label fw-b">Nombres y Apellidos del
+														Demandante
+													</label>
+													<input type="text" class="form-control"
+														id="inputNombreDemandanteSi" value="Sergio Perez" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputDomicilioDemandanteSf"
+														class="form-label fw-b">Domicilio del Demandante</label>
+													<input type="text" class="form-control"
+														id="inputDomicilioDemandanteSf" value="Av. Arenales 1912, Lince" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputCelularDemandanteSf"
+														class="form-label fw-b">Celulars del Demandante</label>
+													<input type="tel" class="form-control"
+														id="inputCelularDemandanteSf" value="963 325 366" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+
+											<div class="table-responsive marginBottom-1">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">#</th>
+															<th scope="col">Correos</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>
+																peru@attachmedia.com.pe
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>
+																contacto@attachmedia.com.pe
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
+											<fieldset id="fieldset-datosDemandanteRepLegalSiPn">
+												<div class="card-solicitud-section__header">
+													<h2>
+														Representante Legal del Demandante
+													</h2>
+													<button class="btn small-button outline-button">
+														<span class="material-icons-outlined">
+															edit
+														</span>
+														Editar
+													</button>
+													<button class="btn small-button primary-button">
+														<span class="material-icons-outlined">
+															save
+														</span>
+														Guardar
+													</button>
+												</div>
+
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-														<label for="selectTipoDocumentoDemandanteSi"
+														<label for="selectTipoDocumentoFacultatorioSi"
+															class="form-label fw-b">Seleccionar Tipo de Documento
+															Facultatorio</label>
+														<select class="form-select"
+															aria-label="Default select example"
+															id="selectTipoDocumentoFacultatorioSi" disabled>
+															<option>Seleccione</option>
+															<option selected>Escritura Pública</option>
+															<option>Acta Legalizada</option>
+															<option>Copia Literal</option>
+															<option>Copia de la vigencia expedida por los registros
+																públicos</option>
+														</select>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+														<label for="inputCodigoDocumentoFacultatorioSi"
+															class="form-label fw-b">Código del Documento
+															Facultatorio</label>
+														<input type="text" class="form-control"
+															id="inputCodigoDocumentoFacultatorioSi" value="EP121854" disabled>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="row form-row g-3">
+													<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
+														<label for="selectTipoDocumentoRlegalSi"
 															class="form-label fw-b">Tipo de Documento del
-															Demandante</label>
-														<select class="form-select" aria-label="Default select example"
-															id="selectTipoDocumentoDemandanteSi" disabled>
+															Representante Legal</label>
+														<select class="form-select"
+															aria-label="Default select example"
+															id="selectTipoDocumentoRlegalSi" disabled>
 															<option selected>(DNI) Documento Nacional de Identidad
 															</option>
 															<option value="1">(CE) Carnet de Extranjería)</option>
@@ -2067,11 +2207,11 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputDocumentoDemandanteSi"
+														<label for="inputDocumentoRlegalSi"
 															class="form-label fw-b">Número de Documento del
-															Demandante</label>
+															Representante Legal</label>
 														<input type="number" class="form-control"
-															id="inputDocumentoDemandanteSi" value="74589658" disabled>
+															id="inputDocumentoRlegalSi" value="74523658" disabled> 
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2081,217 +2221,13 @@
 													</div>
 												</div>
 
-												<div class="row form-row g-3">
-													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputNombreDemandanteSi"
-															class="form-label fw-b">Nombres y Apellidos del
-															Demandante
-														</label>
-														<input type="text" class="form-control"
-															id="inputNombreDemandanteSi" value="Sergio Perez" disabled>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-
-													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputDomicilioDemandanteSf"
-															class="form-label fw-b">Domicilio del Demandante</label>
-														<input type="text" class="form-control"
-															id="inputDomicilioDemandanteSf" value="Av. Arenales 1912, Lince" disabled>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-
-													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCelularDemandanteSf"
-															class="form-label fw-b">Celulars del Demandante</label>
-														<input type="tel" class="form-control"
-															id="inputCelularDemandanteSf" value="963 325 366" disabled>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-												</div>
-
-												<div class="table-responsive marginBottom-1">
-													<table class="table">
-														<thead>
-															<tr>
-																<th scope="col">#</th>
-																<th scope="col">Correos</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th scope="row">1</th>
-																<td>
-																	peru@attachmedia.com.pe
-																</td>
-															</tr>
-															<tr>
-																<th scope="row">2</th>
-																<td>
-																	contacto@attachmedia.com.pe
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-
-												<fieldset id="fieldset-datosDemandanteRepLegalSiPn">
-													<h3>
-														Representante Legal del Demandante
-													</h3>
-
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="selectTipoDocumentoFacultatorioSi"
-																class="form-label fw-b">Seleccionar Tipo de Documento
-																Facultatorio</label>
-															<select class="form-select"
-																aria-label="Default select example"
-																id="selectTipoDocumentoFacultatorioSi" disabled>
-																<option>Seleccione</option>
-																<option selected>Escritura Pública</option>
-																<option>Acta Legalizada</option>
-																<option>Copia Literal</option>
-																<option>Copia de la vigencia expedida por los registros
-																	públicos</option>
-															</select>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputCodigoDocumentoFacultatorioSi"
-																class="form-label fw-b">Código del Documento
-																Facultatorio</label>
-															<input type="text" class="form-control"
-																id="inputCodigoDocumentoFacultatorioSi" value="EP121854" disabled>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="selectTipoDocumentoRlegalSi"
-																class="form-label fw-b">Tipo de Documento del
-																Representante Legal</label>
-															<select class="form-select"
-																aria-label="Default select example"
-																id="selectTipoDocumentoRlegalSi" disabled>
-																<option selected>(DNI) Documento Nacional de Identidad
-																</option>
-																<option value="1">(CE) Carnet de Extranjería)</option>
-															</select>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputDocumentoRlegalSi"
-																class="form-label fw-b">Número de Documento del
-																Representante Legal</label>
-															<input type="number" class="form-control"
-																id="inputDocumentoRlegalSi" value="74523658" disabled> 
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="inputNombreRlegalSi"
-																class="form-label fw-b">Nombres y Apellidos del
-																Representante Legal</label>
-															<input type="text" class="form-control"
-																id="inputNombreRlegalSi" value="Sergio Perez" disabled>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputCelularRlegalSf"
-																class="form-label fw-b">Celular del Representante
-																Legal</label>
-															<input type="tel" class="form-control"
-																id="inputCelularRlegalSf" value="963 325 366" disabled>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="table-responsive marginBottom-1">
-														<table class="table">
-															<thead>
-																<tr>
-																	<th scope="col">#</th>
-																	<th scope="col">Correos</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<th scope="row">1</th>
-																	<td>
-																		peru@attachmedia.com.pe
-																	</td>
-																</tr>
-																<tr>
-																	<th scope="row">2</th>
-																	<td>
-																		contacto@attachmedia.com.pe
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-
-												</fieldset>
-											</fieldset>
-
-											<fieldset class="fieldset-demandante-si-pj" id="fieldset-demandante-si-pj">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-														<label for="inputRazonSocialDemandanteSiPj"
-															class="form-label fw-b">Razón Social del Demandante</label>
+														<label for="inputNombreRlegalSi"
+															class="form-label fw-b">Nombres y Apellidos del
+															Representante Legal</label>
 														<input type="text" class="form-control"
-															id="inputRazonSocialDemandanteSiPj" value="Attach Media" disabled>
+															id="inputNombreRlegalSi" value="Sergio Perez" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2301,52 +2237,11 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputRucDemandanteSiPj" class="form-label fw-b">RUC
-															del Demandante</label>
-														<input type="number" class="form-control"
-															id="inputRucDemandanteSiPj" value="1245685456" disabled>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-												</div>
-
-												<div class="row form-row g-3">
-													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputDomicilioDemandanteSiPj"
-															class="form-label fw-b">Domicilio del Demandante</label>
-														<input type="text" class="form-control"
-															id="inputDomicilioDemandanteSiPj" value="Av. Javier Prado Este 492, San Isidro 15046" disabled>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-
-													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputCelularDemandanteSiPj"
-															class="form-label fw-b">Celular del Demandante</label>
+														<label for="inputCelularRlegalSf"
+															class="form-label fw-b">Celular del Representante
+															Legal</label>
 														<input type="tel" class="form-control"
-															id="inputCelularDemandanteSiPj" value="963512569" disabled>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-
-													<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-														<label for="inputLinkDemandanteSiPj"
-															class="form-label fw-b">Enlace Mesa de partes
-															(Opcional)</label>
-														<input type="url" class="form-control"
-															id="inputLinkDemandanteSiPj" value="https://www.ilovepdf.com/es/pdf_a_word" disabled>
+															id="inputCelularRlegalSf" value="963 325 366" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -2381,137 +2276,6 @@
 													</table>
 												</div>
 
-												<fieldset id="fieldset-datosDemandanteRepLegalSiPj">
-													<h3>Representante Legal del Demandante</h3>
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="selectTipoDocumentoFacultatorioSiPj"
-																class="form-label fw-b">Seleccionar Tipo de Documento
-																Facultatorio</label>
-															<select class="form-select"
-																aria-label="Default select example"
-																id="selectTipoDocumentoFacultatorioSiPj" disabled>
-																<option>Seleccione</option>
-																<option>Escritura Pública</option>
-																<option>Acta Legalizada</option>
-																<option>Copia Literal</option>
-																<option>Copia de la vigencia expedida por los registros
-																	públicos</option>
-															</select>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputCodigoDocumentoFacultatorioSiPj"
-																class="form-label fw-b">Código del Documento
-																Facultatorio</label>
-															<input type="text" class="form-control"
-																id="inputCodigoDocumentoFacultatorioSiPj" value="EP123545634" disabled>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="selectTipoDocumentoRlegalSiPj"
-																class="form-label fw-b">Tipo de Documento del
-																Representante Legal</label>
-															<select class="form-select"
-																aria-label="Default select example"
-																id="selectTipoDocumentoRlegalSiPj" disabled>
-																<option selected>(DNI) Documento Nacional de Identidad
-																</option>
-																<option value="1">(CE) Carnet de Extranjería)</option>
-															</select>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputDocumentoRlegalSfPj"
-																class="form-label fw-b">Número de Documento del
-																Representante Legal</label>
-															<input type="number" class="form-control"
-																id="inputDocumentoRlegalSfPj" value="13851531" disabled>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="row form-row g-3">
-														<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-															<label for="inputNombreRlegalSiPj"
-																class="form-label fw-b">Nombres y Apellidos del
-																Representante Legal</label>
-															<input type="text" class="form-control"
-																id="inputNombreRlegalSiPj" value="Sergio Perez" disabled>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-
-														<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-															<label for="inputCelularRlegalSiPj"
-																class="form-label fw-b">Celular del Representante
-																Legal</label>
-															<input type="tel" class="form-control"
-																id="inputCelularRlegalSiPj" value="985412563" disabled>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-														</div>
-													</div>
-
-													<div class="table-responsive marginBottom-1">
-														<table class="table">
-															<thead>
-																<tr>
-																	<th scope="col">#</th>
-																	<th scope="col">Correos</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<th scope="row">1</th>
-																	<td>
-																		peru@attachmedia.com.pe
-																	</td>
-																</tr>
-																<tr>
-																	<th scope="row">2</th>
-																	<td>
-																		contacto@attachmedia.com.pe
-																	</td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-
-												</fieldset>
 											</fieldset>
 										</form>
 									</div>
