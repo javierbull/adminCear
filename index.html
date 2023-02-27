@@ -1974,7 +1974,7 @@
 
 			<div class="panel" id="detalle-solicitud-ingresada-panel">
 				<div class="row">
-					<div class="wrap-header-panel col-xl-10 col-lg-12">
+					<div class="wrap-header-panel">
 						<div class="header-panel">
 							<button class="btn link-button showSolicitudesIngresadas">
 								<span class="material-icons-outlined">
@@ -1995,7 +1995,7 @@
 					</div>
 
 
-					<div class="col-xl-10 col-lg-12  marginBottom-2">
+					<div class="marginBottom-2">
 						<div class="card-solicitud">
 							<div class="card-solicitud__header">
 								<h1 class="card-solicitud__title">
@@ -2565,11 +2565,12 @@
 														</td>
 														<td>
 															<div class="content-action-btns">
-																<a href="https://www.iloveimg.com/es" type="button" name="button"
-																	class="btn ghost-button small-button" target="_blank">
+																<a href="https://www.iloveimg.com/es" type="button"
+																	name="button" class="btn ghost-button small-button"
+																	target="_blank">
 																	<span class="material-icons-outlined"
-																		data-bs-toggle="tooltip" data-bs-placement="left"
-																		title="Ir al enlace">
+																		data-bs-toggle="tooltip"
+																		data-bs-placement="left" title="Ir al enlace">
 																		link
 																	</span>
 																</a>
@@ -2628,7 +2629,8 @@
 														class="form-label fw-b">Fecha de Registro
 													</label>
 													<input type="datetime" class="form-control"
-														id="inputDocumentoDemandadoSiPn" value="2023-02-15 17:00" disabled>
+														id="inputDocumentoDemandadoSiPn" value="2023-02-15 17:00"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2685,17 +2687,22 @@
 															</td>
 															<td>
 																<div class="content-action-btns">
-																	<button type="button" name="button" class="btn ghost-button small-button"
-																		data-bs-toggle="modal" data-bs-target="#modalSolicitudDetalle">
-																		<span class="material-icons-outlined" data-bs-toggle="tooltip"
+																	<button type="button" name="button"
+																		class="btn ghost-button small-button"
+																		data-bs-toggle="modal"
+																		data-bs-target="#modalSolicitudDetalle">
+																		<span class="material-icons-outlined"
+																			data-bs-toggle="tooltip"
 																			data-bs-placement="left" title="Detalle">
 																			visibility
 																		</span>
 																	</button>
 																	<button type="button" name="button"
 																		class="btn ghost-button small-button">
-																		<span class="material-icons-outlined" data-bs-toggle="tooltip"
-																			data-bs-placement="left" title="Ver solicitud">
+																		<span class="material-icons-outlined"
+																			data-bs-toggle="tooltip"
+																			data-bs-placement="left"
+																			title="Ver solicitud">
 																			download
 																		</span>
 																	</button>
@@ -2712,7 +2719,27 @@
 						</div>
 					</div>
 
+					<div class="container-fluid">
+						<div class="row">
+
+							<div class="col-12">
+								<div class="taskbar-panel">
+									<div class="taskbar-panel__actions">
+										<button class="btn outline-button">
+											Asignar
+										</button>
+										<button class="btn primary-button">
+											Responder
+										</button>
+									</div>
+								</div>
+		
+							</div>
+						</div>
+					</div>
 				</div>
+				
+
 			</div>
 
 			<div class="panel" id="solicitud-fisico-panel">
@@ -6584,7 +6611,8 @@
 						<label for="respuestaSI">
 							Respuesta
 						</label>
-						<textarea class="form-control" id="respuestaSI" rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, in.</textarea>
+						<textarea class="form-control" id="respuestaSI"
+							rows="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, in.</textarea>
 						<small class="text-help">
 							<span class="material-icons">
 								report_problem
