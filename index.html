@@ -2727,7 +2727,7 @@
 								Descargar
 							</span>
 						</button>
-						<button class="btn outline-button">
+						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalCambiarEstado">
 							<span class="material-icons-outlined">
 								swap_horiz
 							</span>
@@ -2735,7 +2735,7 @@
 								Cambiar Estado
 							</span>
 						</button>
-						<button class="btn outline-button">
+						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalAdjuntarDocumento">
 							<span class="material-icons-outlined">
 								link
 							</span>
@@ -2743,7 +2743,7 @@
 								Adjuntar Documento
 							</span>
 						</button>
-						<button class="btn outline-button">
+						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalAsignar">
 							<span class="material-icons-outlined">
 								people
 							</span>
@@ -2751,7 +2751,7 @@
 								Asignar
 							</span>
 						</button>
-						<button class="btn primary-button">
+						<button class="btn primary-button" data-bs-toggle="modal" data-bs-target="#modalResponderSolicitud">
 							<span class="material-icons-outlined">
 								send
 							</span>
@@ -2761,7 +2761,7 @@
 						</button>
 					</div>
 				</div>
-				
+
 
 			</div>
 
@@ -5830,8 +5830,7 @@
 
 
 	<!-- Modal -->
-	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -6645,6 +6644,62 @@
 					</div>
 				</div>
 				<div class="modal-footer">
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalResponderSolicitud" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5 text-center">
+						Responder
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<div class="mb-3">
+							<label for="inputFileSi" class="form-label fw-b">
+								Anexar documento
+							</label>
+							<input type="file" class="form-control" id="inputFileSi"
+								aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+						<div class="mb-3">
+							<label for="respuestaSI" class="form-label">
+								Respuesta
+							</label>
+							<textarea class="form-control" id="respuestaSI" rows="4" placeholder="Ingrese su respuesta"></textarea>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						<span class="material-icons-outlined">
+							send
+						</span>
+						Enviar Respuesta
+					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cerrar
 					</button>

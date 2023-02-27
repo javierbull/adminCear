@@ -83,6 +83,10 @@
     margin-bottom: 1rem;
   }
 
+  .taskbar-panel {
+    padding: 0 1.5rem;
+  }
+
   .taskbar-panel__text-button {
     display: none;
   }
