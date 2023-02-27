@@ -82,6 +82,12 @@
   .wrap-header-panel .header-panel {
     margin-bottom: 1rem;
   }
+
+  .taskbar-panel__text-button {
+    display: none;
+  }
+  
+
 }
 
 /* fin tablet portrait */
