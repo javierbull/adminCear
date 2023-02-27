@@ -2743,7 +2743,7 @@
 								Adjuntar Documento
 							</span>
 						</button>
-						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalAsignar">
+						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalAsignarSolicitud">
 							<span class="material-icons-outlined">
 								people
 							</span>
@@ -6699,6 +6699,60 @@
 							send
 						</span>
 						Enviar Respuesta
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalAsignarSolicitud" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5 text-center">
+						Asignar
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<div class=" marginBottom-1 error-input-">
+							<label for="selectAsignarAreaSi" class="form-label fw-b">
+								Asignar
+							</label>
+							<select class="form-select" aria-label="Default select example"
+								id="selectAsignarAreaSi">
+								<option selected>Seleccione</option>
+								<option>Secretaria</option>
+								<option>Mesa de partes</option>
+								<option>Administración</option>
+								<option>Profesional</option>
+							</select>
+						</div>
+
+						<div class="mb-3">
+							<label for="modalComentarioSI" class="form-label">
+								Comentario
+							</label>
+							<textarea class="form-control" id="modalComentarioSI" rows="4" placeholder="Ingrese un comentario"></textarea>
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						<span class="material-icons-outlined">
+							people
+						</span>
+						Asignar
 					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cerrar
