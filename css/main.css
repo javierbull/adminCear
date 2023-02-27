@@ -517,6 +517,10 @@ input[type=number]::-webkit-outer-spin-button {
 .form-row-top {
   align-items: flex-start;
 }
+
+.form-check-input:disabled~.form-check-label, .form-check-input[disabled]~.form-check-label {
+  opacity: .7;
+}
 /* END FORMS */
 
 /* Fin Estilos Generales */
