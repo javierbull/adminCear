@@ -1459,9 +1459,19 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: .5rem;
 }
 
-.header-panel h2 {
-  font-weight: 600;
+.wrap-header-panel__title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
+
+.header-panel__title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+
+
 
 .wrap-controls-admin {
   /* background-color: yellowgreen; */
@@ -1548,10 +1558,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .content-accordion-btn {
-  /* background-color: pink; */
+  background-color: pink;
   display:flex;
   align-items: center;
   text-transform: uppercase;
+  gap: 1rem;
 }
 
 .accordion-step {
@@ -1563,7 +1574,6 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   text-align: center;
   line-height: 2rem;
-  margin-right: .5rem;
   border-radius: 50%;
 }
 /* End Accordion */
@@ -1890,6 +1900,7 @@ input[type=number]::-webkit-outer-spin-button {
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
+  overflow: hidden;
 }
 
 .card-solicitud__header {
@@ -1908,10 +1919,6 @@ input[type=number]::-webkit-outer-spin-button {
   text-transform: uppercase;
 }
 
-.card-solicitud__body {
-  padding: 1rem;
-}
-
 .card-solicitud-section {
   margin-bottom: 2rem;
 }
@@ -1925,12 +1932,18 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   gap: 1rem;
   align-items: center;
-  margin-bottom: 1rem;
   flex-wrap: wrap;
+  border-top: solid 1px var(--primary );
+  border-bottom: solid 1px var(--primary);
+  padding: 1rem;
 }
 
-.card-solicitud-section__header h2 {
+.card-solicitud-section__title {
   margin-bottom: 0;
+}
+
+.card-solicitud-section__body {
+  padding: 1rem;
 }
 
 .taskbar-panel {
