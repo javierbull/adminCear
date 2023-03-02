@@ -2313,6 +2313,89 @@
 										</form>
 									</div>
 								</section>
+
+								<section class="card-solicitud-section">
+									<div class="card-solicitud-section__header">
+										<h2 class="card-solicitud-section__title">
+											Emisión de Comprobante
+										</h2>
+										<button class="btn small-button outline-button">
+											<span class="material-icons-outlined">
+												edit
+											</span>
+											Editar
+										</button>
+										<button class="btn small-button primary-button">
+											<span class="material-icons-outlined">
+												save
+											</span>
+											Guardar
+										</button>
+									</div>
+
+									<div class="card-solicitud-section__body">
+										<form>
+											<div class="row form-row g-3">
+												<div class="col-lg-4 col-md-6 marginBottom-1">
+													<label for="comprobanteSelectorSeSi" class="form-label fw-b">Tipo de
+														Comprobante</label>
+													<select class="form-select" aria-label="Default select example"
+														id="comprobanteSelectorSeSi" disabled>
+														<option value="comprobanteDNISeSi">Boleta</option>
+														<option value="comprobanteFacturaSeSi" selected>Factura</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 comprobanteSeSi"
+													id="comprobanteDNIseSi">
+													<label for="inputComprobanteDNISeSi"
+														class="form-label fw-b">DNI</label>
+													<input type="number" class="form-control"
+														id="inputComprobanteDNISeSi" value="7458652" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 comprobanteSeSi"
+													id="comprobanteFacturaseSi">
+													<label for="inputComprobanteFacturaSeSi"
+														class="form-label fw-b">Factura</label>
+													<input type="number" class="form-control"
+														id="inputComprobanteFacturaSeSi" value="412562545" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
+													<label for="inputComprobanteRazonSocialSeSi"
+														class="form-label fw-b">Razón Social</label>
+													<input type="text" class="form-control"
+														id="inputComprobanteRazonSocialSeSi" value="Medium" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+										</form>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>

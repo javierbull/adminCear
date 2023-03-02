@@ -1843,11 +1843,12 @@ input[type=number]::-webkit-outer-spin-button {
 #fieldset-datosDemandanteRepLegalSfPn,
 #fieldset-datosDemandanteRepLegalSePn,
 #fieldset-enlaceArchivoPesado,
- .comprobanteSe {
+ .comprobanteSe,
+ .comprobanteSeSi {
   display: none;
 }
 
-#comprobanteDNIse {
+#comprobanteDNIse, #comprobanteFacturaseSi {
   display: block;
 }
 
