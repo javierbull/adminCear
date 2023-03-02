@@ -55,6 +55,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showAgregarProfesional").click(function () {
@@ -74,6 +75,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showDesignacion").click(function () {
@@ -93,6 +95,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showAgregarDesignacion").click(function () {
@@ -112,6 +115,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showEspecialidad").click(function () {
@@ -131,6 +135,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showAgregarEspecialidad").click(function () {
@@ -150,6 +155,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showProfesiones").click(function () {
@@ -169,6 +175,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showAgregarProfesion").click(function () {
@@ -188,6 +195,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showCasos").click(function () {
@@ -207,6 +215,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showEditarCaso").click(function () {
@@ -226,6 +235,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showUsuarios").click(function () {
@@ -245,6 +255,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showEditarUsuario").click(function () {
@@ -264,6 +275,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showSolicitudFisico").click(function () {
@@ -283,6 +295,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showSolicitudElectronico").click(function () {
@@ -302,6 +315,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").show();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showSolicitudesIngresadas").click(function () {
@@ -321,6 +335,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").show();
     $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresada").click(function () {
@@ -340,6 +355,27 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel").hide();
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").show();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
+  });
+
+  $(".showDetalleSolicitudIngresadaElectronico").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").show();
   });
 
 
