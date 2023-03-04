@@ -3499,6 +3499,26 @@
 												</div>
 											</div>
 
+											<div class="col-12 marginBottom-1 error-input-">
+												<label for="inputcorreoDemandanteSfPnSi"
+													class="form-label fw-b">Correo del Demandante</label>
+												<div class="input-group">
+													<input type="email" class="form-control"
+														id="inputcorreoDemandanteSfPnSi"
+														placeholder="Ingrese un correo"
+														aria-label="Registre un correo"
+														aria-describedby="button-addon-correo" disabled>
+													<button class="btn outline-button" type="button"
+														id="button-addon-correo" disabled>Agregar</button>
+												</div>
+												<small class="text-help">
+													<span class="material-icons">
+														report_problem
+													</span>
+													Campo obligatorio
+												</small>
+											</div>
+
 											<div class="table-responsive marginBottom-1">
 												<table class="table">
 													<thead>
@@ -3650,6 +3670,26 @@
 												</div>
 											</div>
 
+											<div class="col-12 marginBottom-1 error-input-">
+												<label for="inputcorreoDemandanteRlSfPnSi"
+													class="form-label fw-b">Correo del Representante legal del Demandante</label>
+												<div class="input-group">
+													<input type="email" class="form-control"
+														id="inputcorreoDemandanteRlSfPnSi"
+														placeholder="Ingrese un correo"
+														aria-label="Registre un correo"
+														aria-describedby="button-addon-correo" disabled>
+													<button class="btn outline-button" type="button"
+														id="button-addon-correo" disabled>Agregar</button>
+												</div>
+												<small class="text-help">
+													<span class="material-icons">
+														report_problem
+													</span>
+													Campo obligatorio
+												</small>
+											</div>
+
 											<div class="table-responsive marginBottom-1">
 												<table class="table">
 													<thead>
@@ -3746,6 +3786,26 @@
 												</div>
 											</div>
 
+											<div class="col-12 marginBottom-1 error-input-">
+												<label for="inputcorreoDemandadoSfPnSi"
+													class="form-label fw-b">Correo del Demandado</label>
+												<div class="input-group">
+													<input type="email" class="form-control"
+														id="inputcorreoDemandadoSfPnSi"
+														placeholder="Ingrese un correo"
+														aria-label="Registre un correo"
+														aria-describedby="button-addon-correo" disabled>
+													<button class="btn outline-button" type="button"
+														id="button-addon-correo" disabled>Agregar</button>
+												</div>
+												<small class="text-help">
+													<span class="material-icons">
+														report_problem
+													</span>
+													Campo obligatorio
+												</small>
+											</div>
+
 											<div class="table-responsive marginBottom-1">
 												<table class="table">
 													<thead>
@@ -3809,37 +3869,73 @@
 									</div>
 
 									<div class="card-solicitud-section__body">
-										<div class="table-responsive marginBottom-1">
-											<table class="table">
-												<thead>
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">Controversia</th>
-														<th scope="col">Especialidad</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th scope="row">1</th>
-														<td>
-															de Derecho
-														</td>
-														<td>
-															Contratación Pública
-														</td>
-													</tr>
-													<tr>
-														<th scope="row">2</th>
-														<td>
-															Nacional
-														</td>
-														<td>
-															Civil
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
+										<form>
+											<h3 class="col-lg-6 col-md-6">
+												Seleccione las casillas que considere aplicables
+											</h3>
+											<div class="row form-row-top g-3">
+												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
+													<label for="selectControversiaSfSi" class="form-label fw-b">Seleccione
+														su Controversia
+													</label>
+
+													<div class="wrap-buttons-contorls-select2 marginBottom-1">
+														<button type="button" name="button"
+															class="btn primary-button small-button" disabled>
+															Seleccionar todos
+														</button>
+														<button type="button" name="button"
+															class="btn primary-button small-button" disabled>
+															Quitar todos
+														</button>
+													</div>
+
+													<select class="form-select select2-multiple"
+														aria-label="Default select example" id="selectControversiaSfSi"
+														data-placeholder="Buscar" multiple disabled>
+														<option></option>
+														<option selected>(DNI) Documento Nacional de Identidad</option>
+														<option selected>(CE) Carnet de Extranjería)</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
+													<label for="selectEspecialidadSfSi" class="form-label fw-b">Seleccione
+														la Especialidad</label>
+
+													<div class="wrap-buttons-contorls-select2 marginBottom-1">
+														<button type="button" name="button"
+															class="btn primary-button small-button" disabled>
+															Seleccionar todos
+														</button>
+														<button type="button" name="button"
+															class="btn primary-button small-button" disabled>
+															Quitar todos
+														</button>
+													</div>
+
+													<select class="form-select select2-multiple"
+														aria-label="Default select example" id="selectEspecialidadSfSi"
+														data-placeholder="Buscar" multiple disabled>
+														<option></option>
+														<option selected>Contratación Pública</option>
+														<option selected>Civil</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+										</form>
 									</div>
 								</section>
 
@@ -3851,95 +3947,125 @@
 									</div>
 
 									<div class="card-solicitud-section__body">
-										<div class="table-responsive marginBottom-1">
-											<table class="table">
-												<thead>
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">Archivo</th>
-														<th scope="col">Folios</th>
-														<th scope="col">Peso</th>
-														<th scope="col">Acciones</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th scope="row">1</th>
-														<td>
-															archivo1.pdf
-														</td>
-														<td>
-															10
-														</td>
-														<td>
-															10 mb
-														</td>
-														<td>
-															<button type="button" name="button"
-																class="btn ghost-button small-button"
-																data-bs-toggle="modal"
-																data-bs-target="#modalSolicitudCargo">
-																<span class="material-icons-outlined"
-																	data-bs-toggle="tooltip" data-bs-placement="left"
-																	title="Descargar">
-																	file_download
-																</span>
-															</button>
-														</td>
-													</tr>
-													<tr>
-														<th scope="row">2</th>
-														<td>
-															archivo2.pdf
-														</td>
-														<td>
-															20
-														</td>
-														<td>
-															15 mb
-														</td>
-														<td>
-															<button type="button" name="button"
-																class="btn ghost-button small-button"
-																data-bs-toggle="modal"
-																data-bs-target="#modalSolicitudCargo">
-																<span class="material-icons-outlined"
-																	data-bs-toggle="tooltip" data-bs-placement="left"
-																	title="Descargar">
-																	file_download
-																</span>
-															</button>
-														</td>
-													</tr>
-												<tfoot>
-													<tr>
-														<td></td>
-														<td>
-															Total
-														</td>
-														<td>
-															30
-														</td>
-														<td>
-															25 mb
-														</td>
-														<td>
-															<button type="button" name="button"
-																class="btn ghost-button small-button"
-																data-bs-toggle="modal"
-																data-bs-target="#modalSolicitudCargo">
-																<span class="material-icons-outlined"
-																	data-bs-toggle="tooltip" data-bs-placement="left"
-																	title="Descargar todo">
-																	file_download
-																</span>
-															</button>
-														</td>
-													</tr>
-												</tfoot>
-												</tbody>
-											</table>
-										</div>
+										<button type="button" name="button"
+											class="btn outline-button btn-icon marginBottom-1" data-bs-toggle="modal"
+											data-bs-target="#modalListaRequerimientos">
+											<span class="material-icons-outlined">
+												visibility
+											</span>
+											Ver Lista de Requerimientos
+										</button>
+										<form>
+											<div class="form-row-btn">
+												<div class="col">
+													<label for="inputFileSfSi" class="form-label fw-b">Documento PDF (El
+														total de archivos no deben exceder los 30mb)</label>
+													<input type="file" class="form-control" id="inputFileSfSi"
+														aria-describedby="inputGroupFileAddon04" aria-label="Upload" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-3 col-md-3 col-sm-12">
+													<label for="inputFoliosSfSi" class="form-label fw-b">Total de
+														Folios</label>
+													<input type="number" class="form-control" id="inputFoliosSfSi" value="100" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<button type="button" name="button" class="btn outline-button"
+													data-bs-toggle="modal" data-bs-target="#modalAvisoPesoArchivos">
+													Agregar
+												</button>
+											</div>
+
+											<div class="table-responsive marginBottom-1">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">#</th>
+															<th scope="col">Archivo</th>
+															<th scope="col">Folios</th>
+															<th scope="col">Peso</th>
+															<th scope="col">Acciones</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>
+																archivo1.pdf
+															</td>
+															<td>
+																10
+															</td>
+															<td>
+																10 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		file_download
+																	</span>
+																</button>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>
+																archivo2.pdf
+															</td>
+															<td>
+																20
+															</td>
+															<td>
+																15 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		file_download
+																	</span>
+																</button>
+															</td>
+														</tr>
+													<tfoot>
+														<tr>
+															<td></td>
+															<td>
+																Total
+															</td>
+															<td>
+																30
+															</td>
+															<td>
+																25 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		file_download
+																	</span>
+																</button>
+															</td>
+														</tr>
+													</tfoot>
+													</tbody>
+												</table>
+											</div>
+										</form>
 
 										<div class="table-responsive marginBottom-1">
 											<table class="table">
@@ -5167,7 +5293,7 @@
 										aria-controls="collapseThreeSolicitudesFisico">
 										<div class="content-accordion-btn">
 											<span class="accordion-step">3</span>
-											Tipo de arbitraje
+											Tipo de Servicio
 										</div>
 									</button>
 								</h2>

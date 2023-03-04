@@ -306,7 +306,7 @@ small {
 
 .primary-button.disabled, .primary-button:disabled {
   background-color: var(--background);
-  color: var(--white);
+  color: var(--grey-dark);
   opacity: 1;
 }
 
