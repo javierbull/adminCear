@@ -452,6 +452,14 @@ $(document).ready(function () {
     }
   });
 
+  $("#checkShowInputEnlaceSeSi").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-enlaceArchivoPesado-se-si").show();
+    } else {
+      $("#fieldset-enlaceArchivoPesado-se-si").hide();
+    }
+  });
+
   $("#checkDatosRepresentanteLegalSe").click(function () {
     if ($(this).is(":checked")) {
       $("#fieldset-DatosRepresntanteLegalSe").show();

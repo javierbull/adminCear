@@ -3076,6 +3076,189 @@
 										</div>
 									</div>
 								</section>
+
+								<section class="card-solicitud-section">
+									<div class="card-solicitud-section__header">
+										<h2 class="card-solicitud-section__title">
+											Anexos
+										</h2>
+										<button class="btn small-button outline-button">
+											<span class="material-icons-outlined">
+												edit
+											</span>
+											Editar
+										</button>
+										<button class="btn small-button primary-button">
+											<span class="material-icons-outlined">
+												save
+											</span>
+											Guardar
+										</button>
+									</div>
+
+									<div class="card-solicitud-section__body">
+										<button type="button" name="button"
+											class="btn outline-button btn-icon marginBottom-1" data-bs-toggle="modal"
+											data-bs-target="#modalListaRequerimientos">
+											<span class="material-icons-outlined">
+												visibility
+											</span>
+											Ver Lista de Requerimientos
+										</button>
+										<form>
+											<div class="form-row-btn">
+												<div class="col">
+													<label for="inputFileSeSi" class="form-label fw-b">Documento PDF (El
+														total de archivos no deben exceder los 30 mb)</label>
+													<input type="file" class="form-control " id="inputFileSeSi"
+														aria-describedby="inputGroupFileAddon04" aria-label="Upload" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-3 col-md-3 col-sm-12">
+													<label for="inputFoliosSeSi" class="form-label fw-b">Total de
+														Folios</label>
+													<input type="number" class="form-control" id="inputFoliosSeSi" value="100" disabled>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<button type="button" name="button" class="btn outline-button"
+													data-bs-toggle="modal" data-bs-target="#modalAvisoPesoArchivos" disabled>
+													Agregar
+												</button>
+											</div>
+
+											<div class="table-responsive marginBottom-1">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">#</th>
+															<th scope="col">Archivo</th>
+															<th scope="col">Folios</th>
+															<th scope="col">Peso</th>
+															<th scope="col">Acciones</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>
+																archivo1.pdf
+															</td>
+															<td>
+																10
+															</td>
+															<td>
+																10 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button" disabled>
+																	<span class="material-icons-outlined">
+																		delete_forever
+																	</span>
+																</button>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>
+																archivo2.pdf
+															</td>
+															<td>
+																20
+															</td>
+															<td>
+																15 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button" disabled>
+																	<span class="material-icons-outlined">
+																		delete_forever
+																	</span>
+																</button>
+															</td>
+														</tr>
+													<tfoot>
+														<tr>
+															<td></td>
+															<td>
+																Total
+															</td>
+															<td>
+																30
+															</td>
+															<td>
+																25 mb
+															</td>
+															<td></td>
+														</tr>
+													</tfoot>
+													</tbody>
+												</table>
+											</div>
+
+											<div class="wrap-form-tooltip">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="checkShowInputEnlaceSeSi" disabled>
+													<label class="form-check-label" for="checkShowInputEnlaceSeSi">
+														Mi archivo pesa más de 30 Mb
+													</label>
+												</div>
+												<span class="material-icons" data-bs-toggle="tooltip"
+													data-bs-placement="right"
+													title="Marque la casilla para ingresar link del archivo">
+													help
+												</span>
+											</div>
+
+											<fieldset id="fieldset-enlaceArchivoPesado-se-si">
+												<div class="row form-row g-3">
+													<div class="col-lg-10 col-md-8 marginBottom-1 error-input-">
+														<label for="inputNombresDemandadoSeSi"
+															class="form-label fw-b">Enlace para enviar archivos pesados
+															(Google Drive, OneDrive, WeTransfer, Mega, Dropbox, etc.),
+															recuerde habilitar los permisos</label>
+														<input type="url" class="form-control"
+															placeholder="Ingrese url del documento"
+															id="inputNombresDemandadoSeSi">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-2 col-md-4 marginBottom-1 error-input-">
+														<label for="inputCorreoDemandadoSeSi"
+															class="form-label fw-b">Total de Folios</label>
+														<input type="email" class="form-control"
+															id="inputCorreoDemandadoSeSi">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>
