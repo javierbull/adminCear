@@ -468,6 +468,14 @@ $(document).ready(function () {
     $("#fieldset-cuantia-determinada").hide();
   });
 
+  $("#cuantiaDeterminadoSi").click(function () {
+    $("#fieldset-cuantia-determinada-Si").show();
+  });
+
+  $("#cuantiaIndeterminadoSi").click(function () {
+    $("#fieldset-cuantia-determinada-Si").hide();
+  });
+
   $("#datosDemandanteSfPj").click(function () {
     $("#fieldset-demandante-sf-pn").hide();
     $("#fieldset-demandante-sf-pj").show();

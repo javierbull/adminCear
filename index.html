@@ -2843,6 +2843,97 @@
 										</form>
 									</div>
 								</section>
+
+								<section class="card-solicitud-section">
+									<div class="card-solicitud-section__header">
+										<h2 class="card-solicitud-section__title">
+											Cuantía
+										</h2>
+										<button class="btn small-button outline-button">
+											<span class="material-icons-outlined">
+												edit
+											</span>
+											Editar
+										</button>
+										<button class="btn small-button primary-button">
+											<span class="material-icons-outlined">
+												save
+											</span>
+											Guardar
+										</button>
+									</div>
+
+									<div class="card-solicitud-section__body">
+										<h3>
+											Se estima que el importe controvertido en el presente arbitraje asciende a:
+										</h3>
+
+										<div class="col-12 marginBottom-1 error-input-">
+											<label for="inputPetitorioSe" class="form-label fw-b">Tipo de
+												Cuantía</label>
+											<div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio"
+														name="radioOptionsCuantiaSi" id="cuantiaIndeterminadoSi"
+														value="option1" checked disabled> 
+													<label class="form-check-label"
+														for="cuantiaIndeterminadoSi">Indeterminado</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio"
+														name="radioOptionsCuantiaSi" id="cuantiaDeterminadoSi"
+														value="option2" disabled>
+													<label class="form-check-label"
+														for="cuantiaDeterminadoSi">Determinado</label>
+												</div>
+											</div>
+										</div>
+
+										<fieldset id="fieldset-cuantia-determinada-Si">
+											<div class="row form-row g-3">
+												<div class="col-lg-3 col-md-6 col-md-6 marginBottom-1 error-input-">
+													<label for="selectTipoMonedaSeSi"
+														class="form-label fw-b">Moneda</label>
+													<select class="form-select" aria-label="Default select example"
+														id="selectTipoMonedaSeSi">
+														<option selected>S/ SOL</option>
+														<option value="1">$ DOLAR</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-3 col-md-6 col-md-6 marginBottom-1 error-input-">
+													<label for="inputImporteNumeroSeSi" class="form-label fw-b">Importe en
+														Números</label>
+													<input type="text" class="form-control" id="inputImporteNumeroSeSi">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-6 marginBottom-1 error-input-">
+													<label for="inputImporteLetrasSeSi" class="form-label fw-b">Importe en
+														Letras</label>
+													<input type="text" class="form-control" id="inputImporteLetrasSeSi">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+										</fieldset>
+									</div>
+								</section>
 							</div>
 						</div>
 					</div>
@@ -6326,7 +6417,7 @@
 										data-bs-target="#collapseNineSolicitudElectronico">
 										<div class="content-accordion-btn">
 											<span class="accordion-step">9</span>
-											Cuantia
+											Cuantía
 										</div>
 									</button>
 								</h2>
