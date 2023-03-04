@@ -304,8 +304,8 @@ small {
   box-shadow: 0 0 0 0.25rem rgba(16, 158, 181, 0.5);
 }
 
-.primary-button.disabled {
-  background-color: var(--grey);
+.primary-button.disabled, .primary-button:disabled {
+  background-color: var(--background);
   color: var(--white);
   opacity: 1;
 }
@@ -330,8 +330,8 @@ small {
   box-shadow: 0 0 0 0.25rem var(--danger-light);
 }
 
-.ghost-button-danger.disabled {
-  background-color: var(--grey);
+.ghost-button-danger.disabled, .ghost-button-danger:disabled {
+  background-color: var(--background);
   color: var(--grey-dark);
   opacity: 1;
 }
@@ -356,8 +356,8 @@ small {
   box-shadow: 0 0 0 0.25rem var(--primary-extra-light);
 }
 
-.ghost-button.disabled {
-  background-color: var(--grey);
+.ghost-button.disabled, .ghost-button:disabled {
+  background-color: var(--background);
   color: var(--grey-dark);
   opacity: 1;
 }
@@ -388,7 +388,7 @@ small {
   text-decoration: underline;
 }
 
-.link-button.disabled {
+.link-button.disabled, .link-button:disabled {
   color: var(--grey);
   text-decoration: underline;
 }
@@ -411,7 +411,7 @@ small {
   text-decoration: underline;
 }
 
-.link-button-danger.disabled {
+.link-button-danger.disabled, .link-button-danger:disabled {
   color: var(--grey);
   text-decoration: underline;
 }
@@ -425,15 +425,15 @@ small {
   background-color: var(--grey-light);
 }
 
-.btn-light:focus, .btn-light.focus {
+.light-button:focus, .light-button.focus {
   color: var(--dark);
   background-color: var(--grey-light);
   border-color: var(--grey-light);
   box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
-.btn-light.disabled, .btn-light:disabled {
-  background-color: var(--grey);
+.light-button.disabled, .light-button:disabled {
+  background-color: var(--background);
   color: var(--white);
   opacity: 1;
 }
@@ -448,6 +448,13 @@ small {
   border: 1px solid var(--primary);
   color: var(--primary);
   background-color: var(--primary-extra-light);
+}
+
+.outline-button.disabled, .outline-button:disabled {
+  border: 1px solid var(--grey);
+  background-color: var(--background);
+  color: var(--grey);
+  opacity: 1;
 }
 
 .btn-icon {
@@ -1937,6 +1944,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .card-solicitud-section__title {
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .card-solicitud-section__body {
