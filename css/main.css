@@ -310,6 +310,29 @@ small {
   opacity: 1;
 }
 
+.danger-button {
+  background-color: var(--danger);
+  color: var(--grey-light);
+}
+
+.danger-button:hover {
+  background-color: var(--danger-dark);
+  color: var(--grey-light);
+}
+
+.danger-button:focus {
+  background-color: var(--danger);
+  color: var(--white);
+  border-color: var(--danger-dark);
+  box-shadow: 0 0 0 0.25rem rgba(16, 158, 181, 0.5);
+}
+
+.danger-button.disabled, .danger-button:disabled {
+  background-color: var(--background);
+  color: var(--grey-dark);
+  opacity: 1;
+}
+
 .ghost-button-danger {
   background-color: transparent;
   color: var(--primary-dark);
