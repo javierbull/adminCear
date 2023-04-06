@@ -222,6 +222,17 @@
     gap:2rem;
   }
   /* End Solicitudes */
+
+  /* Costos arbitrales */
+  .wrap-controls-cosotos-arbitrales {
+    /* background-color: pink; */
+    justify-content: center;
+  }
+
+  .wrap-controls-cosotos-arbitrales .btn {
+    width: 100%;
+  }
+  /* End costos arbitrales */
 }
 
 /* Fin cell portrait */
