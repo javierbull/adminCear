@@ -56,6 +56,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showAgregarProfesional").click(function () {
@@ -76,6 +77,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showDesignacion").click(function () {
@@ -96,6 +98,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showAgregarDesignacion").click(function () {
@@ -116,6 +119,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showEspecialidad").click(function () {
@@ -136,6 +140,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showAgregarEspecialidad").click(function () {
@@ -156,6 +161,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showProfesiones").click(function () {
@@ -176,6 +182,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showAgregarProfesion").click(function () {
@@ -196,6 +203,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showCasos").click(function () {
@@ -216,6 +224,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showEditarCaso").click(function () {
@@ -236,6 +245,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showUsuarios").click(function () {
@@ -256,6 +266,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showEditarUsuario").click(function () {
@@ -276,6 +287,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showSolicitudFisico").click(function () {
@@ -296,6 +308,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showSolicitudElectronico").click(function () {
@@ -316,6 +329,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showSolicitudesIngresadas").click(function () {
@@ -336,6 +350,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").show();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresada").click(function () {
@@ -356,6 +371,7 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").show();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresadaElectronico").click(function () {
@@ -376,6 +392,28 @@ $(document).ready(function () {
     $("#solicitudes-ingresadas-panel").hide();
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").show();
+    $("#costo-arbitroUnico-panel").hide();
+  });
+
+  $(".showCostoArbitroUnico").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").show();
   });
 
 
