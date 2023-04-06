@@ -1972,3 +1972,13 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 10;
 }
 /* END SOLICITUD INGRESADA */
+
+/* COSTOS ARBITRALES */
+.wrap-controls-cosotos-arbitrales {
+  /* background-color: #FFB700; */
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+/* END COSTOS ARBITRALES */
