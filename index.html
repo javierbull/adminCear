@@ -111,12 +111,36 @@
 					</button>
 					<div class="collapse" id="costos-arbitrales-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
-							<li><a href="#" class="item-collapse rounded showCostoArbitoUnico">Árbitro Único</a></li>
-							<li><a href="#" class="item-collapse rounded showCostoTribunalArbitral">Tribunal Arbitral</a></li>
-							<li><a href="#" class="item-collapse rounded showCostoArbitoUnico">Secretaría Arbitral</a></li>
-							<li><a href="#" class="item-collapse rounded showCostoArbitoEmergencia">Árbitro de Emergencia</a></li>
-							<li><a href="#" class="item-collapse rounded showCostoArbitoUnico">Centro Arbitraje</a></li>
-							<li><a href="#" class="item-collapse rounded showCostoCuantiaIndeterminada">Cuantía Indeterminada</a></li>
+							<li>
+								<a href="#" class="item-collapse rounded showCostoArbitroUnico">
+									Árbitro Único
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-collapse rounded showCostoTribunalArbitral">
+									Tribunal Arbitral
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-collapse rounded showCostoSecretariaArbitral">
+									Secretaría Arbitral
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-collapse rounded showCostoArbitroEmergencia">
+									Árbitro de Emergencia
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-collapse rounded showCostoCentroArbitral">
+									Centro de Arbitraje
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-collapse rounded showCostoCuantiaIndeterminada">
+									Cuantía Indeterminada
+								</a>
+							</li>
 						</ul>
 					</div>
 				</li>
@@ -176,7 +200,7 @@
 						</button>
 						<div class="collapse show-" id="home-collapse">
 							<ul class="btn-toggle-nav sidebar-list-collapse">
-								<li><a href="#" class="item-collapse rounded showDesignacion"
+								<li><a href="#" class="item-collapse rounded showCostoArbitroUnico"
 										data-bs-dismiss="offcanvas">Tipos de designación</a></li>
 								<li><a href="#" class="item-collapse rounded showEspecialidad"
 										data-bs-dismiss="offcanvas">Especialidades</a></li>
@@ -194,6 +218,50 @@
 						<button class="btn btn-toggle collapsed showUsuarios" data-bs-dismiss="offcanvas">
 							Usuarios
 						</button>
+					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
+							data-bs-target="#costos-arbitrales-collapse-mobile" aria-expanded="true">
+							Costos Arbitrales
+							<span class="material-icons-outlined">
+								expand_more
+							</span>
+						</button>
+						<div class="collapse show-" id="costos-arbitrales-collapse-mobile">
+							<ul class="btn-toggle-nav sidebar-list-collapse">
+								<li>
+									<a href="#" class="item-collapse rounded showCostoArbitroUnico" data-bs-dismiss="offcanvas">
+										Árbitro Único
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showCostoTribunalArbitral" data-bs-dismiss="offcanvas">
+										Tribunal Arbitral
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showCostoSecretariaArbitral" data-bs-dismiss="offcanvas">
+										Secretaría Arbitral
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showCostoArbitroEmergencia" data-bs-dismiss="offcanvas">
+										Árbitro de Emergencia
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showCostoCentroArbitral" data-bs-dismiss="offcanvas">
+										Centro de Arbitraje
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showCostoCuantiaIndeterminada" data-bs-dismiss="offcanvas">
+										Cuantía Indeterminada
+									</a>
+								</li>
+
+							</ul>
+						</div>
 					</li>
 					<li class="item-sidebar">
 						<button class="btn btn-toggle collapsed showSolicitudesIngresadas" data-bs-dismiss="offcanvas">
@@ -2208,7 +2276,8 @@
 													<label for="inputRazonSocialDemandanteSePjSi"
 														class="form-label fw-b">Razón Social del Demandante</label>
 													<input type="text" class="form-control"
-														id="inputRazonSocialDemandanteSePjSi" value="Attach Media" disabled>
+														id="inputRazonSocialDemandanteSePjSi" value="Attach Media"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2236,7 +2305,8 @@
 													<label for="inputDomicilioDemandanteSePjSi"
 														class="form-label fw-b">Domicilio del Demandante</label>
 													<input type="text" class="form-control"
-														id="inputDomicilioDemandanteSePjSi" value="Av. Larco 1314" disabled>
+														id="inputDomicilioDemandanteSePjSi" value="Av. Larco 1314"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2263,7 +2333,8 @@
 														class="form-label fw-b">Enlace Mesa de partes
 														(Opcional)</label>
 													<input type="url" class="form-control"
-														id="inputLinkDemandanteSePjSi" value="https://attachmedia.com/" disabled>
+														id="inputLinkDemandanteSePjSi" value="https://attachmedia.com/"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2274,12 +2345,11 @@
 											</div>
 
 											<div class="col-12 marginBottom-1 error-input-">
-												<label for="inputcorreoDemandanteSePjSi"
-													class="form-label fw-b">Correo del Demandante</label>
+												<label for="inputcorreoDemandanteSePjSi" class="form-label fw-b">Correo
+													del Demandante</label>
 												<div class="input-group">
 													<input type="email" class="form-control"
-														id="inputcorreoDemandanteSePjSi"
-														placeholder="Ingrese un correo"
+														id="inputcorreoDemandanteSePjSi" placeholder="Ingrese un correo"
 														aria-label="Registre un correo"
 														aria-describedby="button-addon-correo" disabled>
 													<button class="btn outline-button" type="button"
@@ -2347,8 +2417,7 @@
 													<label for="selectTipoDocumentoFacultatorioSePj"
 														class="form-label fw-b">Seleccionar Tipo de Documento
 														Facultatorio</label>
-													<select class="form-select"
-														aria-label="Default select example"
+													<select class="form-select" aria-label="Default select example"
 														id="selectTipoDocumentoFacultatorioSePj" disabled>
 														<option>Seleccione</option>
 														<option selected>Escritura Pública</option>
@@ -2370,7 +2439,8 @@
 														class="form-label fw-b">Código del Documento
 														Facultatorio</label>
 													<input type="text" class="form-control"
-														id="inputCodigoDocumentoFacultatorioSePj" value="13213543" disabled>
+														id="inputCodigoDocumentoFacultatorioSePj" value="13213543"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2385,8 +2455,7 @@
 													<label for="selectTipoDocumentoRlegalSePj"
 														class="form-label fw-b">Tipo de Documento del
 														Representante Legal</label>
-													<select class="form-select"
-														aria-label="Default select example"
+													<select class="form-select" aria-label="Default select example"
 														id="selectTipoDocumentoRlegalSePj" disabled>
 														<option selected>(DNI) Documento Nacional de Identidad
 														</option>
@@ -2401,8 +2470,8 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputDocumentoRlegalSePj"
-														class="form-label fw-b">Número de Documento del
+													<label for="inputDocumentoRlegalSePj" class="form-label fw-b">Número
+														de Documento del
 														Representante Legal</label>
 													<input type="number" class="form-control"
 														id="inputDocumentoRlegalSePj" value="7458652" disabled>
@@ -2417,11 +2486,11 @@
 
 											<div class="row form-row g-3">
 												<div class="col-lg-8 col-md-6 marginBottom-1 error-input-">
-													<label for="inputNombreRlegalSePj"
-														class="form-label fw-b">Nombres y Apellidos del
+													<label for="inputNombreRlegalSePj" class="form-label fw-b">Nombres y
+														Apellidos del
 														Representante Legal</label>
-													<input type="text" class="form-control"
-														id="inputNombreRlegalSePj" value="Sergio perez" disabled>
+													<input type="text" class="form-control" id="inputNombreRlegalSePj"
+														value="Sergio perez" disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2431,11 +2500,11 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputCelularRlegalSePj"
-														class="form-label fw-b">Celular del Representante
+													<label for="inputCelularRlegalSePj" class="form-label fw-b">Celular
+														del Representante
 														Legal</label>
-													<input type="tel" class="form-control"
-														id="inputCelularRlegalSePj" value="952365854" disabled>
+													<input type="tel" class="form-control" id="inputCelularRlegalSePj"
+														value="952365854" disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2446,13 +2515,12 @@
 											</div>
 
 											<div class="col-12 marginBottom-1 error-input-">
-												<label for="inputCorreoReprentanteSePjSi"
-													class="form-label fw-b">Correo del Representante Legal</label>
+												<label for="inputCorreoReprentanteSePjSi" class="form-label fw-b">Correo
+													del Representante Legal</label>
 												<div class="input-group">
 													<input type="email" class="form-control"
 														id="inputCorreoReprentanteSePjSi"
-														placeholder="Ingrese un correo"
-														aria-label="Registre un correo"
+														placeholder="Ingrese un correo" aria-label="Registre un correo"
 														aria-describedby="button-addon-correo" disabled>
 													<button class="btn outline-button" type="button"
 														id="button-addon-correo" disabled>Agregar</button>
@@ -2630,7 +2698,8 @@
 													<label for="inputDomicilioDemandadoSePjSi"
 														class="form-label fw-b">Domicilio del Demandado</label>
 													<input type="text" class="form-control"
-														id="inputDomicilioDemandadoSePjSi" value="Av. Arica 456" disabled>
+														id="inputDomicilioDemandadoSePjSi" value="Av. Arica 456"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2653,11 +2722,11 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputLinkDemandadoSePjSi"
-														class="form-label fw-b">Enlace Mesa de partes
+													<label for="inputLinkDemandadoSePjSi" class="form-label fw-b">Enlace
+														Mesa de partes
 														(Opcional)</label>
-													<input type="url" class="form-control"
-														id="inputLinkDemandadoSePjSi" value="https://bitel.com.pe/" disabled>
+													<input type="url" class="form-control" id="inputLinkDemandadoSePjSi"
+														value="https://bitel.com.pe/" disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2668,12 +2737,11 @@
 											</div>
 
 											<div class="col-12 marginBottom-1 error-input-">
-												<label for="inputcorreoDemandadoSePjSi"
-													class="form-label fw-b">Correo del Demandado</label>
+												<label for="inputcorreoDemandadoSePjSi" class="form-label fw-b">Correo
+													del Demandado</label>
 												<div class="input-group">
 													<input type="email" class="form-control"
-														id="inputcorreoDemandadoSePjSi"
-														placeholder="Ingrese un correo"
+														id="inputcorreoDemandadoSePjSi" placeholder="Ingrese un correo"
 														aria-label="Registre un correo"
 														aria-describedby="button-addon-correo" disabled>
 													<button class="btn outline-button" type="button"
@@ -2758,7 +2826,8 @@
 												</h3>
 												<div class="mb-3">
 													<textarea class="form-control" id="exampleFormControlTextarea1"
-														rows="4" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, libero?</textarea>
+														rows="4"
+														disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, libero?</textarea>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2797,7 +2866,8 @@
 											</h3>
 											<div class="row form-row-top g-3">
 												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="selectControversiaSeSi" class="form-label fw-b">Seleccione
+													<label for="selectControversiaSeSi"
+														class="form-label fw-b">Seleccione
 														su Controversia</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -2827,7 +2897,8 @@
 												</div>
 
 												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="selectEspecialidadSeSi" class="form-label fw-b">Seleccione
+													<label for="selectEspecialidadSeSi"
+														class="form-label fw-b">Seleccione
 														la Especialidad</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -2883,11 +2954,13 @@
 										<form>
 											<div class="col-lg-7">
 												<h3>
-													Narración breve de los hechos que desee someter a arbitraje. (El solicitante debe hacer un resumen claro de los hechos que han generado la controversia)
+													Narración breve de los hechos que desee someter a arbitraje. (El
+													solicitante debe hacer un resumen claro de los hechos que han
+													generado la controversia)
 												</h3>
 												<div class="mb-3">
-													<textarea class="form-control" id="textareaNarracionhechos"
-														rows="4" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, libero?</textarea>
+													<textarea class="form-control" id="textareaNarracionhechos" rows="4"
+														disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, libero?</textarea>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -2925,7 +2998,8 @@
 												La pretención debe ser redactado con claridad y precisión
 											</h3>
 											<div class="col-12 marginBottom-1 error-input-">
-												<label for="inputPetitorioSeSi" class="form-label fw-b">Pretención</label>
+												<label for="inputPetitorioSeSi"
+													class="form-label fw-b">Pretención</label>
 												<div class="input-group">
 													<input type="text" class="form-control" id="inputPetitorioSeSi"
 														placeholder="Registre un petitorio"
@@ -2967,7 +3041,8 @@
 																	</span>
 																</button>
 																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button" disabled>
+																	class="btn ghost-button-danger small-button"
+																	disabled>
 																	<span class="material-icons-outlined">
 																		delete_forever
 																	</span>
@@ -2989,7 +3064,8 @@
 																	</span>
 																</button>
 																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button" disabled>
+																	class="btn ghost-button-danger small-button"
+																	disabled>
 																	<span class="material-icons-outlined">
 																		delete_forever
 																	</span>
@@ -3026,11 +3102,13 @@
 										<form>
 											<div class="col-lg-7">
 												<h3>
-													Información sobre procesos extra arbitrales interpuestos ante el Árbitro de Emergencia o ante el órgano jurisdiccional - Poder Judicial - sobre la materia en arbitraje: (cautelares)
+													Información sobre procesos extra arbitrales interpuestos ante el
+													Árbitro de Emergencia o ante el órgano jurisdiccional - Poder
+													Judicial - sobre la materia en arbitraje: (cautelares)
 												</h3>
 												<div class="mb-3">
-													<textarea class="form-control" id="textareaMedidaCautelar"
-														rows="4" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, libero?</textarea>
+													<textarea class="form-control" id="textareaMedidaCautelar" rows="4"
+														disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, libero?</textarea>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -3074,7 +3152,7 @@
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
 														name="radioOptionsCuantiaSi" id="cuantiaIndeterminadoSi"
-														value="option1" checked disabled> 
+														value="option1" checked disabled>
 													<label class="form-check-label"
 														for="cuantiaIndeterminadoSi">Indeterminado</label>
 												</div>
@@ -3107,7 +3185,8 @@
 												</div>
 
 												<div class="col-lg-3 col-md-6 col-md-6 marginBottom-1 error-input-">
-													<label for="inputImporteNumeroSeSi" class="form-label fw-b">Importe en
+													<label for="inputImporteNumeroSeSi" class="form-label fw-b">Importe
+														en
 														Números</label>
 													<input type="text" class="form-control" id="inputImporteNumeroSeSi">
 													<small class="text-help">
@@ -3119,7 +3198,8 @@
 												</div>
 
 												<div class="col-lg-6 marginBottom-1 error-input-">
-													<label for="inputImporteLetrasSeSi" class="form-label fw-b">Importe en
+													<label for="inputImporteLetrasSeSi" class="form-label fw-b">Importe
+														en
 														Letras</label>
 													<input type="text" class="form-control" id="inputImporteLetrasSeSi">
 													<small class="text-help">
@@ -3162,22 +3242,25 @@
 										<div
 											class="col-12 marginBottom-1 wrap-designacion-arbitro-options error-input-">
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitroSi"
-													id="arbitroParteSi" value="option1" checked disabled>
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitroSi" id="arbitroParteSi" value="option1"
+													checked disabled>
 												<label class="form-check-label" for="arbitroParteSi">
 													El Centro de Arbitraje designe al Árbitro de parte
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitroSi"
-													id="arbitroUnicoSi" value="option2" disabled>
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitroSi" id="arbitroUnicoSi" value="option2"
+													disabled>
 												<label class="form-check-label" for="arbitroUnicoSi">
 													El Centro de Arbitraje designe al Árbitro Único
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitroSi"
-													id="designarArbitroSi" value="option3" disabled>
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitroSi" id="designarArbitroSi" value="option3"
+													disabled>
 												<label class="form-check-label" for="designarArbitroSi">
 													Designar mi árbitro
 												</label>
@@ -3189,7 +3272,8 @@
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1 error-input-">
 													<label for="inputNameArbitroSeSi" class="form-label fw-b">Nombre del
 														Árbitro</label>
-													<input type="text" class="form-control" id="inputNameArbitroSeSi" disabled>
+													<input type="text" class="form-control" id="inputNameArbitroSeSi"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -3199,9 +3283,11 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1 error-input-">
-													<label for="inputEmailArbitroSeSi" class="form-label fw-b">Correo del
+													<label for="inputEmailArbitroSeSi" class="form-label fw-b">Correo
+														del
 														Árbitro</label>
-													<input type="email" class="form-control" id="inputEmailArbitroSeSi" disabled>
+													<input type="email" class="form-control" id="inputEmailArbitroSeSi"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -3213,7 +3299,8 @@
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1 error-input-">
 													<label for="inputTelArbitroSeSi" class="form-label fw-b">Celular del
 														Árbitro</label>
-													<input type="tel" class="form-control" id="inputTelArbitroSeSi" disabled>
+													<input type="tel" class="form-control" id="inputTelArbitroSeSi"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -3225,9 +3312,11 @@
 
 											<div class="row form-row g-3">
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1 error-input-">
-													<label for="inputAddressArbitroSeSi" class="form-label fw-b">Domicilio
+													<label for="inputAddressArbitroSeSi"
+														class="form-label fw-b">Domicilio
 														del Árbitro</label>
-													<input type="text" class="form-control" id="inputAddressArbitroSeSi" disabled>
+													<input type="text" class="form-control" id="inputAddressArbitroSeSi"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -3310,7 +3399,8 @@
 													<label for="inputFileSeSi" class="form-label fw-b">Documento PDF (El
 														total de archivos no deben exceder los 30 mb)</label>
 													<input type="file" class="form-control " id="inputFileSeSi"
-														aria-describedby="inputGroupFileAddon04" aria-label="Upload" disabled>
+														aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -3322,7 +3412,8 @@
 												<div class="col-lg-3 col-md-3 col-sm-12">
 													<label for="inputFoliosSeSi" class="form-label fw-b">Total de
 														Folios</label>
-													<input type="number" class="form-control" id="inputFoliosSeSi" value="100" disabled>
+													<input type="number" class="form-control" id="inputFoliosSeSi"
+														value="100" disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -3332,7 +3423,8 @@
 												</div>
 
 												<button type="button" name="button" class="btn outline-button"
-													data-bs-toggle="modal" data-bs-target="#modalAvisoPesoArchivos" disabled>
+													data-bs-toggle="modal" data-bs-target="#modalAvisoPesoArchivos"
+													disabled>
 													Agregar
 												</button>
 											</div>
@@ -3362,7 +3454,8 @@
 															</td>
 															<td>
 																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button" disabled>
+																	class="btn ghost-button-danger small-button"
+																	disabled>
 																	<span class="material-icons-outlined">
 																		delete_forever
 																	</span>
@@ -3382,7 +3475,8 @@
 															</td>
 															<td>
 																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button" disabled>
+																	class="btn ghost-button-danger small-button"
+																	disabled>
 																	<span class="material-icons-outlined">
 																		delete_forever
 																	</span>
@@ -3600,7 +3694,8 @@
 								Cambiar Estado
 							</span>
 						</button>
-						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalAdjuntarDocumento">
+						<button class="btn outline-button" data-bs-toggle="modal"
+							data-bs-target="#modalAdjuntarDocumento">
 							<span class="material-icons-outlined">
 								link
 							</span>
@@ -3608,7 +3703,8 @@
 								Adjuntar Documento
 							</span>
 						</button>
-						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalAsignarSolicitud">
+						<button class="btn outline-button" data-bs-toggle="modal"
+							data-bs-target="#modalAsignarSolicitud">
 							<span class="material-icons-outlined">
 								people
 							</span>
@@ -3616,7 +3712,8 @@
 								Asignar
 							</span>
 						</button>
-						<button class="btn primary-button" data-bs-toggle="modal" data-bs-target="#modalResponderSolicitud">
+						<button class="btn primary-button" data-bs-toggle="modal"
+							data-bs-target="#modalResponderSolicitud">
 							<span class="material-icons-outlined">
 								send
 							</span>
@@ -3760,12 +3857,11 @@
 											</div>
 
 											<div class="col-12 marginBottom-1 error-input-">
-												<label for="inputcorreoDemandanteSfPnSi"
-													class="form-label fw-b">Correo del Demandante</label>
+												<label for="inputcorreoDemandanteSfPnSi" class="form-label fw-b">Correo
+													del Demandante</label>
 												<div class="input-group">
 													<input type="email" class="form-control"
-														id="inputcorreoDemandanteSfPnSi"
-														placeholder="Ingrese un correo"
+														id="inputcorreoDemandanteSfPnSi" placeholder="Ingrese un correo"
 														aria-label="Registre un correo"
 														aria-describedby="button-addon-correo" disabled>
 													<button class="btn outline-button" type="button"
@@ -3886,8 +3982,8 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputDocumentoRlegalSi"
-														class="form-label fw-b">Número de Documento del
+													<label for="inputDocumentoRlegalSi" class="form-label fw-b">Número
+														de Documento del
 														Representante Legal</label>
 													<input type="number" class="form-control"
 														id="inputDocumentoRlegalSi" value="74523658" disabled>
@@ -3916,8 +4012,8 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 marginBottom-1 error-input-">
-													<label for="inputCelularRlegalSf"
-														class="form-label fw-b">Celular del Representante
+													<label for="inputCelularRlegalSf" class="form-label fw-b">Celular
+														del Representante
 														Legal</label>
 													<input type="tel" class="form-control" id="inputCelularRlegalSf"
 														value="963 325 366" disabled>
@@ -3932,12 +4028,12 @@
 
 											<div class="col-12 marginBottom-1 error-input-">
 												<label for="inputcorreoDemandanteRlSfPnSi"
-													class="form-label fw-b">Correo del Representante legal del Demandante</label>
+													class="form-label fw-b">Correo del Representante legal del
+													Demandante</label>
 												<div class="input-group">
 													<input type="email" class="form-control"
 														id="inputcorreoDemandanteRlSfPnSi"
-														placeholder="Ingrese un correo"
-														aria-label="Registre un correo"
+														placeholder="Ingrese un correo" aria-label="Registre un correo"
 														aria-describedby="button-addon-correo" disabled>
 													<button class="btn outline-button" type="button"
 														id="button-addon-correo" disabled>Agregar</button>
@@ -4047,12 +4143,11 @@
 											</div>
 
 											<div class="col-12 marginBottom-1 error-input-">
-												<label for="inputcorreoDemandadoSfPnSi"
-													class="form-label fw-b">Correo del Demandado</label>
+												<label for="inputcorreoDemandadoSfPnSi" class="form-label fw-b">Correo
+													del Demandado</label>
 												<div class="input-group">
 													<input type="email" class="form-control"
-														id="inputcorreoDemandadoSfPnSi"
-														placeholder="Ingrese un correo"
+														id="inputcorreoDemandadoSfPnSi" placeholder="Ingrese un correo"
 														aria-label="Registre un correo"
 														aria-describedby="button-addon-correo" disabled>
 													<button class="btn outline-button" type="button"
@@ -4135,7 +4230,8 @@
 											</h3>
 											<div class="row form-row-top g-3">
 												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="selectControversiaSfSi" class="form-label fw-b">Seleccione
+													<label for="selectControversiaSfSi"
+														class="form-label fw-b">Seleccione
 														su Controversia
 													</label>
 
@@ -4166,7 +4262,8 @@
 												</div>
 
 												<div class="col-lg-6 col-md-6 marginBottom-1 error-input-">
-													<label for="selectEspecialidadSfSi" class="form-label fw-b">Seleccione
+													<label for="selectEspecialidadSfSi"
+														class="form-label fw-b">Seleccione
 														la Especialidad</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -4221,7 +4318,8 @@
 													<label for="inputFileSfSi" class="form-label fw-b">Documento PDF (El
 														total de archivos no deben exceder los 30mb)</label>
 													<input type="file" class="form-control" id="inputFileSfSi"
-														aria-describedby="inputGroupFileAddon04" aria-label="Upload" disabled>
+														aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+														disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -4233,7 +4331,8 @@
 												<div class="col-lg-3 col-md-3 col-sm-12">
 													<label for="inputFoliosSfSi" class="form-label fw-b">Total de
 														Folios</label>
-													<input type="number" class="form-control" id="inputFoliosSfSi" value="100" disabled>
+													<input type="number" class="form-control" id="inputFoliosSfSi"
+														value="100" disabled>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -4507,7 +4606,8 @@
 								Cambiar Estado
 							</span>
 						</button>
-						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalAdjuntarDocumento">
+						<button class="btn outline-button" data-bs-toggle="modal"
+							data-bs-target="#modalAdjuntarDocumento">
 							<span class="material-icons-outlined">
 								link
 							</span>
@@ -4515,7 +4615,8 @@
 								Adjuntar Documento
 							</span>
 						</button>
-						<button class="btn outline-button" data-bs-toggle="modal" data-bs-target="#modalAsignarSolicitud">
+						<button class="btn outline-button" data-bs-toggle="modal"
+							data-bs-target="#modalAsignarSolicitud">
 							<span class="material-icons-outlined">
 								people
 							</span>
@@ -4523,7 +4624,8 @@
 								Asignar
 							</span>
 						</button>
-						<button class="btn primary-button" data-bs-toggle="modal" data-bs-target="#modalResponderSolicitud">
+						<button class="btn primary-button" data-bs-toggle="modal"
+							data-bs-target="#modalResponderSolicitud">
 							<span class="material-icons-outlined">
 								send
 							</span>
@@ -7600,7 +7702,8 @@
 
 
 	<!-- Modal -->
-	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade modalInfo" id="modalContraOlvidada" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -8432,13 +8535,14 @@
 					</h4>
 				</div>
 				<div class="modal-body">
-					<form class="form-modal">	
+					<form class="form-modal">
 
 						<div class="mb-3">
 							<label for="respuestaSI" class="form-label">
 								Respuesta
 							</label>
-							<textarea class="form-control" id="respuestaSI" rows="4" placeholder="Ingrese su respuesta"></textarea>
+							<textarea class="form-control" id="respuestaSI" rows="4"
+								placeholder="Ingrese su respuesta"></textarea>
 							<small class="text-help">
 								<span class="material-icons">
 									report_problem
@@ -8480,8 +8584,7 @@
 							<label for="selectAsignarAreaSi" class="form-label fw-b">
 								Asignar
 							</label>
-							<select class="form-select" aria-label="Default select example"
-								id="selectAsignarAreaSi">
+							<select class="form-select" aria-label="Default select example" id="selectAsignarAreaSi">
 								<option selected>Seleccione</option>
 								<option>Secretaria</option>
 								<option>Mesa de partes</option>
@@ -8494,7 +8597,8 @@
 							<label for="modalComentarioSI" class="form-label">
 								Comentario
 							</label>
-							<textarea class="form-control" id="modalComentarioSI" rows="4" placeholder="Ingrese un comentario"></textarea>
+							<textarea class="form-control" id="modalComentarioSI" rows="4"
+								placeholder="Ingrese un comentario"></textarea>
 							<small class="text-help">
 								<span class="material-icons">
 									report_problem
@@ -8549,7 +8653,8 @@
 							<label for="modalCambiarEstadoComentarioSI" class="form-label">
 								Comentario
 							</label>
-							<textarea class="form-control" id="modalCambiarEstadoComentarioSI" rows="4" placeholder="Ingrese un comentario"></textarea>
+							<textarea class="form-control" id="modalCambiarEstadoComentarioSI" rows="4"
+								placeholder="Ingrese un comentario"></textarea>
 							<small class="text-help">
 								<span class="material-icons">
 									report_problem
@@ -8603,7 +8708,8 @@
 							<label for="modalAdjuntarDocComentario" class="form-label">
 								Respuesta
 							</label>
-							<textarea class="form-control" id="modalAdjuntarDocComentario" rows="4" placeholder="Ingrese su respuesta"></textarea>
+							<textarea class="form-control" id="modalAdjuntarDocComentario" rows="4"
+								placeholder="Ingrese su respuesta"></textarea>
 							<small class="text-help">
 								<span class="material-icons">
 									report_problem
