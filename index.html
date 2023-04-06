@@ -102,6 +102,25 @@
 					</button>
 				</li>
 				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
+						data-bs-target="#costos-arbitrales-collapse" aria-expanded="true">
+						Costos Arbitrales
+						<span class="material-icons-outlined">
+							expand_more
+						</span>
+					</button>
+					<div class="collapse" id="costos-arbitrales-collapse">
+						<ul class="btn-toggle-nav sidebar-list-collapse">
+							<li><a href="#" class="item-collapse rounded showCostoArbitoUnico">Árbitro Único</a></li>
+							<li><a href="#" class="item-collapse rounded showCostoTribunalArbitral">Tribunal Arbitral</a></li>
+							<li><a href="#" class="item-collapse rounded showCostoArbitoUnico">Secretaría Arbitral</a></li>
+							<li><a href="#" class="item-collapse rounded showCostoArbitoEmergencia">Árbitro de Emergencia</a></li>
+							<li><a href="#" class="item-collapse rounded showCostoArbitoUnico">Centro Arbitraje</a></li>
+							<li><a href="#" class="item-collapse rounded showCostoCuantiaIndeterminada">Cuantía Indeterminada</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed showSolicitudesIngresadas">
 						Expedientes
 					</button>
@@ -114,7 +133,7 @@
 							expand_more
 						</span>
 					</button>
-					<div class="collapse show-" id="Solicitudes-collapse">
+					<div class="collapse" id="Solicitudes-collapse">
 						<ul class="btn-toggle-nav sidebar-list-collapse">
 							<li>
 								<a href="#" class="item-collapse rounded showSolicitudFisico">
