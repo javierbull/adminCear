@@ -1345,7 +1345,7 @@ input[type=number]::-webkit-outer-spin-button {
 .sidebar-admin {
   background-color: var(--white);
   width: 250px;
-  min-height: calc(100vh - 74px);
+  /* min-height: calc(100vh - 74px); */
   position: fixed;
   left: 0;
   transition: all 150ms linear;
@@ -1377,7 +1377,7 @@ input[type=number]::-webkit-outer-spin-button {
 .sidebar-admin-list {
   list-style: none;
   padding-left: 0;
-  height: 100vh;
+  height: calc(100vh - 74px);
   overflow-y: auto;
 }
 
