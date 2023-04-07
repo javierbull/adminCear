@@ -57,6 +57,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showAgregarProfesional").click(function () {
@@ -78,6 +79,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showDesignacion").click(function () {
@@ -99,6 +101,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showAgregarDesignacion").click(function () {
@@ -120,6 +123,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showEspecialidad").click(function () {
@@ -141,6 +145,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showAgregarEspecialidad").click(function () {
@@ -162,6 +167,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showProfesiones").click(function () {
@@ -183,6 +189,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showAgregarProfesion").click(function () {
@@ -204,6 +211,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showCasos").click(function () {
@@ -225,6 +233,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showEditarCaso").click(function () {
@@ -246,6 +255,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showUsuarios").click(function () {
@@ -267,6 +277,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showEditarUsuario").click(function () {
@@ -288,6 +299,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showSolicitudFisico").click(function () {
@@ -309,6 +321,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showSolicitudElectronico").click(function () {
@@ -330,6 +343,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showSolicitudesIngresadas").click(function () {
@@ -351,6 +365,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresada").click(function () {
@@ -372,6 +387,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").show();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresadaElectronico").click(function () {
@@ -393,6 +409,7 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").show();
     $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
   });
 
   $(".showCostoArbitroUnico").click(function () {
@@ -414,6 +431,29 @@ $(document).ready(function () {
     $("#detalle-solicitud-ingresada-panel").hide();
     $("#detalle-solicitud-ingresada-electronico-panel").hide();
     $("#costo-arbitroUnico-panel").show();
+    $("#costo-tribunalArbitral-panel").hide();
+  });
+
+  $(".showCostoTribunalArbitral").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#solicitudes-ingresadas-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").show();
   });
 
 
