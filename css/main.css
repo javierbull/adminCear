@@ -541,7 +541,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-items: flex-end;
   gap: 1rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .form-row-top {
@@ -709,7 +709,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: .25rem;
   padding-left: .25rem;
   position: absolute;
-  display: none;
+  /* display: none; */
 }
 
 .text-help .material-icons {
