@@ -22,6 +22,7 @@
   --danger: #DF2020;
   --danger-dark: #A20F1D;
   --danger-light: #F8D7DA;
+  --shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
 
 html {
@@ -2006,3 +2007,40 @@ input[type=number]::-webkit-outer-spin-button {
   flex-wrap: wrap;
 }
 /* END COSTOS ARBITRALES */
+
+/* PMV */
+.grid-cards-solicitud {
+  /* background-color: pink; */
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-solicitud {
+  width: 18rem;
+  border: none;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-solicitud-top {
+  padding: 1rem;
+}
+
+.card-solicitud-bottom {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.card-solicitud-bottom .btn {
+  width: 100%;
+}
+/* END PMV */

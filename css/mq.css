@@ -233,12 +233,13 @@
     width: 100%;
   }
   /* End costos arbitrales */
+
+  /* MPV */
+  .card-solicitud {
+    width: 100%;
+  }
+  /* End MPV */
 }
 
 /* Fin cell portrait */
-/* Small cell portrait */
-@media (max-width: 360px) {
 
-}
-
-/* Fin small cell portrait */
