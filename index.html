@@ -23,7 +23,6 @@
 	<!-- <link rel="stylesheet" href="js/plugin/select2/select2-bootstrap-5-theme.css"> -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mq.css">
-
 </head>
 
 <body>
@@ -167,6 +166,29 @@
 							<li>
 								<a href="#" class="item-collapse rounded showSolicitudElectronico">
 									Solicitud de Arbitraje Electrónico
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
+						data-bs-target="#mvp-collapse" aria-expanded="true">
+						MPV
+						<span class="material-icons-outlined">
+							expand_more
+						</span>
+					</button>
+					<div class="collapse" id="mvp-collapse">
+						<ul class="btn-toggle-nav sidebar-list-collapse">
+							<li>
+								<a href="#" class="item-collapse rounded showNuevaSolicitud">
+									Nueva Solicitud
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-collapse rounded showSolicitudesIngresadas">
+									Mis Expedientes
 								</a>
 							</li>
 						</ul>
@@ -4465,265 +4487,6 @@
 				</div>
 			</div>
 			<!-- End costos arbitrales -->
-
-			<!-- Expedientes -->
-			<div class="panel" id="solicitudes-ingresadas-panel">
-				<div class="row">
-					<div class="header-panel">
-						<small class="title-panel">
-							Expedientes
-						</small>
-						<h2>
-							Listado de Expedientes
-						</h2>
-					</div>
-
-					<div class="content-controls-main">
-						<div class="content-controls-search">
-							<div class="wrap-search-input">
-								<div class="search-input">
-									<input type="text" class="form-control" placeholder="Buscar Solicitud"
-										aria-label="Recipient's username" aria-describedby="button-addon2">
-									<button class="btn material-icons-outlined" type="button">
-										search
-									</button>
-								</div>
-							</div>
-							<button type="button" class="btn outline-button btn-filter" data-bs-toggle="modal"
-								data-bs-target="#modalFiltrarSolicitudesIngresadas">
-								<span class="material-icons-outlined">
-									filter_list
-								</span>
-								Filtrar
-							</button>
-						</div>
-
-						<!-- <button type="button" name="button" class="btn btn-large primary-button showAgregarProfesional">
-							Agregar profesional
-						</button> -->
-					</div>
-
-					<div class="table-responsive marginBottom-1-5">
-						<table class="table">
-							<thead>
-								<tr>
-									<th scope="col"># Expediente</th>
-									<th scope="col">Tipo de Solicitud</th>
-									<th scope="col">Fecha de Registro</th>
-									<th scope="col">Plazo Límite para Respuesta</th>
-									<th scope="col">Asignado</th>
-									<th scope="col">Estado</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">
-										00022-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Físico
-									</td>
-									<td>
-										08/01/2023 - 11:23
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Mesa de Partes
-									</td>
-									<td>
-										<span class="tag tag-warning">
-											Solicitado
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresada">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										00023-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Electrónico
-									</td>
-									<td>
-										09/01/2023 - 11:00
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Secretaría Arbitral
-									</td>
-									<td>
-										<span class="tag tag-info">
-											Admitido
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										00023-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Electrónico
-									</td>
-									<td>
-										09/01/2023 - 11:00
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Secretaría Arbitral
-									</td>
-									<td>
-										<span class="tag tag-inactive">
-											En Trámite
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										00023-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Electrónico
-									</td>
-									<td>
-										09/01/2023 - 11:00
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Secretaría Arbitral
-									</td>
-									<td>
-										<span class="tag tag-success">
-											Completado
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										00023-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Electrónico
-									</td>
-									<td>
-										09/01/2023 - 11:00
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Secretaría Arbitral
-									</td>
-									<td>
-										<span class="tag tag-danger">
-											Observado
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-				</div>
-			</div>
-			<!-- End expedientes -->
 
 			<!-- Solicitudes -->
 			<div class="panel" id="detalle-solicitud-ingresada-electronico-panel">
@@ -10195,6 +9958,276 @@
 				</div>
 			</div>
 			<!-- End solicitudes -->
+
+			<!-- MPV -->
+			<div class="panel" id="mpv-expedientes-panel">
+				<div class="row">
+					<div class="header-panel">
+						<small class="title-panel">
+							Expedientes
+						</small>
+						<h2>
+							Listado de Expedientes
+						</h2>
+					</div>
+
+					<div class="content-controls-main">
+						<div class="content-controls-search">
+							<div class="wrap-search-input">
+								<div class="search-input">
+									<input type="text" class="form-control" placeholder="Buscar Solicitud"
+										aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn material-icons-outlined" type="button">
+										search
+									</button>
+								</div>
+							</div>
+							<button type="button" class="btn outline-button btn-filter" data-bs-toggle="modal"
+								data-bs-target="#modalFiltrarSolicitudesIngresadas">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+
+						<!-- <button type="button" name="button" class="btn btn-large primary-button showAgregarProfesional">
+							Agregar profesional
+						</button> -->
+					</div>
+
+					<div class="table-responsive marginBottom-1-5">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col"># Expediente</th>
+									<th scope="col">Tipo de Solicitud</th>
+									<th scope="col">Fecha de Registro</th>
+									<th scope="col">Plazo Límite para Respuesta</th>
+									<th scope="col">Asignado</th>
+									<th scope="col">Estado</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">
+										00022-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Físico
+									</td>
+									<td>
+										08/01/2023 - 11:23
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Mesa de Partes
+									</td>
+									<td>
+										<span class="tag tag-warning">
+											Solicitado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresada">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										00023-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Electrónico
+									</td>
+									<td>
+										09/01/2023 - 11:00
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Secretaría Arbitral
+									</td>
+									<td>
+										<span class="tag tag-info">
+											Admitido
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										00023-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Electrónico
+									</td>
+									<td>
+										09/01/2023 - 11:00
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Secretaría Arbitral
+									</td>
+									<td>
+										<span class="tag tag-inactive">
+											En Trámite
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										00023-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Electrónico
+									</td>
+									<td>
+										09/01/2023 - 11:00
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Secretaría Arbitral
+									</td>
+									<td>
+										<span class="tag tag-success">
+											Completado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										00023-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Electrónico
+									</td>
+									<td>
+										09/01/2023 - 11:00
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Secretaría Arbitral
+									</td>
+									<td>
+										<span class="tag tag-danger">
+											Observado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel" id="mpv-nuevaSolicitud-panel">
+				<div class="header-panel">
+					<h2>
+						Nueva Solicitud
+					</h2>
+				</div>
+				
+			</div>
+
+			
+			<!-- End MPV -->
 
 		</div>
 		<!-- End main panel -->
