@@ -63,6 +63,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showAgregarProfesional").click(function () {
@@ -90,6 +91,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showDesignacion").click(function () {
@@ -117,6 +119,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showAgregarDesignacion").click(function () {
@@ -144,6 +147,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showEspecialidad").click(function () {
@@ -171,6 +175,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showAgregarEspecialidad").click(function () {
@@ -198,6 +203,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showProfesiones").click(function () {
@@ -225,6 +231,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showAgregarProfesion").click(function () {
@@ -252,6 +259,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showCasos").click(function () {
@@ -279,6 +287,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showEditarCaso").click(function () {
@@ -306,6 +315,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showUsuarios").click(function () {
@@ -333,6 +343,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showEditarUsuario").click(function () {
@@ -360,6 +371,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showSolicitudFisico").click(function () {
@@ -387,6 +399,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showSolicitudElectronico").click(function () {
@@ -414,6 +427,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showSolicitudesIngresadas").click(function () {
@@ -441,6 +455,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresada").click(function () {
@@ -468,6 +483,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresadaElectronico").click(function () {
@@ -495,6 +511,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showCostoArbitroUnico").click(function () {
@@ -522,6 +539,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showCostoTribunalArbitral").click(function () {
@@ -549,6 +567,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showCostoSecretariaArbitral").click(function () {
@@ -576,6 +595,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showCostoCuantiaIndeterminada").click(function () {
@@ -603,6 +623,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showCostoArbitroEmergencia").click(function () {
@@ -630,6 +651,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").show();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showCostoCentroArbitral").click(function () {
@@ -657,6 +679,7 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").show();
     $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").hide();
   });
 
   $(".showNuevaSolicitud").click(function () {
@@ -684,6 +707,35 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").show();
+    $("#mpv-tipoSolicitud-panel").hide();
+  });
+
+  $(".showTipoSolicitud").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#mpv-expedientes-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
+    $("#costo-secretariaArbitral-panel").hide();
+    $("#costo-cuantiaIndeterminada-panel").hide();
+    $("#costo-arbitroEmergencia-panel").hide();
+    $("#costo-centroArbitral-panel").hide();
+    $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel").show();
   });
 
 

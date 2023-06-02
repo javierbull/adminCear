@@ -6142,12 +6142,7 @@
 								</span>
 							</div>
 						</div>
-						<!-- <button type="button" name="button" class="btn outline-button btn-icon">
-				<span class="material-icons-outlined">
-					file_download
-				</span>
-				Descargar Formato de Solicitud Físico
-			</button> -->
+
 					</div>
 
 					<div class="marginBottom-4">
@@ -8804,13 +8799,6 @@
 													</table>
 												</div>
 
-												<!-- <div class="form-check marginBottom-1-5">
-				<input class="form-check-input" type="checkbox" value="" id="checkDatosDemandanteRepLegalSePj">
-				<label class="form-check-label" for="checkDatosDemandanteRepLegalSePj">
-					Datos del Representante Legal
-				</label>
-			</div> -->
-
 												<fieldset id="fieldset-datosDemandanteRepLegalSePj">
 													<h3>Datos Representante legal</h3>
 													<div class="row form-row g-3">
@@ -10109,10 +10097,6 @@
 								Filtrar
 							</button>
 						</div>
-
-						<!-- <button type="button" name="button" class="btn btn-large primary-button showAgregarProfesional">
-			Agregar profesional
-		</button> -->
 					</div>
 
 					<div class="table-responsive marginBottom-1-5">
@@ -10372,7 +10356,7 @@
 							</p>
 						</div>
 						<div class="card-solicitud-bottom">
-							<button class="btn primary-button">
+							<button class="btn primary-button showTipoSolicitud">
 								Seleccionar
 							</button>
 						</div>
@@ -10390,7 +10374,7 @@
 							</p>
 						</div>
 						<div class="card-solicitud-bottom">
-							<button class="btn primary-button">
+							<button class="btn primary-button showTipoSolicitud">
 								Seleccionar
 							</button>
 						</div>
@@ -10408,7 +10392,7 @@
 							</p>
 						</div>
 						<div class="card-solicitud-bottom">
-							<button class="btn primary-button">
+							<button class="btn primary-button showTipoSolicitud">
 								Seleccionar
 							</button>
 						</div>
@@ -10426,7 +10410,7 @@
 							</p>
 						</div>
 						<div class="card-solicitud-bottom">
-							<button class="btn primary-button">
+							<button class="btn primary-button showTipoSolicitud">
 								Seleccionar
 							</button>
 						</div>
@@ -10435,7 +10419,110 @@
 
 			</div>
 
+			<div class="panel" id="mpv-tipoSolicitud-panel">
+				<div class="header-panel">
+					<button class="btn link-button showSolicitudesIngresadas">
+						<span class="material-icons-outlined">
+							chevron_left
+						</span>
+						Volver
+					</button>
+					<h2>
+						Nueva Solicitud
+					</h2>
+					<p>
+						Por este canal podrá presentar documentos de forma rápida sin necesidad de acercarse de manera
+						presencial a nuestras oficinas.
+						Antes de iniciar algún trámite por este Módulo, le recomendamos revisar previamente los
+						requerimientos que debe tener para poder realizar su solicitud.
+					</p>
+					<button type="button" name="button" class="btn outline-button btn-icon marginBottom-1-5"
+						data-bs-toggle="modal" data-bs-target="#modalListaRequerimientos">
+						<span class="material-icons-outlined">
+							visibility
+						</span>
+						Ver Lista de Requerimientos
+					</button>
+					<h3>
+						Seleccione un Tipo de Solicitud
+					</h3>
+				</div>
 
+				<div class="grid-cards-solicitud">
+					<div class="card-solicitud">
+						<div class="card-solicitud-top">
+							<h3>
+								Arbitraje General
+							</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and 
+								typesetting industry. Lorem Ipsum has been the 
+								industry's standard dummy text ever since the
+							</p>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showTipoSolicitud">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+
+					<div class="card-solicitud">
+						<div class="card-solicitud-top">
+							<h3>
+								Arbitraje de Contratación Pública
+							</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and 
+								typesetting industry. Lorem Ipsum has been the 
+								industry's standard dummy text ever since the
+							</p>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showTipoSolicitud">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+
+					<div class="card-solicitud">
+						<div class="card-solicitud-top">
+							<h3>
+								Arbitraje de Emergencia
+							</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and 
+								typesetting industry. Lorem Ipsum has been the 
+								industry's standard dummy text ever since the
+							</p>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showTipoSolicitud">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+
+					<div class="card-solicitud">
+						<div class="card-solicitud-top">
+							<h3>
+								Junta de Resolución de Disputas
+							</h3>
+							<p>
+								Lorem Ipsum is simply dummy text of the printing and 
+								typesetting industry. Lorem Ipsum has been the 
+								industry's standard dummy text ever since the
+							</p>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showTipoSolicitud">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
 			<!-- End MPV -->
 
 		</div>
