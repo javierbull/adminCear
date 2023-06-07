@@ -2009,6 +2009,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* END COSTOS ARBITRALES */
 
 /* PMV */
+/* Nueva solicitud */
 .grid-cards-solicitud {
   /* background-color: pink; */
   display: flex;
@@ -2032,7 +2033,7 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: space-between;
 }
 
-.card-solicitud-top {
+.card-solicitud-text {
   padding: 1rem;
 }
 
@@ -2043,4 +2044,13 @@ input[type=number]::-webkit-outer-spin-button {
 .card-solicitud-bottom .btn {
   width: 100%;
 }
+/* End nueva solicitud */
+
+/* Tipos de solicitud */
+.card-solicitud-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+/* End tipo de solicitud */
 /* END PMV */
+
