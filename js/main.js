@@ -63,7 +63,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showAgregarProfesional").click(function () {
@@ -91,7 +92,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showDesignacion").click(function () {
@@ -119,7 +121,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showAgregarDesignacion").click(function () {
@@ -147,7 +150,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showEspecialidad").click(function () {
@@ -175,7 +179,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showAgregarEspecialidad").click(function () {
@@ -203,7 +208,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showProfesiones").click(function () {
@@ -231,7 +237,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showAgregarProfesion").click(function () {
@@ -259,7 +266,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showCasos").click(function () {
@@ -287,7 +295,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showEditarCaso").click(function () {
@@ -315,7 +324,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showUsuarios").click(function () {
@@ -343,7 +353,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showEditarUsuario").click(function () {
@@ -371,7 +382,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showSolicitudFisico").click(function () {
@@ -399,7 +411,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showSolicitudElectronico").click(function () {
@@ -427,7 +440,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showSolicitudesIngresadas").click(function () {
@@ -455,7 +469,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showDetalleSolicitudIngresada").click(function () {
@@ -483,7 +498,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showDetalleSolicitudIngresadaElectronico").click(function () {
@@ -511,7 +527,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showCostoArbitroUnico").click(function () {
@@ -539,7 +556,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showCostoTribunalArbitral").click(function () {
@@ -567,7 +585,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showCostoSecretariaArbitral").click(function () {
@@ -595,7 +614,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showCostoCuantiaIndeterminada").click(function () {
@@ -623,7 +643,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showCostoArbitroEmergencia").click(function () {
@@ -651,7 +672,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").show();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showCostoCentroArbitral").click(function () {
@@ -679,7 +701,8 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").show();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
   $(".showNuevaSolicitud").click(function () {
@@ -707,10 +730,11 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").show();
-    $("#mpv-tipoSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
   });
 
-  $(".showTipoSolicitud").click(function () {
+  $(".showTipoSolicitud-arbitrajeGeneral").click(function () {
     $("#profesionales-panel").hide();
     $("#agregarProfesional-panel").hide();
     $("#designacion-panel").hide();
@@ -735,7 +759,37 @@ $(document).ready(function () {
     $("#costo-arbitroEmergencia-panel").hide();
     $("#costo-centroArbitral-panel").hide();
     $("#mpv-nuevaSolicitud-panel").hide();
-    $("#mpv-tipoSolicitud-panel").show();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").show();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+  });
+
+  $(".showTipoSolicitud-ContratacionPublica").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#mpv-expedientes-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
+    $("#costo-secretariaArbitral-panel").hide();
+    $("#costo-cuantiaIndeterminada-panel").hide();
+    $("#costo-arbitroEmergencia-panel").hide();
+    $("#costo-centroArbitral-panel").hide();
+    $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").show();
   });
 
 

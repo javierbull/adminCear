@@ -4614,6 +4614,518 @@
 			</div>
 			<!-- End costos arbitrales -->
 
+			<!-- MPV -->
+			<div class="panel" id="mpv-expedientes-panel">
+				<div class="row">
+					<div class="header-panel">
+						<small class="title-panel">
+							Expedientes
+						</small>
+						<h2>
+							Listado de Expedientes
+						</h2>
+					</div>
+
+					<div class="content-controls-main">
+						<div class="content-controls-search">
+							<div class="wrap-search-input">
+								<div class="search-input">
+									<input type="text" class="form-control" placeholder="Buscar Solicitud"
+										aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn material-icons-outlined" type="button">
+										search
+									</button>
+								</div>
+							</div>
+							<button type="button" class="btn outline-button btn-filter" data-bs-toggle="modal"
+								data-bs-target="#modalFiltrarSolicitudesIngresadas">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+					</div>
+
+					<div class="table-responsive marginBottom-1-5">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col"># Expediente</th>
+									<th scope="col">Tipo de Solicitud</th>
+									<th scope="col">Fecha de Registro</th>
+									<th scope="col">Plazo Límite para Respuesta</th>
+									<th scope="col">Asignado</th>
+									<th scope="col">Estado</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">
+										00022-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Físico
+									</td>
+									<td>
+										08/01/2023 - 11:23
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Mesa de Partes
+									</td>
+									<td>
+										<span class="tag tag-warning">
+											Solicitado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresada">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										00023-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Electrónico
+									</td>
+									<td>
+										09/01/2023 - 11:00
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Secretaría Arbitral
+									</td>
+									<td>
+										<span class="tag tag-info">
+											Admitido
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										00023-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Electrónico
+									</td>
+									<td>
+										09/01/2023 - 11:00
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Secretaría Arbitral
+									</td>
+									<td>
+										<span class="tag tag-inactive">
+											En Trámite
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										00023-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Electrónico
+									</td>
+									<td>
+										09/01/2023 - 11:00
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Secretaría Arbitral
+									</td>
+									<td>
+										<span class="tag tag-success">
+											Completado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										00023-2023
+									</th>
+									<td>
+										Solicitud de Arbitraje Electrónico
+									</td>
+									<td>
+										09/01/2023 - 11:00
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Secretaría Arbitral
+									</td>
+									<td>
+										<span class="tag tag-danger">
+											Observado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver cargo">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button"
+												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver solicitud">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel" id="mpv-nuevaSolicitud-panel">
+				<div class="header-panel">
+					<h2>
+						Nueva Solicitud
+					</h2>
+					<p>
+						Por este canal podrá presentar documentos de forma rápida sin necesidad de acercarse de manera
+						presencial a nuestras oficinas.
+						Antes de iniciar algún trámite por este Módulo, le recomendamos revisar previamente los
+						requerimientos que debe tener para poder realizar su solicitud.
+					</p>
+					<button type="button" name="button" class="btn outline-button btn-icon marginBottom-1-5"
+						data-bs-toggle="modal" data-bs-target="#modalListaRequerimientos">
+						<span class="material-icons-outlined">
+							visibility
+						</span>
+						Ver Lista de Requerimientos
+					</button>
+					<h3>
+						Seleccione un Tipo de Arbitraje
+					</h3>
+				</div>
+
+				<div class="grid-cards-solicitud">
+					<div class="card-solicitud-mpv">
+						<div class="card-solicitud-top">
+							<div class="card-solicitud-text">
+								<h3>
+									Arbitraje General
+								</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and 
+									typesetting industry. Lorem Ipsum has been the 
+									industry's standard dummy text ever since the
+								</p>
+							</div>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showTipoSolicitud-arbitrajeGeneral">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+
+					<div class="card-solicitud-mpv">
+						<div class="card-solicitud-top">
+							<div class="card-solicitud-text">
+								<h3>
+									Arbitraje de Contratación Pública
+								</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and 
+									typesetting industry. Lorem Ipsum has been the 
+									industry's standard dummy text ever since the
+								</p>
+							</div>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showTipoSolicitud-ContratacionPublica">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+
+					<div class="card-solicitud-mpv d-none">
+						<div class="card-solicitud-top">
+							<div class="card-solicitud-text">
+								<h3>
+									Arbitraje de Emergencia
+								</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and 
+									typesetting industry. Lorem Ipsum has been the 
+									industry's standard dummy text ever since the
+								</p>
+							</div>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showTipoSolicitud">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+
+					<div class="card-solicitud-mpv d-none">
+						<div class="card-solicitud-top">
+							<div class="card-solicitud-text">
+								<h3>
+									Junta de Resolución de Disputas
+								</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and 
+									typesetting industry. Lorem Ipsum has been the 
+									industry's standard dummy text ever since the
+								</p>
+							</div>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showTipoSolicitud">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="panel" id="mpv-tipoSolicitud-panel-arbitraje-general">
+				<div class="header-panel">
+					<button class="btn link-button showNuevaSolicitud">
+						<span class="material-icons-outlined">
+							chevron_left
+						</span>
+						Volver
+					</button>
+					<h2>
+						Solicitudes
+					</h2>
+					<p>
+						Por este canal podrá presentar documentos de forma rápida sin necesidad de acercarse de manera
+						presencial a nuestras oficinas.
+						Antes de iniciar algún trámite por este Módulo, le recomendamos revisar previamente los
+						requerimientos que debe tener para poder realizar su solicitud.
+					</p>
+					<button type="button" name="button" class="btn outline-button btn-icon marginBottom-1-5"
+						data-bs-toggle="modal" data-bs-target="#modalListaRequerimientos">
+						<span class="material-icons-outlined">
+							visibility
+						</span>
+						Ver Lista de Requerimientos
+					</button>
+					<h3>
+						Seleccione un Tipo de Solicitud
+					</h3>
+				</div>
+
+				<div class="grid-cards-solicitud">
+					<div class="card-solicitud-mpv">
+						<div class="card-solicitud-top">
+							<img src="img/cards/solicitudArbitrajeFisico.jpg" class="card-solicitud-img" alt="Solicitud Física">
+							<div class="card-solicitud-text">
+								<h3>
+									Solicitud de Arbitraje Físico
+								</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and 
+									typesetting industry. Lorem Ipsum has been the 
+									industry's standard dummy text ever since the
+								</p>
+							</div>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showSolicitudArbitrajeGeneralFisico">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+
+					<div class="card-solicitud-mpv">
+						<div class="card-solicitud-top">
+							<img src="img/cards/solicitudArbitrajeElectronico.jpg" class="card-solicitud-img" alt="Solicitud Electrónica">
+							<div class="card-solicitud-text">
+								<h3>
+									Solicitud de Arbitraje Electrónico
+								</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and 
+									typesetting industry. Lorem Ipsum has been the 
+									industry's standard dummy text ever since the
+								</p>
+							</div>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showSolicitudArbitrajeGeneralGeneral">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="panel" id="mpv-tipoSolicitud-panel-arbitraje-contratacionPublica">
+				<div class="header-panel">
+					<button class="btn link-button showNuevaSolicitud">
+						<span class="material-icons-outlined">
+							chevron_left
+						</span>
+						Volver
+					</button>
+					<h2>
+						Solicitudes
+					</h2>
+					<p>
+						Por este canal podrá presentar documentos de forma rápida sin necesidad de acercarse de manera
+						presencial a nuestras oficinas.
+						Antes de iniciar algún trámite por este Módulo, le recomendamos revisar previamente los
+						requerimientos que debe tener para poder realizar su solicitud.
+					</p>
+					<button type="button" name="button" class="btn outline-button btn-icon marginBottom-1-5"
+						data-bs-toggle="modal" data-bs-target="#modalListaRequerimientos">
+						<span class="material-icons-outlined">
+							visibility
+						</span>
+						Ver Lista de Requerimientos
+					</button>
+					<h3>
+						Seleccione un Tipo de Solicitud
+					</h3>
+				</div>
+
+				<div class="grid-cards-solicitud">
+					<div class="card-solicitud-mpv">
+						<div class="card-solicitud-top">
+							<img src="img/cards/solicitudArbitrajeFisico.jpg" class="card-solicitud-img" alt="Solicitud Física">
+							<div class="card-solicitud-text">
+								<h3>
+									Solicitud de Arbitraje Físico
+								</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and 
+									typesetting industry. Lorem Ipsum has been the 
+									industry's standard dummy text ever since the
+								</p>
+							</div>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showSolicitudArbitrajeGeneralFisico">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+
+					<div class="card-solicitud-mpv">
+						<div class="card-solicitud-top">
+							<img src="img/cards/solicitudArbitrajeElectronico.jpg" class="card-solicitud-img" alt="Solicitud Electrónica">
+							<div class="card-solicitud-text">
+								<h3>
+									Solicitud de Arbitraje Electrónico
+								</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and 
+									typesetting industry. Lorem Ipsum has been the 
+									industry's standard dummy text ever since the
+								</p>
+							</div>
+						</div>
+						<div class="card-solicitud-bottom">
+							<button class="btn primary-button showSolicitudArbitrajeGeneralGeneral">
+								Seleccionar
+							</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- End MPV -->
+
 			<!-- Solicitudes -->
 			<div class="panel" id="detalle-solicitud-ingresada-electronico-panel">
 				<div class="row">
@@ -7026,9 +7538,12 @@
 				<div class="row">
 					<div class="wrap-header-panel col-xl-10 col-lg-12">
 						<div class="header-panel">
-							<small class="title-panel">
-								Solicitudes
-							</small>
+							<button class="btn link-button showSolicitudesIngresadas">
+								<span class="material-icons-outlined">
+									chevron_left
+								</span>
+								Volver
+							</button>
 							<h2>
 								Solicitud de Arbitraje Físico
 							</h2>
@@ -10059,443 +10574,6 @@
 				</div>
 			</div>
 			<!-- End solicitudes -->
-
-			<!-- MPV -->
-			<div class="panel" id="mpv-expedientes-panel">
-				<div class="row">
-					<div class="header-panel">
-						<small class="title-panel">
-							Expedientes
-						</small>
-						<h2>
-							Listado de Expedientes
-						</h2>
-					</div>
-
-					<div class="content-controls-main">
-						<div class="content-controls-search">
-							<div class="wrap-search-input">
-								<div class="search-input">
-									<input type="text" class="form-control" placeholder="Buscar Solicitud"
-										aria-label="Recipient's username" aria-describedby="button-addon2">
-									<button class="btn material-icons-outlined" type="button">
-										search
-									</button>
-								</div>
-							</div>
-							<button type="button" class="btn outline-button btn-filter" data-bs-toggle="modal"
-								data-bs-target="#modalFiltrarSolicitudesIngresadas">
-								<span class="material-icons-outlined">
-									filter_list
-								</span>
-								Filtrar
-							</button>
-						</div>
-					</div>
-
-					<div class="table-responsive marginBottom-1-5">
-						<table class="table">
-							<thead>
-								<tr>
-									<th scope="col"># Expediente</th>
-									<th scope="col">Tipo de Solicitud</th>
-									<th scope="col">Fecha de Registro</th>
-									<th scope="col">Plazo Límite para Respuesta</th>
-									<th scope="col">Asignado</th>
-									<th scope="col">Estado</th>
-									<th scope="col">Acciones</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<th scope="row">
-										00022-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Físico
-									</td>
-									<td>
-										08/01/2023 - 11:23
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Mesa de Partes
-									</td>
-									<td>
-										<span class="tag tag-warning">
-											Solicitado
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresada">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										00023-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Electrónico
-									</td>
-									<td>
-										09/01/2023 - 11:00
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Secretaría Arbitral
-									</td>
-									<td>
-										<span class="tag tag-info">
-											Admitido
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										00023-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Electrónico
-									</td>
-									<td>
-										09/01/2023 - 11:00
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Secretaría Arbitral
-									</td>
-									<td>
-										<span class="tag tag-inactive">
-											En Trámite
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										00023-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Electrónico
-									</td>
-									<td>
-										09/01/2023 - 11:00
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Secretaría Arbitral
-									</td>
-									<td>
-										<span class="tag tag-success">
-											Completado
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">
-										00023-2023
-									</th>
-									<td>
-										Solicitud de Arbitraje Electrónico
-									</td>
-									<td>
-										09/01/2023 - 11:00
-									</td>
-									<td>
-										12/01/2023
-									</td>
-									<td>
-										Secretaría Arbitral
-									</td>
-									<td>
-										<span class="tag tag-danger">
-											Observado
-										</span>
-									</td>
-									<td>
-										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver cargo">
-													visibility
-												</span>
-											</button>
-											<button type="button" name="button"
-												class="btn ghost-button small-button showDetalleSolicitudIngresadaElectronico">
-												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Ver solicitud">
-													feed
-												</span>
-											</button>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="panel" id="mpv-nuevaSolicitud-panel">
-				<div class="header-panel">
-					<h2>
-						Nueva Solicitud
-					</h2>
-					<p>
-						Por este canal podrá presentar documentos de forma rápida sin necesidad de acercarse de manera
-						presencial a nuestras oficinas.
-						Antes de iniciar algún trámite por este Módulo, le recomendamos revisar previamente los
-						requerimientos que debe tener para poder realizar su solicitud.
-					</p>
-					<button type="button" name="button" class="btn outline-button btn-icon marginBottom-1-5"
-						data-bs-toggle="modal" data-bs-target="#modalListaRequerimientos">
-						<span class="material-icons-outlined">
-							visibility
-						</span>
-						Ver Lista de Requerimientos
-					</button>
-					<h3>
-						Seleccione un Tipo de Arbitraje
-					</h3>
-				</div>
-
-				<div class="grid-cards-solicitud">
-					<div class="card-solicitud-mpv">
-						<div class="card-solicitud-top">
-							<div class="card-solicitud-text">
-								<h3>
-									Arbitraje General
-								</h3>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
-									industry's standard dummy text ever since the
-								</p>
-							</div>
-						</div>
-						<div class="card-solicitud-bottom">
-							<button class="btn primary-button showTipoSolicitud">
-								Seleccionar
-							</button>
-						</div>
-					</div>
-
-					<div class="card-solicitud-mpv">
-						<div class="card-solicitud-top">
-							<div class="card-solicitud-text">
-								<h3>
-									Arbitraje de Contratación Pública
-								</h3>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
-									industry's standard dummy text ever since the
-								</p>
-							</div>
-						</div>
-						<div class="card-solicitud-bottom">
-							<button class="btn primary-button showTipoSolicitud">
-								Seleccionar
-							</button>
-						</div>
-					</div>
-
-					<div class="card-solicitud-mpv">
-						<div class="card-solicitud-top">
-							<div class="card-solicitud-text">
-								<h3>
-									Arbitraje de Emergencia
-								</h3>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
-									industry's standard dummy text ever since the
-								</p>
-							</div>
-						</div>
-						<div class="card-solicitud-bottom">
-							<button class="btn primary-button showTipoSolicitud">
-								Seleccionar
-							</button>
-						</div>
-					</div>
-
-					<div class="card-solicitud-mpv">
-						<div class="card-solicitud-top">
-							<div class="card-solicitud-text">
-								<h3>
-									Junta de Resolución de Disputas
-								</h3>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
-									industry's standard dummy text ever since the
-								</p>
-							</div>
-						</div>
-						<div class="card-solicitud-bottom">
-							<button class="btn primary-button showTipoSolicitud">
-								Seleccionar
-							</button>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="panel" id="mpv-tipoSolicitud-panel">
-				<div class="header-panel">
-					<button class="btn link-button showNuevaSolicitud">
-						<span class="material-icons-outlined">
-							chevron_left
-						</span>
-						Volver
-					</button>
-					<h2>
-						Nueva Solicitud
-					</h2>
-					<p>
-						Por este canal podrá presentar documentos de forma rápida sin necesidad de acercarse de manera
-						presencial a nuestras oficinas.
-						Antes de iniciar algún trámite por este Módulo, le recomendamos revisar previamente los
-						requerimientos que debe tener para poder realizar su solicitud.
-					</p>
-					<button type="button" name="button" class="btn outline-button btn-icon marginBottom-1-5"
-						data-bs-toggle="modal" data-bs-target="#modalListaRequerimientos">
-						<span class="material-icons-outlined">
-							visibility
-						</span>
-						Ver Lista de Requerimientos
-					</button>
-					<h3>
-						Seleccione un Tipo de Solicitud
-					</h3>
-				</div>
-
-				<div class="grid-cards-solicitud">
-					<div class="card-solicitud-mpv">
-						<div class="card-solicitud-top">
-							<img src="img/cards/solicitudArbitrajeFisico.jpg" class="card-solicitud-img" alt="Solicitud Física">
-							<div class="card-solicitud-text">
-								<h3>
-									Solicitud de Arbitraje Físico
-								</h3>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
-									industry's standard dummy text ever since the
-								</p>
-							</div>
-						</div>
-						<div class="card-solicitud-bottom">
-							<button class="btn primary-button showForm">
-								Seleccionar
-							</button>
-						</div>
-					</div>
-
-					<div class="card-solicitud-mpv">
-						<div class="card-solicitud-top">
-							<img src="img/cards/solicitudArbitrajeElectronico.jpg" class="card-solicitud-img" alt="Solicitud Electrónica">
-							<div class="card-solicitud-text">
-								<h3>
-									Solicitud de Arbitraje Electrónico
-								</h3>
-								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
-									industry's standard dummy text ever since the
-								</p>
-							</div>
-						</div>
-						<div class="card-solicitud-bottom">
-							<button class="btn primary-button showTipoSolicitud">
-								Seleccionar
-							</button>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!-- End MPV -->
 
 		</div>
 		<!-- End main panel -->
