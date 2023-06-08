@@ -210,6 +210,10 @@ small {
 .list-group .list-group-item {
   color: var(--primary-dark);
 }
+
+.list-group-item {
+  border: none;
+}
 /* End list */
 
 /* Buttons */
