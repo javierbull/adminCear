@@ -7526,7 +7526,6 @@
 						</button>
 					</div>
 
-
 					<div class="col-xl-10 col-lg-12  marginBottom-2">
 						<div class="accordion" id="accordionNuevoSolicitudFisica-ag">
 							<div class="accordion-item">
@@ -10547,7 +10546,1277 @@
 			</div>
 
 			<div class="panel" id="solicitud-fisico-panel-arbitrajeContratacionPublica">
-				
+				<div class="row">
+					<div class="wrap-header-panel col-xl-10 col-lg-12">
+						<div class="header-panel">
+							<button class="btn link-button showTipoSolicitud-arbitrajeGeneral">
+								<span class="material-icons-outlined">
+									chevron_left
+								</span>
+								Volver
+							</button>
+							<h2>
+								Arbitraje General - Subir tu Solicitud de Arbitraje
+							</h2>
+						</div>
+						<button type="button" name="button" class="btn outline-button btn-icon">
+							<span class="material-icons-outlined">
+								file_download
+							</span>
+							Descargar Formato de Solicitud Físico
+						</button>
+					</div>
+
+					<div class="col-xl-10 col-lg-12  marginBottom-2">
+						<div class="accordion" id="accordionNuevoSolicitudFisica-acp">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOneSolicitudesFisico-acp">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseOneSolicitudesFisico-acp" aria-expanded="true"
+										aria-controls="collapseOneSolicitudesFisico-acp">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">1</span>
+											Datos del Demandante
+										</div>
+									</button>
+								</h2>
+								<div id="collapseOneSolicitudesFisico-acp" class="accordion-collapse collapse show"
+									aria-labelledby="headingOneSolicitudesFisico-acp"
+									data-bs-parent="#accordionNuevoProfesional">
+									<div class="accordion-body">
+										<form>
+											<div class="marginBottom-1-5">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio"
+														name="RadioOptionsDemandanteSfPn-acp" id="datosDemandanteSfPn-acp"
+														value="option1" checked>
+													<label class="form-check-label" for="datosDemandanteSfPn-acp">Persona
+														Natural</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio"
+														name="RadioOptionsDemandanteSfPn-acp" id="datosDemandanteSfPj-acp"
+														value="option2">
+													<label class="form-check-label" for="datosDemandanteSfPj-acp">Persona
+														Jurídica</label>
+												</div>
+											</div>
+
+											<fieldset class="fieldset-demandante-sf-pn" id="fieldset-demandante-sf-pn-acp">
+												<div class="row form-row g-3">
+													<div class="col-lg-8 col-md-6 marginBottom-1-5">
+														<label for="selectTipoDocumentoDemandanteSf-acp"
+															class="form-label fw-b">Tipo de Documento del
+															Demandante</label>
+														<select class="form-select" aria-label="Default select example"
+															id="selectTipoDocumentoDemandanteSf-acp">
+															<option selected>(DNI) Documento Nacional de Identidad
+															</option>
+															<option value="1">(CE) Carnet de Extranjería</option>
+														</select>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputDocumentoDemandanteSf-acp"
+															class="form-label fw-b">Número de Documento del
+															Demandante</label>
+														<input type="number" class="form-control"
+															id="inputDocumentoDemandanteSf-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="row form-row g-3">
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputNombreDemandanteSf-acp"
+															class="form-label fw-b">Nombres y Apellidos del
+															Demandante</label>
+														<input type="text" class="form-control"
+															id="inputNombreDemandanteSf-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputDomicilioDemandanteSf-acp"
+															class="form-label fw-b">Domicilio del Demandante</label>
+														<input type="text" class="form-control"
+															id="inputDomicilioDemandanteSf-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputCelularDemandanteSf-acp"
+															class="form-label fw-b">Celulars del Demandante</label>
+														<input type="tel" class="form-control"
+															id="inputCelularDemandanteSf-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="col-12 marginBottom-1-5 ">
+													<label for="inputcorreoDemandanteSf-acp" class="form-label fw-b">Correo
+														del Demandante</label>
+													<div class="input-group">
+														<input type="email" class="form-control"
+															id="inputcorreoDemandanteSf-acp" placeholder="Ingrese un correo"
+															aria-label="Registre un correo"
+															aria-describedby="button-addon-correo">
+														<button class="btn outline-button" type="button"
+															id="button-addon-correo">Agregar</button>
+													</div>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="table-responsive marginBottom-1-5">
+													<table class="table">
+														<thead>
+															<tr>
+																<th scope="col">#</th>
+																<th scope="col">Correos</th>
+																<th scope="col">Acciones</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">1</th>
+																<td>
+																	peru@attachmedia.com.pe
+																</td>
+																<td>
+																	<button type="button" name="button"
+																		class="btn ghost-button-danger small-button">
+																		<span class="material-icons-outlined">
+																			delete_forever
+																		</span>
+																	</button>
+																</td>
+															</tr>
+															<tr>
+																<th scope="row">2</th>
+																<td>
+																	contacto@attachmedia.com.pe
+																</td>
+																<td>
+																	<button type="button" name="button"
+																		class="btn ghost-button-danger small-button">
+																		<span class="material-icons-outlined">
+																			delete_forever
+																		</span>
+																	</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+
+												<div class="form-check marginBottom-1-5">
+													<input class="form-check-input" type="checkbox" value=""
+														id="checkDatosDemandanteRepLegalSfPn-acp">
+													<label class="form-check-label"
+														for="checkDatosDemandanteRepLegalSfPn-acp">
+														Datos del Representante Legal
+													</label>
+													<small class="tag-primary hide" id="tag-arbitro">Árbitro
+														Único/Presidente</small>
+												</div>
+
+												<fieldset id="fieldset-datosDemandanteRepLegalSfPn-acp">
+													<div class="row form-row g-3">
+														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+															<label for="selectTipoDocumentoFacultatorioSf-acp"
+																class="form-label fw-b">Seleccionar Tipo de Documento
+																Facultatorio</label>
+															<select class="form-select"
+																aria-label="Default select example"
+																id="selectTipoDocumentoFacultatorioSf-acp">
+																<option>Seleccione</option>
+																<option>Escritura Pública</option>
+																<option>Acta Legalizada</option>
+																<option>Copia Literal</option>
+																<option>Copia de la vigencia expedida por los registros
+																	públicos</option>
+															</select>
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+															<label for="inputCodigoDocumentoFacultatorioSf-acp"
+																class="form-label fw-b">Código del Documento
+																Facultatorio</label>
+															<input type="number" class="form-control"
+																id="inputCodigoDocumentoFacultatorioSf-acp">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+
+													<div class="row form-row g-3">
+														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+															<label for="selectTipoDocumentoRlegalSf-acp"
+																class="form-label fw-b">Tipo de Documento del
+																Representante Legal</label>
+															<select class="form-select"
+																aria-label="Default select example"
+																id="selectTipoDocumentoRlegalSf-acp">
+																<option selected>(DNI) Documento Nacional de Identidad
+																</option>
+																<option value="1">(CE) Carnet de Extranjería)</option>
+															</select>
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+															<label for="inputDocumentoRlegalSf-acp"
+																class="form-label fw-b">Número de Documento del
+																Representante Legal</label>
+															<input type="number" class="form-control"
+																id="inputDocumentoRlegalSf-acp">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+
+													<div class="row form-row g-3">
+														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+															<label for="inputNombreRlegalSf-acp"
+																class="form-label fw-b">Nombres y Apellidos del
+																Representante Legal</label>
+															<input type="text" class="form-control"
+																id="inputNombreRlegalSf-acp">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+															<label for="inputCelularRlegalSf-acp"
+																class="form-label fw-b">Celular del Representante
+																Legal</label>
+															<input type="tel" class="form-control"
+																id="inputCelularRlegalSf-acp">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+
+													<div class="col-12 marginBottom-1-5 ">
+														<label for="inputcorreoRepresentanteLegalSf-acp"
+															class="form-label fw-b">Correo del Representante
+															Legal</label>
+														<div class="input-group">
+															<input type="email" class="form-control"
+																id="inputcorreoRepresentanteLegalSf-acp"
+																placeholder="Ingrese un correo"
+																aria-label="Registre un correo"
+																aria-describedby="button-addon-correo">
+															<button class="btn outline-button" type="button"
+																id="button-addon-correo">Agregar</button>
+														</div>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="table-responsive marginBottom-1-5">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th scope="col">#</th>
+																	<th scope="col">Correos</th>
+																	<th scope="col">Acciones</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<th scope="row">1</th>
+																	<td>
+																		peru@attachmedia.com.pe
+																	</td>
+																	<td>
+																		<button type="button" name="button"
+																			class="btn ghost-button-danger small-button">
+																			<span class="material-icons-outlined">
+																				delete_forever
+																			</span>
+																		</button>
+																	</td>
+																</tr>
+																<tr>
+																	<th scope="row">2</th>
+																	<td>
+																		contacto@attachmedia.com.pe
+																	</td>
+																	<td>
+																		<button type="button" name="button"
+																			class="btn ghost-button-danger small-button">
+																			<span class="material-icons-outlined">
+																				delete_forever
+																			</span>
+																		</button>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+
+												</fieldset>
+											</fieldset>
+
+											<fieldset class="fieldset-demandante-sf-pj" id="fieldset-demandante-sf-pj-acp">
+												<div class="row form-row g-3">
+													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+														<label for="inputRazonSocialDemandanteSfPj-acp"
+															class="form-label fw-b">Razón Social del Demandante</label>
+														<input type="number" class="form-control"
+															id="inputRazonSocialDemandanteSfPj-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputRucDemandanteSfPj-acp" class="form-label fw-b">RUC
+															del Demandante</label>
+														<input type="number" class="form-control"
+															id="inputRucDemandanteSfPj-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="row form-row g-3">
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputDomicilioDemandanteSfPj-acp"
+															class="form-label fw-b">Domicilio del Demandante</label>
+														<input type="text" class="form-control"
+															id="inputDomicilioDemandanteSfPj-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputCelularDemandanteSfPj-acp"
+															class="form-label fw-b">Celular del Demandante</label>
+														<input type="tel" class="form-control"
+															id="inputCelularDemandanteSfPj-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputLinkDemandanteSfPj-acp"
+															class="form-label fw-b">Enlace Mesa de partes
+															(Opcional)</label>
+														<input type="url" class="form-control"
+															id="inputLinkDemandanteSfPj-acp">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="col-12 marginBottom-1-5 ">
+													<label for="inputcorreoDemandanteSfPj-acp"
+														class="form-label fw-b">Correo del Demandante</label>
+													<div class="input-group">
+														<input type="email" class="form-control"
+															id="inputcorreoDemandanteSfPj-acp"
+															placeholder="Ingrese un correo"
+															aria-label="Registre un correo"
+															aria-describedby="button-addon-correo">
+														<button class="btn outline-button" type="button"
+															id="button-addon-correo">Agregar</button>
+													</div>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="table-responsive marginBottom-1-5">
+													<table class="table">
+														<thead>
+															<tr>
+																<th scope="col">#</th>
+																<th scope="col">Correos</th>
+																<th scope="col">Acciones</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">1</th>
+																<td>
+																	peru@attachmedia.com.pe
+																</td>
+																<td>
+																	<button type="button" name="button"
+																		class="btn ghost-button-danger small-button">
+																		<span class="material-icons-outlined">
+																			delete_forever
+																		</span>
+																	</button>
+																</td>
+															</tr>
+															<tr>
+																<th scope="row">2</th>
+																<td>
+																	contacto@attachmedia.com.pe
+																</td>
+																<td>
+																	<button type="button" name="button"
+																		class="btn ghost-button-danger small-button">
+																		<span class="material-icons-outlined">
+																			delete_forever
+																		</span>
+																	</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+
+												<fieldset id="fieldset-datosDemandanteRepLegalSfPj-acp">
+													<h3>Datos Representante legal</h3>
+													<div class="row form-row g-3">
+														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+															<label for="selectTipoDocumentoFacultatorioSfPj-acp"
+																class="form-label fw-b">Seleccionar Tipo de Documento
+																Facultatorio</label>
+															<select class="form-select"
+																aria-label="Default select example"
+																id="selectTipoDocumentoFacultatorioSfPj-acp">
+																<option>Seleccione</option>
+																<option>Escritura Pública</option>
+																<option>Acta Legalizada</option>
+																<option>Copia Literal</option>
+																<option>Copia de la vigencia expedida por los registros
+																	públicos</option>
+															</select>
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+															<label for="inputCodigoDocumentoFacultatorioSfPj-acp"
+																class="form-label fw-b">Código del Documento
+																Facultatorio</label>
+															<input type="number" class="form-control"
+																id="inputCodigoDocumentoFacultatorioSfPj-acp">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+
+													<div class="row form-row g-3">
+														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+															<label for="selectTipoDocumentoRlegalSfPj-acp"
+																class="form-label fw-b">Tipo de Documento del
+																Representante Legal</label>
+															<select class="form-select"
+																aria-label="Default select example"
+																id="selectTipoDocumentoRlegalSfPj-acp">
+																<option selected>(DNI) Documento Nacional de Identidad
+																</option>
+																<option value="1">(CE) Carnet de Extranjería)</option>
+															</select>
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+															<label for="inputDocumentoRlegalSfPj-acp"
+																class="form-label fw-b">Número de Documento del
+																Representante Legal</label>
+															<input type="number" class="form-control"
+																id="inputDocumentoRlegalSfPj-acp">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+
+													<div class="row form-row g-3">
+														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+															<label for="inputNombreRlegalSfPj-acp"
+																class="form-label fw-b">Nombres y Apellidos del
+																Representante Legal</label>
+															<input type="text" class="form-control"
+																id="inputNombreRlegalSfPj-acp">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+
+														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+															<label for="inputCelularRlegalSfPj-acp"
+																class="form-label fw-b">Celular del Representante
+																Legal</label>
+															<input type="tel" class="form-control"
+																id="inputCelularRlegalSfPj-acp">
+															<small class="text-help">
+																<span class="material-icons">
+																	report_problem
+																</span>
+																Campo obligatorio
+															</small>
+														</div>
+													</div>
+
+													<div class="col-12 marginBottom-1-5 ">
+														<label for="inputcorreoRepresentanteLegalSfPj-acp"
+															class="form-label fw-b">Correo del Representante
+															Legal</label>
+														<div class="input-group">
+															<input type="email" class="form-control"
+																id="inputcorreoRepresentanteLegalSfPj-acp"
+																placeholder="Ingrese un correo"
+																aria-label="Registre un correo"
+																aria-describedby="button-addon-correo">
+															<button class="btn outline-button" type="button"
+																id="button-addon-correo">Agregar</button>
+														</div>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="table-responsive marginBottom-1-5">
+														<table class="table">
+															<thead>
+																<tr>
+																	<th scope="col">#</th>
+																	<th scope="col">Correos</th>
+																	<th scope="col">Acciones</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<th scope="row">1</th>
+																	<td>
+																		peru@attachmedia.com.pe
+																	</td>
+																	<td>
+																		<button type="button" name="button"
+																			class="btn ghost-button-danger small-button">
+																			<span class="material-icons-outlined">
+																				delete_forever
+																			</span>
+																		</button>
+																	</td>
+																</tr>
+																<tr>
+																	<th scope="row">2</th>
+																	<td>
+																		contacto@attachmedia.com.pe
+																	</td>
+																	<td>
+																		<button type="button" name="button"
+																			class="btn ghost-button-danger small-button">
+																			<span class="material-icons-outlined">
+																				delete_forever
+																			</span>
+																		</button>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+
+												</fieldset>
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwoSolicitudesFisico-ag">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwoSolicitudesFisico-ag" aria-expanded="false"
+										aria-controls="collapseTwoSolicitudesFisico-ag">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">2</span>
+											Datos del Demandado
+										</div>
+									</button>
+								</h2>
+								<div id="collapseTwoSolicitudesFisico-ag" class="accordion-collapse collapse"
+									aria-labelledby="headingTwoSolicitudesFisico-ag"
+									data-bs-parent="#accordionNuevoProfesional">
+									<div class="accordion-body">
+										<form>
+											<div class="marginBottom-1-5">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio"
+														name="RadioOptionsDemandadoSf" id="datosDemandadoSfPn-ag"
+														value="option1" checked>
+													<label class="form-check-label" for="datosDemandadoSfPn-ag">Persona
+														Natural</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio"
+														name="RadioOptionsDemandadoSf" id="datosDemandadoSfPj-ag"
+														value="option2">
+													<label class="form-check-label" for="datosDemandadoSfPj-ag">Persona
+														Jurídica</label>
+												</div>
+											</div>
+
+											<fieldset class="fieldset-se-demandado-pn" id="fieldset-demandado-sf-pn-ag">
+												<div class="row form-row g-3">
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="selectTipoDocumentoDemandadoSfPn-ag"
+															class="form-label fw-b">Tipo de Documento del
+															Demandado</label>
+														<select class="form-select" aria-label="Default select example"
+															id="selectTipoDocumentoDemandadoSfPn-ag">
+															<option selected>(DNI) Documento Nacional de Identidad
+															</option>
+															<option value="1">(CE) Carnet de Extranjería)</option>
+														</select>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputDocumentoDemandadoSfPn-ag"
+															class="form-label fw-b">Número de Documento del
+															Demandado</label>
+														<input type="number" class="form-control"
+															id="inputDocumentoDemandadoSfPn-ag">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputNombreDemandadoSfPn-ag"
+															class="form-label fw-b">Nombres y Apellidos del
+															Demandado</label>
+														<input type="text" class="form-control"
+															id="inputNombreDemandadoSfPn-ag">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="col-12 marginBottom-1-5 ">
+													<label for="inputCorreoDemandadoSfPn-ag" class="form-label fw-b">Correo
+														del Demandado</label>
+													<div class="input-group">
+														<input type="email" class="form-control"
+															id="inputCorreoDemandadoSfPn-ag"
+															placeholder="Ingrese un correo"
+															aria-label="Registre un correo"
+															aria-describedby="button-addon-correo">
+														<button class="btn outline-button" type="button"
+															id="button-addon-correo">Agregar</button>
+													</div>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="table-responsive marginBottom-1-5">
+													<table class="table">
+														<thead>
+															<tr>
+																<th scope="col">#</th>
+																<th scope="col">Correos</th>
+																<th scope="col">Acciones</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">1</th>
+																<td>
+																	peru@attachmedia.com.pe
+																</td>
+																<td>
+																	<button type="button" name="button"
+																		class="btn ghost-button-danger small-button">
+																		<span class="material-icons-outlined">
+																			delete_forever
+																		</span>
+																	</button>
+																</td>
+															</tr>
+															<tr>
+																<th scope="row">2</th>
+																<td>
+																	contacto@attachmedia.com.pe
+																</td>
+																<td>
+																	<button type="button" name="button"
+																		class="btn ghost-button-danger small-button">
+																		<span class="material-icons-outlined">
+																			delete_forever
+																		</span>
+																	</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+
+												<div class="marginBottom-1-5 ">
+													<label for="inputNombreRlDemandadoSfPn-ag"
+														class="form-label fw-b">Nombres y Apellidos del Representante
+														Legal</label>
+													<input type="text" class="form-control"
+														id="inputNombreRlDemandadoSfPn-ag">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</fieldset>
+
+											<fieldset class="fieldset-se-demandado-pj" id="fieldset-demandado-sf-pj-ag">
+												<div class="row form-row g-3">
+													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+														<label for="inputRazonSocialDemandadoSfPj-ag"
+															class="form-label fw-b">Razón Social del Demandado</label>
+														<input type="number" class="form-control"
+															id="inputRazonSocialDemandadoSfPj-ag">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputRucDemandadoSfPj-ag" class="form-label fw-b">RUC
+															del Demandado</label>
+														<input type="number" class="form-control"
+															id="inputRucDemandadoSfPj-ag">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="row form-row g-3">
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputDomicilioDemandadoSfPj-ag"
+															class="form-label fw-b">Domicilio del Demandado</label>
+														<input type="text" class="form-control"
+															id="inputDomicilioDemandadoSfPj-ag">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputCelularDemandadoSfPj-ag"
+															class="form-label fw-b">Celular del Demandado</label>
+														<input type="tel" class="form-control"
+															id="inputCelularDemandadoSfPj-ag">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputLinkDemandadoSfPj-ag"
+															class="form-label fw-b">Enlace Mesa de partes
+															(Opcional)</label>
+														<input type="url" class="form-control"
+															id="inputLinkDemandadoSfPj-ag">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="col-12 marginBottom-1-5 ">
+													<label for="inputcorreoDemandadoSfPj-ag" class="form-label fw-b">Correo
+														del Demandado</label>
+													<div class="input-group">
+														<input type="email" class="form-control"
+															id="inputcorreoDemandadoSfPj-ag"
+															placeholder="Ingrese un correo"
+															aria-label="Registre un correo"
+															aria-describedby="button-addon-correo">
+														<button class="btn outline-button" type="button"
+															id="button-addon-correo">Agregar</button>
+													</div>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="table-responsive marginBottom-1-5">
+													<table class="table">
+														<thead>
+															<tr>
+																<th scope="col">#</th>
+																<th scope="col">Correos</th>
+																<th scope="col">Acciones</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">1</th>
+																<td>
+																	peru@attachmedia.com.pe
+																</td>
+																<td>
+																	<button type="button" name="button"
+																		class="btn ghost-button-danger small-button">
+																		<span class="material-icons-outlined">
+																			delete_forever
+																		</span>
+																	</button>
+																</td>
+															</tr>
+															<tr>
+																<th scope="row">2</th>
+																<td>
+																	contacto@attachmedia.com.pe
+																</td>
+																<td>
+																	<button type="button" name="button"
+																		class="btn ghost-button-danger small-button">
+																		<span class="material-icons-outlined">
+																			delete_forever
+																		</span>
+																	</button>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+
+												<div class="marginBottom-1-5 ">
+													<label for="inputNombreRlDemandadoSfPj-ag"
+														class="form-label fw-b">Nombres y Apellidos del Representante
+														Legal</label>
+													<input type="text" class="form-control"
+														id="inputNombreRlDemandadoSfPj-ag">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThreeSolicitudesFisico-ag">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseThreeSolicitudesFisico-ag" aria-expanded="false"
+										aria-controls="collapseThreeSolicitudesFisico-ag">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">3</span>
+											Tipo de Servicio
+										</div>
+									</button>
+								</h2>
+								<div id="collapseThreeSolicitudesFisico-ag" class="accordion-collapse collapse"
+									aria-labelledby="headingThreeSolicitudesFisico-ag"
+									data-bs-parent="#accordionNuevoProfesional">
+									<div class="accordion-body">
+										<form>
+											<h3 class="col-lg-6 col-md-6">
+												Seleccione las casillas que considere aplicables
+											</h3>
+											<div class="row form-row-top g-3">
+												<div class="col-lg-6 col-md-6 marginBottom-1-5 ">
+													<label for="selectControversiaSf-ag" class="form-label fw-b">Seleccione
+														su Controversia
+													</label>
+
+													<div class="wrap-buttons-contorls-select2 marginBottom-1">
+														<button type="button" name="button"
+															class="btn primary-button small-button">
+															Seleccionar todos
+														</button>
+														<button type="button" name="button"
+															class="btn primary-button small-button">
+															Quitar todos
+														</button>
+													</div>
+
+													<select class="form-select select2-multiple"
+														aria-label="Default select example" id="selectControversiaSf-ag"
+														data-placeholder="Buscar" multiple>
+														<option></option>
+														<option>(DNI) Documento Nacional de Identidad</option>
+														<option>(CE) Carnet de Extranjería)</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-6 col-md-6 marginBottom-1-5 ">
+													<label for="selectEspecialidadSf-ag" class="form-label fw-b">Seleccione
+														la Especialidad</label>
+
+													<div class="wrap-buttons-contorls-select2 marginBottom-1">
+														<button type="button" name="button"
+															class="btn primary-button small-button">
+															Seleccionar todos
+														</button>
+														<button type="button" name="button"
+															class="btn primary-button small-button">
+															Quitar todos
+														</button>
+													</div>
+
+													<select class="form-select select2-multiple"
+														aria-label="Default select example" id="selectEspecialidadSf-ag"
+														data-placeholder="Buscar" multiple>
+														<option></option>
+														<option>Contratación Pública</option>
+														<option>Civil</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFourSolicitudesFisico-ag">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseFourSolicitudesFisico-ag" aria-expanded="false"
+										aria-controls="collapseFourSolicitudesFisico-ag">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">4</span>
+											Anexos
+										</div>
+									</button>
+								</h2>
+								<div id="collapseFourSolicitudesFisico-ag" class="accordion-collapse collapse"
+									aria-labelledby="headingFourSolicitudesFisico-ag"
+									data-bs-parent="#accordionNuevoSolicitudFisica-ag">
+									<div class="accordion-body">
+										<button type="button" name="button"
+											class="btn outline-button btn-icon marginBottom-1-5" data-bs-toggle="modal"
+											data-bs-target="#modalListaRequerimientos">
+											<span class="material-icons-outlined">
+												visibility
+											</span>
+											Ver Lista de Requerimientos
+										</button>
+										<form>
+											<div class="form-row-btn">
+												<div class="col marginBottom-1-5">
+													<label for="inputFileSf" class="form-label fw-b">Documento PDF (El
+														total de archivos no deben exceder los 30mb)</label>
+													<input type="file" class="form-control" id="inputFileSf"
+														aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-3 col-md-3 col-sm-12 marginBottom-1-5">
+													<label for="inputFoliosSf" class="form-label fw-b">Total de
+														Folios</label>
+													<input type="number" class="form-control" id="inputFoliosSf">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<button type="button" name="button"
+													class="btn outline-button marginBottom-1-5" data-bs-toggle="modal"
+													data-bs-target="#modalAvisoPesoArchivos">
+													Agregar
+												</button>
+											</div>
+
+											<div class="table-responsive marginBottom-1-5">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">#</th>
+															<th scope="col">Archivo</th>
+															<th scope="col">Folios</th>
+															<th scope="col">Peso</th>
+															<th scope="col">Acciones</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>
+																archivo1.pdf
+															</td>
+															<td>
+																<input type="number" class="form-control input-table">
+															</td>
+															<td>
+																10 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		delete_forever
+																	</span>
+																</button>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>
+																archivo2.pdf
+															</td>
+															<td>
+																<input type="number" class="form-control input-table">
+															</td>
+															<td>
+																15 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		delete_forever
+																	</span>
+																</button>
+															</td>
+														</tr>
+													<tfoot>
+														<tr>
+															<td></td>
+															<td>
+																Total
+															</td>
+															<td>
+																30
+															</td>
+															<td>
+																25 mb
+															</td>
+															<td></td>
+														</tr>
+													</tfoot>
+													</tbody>
+												</table>
+											</div>
+
+											<div class="wrap-form-tooltip">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" value=""
+														id="checkShowInputEnlaceSf-ag">
+													<label class="form-check-label" for="checkShowInputEnlaceSf-ag">
+														Mi archivo pesa más de 30 Mb
+													</label>
+												</div>
+												<span class="material-icons" data-bs-toggle="tooltip"
+													data-bs-placement="right"
+													title="Marque la casilla para ingresar link del archivo">
+													help
+												</span>
+											</div>
+
+											<fieldset id="fieldset-enlaceArchivoPesado-ag">
+												<div class="row form-row g-3">
+													<div class="col-lg-10 col-md-8 marginBottom-1-5">
+														<label for="inputNombresDemandadoSf-ag"
+															class="form-label fw-b">Enlace para enviar archivos pesados
+															(Google Drive, OneDrive, WeTransfer, Mega, Dropbox, etc.),
+															recuerde habilitar los permisos</label>
+														<input type="url" class="form-control"
+															placeholder="Ingrese url del documento"
+															id="inputNombresDemandadoSf-ag">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-2 col-md-4 marginBottom-1-5 ">
+														<label for="inputCorreoDemandadoSf"
+															class="form-label fw-b">Total de Folios</label>
+														<input type="email" class="form-control"
+															id="inputCorreoDemandadoSf">
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-10 col-lg-12">
+						<div class="row">
+							<div class="col content-btns-controls-panel">
+								<button type="button" name="button" class="btn btn-large primary-button"
+									data-bs-toggle="modal" data-bs-target="#modalSolicitudCargo">
+									Presentar Solicitud
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="panel" id="solicitud-electronico-panel-arbitrajeContratacionPublica">

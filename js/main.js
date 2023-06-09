@@ -1061,6 +1061,14 @@ $(document).ready(function () {
     }
   });
 
+  $("#checkDatosDemandanteRepLegalSfPn-acp").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-datosDemandanteRepLegalSfPn-acp").show();
+    } else {
+      $("#fieldset-datosDemandanteRepLegalSfPn-acp").hide();
+    }
+  });
+
   $("#checkDatosDemandanteRepLegalSfPj-ag").click(function () {
     if ($(this).is(":checked")) {
       $("#fieldset-datosDemandanteRepLegalSfPj-ag").show();
@@ -1145,14 +1153,14 @@ $(document).ready(function () {
     $("#fieldset-demandante-sf-pj-ag").hide();
   });
 
-  $("#datosDemandanteSfPj-acp-ag").click(function () {
-    $("#fieldset-demandante-sf-pn-acp-ag").hide();
-    $("#fieldset-demandante-sf-pj-acp-ag").show();
+  $("#datosDemandanteSfPj-acp").click(function () {
+    $("#fieldset-demandante-sf-pn-acp").hide();
+    $("#fieldset-demandante-sf-pj-acp").show();
   });
 
-  $("#datosDemandanteSfPn-acp-ag").click(function () {
-    $("#fieldset-demandante-sf-pn-acp-ag").show();
-    $("#fieldset-demandante-sf-pj-acp-ag").hide();
+  $("#datosDemandanteSfPn-acp").click(function () {
+    $("#fieldset-demandante-sf-pn-acp").show();
+    $("#fieldset-demandante-sf-pj-acp").hide();
   });
 
   $("#datosDemandadoSfPj-ag").click(function () {

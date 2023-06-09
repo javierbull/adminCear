@@ -1302,7 +1302,7 @@ input[type=number]::-webkit-outer-spin-button {
 #content-resumen,
 #fieldset-cuantia-determinada-ag,
 #fieldset-cuantia-determinada-Si,
-#fieldset-demandante-sf-pj,
+#fieldset-demandante-sf-pj-acp,
 #fieldset-enlaceArchivoPesado-se-ag,
 #fieldset-enlaceArchivoPesado-se-si,
 #fieldset-demandante-si-pj {
@@ -1887,6 +1887,13 @@ input[type=number]::-webkit-outer-spin-button {
 #fieldset-datosDemandanteRepLegalSfPn-ag,
 #fieldset-datosDemandanteRepLegalSePn-ag,
 #fieldset-enlaceArchivoPesado-ag,
+#fieldset-demandante-sf-pj-acp,
+#fieldset-demandante-se-pj-acp,
+#fieldset-demandado-sf-pj-acp,
+#fieldset-demandado-se-pj-acp,
+#fieldset-datosDemandanteRepLegalSfPn-acp,
+#fieldset-datosDemandanteRepLegalSePn-acp,
+#fieldset-enlaceArchivoPesado-acp,
 
  .comprobanteSe,
  .comprobanteSeSi {
