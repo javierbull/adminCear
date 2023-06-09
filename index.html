@@ -7515,7 +7515,7 @@
 								Volver
 							</button>
 							<h2>
-								Solicitud de Arbitraje Físico
+								Arbitraje General - Subir tu solicitud de arbitraje
 							</h2>
 						</div>
 						<button type="button" name="button" class="btn outline-button btn-icon">
@@ -7532,15 +7532,15 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingOneSolicitudesFisico">
 									<button class="accordion-button" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseOneSolicitudesFisico" aria-expanded="true"
-										aria-controls="collapseOneSolicitudesFisico">
+										data-bs-target="#collapseOneSolicitudesFisico-ag" aria-expanded="true"
+										aria-controls="collapseOneSolicitudesFisico-ag">
 										<div class="content-accordion-btn">
 											<span class="accordion-step">1</span>
 											Datos del Demandante
 										</div>
 									</button>
 								</h2>
-								<div id="collapseOneSolicitudesFisico" class="accordion-collapse collapse show"
+								<div id="collapseOneSolicitudesFisico-ag" class="accordion-collapse collapse show"
 									aria-labelledby="headingOneSolicitudesFisico"
 									data-bs-parent="#accordionNuevoProfesional">
 									<div class="accordion-body">
@@ -7548,28 +7548,28 @@
 											<div class="marginBottom-1-5">
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
-														name="RadioOptionsDemandanteSfPn" id="datosDemandanteSfPn"
+														name="RadioOptionsDemandanteSfPn-ag" id="datosDemandanteSfPn-ag"
 														value="option1" checked>
-													<label class="form-check-label" for="datosDemandanteSfPn">Persona
+													<label class="form-check-label" for="datosDemandanteSfPn-ag">Persona
 														Natural</label>
 												</div>
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
-														name="RadioOptionsDemandanteSfPn" id="datosDemandanteSfPj"
+														name="RadioOptionsDemandanteSfPn-ag" id="datosDemandanteSfPj-ag"
 														value="option2">
-													<label class="form-check-label" for="datosDemandanteSfPj">Persona
+													<label class="form-check-label" for="datosDemandanteSfPj-ag">Persona
 														Jurídica</label>
 												</div>
 											</div>
 
-											<fieldset class="fieldset-demandante-sf-pn" id="fieldset-demandante-sf-pn">
+											<fieldset class="fieldset-demandante-sf-pn" id="fieldset-demandante-sf-pn-ag">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5">
-														<label for="selectTipoDocumentoDemandanteSf"
+														<label for="selectTipoDocumentoDemandanteSf-ag"
 															class="form-label fw-b">Tipo de Documento del
 															Demandante</label>
 														<select class="form-select" aria-label="Default select example"
-															id="selectTipoDocumentoDemandanteSf">
+															id="selectTipoDocumentoDemandanteSf-ag">
 															<option selected>(DNI) Documento Nacional de Identidad
 															</option>
 															<option value="1">(CE) Carnet de Extranjería</option>
@@ -7583,11 +7583,11 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputDocumentoDemandanteSf"
+														<label for="inputDocumentoDemandanteSf-ag"
 															class="form-label fw-b">Número de Documento del
 															Demandante</label>
 														<input type="number" class="form-control"
-															id="inputDocumentoDemandanteSf">
+															id="inputDocumentoDemandanteSf-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7599,11 +7599,11 @@
 
 												<div class="row form-row g-3">
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputNombreDemandanteSf"
+														<label for="inputNombreDemandanteSf-ag"
 															class="form-label fw-b">Nombres y Apellidos del
 															Demandante</label>
 														<input type="text" class="form-control"
-															id="inputNombreDemandanteSf">
+															id="inputNombreDemandanteSf-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7613,10 +7613,10 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputDomicilioDemandanteSf"
+														<label for="inputDomicilioDemandanteSf-ag"
 															class="form-label fw-b">Domicilio del Demandante</label>
 														<input type="text" class="form-control"
-															id="inputDomicilioDemandanteSf">
+															id="inputDomicilioDemandanteSf-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7626,10 +7626,10 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputCelularDemandanteSf"
+														<label for="inputCelularDemandanteSf-ag"
 															class="form-label fw-b">Celulars del Demandante</label>
 														<input type="tel" class="form-control"
-															id="inputCelularDemandanteSf">
+															id="inputCelularDemandanteSf-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7640,11 +7640,11 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandanteSf" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandanteSf-ag" class="form-label fw-b">Correo
 														del Demandante</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
-															id="inputcorreoDemandanteSf" placeholder="Ingrese un correo"
+															id="inputcorreoDemandanteSf-ag" placeholder="Ingrese un correo"
 															aria-label="Registre un correo"
 															aria-describedby="button-addon-correo">
 														<button class="btn outline-button" type="button"
@@ -7702,24 +7702,24 @@
 
 												<div class="form-check marginBottom-1-5">
 													<input class="form-check-input" type="checkbox" value=""
-														id="checkDatosDemandanteRepLegalSfPn">
+														id="checkDatosDemandanteRepLegalSfPn-ag">
 													<label class="form-check-label"
-														for="checkDatosDemandanteRepLegalSfPn">
+														for="checkDatosDemandanteRepLegalSfPn-ag">
 														Datos del Representante Legal
 													</label>
 													<small class="tag-primary hide" id="tag-arbitro">Árbitro
 														Único/Presidente</small>
 												</div>
 
-												<fieldset id="fieldset-datosDemandanteRepLegalSfPn">
+												<fieldset id="fieldset-datosDemandanteRepLegalSfPn-ag">
 													<div class="row form-row g-3">
 														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
-															<label for="selectTipoDocumentoFacultatorioSf"
+															<label for="selectTipoDocumentoFacultatorioSf-ag"
 																class="form-label fw-b">Seleccionar Tipo de Documento
 																Facultatorio</label>
 															<select class="form-select"
 																aria-label="Default select example"
-																id="selectTipoDocumentoFacultatorioSf">
+																id="selectTipoDocumentoFacultatorioSf-ag">
 																<option>Seleccione</option>
 																<option>Escritura Pública</option>
 																<option>Acta Legalizada</option>
@@ -7736,11 +7736,11 @@
 														</div>
 
 														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-															<label for="inputCodigoDocumentoFacultatorioSf"
+															<label for="inputCodigoDocumentoFacultatorioSf-ag"
 																class="form-label fw-b">Código del Documento
 																Facultatorio</label>
 															<input type="number" class="form-control"
-																id="inputCodigoDocumentoFacultatorioSf">
+																id="inputCodigoDocumentoFacultatorioSf-ag">
 															<small class="text-help">
 																<span class="material-icons">
 																	report_problem
@@ -7752,12 +7752,12 @@
 
 													<div class="row form-row g-3">
 														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
-															<label for="selectTipoDocumentoRlegalSf"
+															<label for="selectTipoDocumentoRlegalSf-ag"
 																class="form-label fw-b">Tipo de Documento del
 																Representante Legal</label>
 															<select class="form-select"
 																aria-label="Default select example"
-																id="selectTipoDocumentoRlegalSf">
+																id="selectTipoDocumentoRlegalSf-ag">
 																<option selected>(DNI) Documento Nacional de Identidad
 																</option>
 																<option value="1">(CE) Carnet de Extranjería)</option>
@@ -7771,11 +7771,11 @@
 														</div>
 
 														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-															<label for="inputDocumentoRlegalSf"
+															<label for="inputDocumentoRlegalSf-ag"
 																class="form-label fw-b">Número de Documento del
 																Representante Legal</label>
 															<input type="number" class="form-control"
-																id="inputDocumentoRlegalSf">
+																id="inputDocumentoRlegalSf-ag">
 															<small class="text-help">
 																<span class="material-icons">
 																	report_problem
@@ -7787,11 +7787,11 @@
 
 													<div class="row form-row g-3">
 														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
-															<label for="inputNombreRlegalSf"
+															<label for="inputNombreRlegalSf-ag"
 																class="form-label fw-b">Nombres y Apellidos del
 																Representante Legal</label>
 															<input type="text" class="form-control"
-																id="inputNombreRlegalSf">
+																id="inputNombreRlegalSf-ag">
 															<small class="text-help">
 																<span class="material-icons">
 																	report_problem
@@ -7801,11 +7801,11 @@
 														</div>
 
 														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-															<label for="inputCelularRlegalSf"
+															<label for="inputCelularRlegalSf-ag"
 																class="form-label fw-b">Celular del Representante
 																Legal</label>
 															<input type="tel" class="form-control"
-																id="inputCelularRlegalSf">
+																id="inputCelularRlegalSf-ag">
 															<small class="text-help">
 																<span class="material-icons">
 																	report_problem
@@ -7816,12 +7816,12 @@
 													</div>
 
 													<div class="col-12 marginBottom-1-5 ">
-														<label for="inputcorreoRepresentanteLegalSf"
+														<label for="inputcorreoRepresentanteLegalSf-ag"
 															class="form-label fw-b">Correo del Representante
 															Legal</label>
 														<div class="input-group">
 															<input type="email" class="form-control"
-																id="inputcorreoRepresentanteLegalSf"
+																id="inputcorreoRepresentanteLegalSf-ag"
 																placeholder="Ingrese un correo"
 																aria-label="Registre un correo"
 																aria-describedby="button-addon-correo">
@@ -7881,13 +7881,13 @@
 												</fieldset>
 											</fieldset>
 
-											<fieldset class="fieldset-demandante-sf-pj" id="fieldset-demandante-sf-pj">
+											<fieldset class="fieldset-demandante-sf-pj" id="fieldset-demandante-sf-pj-ag">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
-														<label for="inputRazonSocialDemandanteSfPj"
+														<label for="inputRazonSocialDemandanteSfPj-ag"
 															class="form-label fw-b">Razón Social del Demandante</label>
 														<input type="number" class="form-control"
-															id="inputRazonSocialDemandanteSfPj">
+															id="inputRazonSocialDemandanteSfPj-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7897,10 +7897,10 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandanteSfPj" class="form-label fw-b">RUC
+														<label for="inputRucDemandanteSfPj-ag" class="form-label fw-b">RUC
 															del Demandante</label>
 														<input type="number" class="form-control"
-															id="inputRucDemandanteSfPj">
+															id="inputRucDemandanteSfPj-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7912,10 +7912,10 @@
 
 												<div class="row form-row g-3">
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputDomicilioDemandanteSfPj"
+														<label for="inputDomicilioDemandanteSfPj-ag"
 															class="form-label fw-b">Domicilio del Demandante</label>
 														<input type="text" class="form-control"
-															id="inputDomicilioDemandanteSfPj">
+															id="inputDomicilioDemandanteSfPj-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7925,10 +7925,10 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputCelularDemandanteSfPj"
+														<label for="inputCelularDemandanteSfPj-ag"
 															class="form-label fw-b">Celular del Demandante</label>
 														<input type="tel" class="form-control"
-															id="inputCelularDemandanteSfPj">
+															id="inputCelularDemandanteSfPj-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7938,11 +7938,11 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputLinkDemandanteSfPj"
+														<label for="inputLinkDemandanteSfPj-ag"
 															class="form-label fw-b">Enlace Mesa de partes
 															(Opcional)</label>
 														<input type="url" class="form-control"
-															id="inputLinkDemandanteSfPj">
+															id="inputLinkDemandanteSfPj-ag">
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -7953,11 +7953,11 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandanteSfPj"
+													<label for="inputcorreoDemandanteSfPj-ag"
 														class="form-label fw-b">Correo del Demandante</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
-															id="inputcorreoDemandanteSfPj"
+															id="inputcorreoDemandanteSfPj-ag"
 															placeholder="Ingrese un correo"
 															aria-label="Registre un correo"
 															aria-describedby="button-addon-correo">
@@ -8014,16 +8014,16 @@
 													</table>
 												</div>
 
-												<fieldset id="fieldset-datosDemandanteRepLegalSfPj">
+												<fieldset id="fieldset-datosDemandanteRepLegalSfPj-ag">
 													<h3>Datos Representante legal</h3>
 													<div class="row form-row g-3">
 														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
-															<label for="selectTipoDocumentoFacultatorioSfPj"
+															<label for="selectTipoDocumentoFacultatorioSfPj-ag"
 																class="form-label fw-b">Seleccionar Tipo de Documento
 																Facultatorio</label>
 															<select class="form-select"
 																aria-label="Default select example"
-																id="selectTipoDocumentoFacultatorioSfPj">
+																id="selectTipoDocumentoFacultatorioSfPj-ag">
 																<option>Seleccione</option>
 																<option>Escritura Pública</option>
 																<option>Acta Legalizada</option>
@@ -8040,11 +8040,11 @@
 														</div>
 
 														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-															<label for="inputCodigoDocumentoFacultatorioSfPj"
+															<label for="inputCodigoDocumentoFacultatorioSfPj-ag"
 																class="form-label fw-b">Código del Documento
 																Facultatorio</label>
 															<input type="number" class="form-control"
-																id="inputCodigoDocumentoFacultatorioSfPj">
+																id="inputCodigoDocumentoFacultatorioSfPj-ag">
 															<small class="text-help">
 																<span class="material-icons">
 																	report_problem
@@ -8056,12 +8056,12 @@
 
 													<div class="row form-row g-3">
 														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
-															<label for="selectTipoDocumentoRlegalSfPj"
+															<label for="selectTipoDocumentoRlegalSfPj-ag"
 																class="form-label fw-b">Tipo de Documento del
 																Representante Legal</label>
 															<select class="form-select"
 																aria-label="Default select example"
-																id="selectTipoDocumentoRlegalSfPj">
+																id="selectTipoDocumentoRlegalSfPj-ag">
 																<option selected>(DNI) Documento Nacional de Identidad
 																</option>
 																<option value="1">(CE) Carnet de Extranjería)</option>
@@ -8075,11 +8075,11 @@
 														</div>
 
 														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-															<label for="inputDocumentoRlegalSfPj"
+															<label for="inputDocumentoRlegalSfPj-ag"
 																class="form-label fw-b">Número de Documento del
 																Representante Legal</label>
 															<input type="number" class="form-control"
-																id="inputDocumentoRlegalSfPj">
+																id="inputDocumentoRlegalSfPj-ag">
 															<small class="text-help">
 																<span class="material-icons">
 																	report_problem
@@ -8091,11 +8091,11 @@
 
 													<div class="row form-row g-3">
 														<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
-															<label for="inputNombreRlegalSfPj"
+															<label for="inputNombreRlegalSfPj-ag"
 																class="form-label fw-b">Nombres y Apellidos del
 																Representante Legal</label>
 															<input type="text" class="form-control"
-																id="inputNombreRlegalSfPj">
+																id="inputNombreRlegalSfPj-ag">
 															<small class="text-help">
 																<span class="material-icons">
 																	report_problem
@@ -8105,11 +8105,11 @@
 														</div>
 
 														<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-															<label for="inputCelularRlegalSfPj"
+															<label for="inputCelularRlegalSfPj-ag"
 																class="form-label fw-b">Celular del Representante
 																Legal</label>
 															<input type="tel" class="form-control"
-																id="inputCelularRlegalSfPj">
+																id="inputCelularRlegalSfPj-ag">
 															<small class="text-help">
 																<span class="material-icons">
 																	report_problem
@@ -8120,12 +8120,12 @@
 													</div>
 
 													<div class="col-12 marginBottom-1-5 ">
-														<label for="inputcorreoRepresentanteLegalSfPj"
+														<label for="inputcorreoRepresentanteLegalSfPj-ag"
 															class="form-label fw-b">Correo del Representante
 															Legal</label>
 														<div class="input-group">
 															<input type="email" class="form-control"
-																id="inputcorreoRepresentanteLegalSfPj"
+																id="inputcorreoRepresentanteLegalSfPj-ag"
 																placeholder="Ingrese un correo"
 																aria-label="Registre un correo"
 																aria-describedby="button-addon-correo">

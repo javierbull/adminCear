@@ -1069,21 +1069,7 @@ $(document).ready(function () {
     }
   });
 
-  $("#checkDatosDemandanteRepLegalSfPn-acp").click(function () {
-    if ($(this).is(":checked")) {
-      $("#fieldset-datosDemandanteRepLegalSfPn").show();
-    } else {
-      $("#fieldset-datosDemandanteRepLegalSfPn").hide();
-    }
-  });
 
-  $("#checkDatosDemandanteRepLegalSfPj-acp").click(function () {
-    if ($(this).is(":checked")) {
-      $("#fieldset-datosDemandanteRepLegalSfPj").show();
-    } else {
-      $("#fieldset-datosDemandanteRepLegalSfPj").hide();
-    }
-  });
 
   $("#checkDatosDemandanteRepLegalSePn").click(function () {
     if ($(this).is(":checked")) {

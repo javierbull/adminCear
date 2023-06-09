@@ -1875,13 +1875,13 @@ input[type=number]::-webkit-outer-spin-button {
 /* END SIDEBAR OFF CANVAS */
 
 /* SOLICITUD FISICA */
-#fieldset-demandante-sf-pj,
-#fieldset-demandante-se-pj,
-#fieldset-demandado-sf-pj,
-#fieldset-demandado-se-pj,
-#fieldset-datosDemandanteRepLegalSfPn,
-#fieldset-datosDemandanteRepLegalSePn,
-#fieldset-enlaceArchivoPesado,
+#fieldset-demandante-sf-pj-ag,
+#fieldset-demandante-se-pj-ag,
+#fieldset-demandado-sf-pj-ag,
+#fieldset-demandado-se-pj-ag,
+#fieldset-datosDemandanteRepLegalSfPn-ag,
+#fieldset-datosDemandanteRepLegalSePn-ag,
+#fieldset-enlaceArchivoPesado-ag,
 
  .comprobanteSe,
  .comprobanteSeSi {
