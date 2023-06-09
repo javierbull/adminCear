@@ -778,6 +778,11 @@ input[type=number]::-webkit-outer-spin-button {
   gap: .5rem;
 }
 
+.input-table {
+  max-width: 6rem;
+  padding: .5rem;
+}
+
 .tag {
   /*background-color: lavender;*/
   font-size: .875rem;
