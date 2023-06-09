@@ -1053,163 +1053,163 @@ $(document).ready(function () {
   // End admin dashboard
 
   // SHOW HIDE CHECKBOX
-  $("#checkDatosDemandanteRepLegalSfPn").click(function () {
+  $("#checkDatosDemandanteRepLegalSfPn-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-datosDemandanteRepLegalSfPn").show();
+      $("#fieldset-datosDemandanteRepLegalSfPn-ag").show();
     } else {
-      $("#fieldset-datosDemandanteRepLegalSfPn").hide();
+      $("#fieldset-datosDemandanteRepLegalSfPn-ag").hide();
     }
   });
 
-  $("#checkDatosDemandanteRepLegalSfPj").click(function () {
+  $("#checkDatosDemandanteRepLegalSfPj-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-datosDemandanteRepLegalSfPj").show();
+      $("#fieldset-datosDemandanteRepLegalSfPj-ag").show();
     } else {
-      $("#fieldset-datosDemandanteRepLegalSfPj").hide();
+      $("#fieldset-datosDemandanteRepLegalSfPj-ag").hide();
     }
   });
 
 
 
-  $("#checkDatosDemandanteRepLegalSePn").click(function () {
+  $("#checkDatosDemandanteRepLegalSePn-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-datosDemandanteRepLegalSePn").show();
+      $("#fieldset-datosDemandanteRepLegalSePn-ag").show();
     } else {
-      $("#fieldset-datosDemandanteRepLegalSePn").hide();
+      $("#fieldset-datosDemandanteRepLegalSePn-ag").hide();
     }
   });
 
-  $("#checkDatosDemandanteRepLegalSePj").click(function () {
+  $("#checkDatosDemandanteRepLegalSePj-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-datosDemandanteRepLegalSePj").show();
+      $("#fieldset-datosDemandanteRepLegalSePj-ag").show();
     } else {
       $("#fieldset-datosDemandanteRepLegalSePj").hide();
     }
   });
 
-  $("#checkShowInputEnlaceSf").click(function () {
+  $("#checkShowInputEnlaceSf-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-enlaceArchivoPesado").show();
+      $("#fieldset-enlaceArchivoPesado-ag").show();
     } else {
-      $("#fieldset-enlaceArchivoPesado").hide();
+      $("#fieldset-enlaceArchivoPesado-ag").hide();
     }
   });
 
-  $("#checkShowInputEnlaceSe").click(function () {
+  $("#checkShowInputEnlaceSe-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-enlaceArchivoPesado-se").show();
+      $("#fieldset-enlaceArchivoPesado-se-ag").show();
     } else {
-      $("#fieldset-enlaceArchivoPesado-se").hide();
+      $("#fieldset-enlaceArchivoPesado-se-ag").hide();
     }
   });
 
-  $("#checkShowInputEnlaceSeSi").click(function () {
+  $("#checkShowInputEnlaceSeSi-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-enlaceArchivoPesado-se-si").show();
+      $("#fieldset-enlaceArchivoPesado-se-si-ag").show();
     } else {
-      $("#fieldset-enlaceArchivoPesado-se-si").hide();
+      $("#fieldset-enlaceArchivoPesado-se-si-ag").hide();
     }
   });
 
-  $("#checkDatosRepresentanteLegalSe").click(function () {
+  $("#checkDatosRepresentanteLegalSe-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-DatosRepresntanteLegalSe").show();
+      $("#fieldset-DatosRepresntanteLegalSe-ag").show();
     } else {
-      $("#fieldset-DatosRepresntanteLegalSe").hide();
+      $("#fieldset-DatosRepresntanteLegalSe-ag").hide();
     }
   });
 
-  $("#cuantiaDeterminado").click(function () {
-    $("#fieldset-cuantia-determinada").show();
+  $("#cuantiaDeterminado-ag").click(function () {
+    $("#fieldset-cuantia-determinada-ag").show();
   });
 
-  $("#cuantiaIndeterminado").click(function () {
-    $("#fieldset-cuantia-determinada").hide();
+  $("#cuantiaIndeterminado-ag").click(function () {
+    $("#fieldset-cuantia-determinada-ag").hide();
   });
 
-  $("#cuantiaDeterminadoSi").click(function () {
-    $("#fieldset-cuantia-determinada-Si").show();
+  $("#cuantiaDeterminadoSi-ag").click(function () {
+    $("#fieldset-cuantia-determinada-Si-ag").show();
   });
 
-  $("#cuantiaIndeterminadoSi").click(function () {
-    $("#fieldset-cuantia-determinada-Si").hide();
+  $("#cuantiaIndeterminadoSi-ag").click(function () {
+    $("#fieldset-cuantia-determinada-Si-ag").hide();
   });
 
-  $("#datosDemandanteSfPj").click(function () {
-    $("#fieldset-demandante-sf-pn").hide();
-    $("#fieldset-demandante-sf-pj").show();
+  $("#datosDemandanteSfPj-ag").click(function () {
+    $("#fieldset-demandante-sf-pn-ag").hide();
+    $("#fieldset-demandante-sf-pj-ag").show();
   });
 
-  $("#datosDemandanteSfPn").click(function () {
-    $("#fieldset-demandante-sf-pn").show();
-    $("#fieldset-demandante-sf-pj").hide();
+  $("#datosDemandanteSfPn-ag").click(function () {
+    $("#fieldset-demandante-sf-pn-ag").show();
+    $("#fieldset-demandante-sf-pj-ag").hide();
   });
 
-  $("#datosDemandanteSfPj-acp").click(function () {
-    $("#fieldset-demandante-sf-pn-acp").hide();
-    $("#fieldset-demandante-sf-pj-acp").show();
+  $("#datosDemandanteSfPj-acp-ag").click(function () {
+    $("#fieldset-demandante-sf-pn-acp-ag").hide();
+    $("#fieldset-demandante-sf-pj-acp-ag").show();
   });
 
-  $("#datosDemandanteSfPn-acp").click(function () {
-    $("#fieldset-demandante-sf-pn-acp").show();
-    $("#fieldset-demandante-sf-pj-acp").hide();
+  $("#datosDemandanteSfPn-acp-ag").click(function () {
+    $("#fieldset-demandante-sf-pn-acp-ag").show();
+    $("#fieldset-demandante-sf-pj-acp-ag").hide();
   });
 
-  $("#datosDemandadoSfPj").click(function () {
-    $("#fieldset-demandado-sf-pn").hide();
-    $("#fieldset-demandado-sf-pj").show();
+  $("#datosDemandadoSfPj-ag").click(function () {
+    $("#fieldset-demandado-sf-pn-ag").hide();
+    $("#fieldset-demandado-sf-pj-ag").show();
   });
 
-  $("#datosDemandadoSfPn").click(function () {
-    $("#fieldset-demandado-sf-pn").show();
-    $("#fieldset-demandado-sf-pj").hide();
+  $("#datosDemandadoSfPn-ag").click(function () {
+    $("#fieldset-demandado-sf-pn-ag").show();
+    $("#fieldset-demandado-sf-pj-ag").hide();
   });
 
-  $("#datosDemandanteSePj").click(function () {
-    $("#fieldset-demandante-se-pn").hide();
-    $("#fieldset-demandante-se-pj").show();
+  $("#datosDemandanteSePj-ag").click(function () {
+    $("#fieldset-demandante-se-pn-ag").hide();
+    $("#fieldset-demandante-se-pj-ag").show();
   });
 
-  $("#datosDemandanteSePn").click(function () {
-    $("#fieldset-demandante-se-pn").show();
-    $("#fieldset-demandante-se-pj").hide();
+  $("#datosDemandanteSePn-ag").click(function () {
+    $("#fieldset-demandante-se-pn-ag").show();
+    $("#fieldset-demandante-se-pj-ag").hide();
   });
 
-  $("#datosDemandadoSePj").click(function () {
-    $("#fieldset-demandado-se-pn").hide();
-    $("#fieldset-demandado-se-pj").show();
+  $("#datosDemandadoSePj-ag").click(function () {
+    $("#fieldset-demandado-se-pn-ag").hide();
+    $("#fieldset-demandado-se-pj-ag").show();
   });
 
-  $("#datosDemandadoSePn").click(function () {
-    $("#fieldset-demandado-se-pn").show();
-    $("#fieldset-demandado-se-pj").hide();
+  $("#datosDemandadoSePn-ag").click(function () {
+    $("#fieldset-demandado-se-pn-ag").show();
+    $("#fieldset-demandado-se-pj-ag").hide();
   });
 
-  $("#datosDemandanteSiPj").click(function () {
-    $("#fieldset-demandante-si-pn").hide();
-    $("#fieldset-demandante-si-pj").show();
+  $("#datosDemandanteSiPj-ag").click(function () {
+    $("#fieldset-demandante-si-pn-ag").hide();
+    $("#fieldset-demandante-si-pj-ag").show();
   });
 
-  $("#datosDemandanteSiPn").click(function () {
-    $("#fieldset-demandante-si-pn").show();
-    $("#fieldset-demandante-si-pj").hide();
+  $("#datosDemandanteSiPn-ag").click(function () {
+    $("#fieldset-demandante-si-pn-ag").show();
+    $("#fieldset-demandante-si-pj-ag").hide();
   });
 
-  $("#datosDemandadoSiPj").click(function () {
-    $("#fieldset-demandado-si-pn").hide();
-    $("#fieldset-demandado-si-pj").show();
+  $("#datosDemandadoSiPj-ag").click(function () {
+    $("#fieldset-demandado-si-pn-ag").hide();
+    $("#fieldset-demandado-si-pj-ag").show();
   });
 
-  $("#datosDemandadoSiPn").click(function () {
-    $("#fieldset-demandado-si-pn").show();
-    $("#fieldset-demandado-si-pj").hide();
+  $("#datosDemandadoSiPn-ag").click(function () {
+    $("#fieldset-demandado-si-pn-ag").show();
+    $("#fieldset-demandado-si-pj-ag").hide();
   });
 
-  $("#checkDatosDemandanteRepLegalSiPn").click(function () {
+  $("#checkDatosDemandanteRepLegalSiPn-ag").click(function () {
     if ($(this).is(":checked")) {
-      $("#fieldset-datosDemandanteRepLegalSiPn").show();
+      $("#fieldset-datosDemandanteRepLegalSiPn-ag").show();
     } else {
-      $("#fieldset-datosDemandanteRepLegalSiPn").hide();
+      $("#fieldset-datosDemandanteRepLegalSiPn-ag").hide();
     }
   });
 
