@@ -65,6 +65,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showAgregarProfesional").click(function () {
@@ -94,6 +95,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showDesignacion").click(function () {
@@ -123,6 +125,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showAgregarDesignacion").click(function () {
@@ -152,6 +155,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showEspecialidad").click(function () {
@@ -181,6 +185,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showAgregarEspecialidad").click(function () {
@@ -210,6 +215,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showProfesiones").click(function () {
@@ -239,6 +245,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showAgregarProfesion").click(function () {
@@ -268,6 +275,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showCasos").click(function () {
@@ -297,6 +305,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showEditarCaso").click(function () {
@@ -326,6 +335,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showUsuarios").click(function () {
@@ -355,6 +365,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showEditarUsuario").click(function () {
@@ -384,6 +395,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showSolicitudFisico").click(function () {
@@ -413,6 +425,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showSolicitudElectronico").click(function () {
@@ -442,6 +455,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showSolicitudesIngresadas").click(function () {
@@ -471,6 +485,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showDetalleSolicitudIngresada").click(function () {
@@ -500,6 +515,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showDetalleSolicitudIngresadaElectronico").click(function () {
@@ -529,6 +545,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showCostoArbitroUnico").click(function () {
@@ -558,6 +575,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showCostoTribunalArbitral").click(function () {
@@ -587,6 +605,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showCostoSecretariaArbitral").click(function () {
@@ -616,6 +635,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showCostoCuantiaIndeterminada").click(function () {
@@ -645,6 +665,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showCostoArbitroEmergencia").click(function () {
@@ -674,6 +695,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showCostoCentroArbitral").click(function () {
@@ -703,6 +725,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showNuevaSolicitud").click(function () {
@@ -732,6 +755,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").show();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showTipoSolicitud-arbitrajeGeneral").click(function () {
@@ -761,6 +785,7 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").show();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
 
   $(".showTipoSolicitud-ContratacionPublica").click(function () {
@@ -790,8 +815,38 @@ $(document).ready(function () {
     $("#mpv-nuevaSolicitud-panel").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
     $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").show();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
   });
-
+  
+  $(".showSolicitudArbitrajeGeneralFisico").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#mpv-expedientes-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
+    $("#costo-secretariaArbitral-panel").hide();
+    $("#costo-cuantiaIndeterminada-panel").hide();
+    $("#costo-arbitroEmergencia-panel").hide();
+    $("#costo-centroArbitral-panel").hide();
+    $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").show();
+  });
 
   // END SHOW HIDE PANELS
 
