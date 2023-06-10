@@ -70,7 +70,35 @@
 		<div class="sidebar-admin" id="sidebar-admin">
 			<ul class="sidebar-admin-list">
 				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed showProfesionales active-item-sidebar active">
+					<button class="btn btn-toggle collapsed showHome active-item-sidebar active">
+						Inicio
+					</button>
+				</li>
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
+						data-bs-target="#mvp-collapse" aria-expanded="true">
+						Mesa de Partes Virtual
+						<span class="material-icons-outlined">
+							expand_more
+						</span>
+					</button>
+					<div class="collapse" id="mvp-collapse">
+						<ul class="btn-toggle-nav sidebar-list-collapse">
+							<li>
+								<a href="#" class="item-collapse rounded showNuevaSolicitud">
+									Solicitudes
+								</a>
+							</li>
+							<li>
+								<a href="#" class="item-collapse rounded showSolicitudesIngresadas">
+									Expedientes
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed showProfesionales">
 						Profesionales
 					</button>
 				</li>
@@ -180,6 +208,36 @@
 			<div class="offcanvas-body">
 				<ul class="sidebar-admin-list">
 					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed showHome" data-bs-dismiss="offcanvas">
+							Inicio
+						</button>
+					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
+							data-bs-target="#Solicitudes-collapse-mobile" aria-expanded="true">
+							Mesa de Partes Virtual
+							<span class="material-icons-outlined">
+								expand_more
+							</span>
+						</button>
+						<div class="collapse show-" id="Solicitudes-collapse-mobile">
+							<ul class="btn-toggle-nav sidebar-list-collapse">
+								<li>
+									<a href="#" class="item-collapse rounded showNuevaSolicitud"
+										data-bs-dismiss="offcanvas">
+										Solicitudes
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showSolicitudesIngresadas"
+										data-bs-dismiss="offcanvas">
+										Expedientes
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-sidebar">
 						<button class="btn btn-toggle collapsed showProfesionales" data-bs-dismiss="offcanvas">
 							Profesionales
 						</button>
@@ -263,31 +321,6 @@
 							</ul>
 						</div>
 					</li>
-					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
-							data-bs-target="#Solicitudes-collapse-mobile" aria-expanded="true">
-							Mesa de Partes Virtual
-							<span class="material-icons-outlined">
-								expand_more
-							</span>
-						</button>
-						<div class="collapse show-" id="Solicitudes-collapse-mobile">
-							<ul class="btn-toggle-nav sidebar-list-collapse">
-								<li>
-									<a href="#" class="item-collapse rounded showNuevaSolicitud"
-										data-bs-dismiss="offcanvas">
-										Solicitudes
-									</a>
-								</li>
-								<li>
-									<a href="#" class="item-collapse rounded showSolicitudesIngresadas"
-										data-bs-dismiss="offcanvas">
-										Expedientes
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
 				</ul>
 			</div>
 		</div>
@@ -296,8 +329,119 @@
 
 		<!-- main panel -->
 		<div class="admin-panel ml-panel" id="admin-panel">
+			<!-- Home -->
+			<div class="panel active-panel bg-light border-radious-panel" id="home-panel">
+				<section class="section">
+					<div class="container">
+						<div class="section-about__content">
+							<div class="section-about__text">
+								<h1 class="heading-1">
+									Bienvenidos al Sistema Electrónico Arbitral - SISTELAR
+								</h1>
+								<p>
+									A través del cual todos los procedimientos de medios
+									de solución de controversias como el servicio de
+									arbitraje en contratación pública, arbitraje de emergencia,
+									arbitraje entre privados, Junta de Resolución de Disputas y
+									el servicio de peritaje en obras, serán de manera electrónica.
+								</p>
+							</div>
+		
+							<iframe class="video" src="https://www.youtube.com/embed/lFdIR4SSqZQ" title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+				</section>
+		
+				<section class="section bg-section" id="section-service">
+					<div class="container">
+						<div class="section-services__content">
+							<h2 class="heading-2 text-center">
+								¿Cómo funciona el inicio de un arbitraje?
+							</h2>
+		
+							<div class="section-services__cards">
+								<div class="service-card">
+									<div class="wrap-icon-card">
+										<img src="img/icons/carbon_document-add.svg" alt="Solicita">
+									</div>
+									<h3 class="heading-3">
+										1. Presenta tu solicitud
+									</h3>
+									<p>
+										A través de Mesa de Partes Virtual podrás presentar 
+										tu solicitud de arbitraje de manera electrónica y/o también 
+										adjuntando el formulario de solicitud de arbitraje, pudiendo 
+										firmar electrónicamente el documento o agregando tu firma 
+										escaneada, no tendrás la necesidad de imprimir ningún 
+										documento para presentar tu petición arbitral.
+									</p>
+								</div>
+		
+								<div class="service-card">
+									<div class="wrap-icon-card">
+										<img src="img/icons/carbon_document-attachment.svg" alt="Cargo">
+									</div>
+									<h3 class="heading-3">
+										2. El sistema emite un cargo
+									</h3>
+									<p>
+										Una vez presentada tu solicitud de arbitraje, el sistema 
+										automáticamente emite un cargo de presentación de documento 
+										en el cual podrás visualizar la fecha, la hora en minutos.
+									</p>
+								</div>
+		
+								<div class="service-card">
+									<div class="wrap-icon-card">
+										<img src="img/icons/carbon_laptop.svg" alt="Solicita">
+									</div>
+									<h3 class="heading-3">
+										3. Te brindamos accesos
+									</h3>
+									<p>
+										Acto seguido el área de administración de expedientes 
+										codificará y consignará un número de expediente a tu caso y 
+										se crearán los accesos para acceder a la casilla electrónica 
+										y demás herramientas que contiene el SISTELAR.  
+									</p>
+								</div>
+							</div>
+		
+							<!-- <div class="wrap-cta">
+								<a class="btn primary-button" href="#" target="_blank">
+									Ir a Mesa de Partes Virtual
+								</a>
+							</div> -->
+						</div>
+					</div>
+				</section>
+		
+				<section class="section">
+					<div class="container">
+						<div class="section-brand__content">
+							<img class="img-brand" src="img/bg/reunion.jpg" alt="reunión">
+		
+							<div class="section-brand__text">
+								<img class="img-brand-logo" src="img/logos/CEAR.png" alt="CEAR">
+								<h2 class="heading-2">
+									CEAR LATINOAMERICANO
+								</h2>
+								<p class="slogan">
+									¡Garantía de un arbitraje eficiente y transparente!
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- End Home -->
+
 			<!-- Profesional -->
-			<div class="panel active-panel" id="profesionales-panel">
+			<div class="panel" id="profesionales-panel">
 				<div class="row">
 					<div class="header-panel">
 						<small class="title-panel">

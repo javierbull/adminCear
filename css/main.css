@@ -2075,3 +2075,146 @@ input[type=number]::-webkit-outer-spin-button {
 /* End tipo de solicitud */
 /* END PMV */
 
+/* HOME */
+.heading-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: normal;
+}
+
+.heading-2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: normal;
+}
+
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: normal;
+}
+
+.heading-4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: normal;
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-about__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.video {
+  min-width: 560px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.bg-light {
+  background-color: var(--background);
+}
+
+.border-radious-panel {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+/* END SECTION ABOUT */
+
+/* SECTION SERVICES */
+.service-card {
+  background-color: var(--white);
+  border: 3px solid var(--primary-light);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  padding: 4rem 1rem 1rem 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.wrap-icon-card {
+  background-color: var(--primary-light);
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.section-services__cards {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.wrap-cta {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+/* END SECTION SERVICES */
+
+/* SECTION BRAND */
+.section-brand__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.img-brand {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  width: 30rem;
+}
+
+.section-brand__text {
+  text-align: center;
+}
+
+.img-brand-logo {
+  width: 8rem;
+}
+
+.slogan {
+  font-size: 1.5rem;
+}
+/* END SECTION BRAND */
+/* END HOME */
+
