@@ -1168,9 +1168,19 @@ $(document).ready(function () {
     $("#fieldset-demandado-sf-pj-ag").show();
   });
 
+  $("#datosDemandadoSfPj-acp").click(function () {
+    $("#fieldset-demandado-sf-pn-acp").hide();
+    $("#fieldset-demandado-sf-pj-acp").show();
+  });
+
   $("#datosDemandadoSfPn-ag").click(function () {
     $("#fieldset-demandado-sf-pn-ag").show();
     $("#fieldset-demandado-sf-pj-ag").hide();
+  });
+
+  $("#datosDemandadoSfPn-acp").click(function () {
+    $("#fieldset-demandado-sf-pn-acp").show();
+    $("#fieldset-demandado-sf-pj-acp").hide();
   });
 
   $("#datosDemandanteSePj-ag").click(function () {
