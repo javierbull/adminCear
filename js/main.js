@@ -1214,9 +1214,19 @@ $(document).ready(function () {
     $("#fieldset-demandado-se-pj-ag").show();
   });
 
+  $("#datosDemandadoSePj-acp").click(function () {
+    $("#fieldset-demandado-se-pn-acp").hide();
+    $("#fieldset-demandado-se-pj-acp").show();
+  });
+
   $("#datosDemandadoSePn-ag").click(function () {
     $("#fieldset-demandado-se-pn-ag").show();
     $("#fieldset-demandado-se-pj-ag").hide();
+  });
+
+  $("#datosDemandadoSePn-acp").click(function () {
+    $("#fieldset-demandado-se-pn-acp").show();
+    $("#fieldset-demandado-se-pj-acp").hide();
   });
 
   $("#datosDemandanteSiPj-ag").click(function () {
