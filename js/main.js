@@ -1127,6 +1127,14 @@ $(document).ready(function () {
     }
   });
 
+  $("#checkShowInputEnlaceSe-acp").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-enlaceArchivoPesado-se-acp").show();
+    } else {
+      $("#fieldset-enlaceArchivoPesado-se-acp").hide();
+    }
+  });
+
   $("#checkShowInputEnlaceSeSi-ag").click(function () {
     if ($(this).is(":checked")) {
       $("#fieldset-enlaceArchivoPesado-se-si-ag").show();
