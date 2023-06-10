@@ -1305,7 +1305,8 @@ input[type=number]::-webkit-outer-spin-button {
 #fieldset-demandante-sf-pj-acp,
 #fieldset-enlaceArchivoPesado-se-ag,
 #fieldset-enlaceArchivoPesado-se-si,
-#fieldset-demandante-si-pj {
+#fieldset-demandante-si-pj,
+#fieldset-enlaceArchivoPesado-acp {
   display: none;
 }
 

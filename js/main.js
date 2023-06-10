@@ -1103,6 +1103,14 @@ $(document).ready(function () {
     }
   });
 
+  $("#checkShowInputEnlaceSf-acp").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-enlaceArchivoPesado-acp").show();
+    } else {
+      $("#fieldset-enlaceArchivoPesado-acp").hide();
+    }
+  });
+
   $("#checkShowInputEnlaceSe-ag").click(function () {
     if ($(this).is(":checked")) {
       $("#fieldset-enlaceArchivoPesado-se-ag").show();
