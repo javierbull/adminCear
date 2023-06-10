@@ -1147,8 +1147,16 @@ $(document).ready(function () {
     $("#fieldset-cuantia-determinada-ag").show();
   });
 
+  $("#cuantiaDeterminado-acp").click(function () {
+    $("#fieldset-cuantia-determinada-acp").show();
+  });
+
   $("#cuantiaIndeterminado-ag").click(function () {
     $("#fieldset-cuantia-determinada-ag").hide();
+  });
+
+  $("#cuantiaIndeterminado-acp").click(function () {
+    $("#fieldset-cuantia-determinada-acp").hide();
   });
 
   $("#cuantiaDeterminadoSi-ag").click(function () {
