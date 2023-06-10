@@ -1087,6 +1087,14 @@ $(document).ready(function () {
     }
   });
 
+  $("#checkDatosDemandanteRepLegalSePn-acp").click(function () {
+    if ($(this).is(":checked")) {
+      $("#fieldset-datosDemandanteRepLegalSePn-acp").show();
+    } else {
+      $("#fieldset-datosDemandanteRepLegalSePn-acp").hide();
+    }
+  });
+
   $("#checkDatosDemandanteRepLegalSePj-ag").click(function () {
     if ($(this).is(":checked")) {
       $("#fieldset-datosDemandanteRepLegalSePj-ag").show();
