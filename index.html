@@ -185,6 +185,36 @@
 			<div class="offcanvas-body">
 				<ul class="sidebar-admin-list">
 					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed showHome" data-bs-dismiss="offcanvas">
+							Inicio
+						</button>
+					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
+							data-bs-target="#home-collapse" aria-expanded="true">
+							Mesa de partes Virtual
+							<span class="material-icons-outlined">
+								expand_more
+							</span>
+						</button>
+						<div class="collapse show-" id="home-collapse">
+							<ul class="btn-toggle-nav sidebar-list-collapse">
+								<li>
+									<a href="#" class="item-collapse rounded showNuevaSolicitud"
+										data-bs-dismiss="offcanvas">
+										Solicitudes
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showSolicitudesIngresadas"
+										data-bs-dismiss="offcanvas">
+										Expedientes
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-sidebar">
 						<button class="btn btn-toggle collapsed showProfesionales" data-bs-dismiss="offcanvas">
 							Profesionales
 						</button>
@@ -273,30 +303,6 @@
 							Expedientes
 						</button>
 					</li>
-					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
-							data-bs-target="#Solicitudes-collapse-mobile" aria-expanded="true">
-							Solicitudes
-							<span class="material-icons-outlined">
-								expand_more
-							</span>
-						</button>
-						<div class="collapse show-" id="Solicitudes-collapse-mobile">
-							<ul class="btn-toggle-nav sidebar-list-collapse">
-								<li>
-									<a href="#" class="item-collapse rounded showSolicitudFisico"
-										data-bs-dismiss="offcanvas">
-										Solicitud de Arbitraje Físico
-									</a>
-								</li>
-								<li>
-									<a href="#" class="item-collapse rounded showSolicitudElectronico"
-										data-bs-dismiss="offcanvas">
-										Solicitud de Arbitraje Electrónico
-									</a>
-								</li>
-							</ul>
-						</div>
 					</li>
 				</ul>
 			</div>
