@@ -477,6 +477,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showSolicitudFisico").click(function () {
@@ -510,6 +511,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showSolicitudElectronico").click(function () {
@@ -543,6 +545,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showSolicitudesIngresadas").click(function () {
@@ -576,6 +579,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresada").click(function () {
@@ -609,6 +613,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresadaElectronico").click(function () {
@@ -642,6 +647,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showCostoArbitroUnico").click(function () {
@@ -675,6 +681,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showCostoTribunalArbitral").click(function () {
@@ -708,6 +715,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showCostoSecretariaArbitral").click(function () {
@@ -741,6 +749,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showCostoCuantiaIndeterminada").click(function () {
@@ -774,6 +783,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showCostoArbitroEmergencia").click(function () {
@@ -807,6 +817,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showCostoCentroArbitral").click(function () {
@@ -840,6 +851,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showNuevaSolicitud").click(function () {
@@ -873,6 +885,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showTipoSolicitud-arbitrajeGeneral").click(function () {
@@ -906,6 +919,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showTipoSolicitud-ContratacionPublica").click(function () {
@@ -939,6 +953,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
   
   $(".showSolicitudArbitrajeGeneralFisico").click(function () {
@@ -972,6 +987,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showSolicitudArbitrajeGeneralElectronico").click(function () {
@@ -1005,6 +1021,7 @@ $(document).ready(function () {
     $("#solicitud-electronico-panel-arbitrajeGeneral").show();
     $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
     $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
   });
 
   $(".showSolicitudArbitrajeContratacionPublicaFisico").click(function () {

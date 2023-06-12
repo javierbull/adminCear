@@ -171,29 +171,6 @@
 						</ul>
 					</div>
 				</li>
-				<li class="item-sidebar">
-					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
-						data-bs-target="#mvp-collapse" aria-expanded="true">
-						Mesa de Partes Virtual
-						<span class="material-icons-outlined">
-							expand_more
-						</span>
-					</button>
-					<div class="collapse" id="mvp-collapse">
-						<ul class="btn-toggle-nav sidebar-list-collapse">
-							<li>
-								<a href="#" class="item-collapse rounded showNuevaSolicitud">
-									Solicitudes
-								</a>
-							</li>
-							<li>
-								<a href="#" class="item-collapse rounded showSolicitudesIngresadas">
-									Expedientes
-								</a>
-							</li>
-						</ul>
-					</div>
-				</li>
 			</ul>
 		</div>
 
@@ -207,36 +184,6 @@
 			</div>
 			<div class="offcanvas-body">
 				<ul class="sidebar-admin-list">
-					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed showHome" data-bs-dismiss="offcanvas">
-							Inicio
-						</button>
-					</li>
-					<li class="item-sidebar">
-						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
-							data-bs-target="#Solicitudes-collapse-mobile" aria-expanded="true">
-							Mesa de Partes Virtual
-							<span class="material-icons-outlined">
-								expand_more
-							</span>
-						</button>
-						<div class="collapse show-" id="Solicitudes-collapse-mobile">
-							<ul class="btn-toggle-nav sidebar-list-collapse">
-								<li>
-									<a href="#" class="item-collapse rounded showNuevaSolicitud"
-										data-bs-dismiss="offcanvas">
-										Solicitudes
-									</a>
-								</li>
-								<li>
-									<a href="#" class="item-collapse rounded showSolicitudesIngresadas"
-										data-bs-dismiss="offcanvas">
-										Expedientes
-									</a>
-								</li>
-							</ul>
-						</div>
-					</li>
 					<li class="item-sidebar">
 						<button class="btn btn-toggle collapsed showProfesionales" data-bs-dismiss="offcanvas">
 							Profesionales
@@ -321,6 +268,36 @@
 							</ul>
 						</div>
 					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed showSolicitudesIngresadas" data-bs-dismiss="offcanvas">
+							Expedientes
+						</button>
+					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
+							data-bs-target="#Solicitudes-collapse-mobile" aria-expanded="true">
+							Solicitudes
+							<span class="material-icons-outlined">
+								expand_more
+							</span>
+						</button>
+						<div class="collapse show-" id="Solicitudes-collapse-mobile">
+							<ul class="btn-toggle-nav sidebar-list-collapse">
+								<li>
+									<a href="#" class="item-collapse rounded showSolicitudFisico"
+										data-bs-dismiss="offcanvas">
+										Solicitud de Arbitraje Físico
+									</a>
+								</li>
+								<li>
+									<a href="#" class="item-collapse rounded showSolicitudElectronico"
+										data-bs-dismiss="offcanvas">
+										Solicitud de Arbitraje Electrónico
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -346,23 +323,23 @@
 									el servicio de peritaje en obras, serán de manera electrónica.
 								</p>
 							</div>
-		
-							<iframe class="video" src="https://www.youtube.com/embed/lFdIR4SSqZQ" title="YouTube video player"
-								frameborder="0"
+
+							<iframe class="video" src="https://www.youtube.com/embed/lFdIR4SSqZQ"
+								title="YouTube video player" frameborder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								allowfullscreen>
 							</iframe>
 						</div>
 					</div>
 				</section>
-		
+
 				<section class="section bg-section" id="section-service">
 					<div class="container">
 						<div class="section-services__content">
 							<h2 class="heading-2 text-center">
 								¿Cómo funciona el inicio de un arbitraje?
 							</h2>
-		
+
 							<div class="section-services__cards">
 								<div class="service-card">
 									<div class="wrap-icon-card">
@@ -372,15 +349,15 @@
 										1. Presenta tu solicitud
 									</h3>
 									<p>
-										A través de Mesa de Partes Virtual podrás presentar 
-										tu solicitud de arbitraje de manera electrónica y/o también 
-										adjuntando el formulario de solicitud de arbitraje, pudiendo 
-										firmar electrónicamente el documento o agregando tu firma 
-										escaneada, no tendrás la necesidad de imprimir ningún 
+										A través de Mesa de Partes Virtual podrás presentar
+										tu solicitud de arbitraje de manera electrónica y/o también
+										adjuntando el formulario de solicitud de arbitraje, pudiendo
+										firmar electrónicamente el documento o agregando tu firma
+										escaneada, no tendrás la necesidad de imprimir ningún
 										documento para presentar tu petición arbitral.
 									</p>
 								</div>
-		
+
 								<div class="service-card">
 									<div class="wrap-icon-card">
 										<img src="img/icons/carbon_document-attachment.svg" alt="Cargo">
@@ -389,12 +366,12 @@
 										2. El sistema emite un cargo
 									</h3>
 									<p>
-										Una vez presentada tu solicitud de arbitraje, el sistema 
-										automáticamente emite un cargo de presentación de documento 
+										Una vez presentada tu solicitud de arbitraje, el sistema
+										automáticamente emite un cargo de presentación de documento
 										en el cual podrás visualizar la fecha, la hora en minutos.
 									</p>
 								</div>
-		
+
 								<div class="service-card">
 									<div class="wrap-icon-card">
 										<img src="img/icons/carbon_laptop.svg" alt="Solicita">
@@ -403,28 +380,22 @@
 										3. Te brindamos accesos
 									</h3>
 									<p>
-										Acto seguido el área de administración de expedientes 
-										codificará y consignará un número de expediente a tu caso y 
-										se crearán los accesos para acceder a la casilla electrónica 
-										y demás herramientas que contiene el SISTELAR.  
+										Acto seguido el área de administración de expedientes
+										codificará y consignará un número de expediente a tu caso y
+										se crearán los accesos para acceder a la casilla electrónica
+										y demás herramientas que contiene el SISTELAR.
 									</p>
 								</div>
 							</div>
-		
-							<!-- <div class="wrap-cta">
-								<a class="btn primary-button" href="#" target="_blank">
-									Ir a Mesa de Partes Virtual
-								</a>
-							</div> -->
 						</div>
 					</div>
 				</section>
-		
+
 				<section class="section">
 					<div class="container">
 						<div class="section-brand__content">
 							<img class="img-brand" src="img/bg/reunion.jpg" alt="reunión">
-		
+
 							<div class="section-brand__text">
 								<img class="img-brand-logo" src="img/logos/CEAR.png" alt="CEAR">
 								<h2 class="heading-2">
@@ -438,7 +409,7 @@
 					</div>
 				</section>
 			</div>
-			<!-- End Home -->
+			<!-- End Home
 
 			<!-- Profesional -->
 			<div class="panel" id="profesionales-panel">
@@ -5010,8 +4981,8 @@
 									Arbitraje General
 								</h3>
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
+									Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the
 								</p>
 							</div>
@@ -5030,8 +5001,8 @@
 									Arbitraje de Contratación Pública
 								</h3>
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
+									Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the
 								</p>
 							</div>
@@ -5050,8 +5021,8 @@
 									Arbitraje de Emergencia
 								</h3>
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
+									Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the
 								</p>
 							</div>
@@ -5070,8 +5041,8 @@
 									Junta de Resolución de Disputas
 								</h3>
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
+									Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the
 								</p>
 							</div>
@@ -5118,14 +5089,15 @@
 				<div class="grid-cards-solicitud">
 					<div class="card-solicitud-mpv">
 						<div class="card-solicitud-top">
-							<img src="img/cards/solicitudArbitrajeFisico.jpg" class="card-solicitud-img" alt="Solicitud Física">
+							<img src="img/cards/solicitudArbitrajeFisico.jpg" class="card-solicitud-img"
+								alt="Solicitud Física">
 							<div class="card-solicitud-text">
 								<h3>
 									Subir tu Solicitud de Arbitraje
 								</h3>
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
+									Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the
 								</p>
 							</div>
@@ -5139,14 +5111,15 @@
 
 					<div class="card-solicitud-mpv">
 						<div class="card-solicitud-top">
-							<img src="img/cards/solicitudArbitrajeElectronico.jpg" class="card-solicitud-img" alt="Solicitud Electrónica">
+							<img src="img/cards/solicitudArbitrajeElectronico.jpg" class="card-solicitud-img"
+								alt="Solicitud Electrónica">
 							<div class="card-solicitud-text">
 								<h3>
 									Crear tu Solicitud de Arbitraje
 								</h3>
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
+									Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the
 								</p>
 							</div>
@@ -5193,14 +5166,15 @@
 				<div class="grid-cards-solicitud">
 					<div class="card-solicitud-mpv">
 						<div class="card-solicitud-top">
-							<img src="img/cards/solicitudArbitrajeFisico.jpg" class="card-solicitud-img" alt="Solicitud Física">
+							<img src="img/cards/solicitudArbitrajeFisico.jpg" class="card-solicitud-img"
+								alt="Solicitud Física">
 							<div class="card-solicitud-text">
 								<h3>
 									Subir tu Solicitud de Arbitraje
 								</h3>
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
+									Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the
 								</p>
 							</div>
@@ -5214,14 +5188,15 @@
 
 					<div class="card-solicitud-mpv">
 						<div class="card-solicitud-top">
-							<img src="img/cards/solicitudArbitrajeElectronico.jpg" class="card-solicitud-img" alt="Solicitud Electrónica">
+							<img src="img/cards/solicitudArbitrajeElectronico.jpg" class="card-solicitud-img"
+								alt="Solicitud Electrónica">
 							<div class="card-solicitud-text">
 								<h3>
 									Crear tu Solicitud de Arbitraje
 								</h3>
 								<p>
-									Lorem Ipsum is simply dummy text of the printing and 
-									typesetting industry. Lorem Ipsum has been the 
+									Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the
 									industry's standard dummy text ever since the
 								</p>
 							</div>
@@ -7705,7 +7680,8 @@
 												</div>
 											</div>
 
-											<fieldset class="fieldset-demandante-sf-pn" id="fieldset-demandante-sf-pn-ag">
+											<fieldset class="fieldset-demandante-sf-pn"
+												id="fieldset-demandante-sf-pn-ag">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5">
 														<label for="selectTipoDocumentoDemandanteSf-ag"
@@ -7783,11 +7759,13 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandanteSf-ag" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandanteSf-ag"
+														class="form-label fw-b">Correo
 														del Demandante</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
-															id="inputcorreoDemandanteSf-ag" placeholder="Ingrese un correo"
+															id="inputcorreoDemandanteSf-ag"
+															placeholder="Ingrese un correo"
 															aria-label="Registre un correo"
 															aria-describedby="button-addon-correo">
 														<button class="btn outline-button" type="button"
@@ -8024,7 +8002,8 @@
 												</fieldset>
 											</fieldset>
 
-											<fieldset class="fieldset-demandante-sf-pj" id="fieldset-demandante-sf-pj-ag">
+											<fieldset class="fieldset-demandante-sf-pj"
+												id="fieldset-demandante-sf-pj-ag">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
 														<label for="inputRazonSocialDemandanteSfPj-ag"
@@ -8040,7 +8019,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandanteSfPj-ag" class="form-label fw-b">RUC
+														<label for="inputRucDemandanteSfPj-ag"
+															class="form-label fw-b">RUC
 															del Demandante</label>
 														<input type="number" class="form-control"
 															id="inputRucDemandanteSfPj-ag">
@@ -8414,7 +8394,8 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputCorreoDemandadoSfPn-ag" class="form-label fw-b">Correo
+													<label for="inputCorreoDemandadoSfPn-ag"
+														class="form-label fw-b">Correo
 														del Demandado</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
@@ -8506,7 +8487,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandadoSfPj-ag" class="form-label fw-b">RUC
+														<label for="inputRucDemandadoSfPj-ag"
+															class="form-label fw-b">RUC
 															del Demandado</label>
 														<input type="number" class="form-control"
 															id="inputRucDemandadoSfPj-ag">
@@ -8562,7 +8544,8 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandadoSfPj-ag" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandadoSfPj-ag"
+														class="form-label fw-b">Correo
 														del Demandado</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
@@ -8663,7 +8646,8 @@
 											</h3>
 											<div class="row form-row-top g-3">
 												<div class="col-lg-6 col-md-6 marginBottom-1-5 ">
-													<label for="selectControversiaSf-ag" class="form-label fw-b">Seleccione
+													<label for="selectControversiaSf-ag"
+														class="form-label fw-b">Seleccione
 														su Controversia
 													</label>
 
@@ -8694,7 +8678,8 @@
 												</div>
 
 												<div class="col-lg-6 col-md-6 marginBottom-1-5 ">
-													<label for="selectEspecialidadSf-ag" class="form-label fw-b">Seleccione
+													<label for="selectEspecialidadSf-ag"
+														class="form-label fw-b">Seleccione
 														la Especialidad</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -8971,7 +8956,8 @@
 												</div>
 											</div>
 
-											<fieldset class="fieldset-demandante-se-pn" id="fieldset-demandante-se-pn-ag">
+											<fieldset class="fieldset-demandante-se-pn"
+												id="fieldset-demandante-se-pn-ag">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
 														<label for="selectTipoDocumentoDemandanteSe-ag"
@@ -9049,11 +9035,13 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandanteSe-ag" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandanteSe-ag"
+														class="form-label fw-b">Correo
 														del Demandante</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
-															id="inputcorreoDemandanteSe-ag" placeholder="Ingrese un correo"
+															id="inputcorreoDemandanteSe-ag"
+															placeholder="Ingrese un correo"
 															aria-label="Registre un correo"
 															aria-describedby="button-addon-correo">
 														<button class="btn outline-button" type="button"
@@ -9290,7 +9278,8 @@
 												</fieldset>
 											</fieldset>
 
-											<fieldset class="fieldset-demandante-se-pj" id="fieldset-demandante-se-pj-ag">
+											<fieldset class="fieldset-demandante-se-pj"
+												id="fieldset-demandante-se-pj-ag">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
 														<label for="inputRazonSocialDemandanteSePj-ag"
@@ -9306,7 +9295,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandanteSePj-ag" class="form-label fw-b">RUC
+														<label for="inputRucDemandanteSePj-ag"
+															class="form-label fw-b">RUC
 															del Demandante</label>
 														<input type="number" class="form-control"
 															id="inputRucDemandanteSePj-ag">
@@ -9600,7 +9590,8 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingComprobanteSolicitudElectronico-ag">
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseComprobanteSolicitudElectronico-ag" aria-expanded="false"
+										data-bs-target="#collapseComprobanteSolicitudElectronico-ag"
+										aria-expanded="false"
 										aria-controls="collapseComprobanteSolicitudElectronico-ag">
 										<div class="content-accordion-btn">
 											<span class="accordion-step">2</span>
@@ -9615,7 +9606,8 @@
 										<form>
 											<div class="row form-row g-3">
 												<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-													<label for="comprobanteSelectorSe-ag" class="form-label fw-b">Tipo de
+													<label for="comprobanteSelectorSe-ag" class="form-label fw-b">Tipo
+														de
 														Comprobante</label>
 													<select class="form-select" aria-label="Default select example"
 														id="comprobanteSelectorSe-ag">
@@ -9758,7 +9750,8 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputCorreoDemandadoSePn-ag" class="form-label fw-b">Correo
+													<label for="inputCorreoDemandadoSePn-ag"
+														class="form-label fw-b">Correo
 														del Demandado</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
@@ -9850,7 +9843,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandadoSePj-ag" class="form-label fw-b">RUC
+														<label for="inputRucDemandadoSePj-ag"
+															class="form-label fw-b">RUC
 															del Demandado</label>
 														<input type="number" class="form-control"
 															id="inputRucDemandadoSePj-ag">
@@ -9906,7 +9900,8 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandadoSePj-ag" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandadoSePj-ag"
+														class="form-label fw-b">Correo
 														del Demandado</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
@@ -10044,7 +10039,8 @@
 											</h3>
 											<div class="row form-row-top g-3">
 												<div class="col-lg-6 col-md-6 marginBottom-1-5">
-													<label for="selectControversiaSe-ag" class="form-label fw-b">Seleccione
+													<label for="selectControversiaSe-ag"
+														class="form-label fw-b">Seleccione
 														su Controversia</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -10074,7 +10070,8 @@
 												</div>
 
 												<div class="col-lg-6 col-md-6 marginBottom-1-5">
-													<label for="selectEspecialidadSe-ag" class="form-label fw-b">Seleccione
+													<label for="selectEspecialidadSe-ag"
+														class="form-label fw-b">Seleccione
 														la Especialidad</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -10161,7 +10158,8 @@
 												El petitorio debe ser redactado con claridad y precisión
 											</h3>
 											<div class="col-12 marginBottom-1-5 ">
-												<label for="inputPetitorioSe-ag" class="form-label fw-b">Petitorio</label>
+												<label for="inputPetitorioSe-ag"
+													class="form-label fw-b">Petitorio</label>
 												<div class="input-group">
 													<input type="text" class="form-control" id="inputPetitorioSe-ag"
 														placeholder="Registre un petitorio"
@@ -10333,9 +10331,11 @@
 												</div>
 
 												<div class="col-lg-3 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputImporteNumeroSe-ag" class="form-label fw-b">Importe en
+													<label for="inputImporteNumeroSe-ag" class="form-label fw-b">Importe
+														en
 														Números</label>
-													<input type="text" class="form-control" id="inputImporteNumeroSe-ag">
+													<input type="text" class="form-control"
+														id="inputImporteNumeroSe-ag">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -10345,9 +10345,11 @@
 												</div>
 
 												<div class="col-lg-6 marginBottom-1-5 ">
-													<label for="inputImporteLetrasSe-ag" class="form-label fw-b">Importe en
+													<label for="inputImporteLetrasSe-ag" class="form-label fw-b">Importe
+														en
 														Letras</label>
-													<input type="text" class="form-control" id="inputImporteLetrasSe-ag">
+													<input type="text" class="form-control"
+														id="inputImporteLetrasSe-ag">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -10381,22 +10383,23 @@
 
 										<div class="col-12 marginBottom-1-5 wrap-designacion-arbitro-options ">
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitro-ag"
-													id="arbitroParte-ag" value="option1">
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitro-ag" id="arbitroParte-ag" value="option1">
 												<label class="form-check-label" for="arbitroParte-ag">
 													El Centro de Arbitraje designe al Árbitro de parte
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitro-ag"
-													id="arbitroUnico-ag" value="option2">
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitro-ag" id="arbitroUnico-ag" value="option2">
 												<label class="form-check-label" for="arbitroUnico-ag">
 													El Centro de Arbitraje designe al Árbitro Único
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitro-ag"
-													id="designarArbitro-ag" value="option3">
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitro-ag" id="designarArbitro-ag"
+													value="option3">
 												<label class="form-check-label" for="designarArbitro-ag">
 													Designar mi árbitro
 												</label>
@@ -10406,7 +10409,8 @@
 										<fieldset>
 											<div class="row form-row g-3">
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputNameArbitroSe-ag" class="form-label fw-b">Nombre del
+													<label for="inputNameArbitroSe-ag" class="form-label fw-b">Nombre
+														del
 														Árbitro</label>
 													<input type="text" class="form-control" id="inputNameArbitroSe-ag">
 													<small class="text-help">
@@ -10418,9 +10422,11 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputEmailArbitroSe-ag" class="form-label fw-b">Correo del
+													<label for="inputEmailArbitroSe-ag" class="form-label fw-b">Correo
+														del
 														Árbitro</label>
-													<input type="email" class="form-control" id="inputEmailArbitroSe-ag">
+													<input type="email" class="form-control"
+														id="inputEmailArbitroSe-ag">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -10430,7 +10436,8 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputTelArbitroSe-ag" class="form-label fw-b">Celular del
+													<label for="inputTelArbitroSe-ag" class="form-label fw-b">Celular
+														del
 														Árbitro</label>
 													<input type="tel" class="form-control" id="inputTelArbitroSe-ag">
 													<small class="text-help">
@@ -10444,9 +10451,11 @@
 
 											<div class="row form-row g-3">
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputAddressArbitroSe-ag" class="form-label fw-b">Domicilio
+													<label for="inputAddressArbitroSe-ag"
+														class="form-label fw-b">Domicilio
 														del Árbitro</label>
-													<input type="text" class="form-control" id="inputAddressArbitroSe-ag">
+													<input type="text" class="form-control"
+														id="inputAddressArbitroSe-ag">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -10469,7 +10478,8 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputColegiaturaArbitroSe-ag" class="form-label fw-b">Nro
+													<label for="inputColegiaturaArbitroSe-ag"
+														class="form-label fw-b">Nro
 														de Colegiatura</label>
 													<input type="text" class="form-control"
 														id="inputColegiaturaArbitroSe-ag">
@@ -10520,7 +10530,8 @@
 										<form>
 											<div class="form-row-btn">
 												<div class="col marginBottom-1-5">
-													<label for="inputFileSe-ag" class="form-label fw-b">Documento PDF (El
+													<label for="inputFileSe-ag" class="form-label fw-b">Documento PDF
+														(El
 														total de archivos no deben exceder los 30 mb)</label>
 													<input type="file" class="form-control" id="inputFileSe-ag"
 														aria-describedby="inputGroupFileAddon04" aria-label="Upload">
@@ -10732,21 +10743,24 @@
 											<div class="marginBottom-1-5">
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
-														name="RadioOptionsDemandanteSfPn-acp" id="datosDemandanteSfPn-acp"
-														value="option1" checked>
-													<label class="form-check-label" for="datosDemandanteSfPn-acp">Persona
+														name="RadioOptionsDemandanteSfPn-acp"
+														id="datosDemandanteSfPn-acp" value="option1" checked>
+													<label class="form-check-label"
+														for="datosDemandanteSfPn-acp">Persona
 														Natural</label>
 												</div>
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
-														name="RadioOptionsDemandanteSfPn-acp" id="datosDemandanteSfPj-acp"
-														value="option2">
-													<label class="form-check-label" for="datosDemandanteSfPj-acp">Persona
+														name="RadioOptionsDemandanteSfPn-acp"
+														id="datosDemandanteSfPj-acp" value="option2">
+													<label class="form-check-label"
+														for="datosDemandanteSfPj-acp">Persona
 														Jurídica</label>
 												</div>
 											</div>
 
-											<fieldset class="fieldset-demandante-sf-pn" id="fieldset-demandante-sf-pn-acp">
+											<fieldset class="fieldset-demandante-sf-pn"
+												id="fieldset-demandante-sf-pn-acp">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5">
 														<label for="selectTipoDocumentoDemandanteSf-acp"
@@ -10824,11 +10838,13 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandanteSf-acp" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandanteSf-acp"
+														class="form-label fw-b">Correo
 														del Demandante</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
-															id="inputcorreoDemandanteSf-acp" placeholder="Ingrese un correo"
+															id="inputcorreoDemandanteSf-acp"
+															placeholder="Ingrese un correo"
 															aria-label="Registre un correo"
 															aria-describedby="button-addon-correo">
 														<button class="btn outline-button" type="button"
@@ -11065,7 +11081,8 @@
 												</fieldset>
 											</fieldset>
 
-											<fieldset class="fieldset-demandante-sf-pj" id="fieldset-demandante-sf-pj-acp">
+											<fieldset class="fieldset-demandante-sf-pj"
+												id="fieldset-demandante-sf-pj-acp">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
 														<label for="inputRazonSocialDemandanteSfPj-acp"
@@ -11081,7 +11098,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandanteSfPj-acp" class="form-label fw-b">RUC
+														<label for="inputRucDemandanteSfPj-acp"
+															class="form-label fw-b">RUC
 															del Demandante</label>
 														<input type="number" class="form-control"
 															id="inputRucDemandanteSfPj-acp">
@@ -11405,7 +11423,8 @@
 												</div>
 											</div>
 
-											<fieldset class="fieldset-se-demandado-pn" id="fieldset-demandado-sf-pn-acp">
+											<fieldset class="fieldset-se-demandado-pn"
+												id="fieldset-demandado-sf-pn-acp">
 												<div class="row form-row g-3">
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
 														<label for="selectTipoDocumentoDemandadoSfPn-acp"
@@ -11455,7 +11474,8 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputCorreoDemandadoSfPn-acp" class="form-label fw-b">Correo
+													<label for="inputCorreoDemandadoSfPn-acp"
+														class="form-label fw-b">Correo
 														del Demandado</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
@@ -11531,7 +11551,8 @@
 												</div>
 											</fieldset>
 
-											<fieldset class="fieldset-se-demandado-pj" id="fieldset-demandado-sf-pj-acp">
+											<fieldset class="fieldset-se-demandado-pj"
+												id="fieldset-demandado-sf-pj-acp">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
 														<label for="inputRazonSocialDemandadoSfPj-acp"
@@ -11547,7 +11568,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandadoSfPj-acp" class="form-label fw-b">RUC
+														<label for="inputRucDemandadoSfPj-acp"
+															class="form-label fw-b">RUC
 															del Demandado</label>
 														<input type="number" class="form-control"
 															id="inputRucDemandadoSfPj-acp">
@@ -11603,7 +11625,8 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandadoSfPj-acp" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandadoSfPj-acp"
+														class="form-label fw-b">Correo
 														del Demandado</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
@@ -11704,7 +11727,8 @@
 											</h3>
 											<div class="row form-row-top g-3">
 												<div class="col-lg-6 col-md-6 marginBottom-1-5 ">
-													<label for="selectControversiaSf-acp" class="form-label fw-b">Seleccione
+													<label for="selectControversiaSf-acp"
+														class="form-label fw-b">Seleccione
 														su Controversia
 													</label>
 
@@ -11720,8 +11744,9 @@
 													</div>
 
 													<select class="form-select select2-multiple"
-														aria-label="Default select example" id="selectControversiaSf-acp"
-														data-placeholder="Buscar" multiple>
+														aria-label="Default select example"
+														id="selectControversiaSf-acp" data-placeholder="Buscar"
+														multiple>
 														<option></option>
 														<option>(DNI) Documento Nacional de Identidad</option>
 														<option>(CE) Carnet de Extranjería)</option>
@@ -11735,7 +11760,8 @@
 												</div>
 
 												<div class="col-lg-6 col-md-6 marginBottom-1-5 ">
-													<label for="selectEspecialidadSf-acp" class="form-label fw-b">Seleccione
+													<label for="selectEspecialidadSf-acp"
+														class="form-label fw-b">Seleccione
 														la Especialidad</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -11750,8 +11776,9 @@
 													</div>
 
 													<select class="form-select select2-multiple"
-														aria-label="Default select example" id="selectEspecialidadSf-acp"
-														data-placeholder="Buscar" multiple>
+														aria-label="Default select example"
+														id="selectEspecialidadSf-acp" data-placeholder="Buscar"
+														multiple>
 														<option></option>
 														<option>Contratación Pública</option>
 														<option>Civil</option>
@@ -11794,7 +11821,8 @@
 										<form>
 											<div class="form-row-btn">
 												<div class="col marginBottom-1-5">
-													<label for="inputFileSf-acp" class="form-label fw-b">Documento PDF (El
+													<label for="inputFileSf-acp" class="form-label fw-b">Documento PDF
+														(El
 														total de archivos no deben exceder los 30mb)</label>
 													<input type="file" class="form-control" id="inputFileSf-acp"
 														aria-describedby="inputGroupFileAddon04" aria-label="Upload">
@@ -11998,21 +12026,24 @@
 											<div class="marginBottom-1-5">
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
-														name="RadioOptionsDemandanteSePn-acp" id="datosDemandanteSePn-acp"
-														value="option1" checked>
-													<label class="form-check-label" for="datosDemandanteSePn-acp">Persona
+														name="RadioOptionsDemandanteSePn-acp"
+														id="datosDemandanteSePn-acp" value="option1" checked>
+													<label class="form-check-label"
+														for="datosDemandanteSePn-acp">Persona
 														Natural</label>
 												</div>
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
-														name="RadioOptionsDemandanteSePn-acp" id="datosDemandanteSePj-acp"
-														value="option2">
-													<label class="form-check-label" for="datosDemandanteSePj-acp">Persona
+														name="RadioOptionsDemandanteSePn-acp"
+														id="datosDemandanteSePj-acp" value="option2">
+													<label class="form-check-label"
+														for="datosDemandanteSePj-acp">Persona
 														Jurídica</label>
 												</div>
 											</div>
 
-											<fieldset class="fieldset-demandante-se-pn" id="fieldset-demandante-se-pn-acp">
+											<fieldset class="fieldset-demandante-se-pn"
+												id="fieldset-demandante-se-pn-acp">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
 														<label for="selectTipoDocumentoDemandanteSe-acp"
@@ -12090,11 +12121,13 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandanteSe-acp" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandanteSe-acp"
+														class="form-label fw-b">Correo
 														del Demandante</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
-															id="inputcorreoDemandanteSe-acp" placeholder="Ingrese un correo"
+															id="inputcorreoDemandanteSe-acp"
+															placeholder="Ingrese un correo"
 															aria-label="Registre un correo"
 															aria-describedby="button-addon-correo">
 														<button class="btn outline-button" type="button"
@@ -12331,7 +12364,8 @@
 												</fieldset>
 											</fieldset>
 
-											<fieldset class="fieldset-demandante-se-pj" id="fieldset-demandante-se-pj-acp">
+											<fieldset class="fieldset-demandante-se-pj"
+												id="fieldset-demandante-se-pj-acp">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
 														<label for="inputRazonSocialDemandanteSePj-acp"
@@ -12347,7 +12381,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandanteSePj-acp" class="form-label fw-b">RUC
+														<label for="inputRucDemandanteSePj-acp"
+															class="form-label fw-b">RUC
 															del Demandante</label>
 														<input type="number" class="form-control"
 															id="inputRucDemandanteSePj-acp">
@@ -12641,7 +12676,8 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="headingComprobanteSolicitudElectronico-acp">
 									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseComprobanteSolicitudElectronico-acp" aria-expanded="false"
+										data-bs-target="#collapseComprobanteSolicitudElectronico-acp"
+										aria-expanded="false"
 										aria-controls="collapseComprobanteSolicitudElectronico-acp">
 										<div class="content-accordion-btn">
 											<span class="accordion-step">2</span>
@@ -12649,14 +12685,16 @@
 										</div>
 									</button>
 								</h2>
-								<div id="collapseComprobanteSolicitudElectronico-acp" class="accordion-collapse collapse"
+								<div id="collapseComprobanteSolicitudElectronico-acp"
+									class="accordion-collapse collapse"
 									aria-labelledby="headingComprobanteSolicitudElectronico-acp"
 									data-bs-parent="#accordionNuevoSolicitudElectronico2">
 									<div class="accordion-body">
 										<form>
 											<div class="row form-row g-3">
 												<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-													<label for="comprobanteSelectorSe-acp" class="form-label fw-b">Tipo de
+													<label for="comprobanteSelectorSe-acp" class="form-label fw-b">Tipo
+														de
 														Comprobante</label>
 													<select class="form-select" aria-label="Default select example"
 														id="comprobanteSelectorSe-acp">
@@ -12749,7 +12787,8 @@
 												</div>
 											</div>
 
-											<fieldset class="fieldset-se-demandado-pn" id="fieldset-demandado-se-pn-acp">
+											<fieldset class="fieldset-se-demandado-pn"
+												id="fieldset-demandado-se-pn-acp">
 												<div class="row form-row g-3">
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
 														<label for="selectTipoDocumentoDemandadoSePn-acp"
@@ -12799,7 +12838,8 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputCorreoDemandadoSePn-acp" class="form-label fw-b">Correo
+													<label for="inputCorreoDemandadoSePn-acp"
+														class="form-label fw-b">Correo
 														del Demandado</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
@@ -12875,7 +12915,8 @@
 												</div>
 											</fieldset>
 
-											<fieldset class="fieldset-se-demandado-pj" id="fieldset-demandado-se-pj-acp">
+											<fieldset class="fieldset-se-demandado-pj"
+												id="fieldset-demandado-se-pj-acp">
 												<div class="row form-row g-3">
 													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
 														<label for="inputRazonSocialDemandadoSePj-acp"
@@ -12891,7 +12932,8 @@
 													</div>
 
 													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputRucDemandadoSePj-acp" class="form-label fw-b">RUC
+														<label for="inputRucDemandadoSePj-acp"
+															class="form-label fw-b">RUC
 															del Demandado</label>
 														<input type="number" class="form-control"
 															id="inputRucDemandadoSePj-acp">
@@ -12947,7 +12989,8 @@
 												</div>
 
 												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoDemandadoSePj-acp" class="form-label fw-b">Correo
+													<label for="inputcorreoDemandadoSePj-acp"
+														class="form-label fw-b">Correo
 														del Demandado</label>
 													<div class="input-group">
 														<input type="email" class="form-control"
@@ -13085,7 +13128,8 @@
 											</h3>
 											<div class="row form-row-top g-3">
 												<div class="col-lg-6 col-md-6 marginBottom-1-5">
-													<label for="selectControversiaSe-acp" class="form-label fw-b">Seleccione
+													<label for="selectControversiaSe-acp"
+														class="form-label fw-b">Seleccione
 														su Controversia</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -13100,8 +13144,9 @@
 													</div>
 
 													<select class="form-select select2-multiple"
-														aria-label="Default select example" id="selectControversiaSe-acp"
-														data-placeholder="Buscar" multiple>
+														aria-label="Default select example"
+														id="selectControversiaSe-acp" data-placeholder="Buscar"
+														multiple>
 														<option></option>
 														<option>(DNI) Documento Nacional de Identidad</option>
 														<option>(CE) Carnet de Extranjería)</option>
@@ -13115,7 +13160,8 @@
 												</div>
 
 												<div class="col-lg-6 col-md-6 marginBottom-1-5">
-													<label for="selectEspecialidadSe-acp" class="form-label fw-b">Seleccione
+													<label for="selectEspecialidadSe-acp"
+														class="form-label fw-b">Seleccione
 														la Especialidad</label>
 
 													<div class="wrap-buttons-contorls-select2 marginBottom-1">
@@ -13130,8 +13176,9 @@
 													</div>
 
 													<select class="form-select select2-multiple"
-														aria-label="Default select example" id="selectEspecialidadSe-acp"
-														data-placeholder="Buscar" multiple>
+														aria-label="Default select example"
+														id="selectEspecialidadSe-acp" data-placeholder="Buscar"
+														multiple>
 														<option></option>
 														<option>Contratación Pública</option>
 														<option>Civil</option>
@@ -13202,7 +13249,8 @@
 												El petitorio debe ser redactado con claridad y precisión
 											</h3>
 											<div class="col-12 marginBottom-1-5 ">
-												<label for="inputPetitorioSe-acp" class="form-label fw-b">Petitorio</label>
+												<label for="inputPetitorioSe-acp"
+													class="form-label fw-b">Petitorio</label>
 												<div class="input-group">
 													<input type="text" class="form-control" id="inputPetitorioSe-acp"
 														placeholder="Registre un petitorio"
@@ -13374,9 +13422,11 @@
 												</div>
 
 												<div class="col-lg-3 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputImporteNumeroSe-acp" class="form-label fw-b">Importe en
+													<label for="inputImporteNumeroSe-acp"
+														class="form-label fw-b">Importe en
 														Números</label>
-													<input type="text" class="form-control" id="inputImporteNumeroSe-acp">
+													<input type="text" class="form-control"
+														id="inputImporteNumeroSe-acp">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -13386,9 +13436,11 @@
 												</div>
 
 												<div class="col-lg-6 marginBottom-1-5 ">
-													<label for="inputImporteLetrasSe-acp" class="form-label fw-b">Importe en
+													<label for="inputImporteLetrasSe-acp"
+														class="form-label fw-b">Importe en
 														Letras</label>
-													<input type="text" class="form-control" id="inputImporteLetrasSe-acp">
+													<input type="text" class="form-control"
+														id="inputImporteLetrasSe-acp">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -13422,22 +13474,25 @@
 
 										<div class="col-12 marginBottom-1-5 wrap-designacion-arbitro-options ">
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitro-acp"
-													id="arbitroParte-acp" value="option1">
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitro-acp" id="arbitroParte-acp"
+													value="option1">
 												<label class="form-check-label" for="arbitroParte-acp">
 													El Centro de Arbitraje designe al Árbitro de parte
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitro-acp"
-													id="arbitroUnico-acp" value="option2">
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitro-acp" id="arbitroUnico-acp"
+													value="option2">
 												<label class="form-check-label" for="arbitroUnico-acp">
 													El Centro de Arbitraje designe al Árbitro Único
 												</label>
 											</div>
 											<div class="form-check">
-												<input class="form-check-input" type="radio" name="radioOptionsArbitro-acp"
-													id="designarArbitro-acp" value="option3">
+												<input class="form-check-input" type="radio"
+													name="radioOptionsArbitro-acp" id="designarArbitro-acp"
+													value="option3">
 												<label class="form-check-label" for="designarArbitro-acp">
 													Designar mi árbitro
 												</label>
@@ -13447,7 +13502,8 @@
 										<fieldset>
 											<div class="row form-row g-3">
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputNameArbitroSe-acp" class="form-label fw-b">Nombre del
+													<label for="inputNameArbitroSe-acp" class="form-label fw-b">Nombre
+														del
 														Árbitro</label>
 													<input type="text" class="form-control" id="inputNameArbitroSe-acp">
 													<small class="text-help">
@@ -13459,9 +13515,11 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputEmailArbitroSe-acp" class="form-label fw-b">Correo del
+													<label for="inputEmailArbitroSe-acp" class="form-label fw-b">Correo
+														del
 														Árbitro</label>
-													<input type="email" class="form-control" id="inputEmailArbitroSe-acp">
+													<input type="email" class="form-control"
+														id="inputEmailArbitroSe-acp">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -13471,7 +13529,8 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputTelArbitroSe-acp" class="form-label fw-b">Celular del
+													<label for="inputTelArbitroSe-acp" class="form-label fw-b">Celular
+														del
 														Árbitro</label>
 													<input type="tel" class="form-control" id="inputTelArbitroSe-acp">
 													<small class="text-help">
@@ -13485,9 +13544,11 @@
 
 											<div class="row form-row g-3">
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputAddressArbitroSe-acp" class="form-label fw-b">Domicilio
+													<label for="inputAddressArbitroSe-acp"
+														class="form-label fw-b">Domicilio
 														del Árbitro</label>
-													<input type="text" class="form-control" id="inputAddressArbitroSe-acp">
+													<input type="text" class="form-control"
+														id="inputAddressArbitroSe-acp">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -13510,7 +13571,8 @@
 												</div>
 
 												<div class="col-lg-4 col-md-6 col-md-6 marginBottom-1-5 ">
-													<label for="inputColegiaturaArbitroSe-acp" class="form-label fw-b">Nro
+													<label for="inputColegiaturaArbitroSe-acp"
+														class="form-label fw-b">Nro
 														de Colegiatura</label>
 													<input type="text" class="form-control"
 														id="inputColegiaturaArbitroSe-acp">
@@ -13561,7 +13623,8 @@
 										<form>
 											<div class="form-row-btn">
 												<div class="col marginBottom-1-5">
-													<label for="inputFileSe-acp" class="form-label fw-b">Documento PDF (El
+													<label for="inputFileSe-acp" class="form-label fw-b">Documento PDF
+														(El
 														total de archivos no deben exceder los 30 mb)</label>
 													<input type="file" class="form-control" id="inputFileSe-acp"
 														aria-describedby="inputGroupFileAddon04" aria-label="Upload">
