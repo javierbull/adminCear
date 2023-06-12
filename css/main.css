@@ -714,7 +714,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: .25rem;
   padding-left: .25rem;
   position: absolute;
-  /* display: none; */
+  display: none;
 }
 
 .text-help .material-icons {
@@ -778,8 +778,12 @@ input[type=number]::-webkit-outer-spin-button {
   gap: .5rem;
 }
 
-.input-table {
+.input-table-number {
   max-width: 6rem;
+  padding: .5rem;
+}
+
+.input-table-text {
   padding: .5rem;
 }
 
