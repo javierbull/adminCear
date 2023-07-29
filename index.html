@@ -14766,6 +14766,81 @@
 													Campo obligatorio
 												</small>
 											</div>
+
+											<h3>
+												Anexos
+											</h3>
+
+											<div class="form-row-btn">
+												<div class="col marginBottom-1-5">
+													<label for="inputFileAnexoMPV" class="form-label fw-b">
+														(Peso máximo de cada archivo 30 Mb)(Formatos permitidos: PDF, DOCX, XLSX, PPT, JPG, PNG y ZIP)(Número máximo de abexos 10)
+													</label>
+													<input type="file" class="form-control" id="inputFileAnexoMPV"
+														aria-describedby="inputGroupFileAddonDocMPV" aria-label="Upload">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<button type="button" name="button"
+													class="btn outline-button marginBottom-1-5" data-bs-toggle="modal"
+													data-bs-target="#modalAvisoPesoArchivos">
+													Agregar
+												</button>
+											</div>
+
+											<div class="table-responsive marginBottom-1-5">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">#</th>
+															<th scope="col">Archivo</th>
+															<th scope="col">Peso</th>
+															<th scope="col">Acciones</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>
+																archivo1.pdf
+															</td>
+															<td>
+																10 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		delete_forever
+																	</span>
+																</button>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>
+																archivo2.pdf
+															</td>
+															<td>
+																15 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		delete_forever
+																	</span>
+																</button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</form>
 									</div>
 								</div>
