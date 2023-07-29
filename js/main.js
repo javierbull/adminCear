@@ -1395,6 +1395,16 @@ $(document).ready(function () {
     $("#fieldset-demandado-si-pj-ag").hide();
   });
 
+  $("#radioDatosRemitenteMPV-pn").click(function () {
+    $("#fieldset-remitente-mpv-pn").show();
+    $("#fieldset-remitente-mpv-pj").hide();
+  });
+
+  $("#radioDatosRemitenteMPV-pj").click(function () {
+    $("#fieldset-remitente-mpv-pn").hide();
+    $("#fieldset-remitente-mpv-pj").show();
+  });
+
   $("#checkDatosDemandanteRepLegalSiPn-ag").click(function () {
     if ($(this).is(":checked")) {
       $("#fieldset-datosDemandanteRepLegalSiPn-ag").show();

@@ -1312,7 +1312,8 @@ input[type=number]::-webkit-outer-spin-button {
 #fieldset-enlaceArchivoPesado-se-acp,
 #fieldset-enlaceArchivoPesado-se-si,
 #fieldset-demandante-si-pj,
-#fieldset-enlaceArchivoPesado-acp {
+#fieldset-enlaceArchivoPesado-acp,
+#fieldset-remitente-mpv-pj {
   display: none;
 }
 
