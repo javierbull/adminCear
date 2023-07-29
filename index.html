@@ -14655,21 +14655,19 @@
 									aria-labelledby="headingDatosRemitenteMPV"
 									data-bs-parent="#accordionMPV-">
 									<div class="accordion-body">
-										<button type="button" name="button"
-											class="btn outline-button btn-icon marginBottom-1-5" data-bs-toggle="modal"
-											data-bs-target="#modalListaRequerimientos">
-											<span class="material-icons-outlined">
-												visibility
-											</span>
-											Ver Lista de Requerimientos
-										</button>
 										<form>
-											<div class="form-row-btn">
-												<div class="col marginBottom-1-5">
-													<label for="inputFileSf" class="form-label fw-b">Documento PDF (El
-														total de archivos no deben exceder los 30mb)</label>
-													<input type="file" class="form-control" id="inputFileSf"
-														aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+											<div class="row form-row g-3">
+												<div class="col-lg-3 col-md-6 marginBottom-1-5">
+													<label for="selectTipoDatosDocumentoMPV"
+														class="form-label fw-b">Tipo de Documento</label>
+													<select class="form-select" aria-label="Default select example"
+														id="selectTipoDatosDocumentoMPV">
+														<option selected>Seleccione
+														</option>
+														<option value="1">Tipo 1</option>
+														<option value="2">Tipo 2</option>
+														<option value="3">Tipo 3</option>
+													</select>
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -14678,10 +14676,11 @@
 													</small>
 												</div>
 
-												<div class="col-lg-3 col-md-3 col-sm-12 marginBottom-1-5">
-													<label for="inputFoliosSf" class="form-label fw-b">Total de
-														Folios</label>
-													<input type="number" class="form-control" id="inputFoliosSf">
+												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
+													<label for="inputDatosDocumentoNumero"
+														class="form-label fw-b">N° Documento</label>
+													<input type="number" class="form-control"
+														id="inputDatosDocumentoNumero">
 													<small class="text-help">
 														<span class="material-icons">
 															report_problem
@@ -14690,158 +14689,32 @@
 													</small>
 												</div>
 
-												<button type="button" name="button"
-													class="btn outline-button marginBottom-1-5" data-bs-toggle="modal"
-													data-bs-target="#modalAvisoPesoArchivos">
-													Agregar
-												</button>
-											</div>
-
-											<div class="table-responsive marginBottom-1-5">
-												<table class="table">
-													<thead>
-														<tr>
-															<th scope="col">#</th>
-															<th scope="col">Archivo</th>
-															<th scope="col">Folio Inicio</th>
-															<th scope="col">Folio Fin</th>
-															<th scope="col">Descripción</th>
-															<th scope="col">Total Folios</th>
-															<th scope="col">Peso</th>
-															<th scope="col">Acciones</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<th scope="row">1</th>
-															<td>
-																archivo1.pdf
-															</td>
-															<td>
-																<input type="number" class="form-control input-table-number">
-															</td>
-															<td>
-																<input type="number" class="form-control input-table-number">
-															</td>
-															<td>
-																<input type="text" class="form-control input-table-text">
-															</td>
-															<td>
-																<input type="number" class="form-control input-table-number">
-															</td>
-															<td>
-																10 mb
-															</td>
-															<td>
-																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button">
-																	<span class="material-icons-outlined">
-																		delete_forever
-																	</span>
-																</button>
-																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button">
-																	<span class="material-icons-outlined">
-																		delete_forever
-																	</span>
-																</button>
-															</td>
-														</tr>
-														<tr>
-															<th scope="row">2</th>
-															<td>
-																archivo2.pdf
-															</td>
-															<td>
-																<input type="number" class="form-control input-table-number">
-															</td>
-															<td>
-																<input type="number" class="form-control input-table-number">
-															</td>
-															<td>
-																<input type="text" class="form-control input-table-text">
-															</td>
-															<td>
-																<input type="number" class="form-control input-table-number">
-															</td>
-															<td>
-																15 mb
-															</td>
-															<td>
-																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button">
-																	<span class="material-icons-outlined">
-																		delete_forever
-																	</span>
-																</button>
-															</td>
-														</tr>
-													<tfoot>
-														<tr>
-															<td colspan="4"></td>
-															<td>
-																Total
-															</td>
-															<td>
-																30
-															</td>
-															<td>
-																25 mb
-															</td>
-															<td></td>
-														</tr>
-													</tfoot>
-													</tbody>
-												</table>
-											</div>
-
-											<div class="wrap-form-tooltip">
-												<div class="form-check">
-													<input class="form-check-input" type="checkbox" value=""
-														id="checkShowInputEnlaceSf-ag">
-													<label class="form-check-label" for="checkShowInputEnlaceSf-ag">
-														Mi archivo pesa más de 30 Mb
-													</label>
+												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
+													<label for="inputDatosDocumentoFecha"
+														class="form-label fw-b">Fecha Documento</label>
+													<input type="date" class="form-control"
+														id="inputDatosDocumentoFecha">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
 												</div>
-												<span class="material-icons" data-bs-toggle="tooltip"
-													data-bs-placement="right"
-													title="Marque la casilla para ingresar link del archivo">
-													help
-												</span>
-											</div>
 
-											<fieldset id="fieldset-enlaceArchivoPesado-ag">
-												<div class="row form-row g-3">
-													<div class="col-lg-10 col-md-8 marginBottom-1-5">
-														<label for="inputNombresDemandadoSf-ag"
-															class="form-label fw-b">Enlace para enviar archivos pesados
-															(Google Drive, OneDrive, WeTransfer, Mega, Dropbox, etc.),
-															recuerde habilitar los permisos</label>
-														<input type="url" class="form-control"
-															placeholder="Ingrese url del documento"
-															id="inputNombresDemandadoSf-ag">
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-
-													<div class="col-lg-2 col-md-4 marginBottom-1-5 ">
-														<label for="inputCorreoDemandadoSf"
-															class="form-label fw-b">Total de Folios</label>
-														<input type="email" class="form-control"
-															id="inputCorreoDemandadoSf">
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
+												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
+													<label for="inputDatosDocumentoNumeroFolios"
+														class="form-label fw-b">N° de Folios</label>
+													<input type="number" class="form-control"
+														id="inputDatosDocumentoNumeroFolios">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
 												</div>
-											</fieldset>
+											</div>
 										</form>
 									</div>
 								</div>
