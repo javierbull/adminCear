@@ -13928,14 +13928,14 @@
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
 														name="RadioOptionsMPVremitente" id="radioDatosRemitenteMPV-pn"
-														value="option1" checked>
+														value="option1" checked disabled>
 													<label class="form-check-label" for="radioDatosRemitenteMPV-pn">Persona
 														Natural</label>
 												</div>
 												<div class="form-check form-check-inline">
 													<input class="form-check-input" type="radio"
 														name="RadioOptionsMPVremitente" id="radioDatosRemitenteMPV-pj"
-														value="option2">
+														value="option2" disabled>
 													<label class="form-check-label" for="radioDatosRemitenteMPV-pj">Persona
 														Jurídica</label>
 												</div>
@@ -13947,7 +13947,7 @@
 														<label for="selectTipoDocumentoRemitenteMPV-pn"
 															class="form-label fw-b">Tipo de Documento</label>
 														<select class="form-select" aria-label="Default select example"
-															id="selectTipoDocumentoRemitenteMPV-pn">
+															id="selectTipoDocumentoRemitenteMPV-pn"disabled>
 															<option selected>(DNI) Documento Nacional de Identidad
 															</option>
 															<option value="1">(CE) Carnet de Extranjería</option>
@@ -13964,7 +13964,7 @@
 														<label for="inputDocumentoRemitente-pn"
 															class="form-label fw-b">Número de Documento</label>
 														<input type="number" class="form-control"
-															id="inputDocumentoRemitente-pn">
+															id="inputDocumentoRemitente-pn" value="43485072" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -13978,7 +13978,7 @@
 														<label for="inputNombreRemitenteMPV-pn"
 															class="form-label fw-b">Nombres</label>
 														<input type="text" class="form-control"
-															id="inputNombreRemitenteMPV-pn">
+															id="inputNombreRemitenteMPV-pn" value="Julio" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -13991,7 +13991,7 @@
 														<label for="inputApellidoPaternoMPV-pn"
 															class="form-label fw-b">Apellido Paterno</label>
 														<input type="text" class="form-control"
-															id="inputApellidoPaternoMPV-pn">
+															id="inputApellidoPaternoMPV-pn" value="Saldaña" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -14004,7 +14004,7 @@
 														<label for="inputApellidoMaternoMPV-pn"
 															class="form-label fw-b">Apellido Materno</label>
 														<input type="text" class="form-control"
-															id="inputApellidoMaternoMPV-pn">
+															id="inputApellidoMaternoMPV-pn" value="Torres" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -14019,7 +14019,7 @@
 															Dirección
 													</label>
 													<input type="text" class="form-control"
-															id="direccionRemitenteMPV-pn">
+															id="direccionRemitenteMPV-pn" value="Av. Arenales 2020" disabled>
 													<small class="caption">
 														La dirección debe ser precisa indicando nombre de la vía (Av. Calle, Jr.), N° Interior, N° Dpto., nombre de Urb., AAHH., etc.  
 													</small>
@@ -14035,12 +14035,11 @@
 														<label for="selectDepartamentoRemitenteMPV-pn"
 															class="form-label fw-b">Departamento</label>
 														<select class="form-select" aria-label="Default select example"
-															id="selectDepartamentoRemitenteMPV-pn">
-															<option selected>Seleccione
-															</option>
-															<option value="1">Lima</option>
-															<option value="2">Arequipa</option>
-															<option value="3">Tacna</option>
+															id="selectDepartamentoRemitenteMPV-pn" disabled>
+															<option >Seleccione</option>
+															<option selected>Lima</option>
+															<option>Arequipa</option>
+															<Tacna>Tacna</option>
 														</select>
 														<small class="text-help">
 															<span class="material-icons">
@@ -14054,12 +14053,12 @@
 														<label for="selectProvinciaRemitenteMPV-pn"
 															class="form-label fw-b">Provincia</label>
 														<select class="form-select" aria-label="Default select example"
-															id="selectProvinciaRemitenteMPV-pn">
-															<option selected>Seleccione
+															id="selectProvinciaRemitenteMPV-pn" disabled>
+															<option>Seleccione
 															</option>
-															<option value="1">Lima</option>
-															<option value="2">Arequipa</option>
-															<option value="3">Tacna</option>
+															<option selected>Lima</option>
+															<option>Arequipa</option>
+															<option>Tacna</option>
 														</select>
 														<small class="text-help">
 															<span class="material-icons">
@@ -14073,12 +14072,12 @@
 														<label for="selectDistritoRemitenteMPV-pn"
 															class="form-label fw-b">Distrito</label>
 														<select class="form-select" aria-label="Default select example"
-															id="selectDistritoRemitenteMPV-pn">
-															<option selected>Seleccione
+															id="selectDistritoRemitenteMPV-pn" disabled>
+															<option>Seleccione
 															</option>
-															<option value="1">Lince</option>
-															<option value="2">Magdalena</option>
-															<option value="3">Surco</option>
+															<option selected>Lince</option>
+															<option>Magdalena</option>
+															<option>Surco</option>
 														</select>
 														<small class="text-help">
 															<span class="material-icons">
@@ -14095,7 +14094,7 @@
 														<label for="inputCorreoRemitenteMPV-pn"
 															class="form-label fw-b">Correo</label>
 														<input type="email" class="form-control"
-															id="inputCorreoRemitenteMPV-pn">
+															id="inputCorreoRemitenteMPV-pn" value="julios@gmail.com" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -14108,7 +14107,7 @@
 														<label for="inputRepetirCorreoRemitenteMPV-pn"
 															class="form-label fw-b">Repetir Correo</label>
 														<input type="email" class="form-control"
-															id="inputRepetirCorreoRemitenteMPV-pn">
+															id="inputRepetirCorreoRemitenteMPV-pn" value="julios@gmail.com" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -14120,8 +14119,8 @@
 													<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
 														<label for="inputFijoRemitenteMPV-pn"
 															class="form-label fw-b">Teléfono fijo (Opcional)</label>
-														<input type="number" class="form-control"
-															id="inputFijoRemitenteMPV-pn">
+														<input type="tel" class="form-control"
+															id="inputFijoRemitenteMPV-pn" value="456 2547" disabled>
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
@@ -14133,8 +14132,8 @@
 													<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
 														<label for="inputCelularMPV-pn"
 															class="form-label fw-b">Celular</label>
-														<input type="number" class="form-control"
-															id="inputCelularMPV-pn">
+														<input type="tel" class="form-control"
+															id="inputCelularMPV-pn" value="966 336 333" disabled> 
 														<small class="text-help">
 															<span class="material-icons">
 																report_problem
