@@ -880,12 +880,8 @@ input[type=number]::-webkit-outer-spin-button {
   .modal-body {
     /* background-color: pink; */
     color: var(--primary-dark);
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 0;
-    padding-bottom: 1.5rem;
+    padding-left: 1.5rem
   }
-
   .modal-subtitle {
     text-align: center;
     font-size: 1.5rem;
