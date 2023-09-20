@@ -58,7 +58,11 @@
     }
     /* END SECTION BRAND */
 
-
+    /* HIDDEN TOOLTIP */
+    .tooltip {
+      display: none !important;
+  }
+    /* END HIDDEON TOOLTIP */
 }
 /* Fin tablet landscape */
 
