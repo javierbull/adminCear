@@ -787,6 +787,12 @@ input[type=number]::-webkit-outer-spin-button {
   padding: .5rem;
 }
 
+.col-large-text {
+  min-width: 200px;
+  max-width: 300px;
+  /* background-color: #06C170; */
+}
+
 .tag {
   /*background-color: lavender;*/
   font-size: .875rem;
