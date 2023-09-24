@@ -5310,8 +5310,7 @@
 									</td>
 									<td>
 										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal" data-bs-target="#modalVerDoc">
+											<button type="button" name="button" class="btn ghost-button small-button">
 												<span class="material-icons-outlined" data-bs-toggle="tooltip"
 													data-bs-placement="left" title="Ver documento">
 													visibility
@@ -15534,7 +15533,7 @@
 				</div>
 				<div class="modal-body">
 					<form class="form-modal">
-						<div class=" marginBottom-1-5 ">
+						<div class="marginBottom-1-5">
 							<label for="selectTipoDocumentoDemandanteSf" class="form-label fw-b">
 								Tipo de Documento
 							</label>
@@ -15544,6 +15543,21 @@
 								<option>Solicitud de arbitraje físico</option>
 								<option>Solicitud de arbitraje electrónico</option>
 							</select>
+						</div>
+
+						<div class="row form-row g-3">
+							<div class="col-md-6 marginBottom-1-5- ">
+								<label for="filtroFechaInicioGestionDocumentos" class="form-label fw-b">
+									Fecha inicio
+								</label>
+								<input type="date" class="form-control" id="filtroFechaInicioGestionDocumentos">								
+							</div>
+							<div class="col-md-6 marginBottom-1-5- ">
+								<label for="filtroFechaFinGestionDocumentos" class="form-label fw-b">
+									Fecha fin
+								</label>
+								<input type="date" class="form-control" id="filtroFechaFinGestionDocumentos">								
+							</div>
 						</div>
 					</form>
 				</div>
@@ -15658,28 +15672,7 @@
 		</div>
 	</div>
 
-	<div class="modal fade modalInfo" id="modalVerDoc" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-xl" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title marginBottom-1-5-5 text-center">
-						 Documento
-					</h4>
-				</div>
-				<div class="modal-body">
-					<div>
-						<iframe src="docs/doc.pdf" frameborder="0" width="100%" height="400px"></iframe>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
-						Cerrar
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 
 	<!-- Fin Modals -->
 
