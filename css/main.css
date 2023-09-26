@@ -2225,3 +2225,30 @@ input[type=number]::-webkit-outer-spin-button {
 /* END SECTION BRAND */
 /* END HOME */
 
+/* PAGINATION */
+.wrap-navigation {
+  /* background-color: lavender; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination .page-link {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-dark);
+}
+
+.page-link:focus {
+  z-index: 3;
+  color: var(--primary);
+  background-color: #e9ecef;
+  outline: 0;
+  box-shadow: inset 0 0 0 2px var(--primary);
+}
+/* END PAGINATION */
+
+
