@@ -85,6 +85,11 @@
 					</button>
 				</li>
 				<li class="item-sidebar">
+					<button class="btn btn-toggle collapsed showCasillaElectronica">
+						Casilla Electrónica
+					</button>
+				</li>
+				<li class="item-sidebar">
 					<button class="btn btn-toggle collapsed btn-icon-sidebar" data-bs-toggle="collapse"
 						data-bs-target="#solicitudes-collapse" aria-expanded="true">
 						Solicitudes
@@ -207,6 +212,11 @@
 					<li class="item-sidebar">
 						<button class="btn btn-toggle collapsed showGestionDocumentos" data-bs-dismiss="offcanvas">
 							Gestión de Documentos
+						</button>
+					</li>
+					<li class="item-sidebar">
+						<button class="btn btn-toggle collapsed showCasillaElectronica" data-bs-dismiss="offcanvas">
+							Casilla Electrónica
 						</button>
 					</li>
 					<li class="item-sidebar">
@@ -4723,6 +4733,394 @@
 			<!-- End costos arbitrales -->
 
 			<!-- MPV -->
+			<div class="panel" id="solicitud-MPV-panel">
+				<div class="row">
+					<div class="wrap-header-panel col-xl-10 col-lg-12">
+						<div class="header-panel">
+							<h2>
+								Mesa de Partes Virtual
+							</h2>
+						</div>
+					</div>
+
+					<div class="col-xl-10 col-lg-12  marginBottom-2">
+						<div class="accordion" id="accordionMPV">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingDatosRemitenteMPV">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseDatosRemitenteMPV" aria-expanded="true"
+										aria-controls="collapseDatosRemitenteMPV">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">1</span>
+											Datos del Remitente
+										</div>
+									</button>
+								</h2>
+								<div id="collapseDatosRemitenteMPV" class="accordion-collapse collapse show"
+									aria-labelledby="headingDatosRemitenteMPV" data-bs-parent="#accordionMPV-">
+									<div class="accordion-body">
+										<form>
+											<fieldset id="fieldset-remitente-mpv-pn">
+												<div class="row form-row g-3">
+													<div class="col-lg-8 col-md-6 marginBottom-1-5">
+														<label for="selectTipoDocumentoRemitenteMPV-pn"
+															class="form-label fw-b">Tipo de Documento</label>
+														<select class="form-select" aria-label="Default select example"
+															id="selectTipoDocumentoRemitenteMPV-pn" disabled>
+															<option selected>(DNI) Documento Nacional de Identidad
+															</option>
+															<option value="1">(CE) Carnet de Extranjería</option>
+														</select>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputDocumentoRemitente-pn"
+															class="form-label fw-b">Número de Documento</label>
+														<input type="number" class="form-control"
+															id="inputDocumentoRemitente-pn" value="43485072" disabled>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+												<div class="row form-row g-3">
+													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
+														<label for="inputNombreRemitenteMPV-pn"
+															class="form-label fw-b">Nombres y Apellidos</label>
+														<input type="text" class="form-control"
+															id="inputNombreRemitenteMPV-pn" value="Julio Cáceres Torres"
+															disabled>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+
+													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
+														<label for="inputCelularMPV-pn"
+															class="form-label fw-b">Celular</label>
+														<input type="tel" class="form-control" id="inputCelularMPV-pn"
+															value="966 336 333" disabled>
+														<small class="text-help">
+															<span class="material-icons">
+																report_problem
+															</span>
+															Campo obligatorio
+														</small>
+													</div>
+												</div>
+
+
+												<div class="col-12 marginBottom-1-5 ">
+													<label for="direccionRemitenteMPV-pn" class="form-label fw-b">
+														Dirección
+													</label>
+													<input type="text" class="form-control"
+														id="direccionRemitenteMPV-pn" value="Av. Arenales 2020"
+														disabled>
+													<small class="caption">
+														La dirección debe ser precisa indicando nombre de la vía (Av.
+														Calle, Jr.), N° Interior, N° Dpto., nombre de Urb., AAHH., etc.
+													</small>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-12 marginBottom-1-5 ">
+													<label for="inputcorreoRemitenteMPV-pn"
+														class="form-label fw-b">Correo
+													</label>
+													<div class="input-group">
+														<input type="email" class="form-control"
+															id="inputcorreoRemitenteMPV-pn"
+															placeholder="Ingrese un correo"
+															aria-label="Registre un correo"
+															aria-describedby="button-addon-correo" disabled>
+														<button class="btn outline-button" type="button"
+															id="button-addon-correo" disabled>Agregar</button>
+													</div>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="table-responsive marginBottom-1-5">
+													<table class="table">
+														<thead>
+															<tr>
+																<th scope="col">#</th>
+																<th scope="col">Correos</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<th scope="row">1</th>
+																<td>
+																	peru@attachmedia.com.pe
+																</td>
+															</tr>
+															<tr>
+																<th scope="row">2</th>
+																<td>
+																	contacto@attachmedia.com.pe
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingDatosRemitenteMPV">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseDatosDocumentoMPV" aria-expanded="false"
+										aria-controls="collapseDatosDocumentoMPV">
+										<div class="content-accordion-btn">
+											<span class="accordion-step">2</span>
+											Datos del Documento
+										</div>
+									</button>
+								</h2>
+								<div id="collapseDatosDocumentoMPV" class="accordion-collapse collapse"
+									aria-labelledby="headingDatosRemitenteMPV" data-bs-parent="#accordionMPV-">
+									<div class="accordion-body">
+										<form>
+											<div class="row form-row g-3">
+												<div class="col-lg-3 col-md-6 marginBottom-1-5">
+													<label for="selectTipoDatosDocumentoMPV"
+														class="form-label fw-b">Tipo de Documento</label>
+													<select class="form-select" aria-label="Default select example"
+														id="selectTipoDatosDocumentoMPV">
+														<option selected>Seleccione
+														</option>
+														<option value="1">Tipo 1</option>
+														<option value="2">Tipo 2</option>
+														<option value="3">Tipo 3</option>
+													</select>
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
+													<label for="inputDatosDocumentoNumero" class="form-label fw-b">N°
+														Documento</label>
+													<input type="number" class="form-control"
+														id="inputDatosDocumentoNumero">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
+													<label for="inputDatosDocumentoFecha" class="form-label fw-b">Fecha
+														Documento</label>
+													<input type="date" class="form-control"
+														id="inputDatosDocumentoFecha">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+
+												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
+													<label for="inputDatosDocumentoNumeroFolios"
+														class="form-label fw-b">N° de Folios</label>
+													<input type="number" class="form-control"
+														id="inputDatosDocumentoNumeroFolios">
+													<small class="text-help">
+														<span class="material-icons">
+															report_problem
+														</span>
+														Campo obligatorio
+													</small>
+												</div>
+											</div>
+
+											<div class="col-lg-12 marginBottom-1-5 ">
+												<label for="inputDatosDocumentoAsunto"
+													class="form-label fw-b">Asunto</label>
+												<textarea type="number" class="form-control"
+													id="inputDatosDocumentoAsunto" rows="4">
+												</textarea>
+												<small class="caption">
+													Máximo 1000 caracteres
+												</small>
+												<small class="text-help">
+													<span class="material-icons">
+														report_problem
+													</span>
+													Campo obligatorio
+												</small>
+											</div>
+
+											<h3>
+												Documento Principal
+											</h3>
+
+											<div class="col marginBottom-1-5">
+												<label for="inputFileDocumentoPrincipalMPV" class="form-label fw-b">
+													Solo se permiten documentos en PDF o Zip (Peso máximo del archivo 50
+													Mb)
+												</label>
+												<input type="file" class="form-control"
+													id="inputFileDocumentoPrincipalMPV"
+													aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+												<small class="text-help">
+													<span class="material-icons">
+														report_problem
+													</span>
+													Campo obligatorio
+												</small>
+											</div>
+
+											<div class="col marginBottom-1-5">
+												<label for="inputURLDatosDocumentoMPV" class="form-label fw-b">
+													Enlace para enviar archivos pesados (Google Drive, OneDrive,
+													WeTransfer, Mega, Dropbox, etc.), recuerde habilitar los permisos
+												</label>
+												<input type="url" class="form-control"
+													placeholder="Ingrese url del documento"
+													id="inputURLDatosDocumentoMPV">
+												<small class="text-help">
+													<span class="material-icons">
+														report_problem
+													</span>
+													Campo obligatorio
+												</small>
+											</div>
+
+											<h3>
+												Documentos
+											</h3>
+
+											<div class="marginBottom-1-5">
+												<div class="form-row-btn">
+													<div class="col">
+														<label for="inputFileAnexoMPV" class="form-label fw-b">
+															Peso máximo del archivo(s) hast 50 MB. Solo se admiten PDFs.
+														</label>
+														<input type="file" class="form-control" id="inputFileAnexoMPV"
+															aria-describedby="inputGroupFileAddonDocMPV"
+															aria-label="Upload">
+													</div>
+
+													<button type="button" name="button" class="btn outline-button"
+														data-bs-toggle="modal" data-bs-target="#modalAvisoPesoArchivos">
+														Agregar
+													</button>
+												</div>
+												<small class="caption">
+													Cada archivo a subir deberá ser debidamente identificado
+												</small>
+												<small class="text-help">
+													<span class="material-icons">
+														report_problem
+													</span>
+													Campo obligatorio
+												</small>
+
+											</div>
+
+
+											<div class="table-responsive marginBottom-1-5">
+												<table class="table">
+													<thead>
+														<tr>
+															<th scope="col">#</th>
+															<th scope="col">Archivo</th>
+															<th scope="col">Peso</th>
+															<th scope="col">Acciones</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>
+																archivo1.pdf
+															</td>
+															<td nowrap="nowrap">
+																10 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		delete_forever
+																	</span>
+																</button>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>
+																archivo2.pdf
+															</td>
+															<td nowrap="nowrap">
+																15 mb
+															</td>
+															<td>
+																<button type="button" name="button"
+																	class="btn ghost-button-danger small-button">
+																	<span class="material-icons-outlined">
+																		delete_forever
+																	</span>
+																</button>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-xl-10 col-lg-12">
+						<div class="row">
+							<div class="col content-btns-controls-panel">
+								<button type="button" name="button" class="btn btn-large primary-button"
+									data-bs-toggle="modal" data-bs-target="#modalMPVCargo">
+									Presentar Solicitud
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="panel" id="mpv-expedientes-panel">
 				<div class="row">
 					<div class="header-panel">
@@ -4934,7 +5332,8 @@
 										00023-2023
 									</th>
 									<td class="col-large-text">
-										Solicitud de Arbitraje Electrónico Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet..
+										Solicitud de Arbitraje Electrónico Lorem ipsum dolor sit amet Lorem ipsum dolor
+										sit amet..
 									</td>
 									<td>
 										09/01/2023 - 11:00
@@ -5334,37 +5733,37 @@
 					<div class="wrap-navigation">
 						<nav aria-label="Page navigation">
 							<ul class="pagination">
-							  <li class="page-item">
-								<a class="page-link btn-firts" href="#" aria-label="Previous">
-								  <span class="material-icons-outlined">
-									keyboard_double_arrow_left
-									</span>
-								</a>
-							  </li>
-							  <li class="page-item">
-								<a class="page-link btn-previous" href="#" aria-label="Previous">
-									<span class="material-icons-outlined">
-										chevron_left
-									</span>
-								</a>
-							  </li>
-							  <li class="page-item"><a class="page-link" href="#">1</a></li>
-							  <li class="page-item"><a class="page-link" href="#">2</a></li>
-							  <li class="page-item"><a class="page-link" href="#">3</a></li>
-							  <li class="page-item">
-								<a class="page-link btn-next" href="#" aria-label="Next">
-									<span class="material-icons-outlined">
-										chevron_right
-									 </span>
-								</a>
-							  </li>
-							  <li class="page-item">
-								<a class="page-link btn-last" href="#" aria-label="Next">
-									<span class="material-icons-outlined">
-										keyboard_double_arrow_right
-									</span>
-								</a>
-							  </li>
+								<li class="page-item">
+									<a class="page-link btn-firts" href="#" aria-label="Previous">
+										<span class="material-icons-outlined">
+											keyboard_double_arrow_left
+										</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link btn-previous" href="#" aria-label="Previous">
+										<span class="material-icons-outlined">
+											chevron_left
+										</span>
+									</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link btn-next" href="#" aria-label="Next">
+										<span class="material-icons-outlined">
+											chevron_right
+										</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link btn-last" href="#" aria-label="Next">
+										<span class="material-icons-outlined">
+											keyboard_double_arrow_right
+										</span>
+									</a>
+								</li>
 							</ul>
 						</nav>
 					</div>
@@ -5372,6 +5771,138 @@
 				</div>
 			</div>
 			<!-- End Gestión de Documentos -->
+
+			<!-- Casilla Electrónica -->
+			<div class="panel" id="casillaElectronica-panel">
+				<div class="row">
+					<div class="header-panel">
+						<h2>
+							Casilla Electrónica
+						</h2>
+					</div>
+
+					<div class="content-controls-main">
+						<div class="content-controls-search">
+							<div class="wrap-search-input">
+								<div class="search-input">
+									<input type="text" class="form-control" placeholder="Buscar Documento"
+										aria-label="Recipient's username" aria-describedby="button-addon2">
+									<button class="btn material-icons-outlined" type="button">
+										search
+									</button>
+								</div>
+							</div>
+							<button type="button" class="btn outline-button btn-filter" data-bs-toggle="modal"
+								data-bs-target="#modalFiltrarCasillaElectronica">
+								<span class="material-icons-outlined">
+									filter_list
+								</span>
+								Filtrar
+							</button>
+						</div>
+					</div>
+
+					<div class="table-responsive marginBottom-1-5">
+						<table class="table">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Expediente</th>
+									<th scope="col">Tipo de Documento</th>
+									<th scope="col">Fecha de Ingreso</th>
+									<th scope="col">Plazo Límite para Respuesta</th>
+									<th scope="col">Asignado</th>
+									<th scope="col">Remitente</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">
+										1
+									</th>
+									<td nowrap="nowrap">
+										00022-2022
+									</td>
+									<td class="col-large-text">
+										Lorem ipsum dolor sit
+									</td>
+									<td>
+										08/01/2023 - 11:23
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										Mesa de Partes
+									</td>
+									<td>
+										Julio Gutierres Armendáriz
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Ver documento">
+													visibility
+												</span>
+											</button>
+											<button type="button" name="button" class="btn ghost-button small-button"
+												data-bs-toggle="modal" data-bs-target="#modalGestionarDoc">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Gestionar documento">
+													feed
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+					<div class="wrap-navigation">
+						<nav aria-label="Page navigation">
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link btn-firts" href="#" aria-label="Previous">
+										<span class="material-icons-outlined">
+											keyboard_double_arrow_left
+										</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link btn-previous" href="#" aria-label="Previous">
+										<span class="material-icons-outlined">
+											chevron_left
+										</span>
+									</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link btn-next" href="#" aria-label="Next">
+										<span class="material-icons-outlined">
+											chevron_right
+										</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link btn-last" href="#" aria-label="Next">
+										<span class="material-icons-outlined">
+											keyboard_double_arrow_right
+										</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+			<!-- End Casilla Electrónica -->
 
 			<!-- Solicitudes -->
 			<!-- Detalle de solicitud ingresada -->
@@ -8954,16 +9485,20 @@
 																archivo1.pdf
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="text" class="form-control input-table-text">
+																<input type="text"
+																	class="form-control input-table-text">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td nowrap="nowrap">
 																10 mb
@@ -8983,16 +9518,20 @@
 																archivo2.pdf
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="text" class="form-control input-table-text">
+																<input type="text"
+																	class="form-control input-table-text">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td nowrap="nowrap">
 																15 mb
@@ -10768,16 +11307,20 @@
 																archivo11351351531351351531351351351351351351351531.pdf
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="text" class="form-control input-table-text">
+																<input type="text"
+																	class="form-control input-table-text">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td nowrap="nowrap">
 																10 mb
@@ -10797,16 +11340,20 @@
 																archivo2.pdf
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="text" class="form-control input-table-text">
+																<input type="text"
+																	class="form-control input-table-text">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td nowrap="nowrap">
 																15 mb
@@ -12080,16 +12627,20 @@
 																archivo1.pdf
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="text" class="form-control input-table-text">
+																<input type="text"
+																	class="form-control input-table-text">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td nowrap="nowrap">
 																10 mb
@@ -12109,16 +12660,20 @@
 																archivo2.pdf
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="text" class="form-control input-table-text">
+																<input type="text"
+																	class="form-control input-table-text">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td nowrap="nowrap">
 																15 mb
@@ -13903,16 +14458,20 @@
 																archivo1.pdf
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="text" class="form-control input-table-text">
+																<input type="text"
+																	class="form-control input-table-text">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td nowrap="nowrap">
 																10 mb
@@ -13932,16 +14491,20 @@
 																archivo2.pdf
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td>
-																<input type="text" class="form-control input-table-text">
+																<input type="text"
+																	class="form-control input-table-text">
 															</td>
 															<td>
-																<input type="number" class="form-control input-table-number">
+																<input type="number"
+																	class="form-control input-table-number">
 															</td>
 															<td nowrap="nowrap">
 																15 mb
@@ -14041,391 +14604,6 @@
 				</div>
 			</div>
 
-			<div class="panel" id="solicitud-MPV-panel">
-				<div class="row">
-					<div class="wrap-header-panel col-xl-10 col-lg-12">
-						<div class="header-panel">							
-							<h2>
-								Mesa de Partes Virtual
-							</h2>
-						</div>
-					</div>
-
-					<div class="col-xl-10 col-lg-12  marginBottom-2">
-						<div class="accordion" id="accordionMPV">
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="headingDatosRemitenteMPV">
-									<button class="accordion-button" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseDatosRemitenteMPV" aria-expanded="true"
-										aria-controls="collapseDatosRemitenteMPV">
-										<div class="content-accordion-btn">
-											<span class="accordion-step">1</span>
-											Datos del Remitente
-										</div>
-									</button>
-								</h2>
-								<div id="collapseDatosRemitenteMPV" class="accordion-collapse collapse show"
-									aria-labelledby="headingDatosRemitenteMPV"
-									data-bs-parent="#accordionMPV-">
-									<div class="accordion-body">
-										<form>
-											<fieldset id="fieldset-remitente-mpv-pn">
-												<div class="row form-row g-3">
-													<div class="col-lg-8 col-md-6 marginBottom-1-5">
-														<label for="selectTipoDocumentoRemitenteMPV-pn"
-															class="form-label fw-b">Tipo de Documento</label>
-														<select class="form-select" aria-label="Default select example"
-															id="selectTipoDocumentoRemitenteMPV-pn"disabled>
-															<option selected>(DNI) Documento Nacional de Identidad
-															</option>
-															<option value="1">(CE) Carnet de Extranjería</option>
-														</select>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-
-													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputDocumentoRemitente-pn"
-															class="form-label fw-b">Número de Documento</label>
-														<input type="number" class="form-control"
-															id="inputDocumentoRemitente-pn" value="43485072" disabled>
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-												</div>
-
-												<div class="row form-row g-3">
-													<div class="col-lg-8 col-md-6 marginBottom-1-5 ">
-														<label for="inputNombreRemitenteMPV-pn"
-																class="form-label fw-b">Nombres y Apellidos</label>
-															<input type="text" class="form-control"
-																id="inputNombreRemitenteMPV-pn" value="Julio Cáceres Torres" disabled>
-															<small class="text-help">
-																<span class="material-icons">
-																	report_problem
-																</span>
-																Campo obligatorio
-															</small>
-													</div>
-
-													<div class="col-lg-4 col-md-6 marginBottom-1-5 ">
-														<label for="inputCelularMPV-pn"
-															class="form-label fw-b">Celular</label>
-														<input type="tel" class="form-control"
-															id="inputCelularMPV-pn" value="966 336 333" disabled> 
-														<small class="text-help">
-															<span class="material-icons">
-																report_problem
-															</span>
-															Campo obligatorio
-														</small>
-													</div>
-												</div>
-												
-												
-												<div class="col-12 marginBottom-1-5 ">
-													<label for="direccionRemitenteMPV-pn"
-															class="form-label fw-b">
-															Dirección
-													</label>
-													<input type="text" class="form-control"
-															id="direccionRemitenteMPV-pn" value="Av. Arenales 2020" disabled>
-													<small class="caption">
-														La dirección debe ser precisa indicando nombre de la vía (Av. Calle, Jr.), N° Interior, N° Dpto., nombre de Urb., AAHH., etc.  
-													</small>
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-															Campo obligatorio
-													</small>
-												</div>
-
-												<div class="col-12 marginBottom-1-5 ">
-													<label for="inputcorreoRemitenteMPV-pn"
-														class="form-label fw-b">Correo
-													</label>
-													<div class="input-group">
-														<input type="email" class="form-control"
-															id="inputcorreoRemitenteMPV-pn"
-															placeholder="Ingrese un correo"
-															aria-label="Registre un correo"
-															aria-describedby="button-addon-correo" disabled>
-														<button class="btn outline-button" type="button"
-															id="button-addon-correo" disabled>Agregar</button>
-													</div>
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-
-												<div class="table-responsive marginBottom-1-5">
-													<table class="table">
-														<thead>
-															<tr>
-																<th scope="col">#</th>
-																<th scope="col">Correos</th>
-															</tr>
-														</thead>
-														<tbody>
-															<tr>
-																<th scope="row">1</th>
-																<td>
-																	peru@attachmedia.com.pe
-																</td>
-															</tr>
-															<tr>
-																<th scope="row">2</th>
-																<td>
-																	contacto@attachmedia.com.pe
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</div>
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="headingDatosRemitenteMPV">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-										data-bs-target="#collapseDatosDocumentoMPV" aria-expanded="false"
-										aria-controls="collapseDatosDocumentoMPV">
-										<div class="content-accordion-btn">
-											<span class="accordion-step">2</span>
-											Datos del Documento
-										</div>
-									</button>
-								</h2>
-								<div id="collapseDatosDocumentoMPV" class="accordion-collapse collapse"
-									aria-labelledby="headingDatosRemitenteMPV"
-									data-bs-parent="#accordionMPV-">
-									<div class="accordion-body">
-										<form>
-											<div class="row form-row g-3">
-												<div class="col-lg-3 col-md-6 marginBottom-1-5">
-													<label for="selectTipoDatosDocumentoMPV"
-														class="form-label fw-b">Tipo de Documento</label>
-													<select class="form-select" aria-label="Default select example"
-														id="selectTipoDatosDocumentoMPV">
-														<option selected>Seleccione
-														</option>
-														<option value="1">Tipo 1</option>
-														<option value="2">Tipo 2</option>
-														<option value="3">Tipo 3</option>
-													</select>
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-
-												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
-													<label for="inputDatosDocumentoNumero"
-														class="form-label fw-b">N° Documento</label>
-													<input type="number" class="form-control"
-														id="inputDatosDocumentoNumero">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-
-												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
-													<label for="inputDatosDocumentoFecha"
-														class="form-label fw-b">Fecha Documento</label>
-													<input type="date" class="form-control"
-														id="inputDatosDocumentoFecha">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-
-												<div class="col-lg-3 col-md-6 marginBottom-1-5 ">
-													<label for="inputDatosDocumentoNumeroFolios"
-														class="form-label fw-b">N° de Folios</label>
-													<input type="number" class="form-control"
-														id="inputDatosDocumentoNumeroFolios">
-													<small class="text-help">
-														<span class="material-icons">
-															report_problem
-														</span>
-														Campo obligatorio
-													</small>
-												</div>
-											</div>
-
-											<div class="col-lg-12 marginBottom-1-5 ">
-												<label for="inputDatosDocumentoAsunto"
-													class="form-label fw-b">Asunto</label>
-												<textarea type="number" class="form-control"
-													id="inputDatosDocumentoAsunto" rows="4">
-												</textarea>
-												<small class="caption">
-													Máximo 1000 caracteres
-												</small>
-												<small class="text-help">
-													<span class="material-icons">
-														report_problem
-													</span>
-													Campo obligatorio
-												</small>
-											</div>
-
-											<h3>
-												Documento Principal
-											</h3>
-
-											<div class="col marginBottom-1-5">
-												<label for="inputFileDocumentoPrincipalMPV" class="form-label fw-b">
-													Solo se permiten documentos en PDF o Zip  (Peso máximo del archivo 50 Mb)
-												</label>
-												<input type="file" class="form-control" id="inputFileDocumentoPrincipalMPV"
-													aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-												<small class="text-help">
-													<span class="material-icons">
-														report_problem
-													</span>
-													Campo obligatorio
-												</small>
-											</div>
-
-											<div class="col marginBottom-1-5">
-												<label for="inputURLDatosDocumentoMPV"
-													class="form-label fw-b">
-													Enlace para enviar archivos pesados (Google Drive, OneDrive, WeTransfer, Mega, Dropbox, etc.), recuerde habilitar los permisos
-												</label>
-												<input type="url" class="form-control"
-													placeholder="Ingrese url del documento"
-													id="inputURLDatosDocumentoMPV">
-												<small class="text-help">
-													<span class="material-icons">
-														report_problem
-													</span>
-													Campo obligatorio
-												</small>
-											</div>
-
-											<h3>
-												Documentos
-											</h3>
-
-											<div class="marginBottom-1-5">
-												<div class="form-row-btn">
-													<div class="col">
-														<label for="inputFileAnexoMPV" class="form-label fw-b">
-															Peso máximo del archivo(s) hast 50 MB. Solo se admiten PDFs.
-														</label>
-														<input type="file" class="form-control" id="inputFileAnexoMPV"
-															aria-describedby="inputGroupFileAddonDocMPV" aria-label="Upload">
-													</div>
-	
-													<button type="button" name="button"
-														class="btn outline-button" data-bs-toggle="modal"
-														data-bs-target="#modalAvisoPesoArchivos">
-														Agregar
-													</button>
-												</div>
-												<small class="caption">
-													Cada archivo a subir deberá ser debidamente identificado  
-												</small>
-												<small class="text-help">
-													<span class="material-icons">
-														report_problem
-													</span>
-													Campo obligatorio
-												</small>
-
-											</div>
-											
-
-											<div class="table-responsive marginBottom-1-5">
-												<table class="table">
-													<thead>
-														<tr>
-															<th scope="col">#</th>
-															<th scope="col">Archivo</th>
-															<th scope="col">Peso</th>
-															<th scope="col">Acciones</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<th scope="row">1</th>
-															<td>
-																archivo1.pdf
-															</td>
-															<td nowrap="nowrap">
-																10 mb
-															</td>
-															<td>
-																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button">
-																	<span class="material-icons-outlined">
-																		delete_forever
-																	</span>
-																</button>
-															</td>
-														</tr>
-														<tr>
-															<th scope="row">2</th>
-															<td>
-																archivo2.pdf
-															</td>
-															<td nowrap="nowrap">
-																15 mb
-															</td>
-															<td>
-																<button type="button" name="button"
-																	class="btn ghost-button-danger small-button">
-																	<span class="material-icons-outlined">
-																		delete_forever
-																	</span>
-																</button>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-xl-10 col-lg-12">
-						<div class="row">
-							<div class="col content-btns-controls-panel">
-								<button type="button" name="button" class="btn btn-large primary-button"
-									data-bs-toggle="modal" data-bs-target="#modalMPVCargo">
-									Presentar Solicitud
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 			<!-- End nuevas solicitudes -->
 			<!-- End solicitudes -->
 
@@ -15504,8 +15682,8 @@
 		</div>
 	</div>
 
-	<div class="modal fade modalInfo" id="modalMPVCargo" tabindex="-1" role="dialog"
-		aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade modalInfo" id="modalMPVCargo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -15588,13 +15766,13 @@
 								<label for="filtroFechaInicioGestionDocumentos" class="form-label fw-b">
 									Fecha inicio
 								</label>
-								<input type="date" class="form-control" id="filtroFechaInicioGestionDocumentos">								
+								<input type="date" class="form-control" id="filtroFechaInicioGestionDocumentos">
 							</div>
 							<div class="col-md-6 marginBottom-1-5- ">
 								<label for="filtroFechaFinGestionDocumentos" class="form-label fw-b">
 									Fecha fin
 								</label>
-								<input type="date" class="form-control" id="filtroFechaFinGestionDocumentos">								
+								<input type="date" class="form-control" id="filtroFechaFinGestionDocumentos">
 							</div>
 						</div>
 					</form>
@@ -15710,7 +15888,73 @@
 		</div>
 	</div>
 
-	
+	<div class="modal fade modalInfo" id="modalFiltrarCasillaElectronica" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5-5 text-center">
+						Filtrar
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<div class="marginBottom-1-5 d-flex justify-content-center">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="RadioOptionFilterCasillaElectronica"
+									id="optionCasillaElectronicaTodos" value="option1" checked>
+								<label class="form-check-label" for="optionCasillaElectronicaTodos">
+									Todos
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="RadioOptionFilterCasillaElectronica"
+									id="optionCasillaElectronicaLeidos" value="option2">
+								<label class="form-check-label" for="optionCasillaElectronicaLeidos">
+									Leídos
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="RadioOptionFilterCasillaElectronica"
+									id="optionCasillaElectronicaNoLeidos" value="option2">
+								<label class="form-check-label" for="optionCasillaElectronicaNoLeidos">
+									No Leídos
+								</label>
+							</div>
+						</div>
+
+						<div class="row form-row g-3">
+							<div class="col-md-6 marginBottom-1-5- ">
+								<label for="filtroFechaInicioGestionDocumentos" class="form-label fw-b">
+									Fecha inicio
+								</label>
+								<input type="date" class="form-control" id="filtroFechaInicioGestionDocumentos">
+							</div>
+							<div class="col-md-6 marginBottom-1-5- ">
+								<label for="filtroFechaFinGestionDocumentos" class="form-label fw-b">
+									Fecha fin
+								</label>
+								<input type="date" class="form-control" id="filtroFechaFinGestionDocumentos">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						<span class="material-icons-outlined">
+							filter_list
+						</span>
+						Aplicar filtros
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	<!-- Fin Modals -->
 
