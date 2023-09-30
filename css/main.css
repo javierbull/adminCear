@@ -2252,6 +2252,14 @@ input[type=number]::-webkit-outer-spin-button {
   outline: 0;
   box-shadow: inset 0 0 0 2px var(--primary);
 }
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: var(--primary);
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+  box-shadow: inset 0 0 0 2px var(--primary);
+}
 /* END PAGINATION */
 
 /* CASILLA ELECTRÓNICA */
