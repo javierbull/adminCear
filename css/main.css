@@ -4,6 +4,7 @@
   --grey-dark: #757677;
   --grey: #BCBEBE;
   --grey-light: #EBECEC;
+  --greay-extra-light: #F0F1F1;
   --background: #F0F2FA;
   --white: #FFFFFF;
   --primary-dark: #18566F;
@@ -2253,4 +2254,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* END PAGINATION */
 
+/* CASILLA ELECTRÓNICA */
+.revised-notification th, .revised-notification td {
+  background-color: var(--greay-extra-light) !important;
+}
+/* END CASILLA ELECTRÓNICA */
 
