@@ -362,6 +362,9 @@
   font-size: 1rem;
 }
 
+.card-votacion-header-right {
+  flex-direction: column;
+}
 /* END VOTACIONES */
 }
 
