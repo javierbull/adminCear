@@ -2278,6 +2278,32 @@ input[type=number]::-webkit-outer-spin-button {
 /* END CASILLA ELECTRÓNICA */
 
 /* VOTACIONES */
+.card-votacion {
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+  padding: 0;
+}
 
+.card-votacion__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--primary);
+  padding: 1rem;
+}
+
+.card-votacion-header-left, .card-votacion-header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-votacion__body {
+  padding: 1rem;
+}
 /* END VOTACIONES */
 
