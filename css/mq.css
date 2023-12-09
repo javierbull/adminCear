@@ -183,6 +183,21 @@
     gap: 1.5rem;
 }
 /* END SECTION BRAND */
+/* VOTACIONES */
+.content-controls-main {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* END VOTACIONES */
 
 }
 
@@ -328,6 +343,14 @@
     justify-content: center;
 }
 /* END FOOTER */
+
+/* VOTACIONES */
+.content-controls-main {
+  width: 100%;
+ 
+}
+
+/* END VOTACIONES */
 }
 
 /* Fin cell portrait */
