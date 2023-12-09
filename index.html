@@ -6219,7 +6219,8 @@
 									</span>
 									Ver documento
 								</button>
-								<button class="btn small-button primary-button">
+								<button class="btn small-button primary-button" data-bs-toggle="modal"
+								data-bs-target="#modalVotar">
 									<span class="material-icons-outlined">
 										edit_note
 									</span>
@@ -16596,6 +16597,74 @@
 					</div>
 				</div>
 				<div class="modal-footer">
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalVotar" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5-5 text-center">
+						Votación
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<h2 class="text-center">Selecciona una opción para votar</h2>
+						<div class="marginBottom-1-5 d-flex justify-content-center">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="RadioOptionVotacion"
+									id="optionVotoAceptar" value="option1" checked>
+								<label class="form-check-label" for="optionVotoAceptar">
+									Aceptar
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="RadioOptionVotacion"
+									id="optionVotoRechazar" value="option2">
+								<label class="form-check-label" for="optionVotoRechazar">
+									Rechazar
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="RadioOptionVotacion"
+									id="optionVotoModificar" value="option3">
+								<label class="form-check-label" for="optionVotoModificar">
+									Modificar
+								</label>
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<label for="inputComentarioVotacion" class="form-label">Comentario indicando el motivo de su voto</label>
+							<textarea class="form-control" id="inputComentarioVotacion" rows="3"></textarea>
+						</div>
+
+						<div class="col">
+							<label for="inputFileSfSi" class="form-label fw-b">
+								Solo se permiten documentos en PDF o Zip  (Peso máximo del archivo 50 Mb)
+							</label>
+							<input type="file" class="form-control" id="inputFileSfSi"
+								aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+							<small class="text-help">
+								<span class="material-icons">
+									report_problem
+								</span>
+								Campo obligatorio
+							</small>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						Guardar cambios
+					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cerrar
 					</button>
