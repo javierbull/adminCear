@@ -73,6 +73,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showProfesionales").click(function () {
@@ -110,6 +111,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showAgregarProfesional").click(function () {
@@ -147,6 +149,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showDesignacion").click(function () {
@@ -184,6 +187,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showAgregarDesignacion").click(function () {
@@ -221,6 +225,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showEspecialidad").click(function () {
@@ -258,6 +263,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showAgregarEspecialidad").click(function () {
@@ -295,6 +301,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showProfesiones").click(function () {
@@ -332,6 +339,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showAgregarProfesion").click(function () {
@@ -369,6 +377,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showCasos").click(function () {
@@ -406,6 +415,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showEditarCaso").click(function () {
@@ -443,6 +453,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showUsuarios").click(function () {
@@ -480,6 +491,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showEditarUsuario").click(function () {
@@ -517,6 +529,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showSolicitudFisico").click(function () {
@@ -554,6 +567,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showSolicitudElectronico").click(function () {
@@ -591,6 +605,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showSolicitudesIngresadas").click(function () {
@@ -628,6 +643,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresada").click(function () {
@@ -665,6 +681,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showDetalleSolicitudIngresadaElectronico").click(function () {
@@ -702,6 +719,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showCostoArbitroUnico").click(function () {
@@ -739,6 +757,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showCostoTribunalArbitral").click(function () {
@@ -776,6 +795,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showCostoSecretariaArbitral").click(function () {
@@ -813,6 +833,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showCostoCuantiaIndeterminada").click(function () {
@@ -850,6 +871,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showCostoArbitroEmergencia").click(function () {
@@ -887,6 +909,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showCostoCentroArbitral").click(function () {
@@ -924,6 +947,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showNuevaSolicitud").click(function () {
@@ -961,6 +985,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showTipoSolicitud-arbitrajeGeneral").click(function () {
@@ -998,6 +1023,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showTipoSolicitud-ContratacionPublica").click(function () {
@@ -1035,6 +1061,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
   
   $(".showSolicitudArbitrajeGeneralFisico").click(function () {
@@ -1072,6 +1099,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showSolicitudArbitrajeGeneralElectronico").click(function () {
@@ -1109,6 +1137,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showSolicitudArbitrajeContratacionPublicaFisico").click(function () {
@@ -1146,6 +1175,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showSolicitudArbitrajeContratacionPublicaElectronico").click(function () {
@@ -1183,6 +1213,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showMPV").click(function () {
@@ -1220,6 +1251,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").show();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showGestionDocumentos").click(function () {
@@ -1257,6 +1289,7 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").show();
     $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").hide();
   });
 
   $(".showCasillaElectronica").click(function () {
@@ -1294,6 +1327,45 @@ $(document).ready(function () {
     $("#solicitud-MPV-panel").hide();
     $("#gestionDocumentos-panel").hide();
     $("#casillaElectronica-panel").show();
+    $("#votaciones-panel").hide();
+  });
+
+  $(".showVotaciones").click(function () {
+    $("#profesionales-panel").hide();
+    $("#agregarProfesional-panel").hide();
+    $("#designacion-panel").hide();
+    $("#agregarDesignacion-panel").hide();
+    $("#especialidades-panel").hide();
+    $("#agregarEspecialidad-panel").hide();
+    $("#profesiones-panel").hide();
+    $("#agregarProfesion-panel").hide();
+    $("#casos-panel").hide();
+    $("#editar-caso-panel").hide();
+    $("#usuarios-panel").hide();
+    $("#editar-usuario-panel").hide();
+    $("#solicitud-fisico-panel").hide();
+    $("#solicitud-electronico-panel").hide();
+    $("#mpv-expedientes-panel").hide();
+    $("#detalle-solicitud-ingresada-panel").hide();
+    $("#detalle-solicitud-ingresada-electronico-panel").hide();
+    $("#costo-arbitroUnico-panel").hide();
+    $("#costo-tribunalArbitral-panel").hide();
+    $("#costo-secretariaArbitral-panel").hide();
+    $("#costo-cuantiaIndeterminada-panel").hide();
+    $("#costo-arbitroEmergencia-panel").hide();
+    $("#costo-centroArbitral-panel").hide();
+    $("#mpv-nuevaSolicitud-panel").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-general").hide();
+    $("#mpv-tipoSolicitud-panel-arbitraje-contratacionPublica").hide();
+    $("#solicitud-fisico-panel-arbitrajeGeneral").hide();
+    $("#solicitud-electronico-panel-arbitrajeGeneral").hide();
+    $("#solicitud-fisico-panel-arbitrajeContratacionPublica").hide();
+    $("#solicitud-electronico-panel-arbitrajeContratacionPublica").hide();
+    $("#home-panel").hide();
+    $("#solicitud-MPV-panel").hide();
+    $("#gestionDocumentos-panel").hide();
+    $("#casillaElectronica-panel").hide();
+    $("#votaciones-panel").show();
   });
 
   // END SHOW HIDE PANELS
