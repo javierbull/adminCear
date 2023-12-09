@@ -5974,6 +5974,13 @@
 								Filtrar
 							</button>
 						</div>
+						<button type="button" class="btn outline-button btn-filter" data-bs-toggle="modal"
+								data-bs-target="#modalLeyendaEstadosVotaciones">
+								<span class="material-icons-outlined">
+									visibility
+								</span>
+								Leyenda estados
+							</button>
 					</div>
 
 					<div class="table-responsive marginBottom-1-5">
@@ -16384,6 +16391,90 @@
 						</span>
 						Aplicar filtros
 					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalLeyendaEstadosVotaciones" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5-5 text-center">
+						Leyenda de estados
+					</h4>
+				</div>
+				<div class="modal-body">
+					<div class="table-responsive">
+						<table class="table table-admin">
+							<thead>
+								<tr>
+									<th scope="col">Estado</th>
+									<th scope="col">Descripción</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-warning">
+											Pendiente
+										</span>
+									</td>
+									<td>
+										Cuando el sistema crea la votación automáticamente.
+										Requiere que secretaria suba un documento e inicie la votación.
+									</td>
+								</tr>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-info">
+											En proceso
+										</span>
+									</td>
+									<td>
+										Cuando secretaría crea una votación.
+									</td>
+								</tr>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-danger">
+											Expirado
+										</span>
+									</td>
+									<td>
+										Cuando se vence el plazo de votación y no se completaron los votos.
+									</td>
+								</tr>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-accent">
+											Ampliado
+										</span>
+									</td>
+									<td>
+										Cuando secretaría amplía el plazo de votación.
+									</td>
+								</tr>
+								<tr>
+									<td scope="row">
+										<span class="tag tag-success">
+											Finalizado
+										</span>
+									</td>
+									<td>
+										Cuando secretaría arbitral finaliza el proceso.
+									</td>
+								</tr>
+	
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="modal-footer">
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cerrar
 					</button>
