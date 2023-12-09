@@ -1741,6 +1741,18 @@ $(document).ready(function () {
   })
   // END TOOLTIP
 
+  $("#optionVotoModificar").click(function () {
+    $("#modificarVotacionFile").show();
+  });
+
+  $("#optionVotoRechazar").click(function () {
+    $("#modificarVotacionFile").hide();
+  });
+
+  $("#optionVotoAceptar").click(function () {
+    $("#modificarVotacionFile").hide();
+  });
+
 
 });
 
