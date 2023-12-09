@@ -5967,7 +5967,7 @@
 								</div>
 							</div>
 							<button type="button" class="btn outline-button btn-filter" data-bs-toggle="modal"
-								data-bs-target="#modalFiltrarCasillaElectronica">
+								data-bs-target="#modalFiltrarVotaciones">
 								<span class="material-icons-outlined">
 									filter_list
 								</span>
@@ -16326,6 +16326,63 @@
 							send
 						</span>
 						Enviar
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalFiltrarVotaciones" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5-5 text-center">
+						Filtrar
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<div class="marginBottom-1-5">
+							<label for="selectEstadoVotaciones" class="form-label fw-b">
+								Estado
+							</label>
+							<select class="form-select" aria-label="Default select example"
+								id="selectEstadoVotaciones">
+								<option selected>Seleccione</option>
+								<option>Pendiente</option>
+								<option>En Proceso</option>
+								<option>Expirado</option>
+								<option>Ampliado</option>
+								<option>Finalizado</option>
+							</select>
+						</div>
+
+						<div class="row form-row g-3">
+							<div class="col-md-6 marginBottom-1-5- ">
+								<label for="filtroFechaInicioVotaciones" class="form-label fw-b">
+									Fecha inicio
+								</label>
+								<input type="date" class="form-control" id="filtroFechaInicioVotaciones">
+							</div>
+							<div class="col-md-6 marginBottom-1-5- ">
+								<label for="filtroFechaFinVotaciones" class="form-label fw-b">
+									Fecha fin
+								</label>
+								<input type="date" class="form-control" id="filtroFechaFinVotaciones">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						<span class="material-icons-outlined">
+							filter_list
+						</span>
+						Aplicar filtros
 					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
 						Cerrar
