@@ -5946,7 +5946,7 @@
 			</div>
 			<!-- End Casilla Electrónica -->
 
-			<!-- Casilla Votaciones -->
+			<!-- Panel Votaciones -->
 			<div class="panel" id="votaciones-panel">
 				<div class="row">
 					<div class="header-panel">
@@ -5988,11 +5988,10 @@
 							<thead>
 								<tr>
 									<th scope="col">#</th>
-									<th scope="col"></th>
 									<th scope="col">Expediente</th>
-									<th scope="col">Sumilla</th>
-									<th scope="col">Remitente</th>
-									<th scope="col">Fecha de Ingreso</th>
+									<th scope="col">Fecha de inicio</th>
+									<th scope="col">Fecha de fin</th>
+									<th scope="col">Estado</th>
 									<th scope="col">Acciones</th>
 								</tr>
 							</thead>
@@ -6001,69 +6000,142 @@
 									<th scope="row">
 										1
 									</th>
-									<td>
-										<div class="d-flex  align-items-center justify-content-center">
-											<span class="material-icons-outlined">
-												email
-											</span>
-										</div>
-									</td>
 									<td nowrap="nowrap">
 										00022-2023
 									</td>
-									<td class="col-large-text">
-										Lorem ipsum dolor sit amet consectetur.
+									<td>
+										08/01/2023
 									</td>
 									<td>
-										Nicolás Rojas Torres
+										12/01/2023
 									</td>
 									<td>
-										08/01/2023 - 11:23
+										<span class="tag tag-warning">
+											Pendiente
+										</span>
 									</td>
 									<td>
 										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal"
-												data-bs-target="#modalCasillaElectronicaNotificacion">
+											<button type="button" name="button" class="btn ghost-button small-button showVotacionPanel">
 												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Gestionar documento">
-													visibility
+													data-bs-placement="left" title="Votar">
+													edit_note
 												</span>
 											</button>
 										</div>
 									</td>
 								</tr>
-								<tr class="revised-notification">
+								<tr>
 									<th scope="row">
 										2
 									</th>
-									<td>
-										<div class="d-flex  align-items-center justify-content-center">
-											<span class="material-symbols-outlined">
-												drafts
-											</span>
-										</div>
-									</td>
 									<td nowrap="nowrap">
 										00022-2023
 									</td>
-									<td class="col-large-text">
-										Lorem ipsum dolor sit amet consectetur.
+									<td>
+										08/01/2023
 									</td>
 									<td>
-										Nicolás Rojas Torres
+										12/01/2023
 									</td>
 									<td>
-										08/01/2023 - 11:23
+										<span class="tag tag-info">
+											En proceso
+										</span>
 									</td>
 									<td>
 										<div class="content-action-btns">
-											<button type="button" name="button" class="btn ghost-button small-button"
-												data-bs-toggle="modal"
-												data-bs-target="#modalCasillaElectronicaNotificacion">
+											<button type="button" name="button" class="btn ghost-button small-button showVotacionPanel">
 												<span class="material-icons-outlined" data-bs-toggle="tooltip"
-													data-bs-placement="left" title="Gestionar documento">
-													visibility
+													data-bs-placement="left" title="Votar">
+													edit_note
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										3
+									</th>
+									<td nowrap="nowrap">
+										00022-2023
+									</td>
+									<td>
+										08/01/2023
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										<span class="tag tag-danger">
+											Expirado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button showVotacionPanel">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Votar">
+													edit_note
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										4
+									</th>
+									<td nowrap="nowrap">
+										00022-2023
+									</td>
+									<td>
+										08/01/2023
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										<span class="tag tag-accent">
+											Ampliado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button showVotacionPanel">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Votar">
+													edit_note
+												</span>
+											</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">
+										5
+									</th>
+									<td nowrap="nowrap">
+										00022-2023
+									</td>
+									<td>
+										08/01/2023
+									</td>
+									<td>
+										12/01/2023
+									</td>
+									<td>
+										<span class="tag tag-success">
+											Finalizado
+										</span>
+									</td>
+									<td>
+										<div class="content-action-btns">
+											<button type="button" name="button" class="btn ghost-button small-button showVotacionPanel">
+												<span class="material-icons-outlined" data-bs-toggle="tooltip"
+													data-bs-placement="left" title="Votar">
+													edit_note
 												</span>
 											</button>
 										</div>
@@ -6113,7 +6185,7 @@
 
 				</div>
 			</div>
-			<!-- End Casilla Votaciones -->
+			<!-- End Panel Votaciones -->
 
 			<!-- Solicitudes -->
 			<!-- Detalle de solicitud ingresada -->
