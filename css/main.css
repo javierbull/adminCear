@@ -678,7 +678,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   /* min-height: calc(1.5em + 0.75rem + 2px); */
   height: 50px;
-  padding: 1rem;
+  padding: .875rem 1rem;
   font-family: inherit;
   font-size: 1rem;
   font-weight: 400;
@@ -2500,6 +2500,19 @@ input[type=number]::-webkit-outer-spin-button {
   width: 50%;
 }
 /* End caja de comentarios */
+
+.content-controls-votacion {
+  /* background-color: pink; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrap-controls-votacion {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 /* END VOTACIONES */
 
 
