@@ -365,6 +365,28 @@
 .card-votacion-header-right {
   flex-direction: column;
 }
+
+/* Chat */
+.wrap-bubble-user-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble-msg-top {
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.bubble {
+  /* background-color: lavender; */
+  margin-bottom: 2rem;
+}
+
+.file-loaded {
+  width: 100%;
+}
+/* End chat */
 /* END VOTACIONES */
 }
 
