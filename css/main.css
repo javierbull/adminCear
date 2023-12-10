@@ -2410,8 +2410,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .chat-btn {
-  /*background-color: pink;
-  */height: 50px;
+  /*background-color: pink;*/ 
+  height: 50px;
   width: 50px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
