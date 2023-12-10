@@ -22,7 +22,6 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="js/plugin/select2/select2.min.css">
 	<link rel="stylesheet" href="js/plugin/select2/select2-bootstrap-5-theme.min.css">
-	<!-- <link rel="stylesheet" href="js/plugin/select2/select2-bootstrap-5-theme.css"> -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/mq.css">
 </head>
@@ -5975,12 +5974,20 @@
 								Filtrar
 							</button>
 						</div>
+
 						<button type="button" class="btn outline-button btn-filter" data-bs-toggle="modal"
 							data-bs-target="#modalLeyendaEstadosVotaciones">
 							<span class="material-icons-outlined">
 								visibility
 							</span>
 							Leyenda estados
+						</button>
+						<button type="button" class="btn primary-button btn-filter" data-bs-toggle="modal"
+							data-bs-target="#modalIniciarVotacion">
+							<span class="material-icons-outlined">
+								edit_note
+							</span>
+							Iniciar votación
 						</button>
 					</div>
 
@@ -6228,7 +6235,7 @@
 										<span class="material-icons-outlined">
 											edit_note
 										</span>
-										Iniciar votación
+										Votar
 									</button>
 								</div>
 							</div>
@@ -16913,6 +16920,48 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						Guardar cambios
+					</button>
+					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">
+						Cerrar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade modalInfo" id="modalIniciarVotacion" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title marginBottom-1-5-5 text-center">
+						Iniciar Votación
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-modal">
+						<div class="marginBottom-1-5">
+							<label for="select2expedientesVotacion" class="form-label fw-b">
+								Seleccione un expediente
+							</label>
+							<select class="form-select select2modal" aria-label="Default select example" id="select2expedientesVotacion">
+								<option selected>Seleccione</option>
+								<option>00020-2023</option>
+								<option>00021-2023</option>
+								<option>00022-2023</option>
+								<option>00023-2023</option>
+								<option>00024-2023</option>
+								<option>00025-2023</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" name="button" class="btn btn-large primary-button btn-icon">
+						<span class="material-icons-outlined">
+							filter_list
+						</span>
 						Guardar cambios
 					</button>
 					<button type="button" class="btn btn-large link-button" data-bs-dismiss="modal">

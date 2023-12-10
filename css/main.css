@@ -676,7 +676,8 @@ input[type=number]::-webkit-outer-spin-button {
 /* Selec2 Styles */
 .select2-container--bootstrap-5 .select2-selection {
   width: 100%;
-  min-height: calc(1.5em + 0.75rem + 2px);
+  /* min-height: calc(1.5em + 0.75rem + 2px); */
+  height: 50px;
   padding: 1rem;
   font-family: inherit;
   font-size: 1rem;
@@ -691,6 +692,8 @@ input[type=number]::-webkit-outer-spin-button {
      -moz-appearance: none;
           appearance: none;
 }
+
+
 /* End Select2 styles */
 
 .search-input {
@@ -2498,4 +2501,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 /* End caja de comentarios */
 /* END VOTACIONES */
+
+
 
