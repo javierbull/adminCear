@@ -2413,7 +2413,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .chat-btn {
-  /*background-color: pink;*/ 
+  /* background-color: pink;  */
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -2423,11 +2423,28 @@ input[type=number]::-webkit-outer-spin-button {
   -o-border-radius: 50%;
 }
 
-.chat-btn:hover {
+.btn-up {
+  /* background-color: lightgreen; */
+  min-height: 50px;
+  min-width: 50px;
+  max-height: 50px;
+  max-width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-btn:hover, .btn-up:hover {
   background-color: var(--primary-extra-light);
 }
 
-.chat-btn span {
+.chat-btn span, .btn-up span {
   font-size: 2rem;
   color: var(--primary-dark);
 }
